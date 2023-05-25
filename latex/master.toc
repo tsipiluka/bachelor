@@ -1,0 +1,5 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iii}{chapter*.3}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{iv}{chapter*.4}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{v}{chapter*.5}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
