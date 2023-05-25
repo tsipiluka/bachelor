@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  25 MAY 2023 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  25 MAY 2023 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -978,7 +978,7 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/Uzletiforditas.hu-Lufthansa.png> <./img/logo.jpg>]) (./ewerkl1.tex)
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/Uzletiforditas.hu-Lufthansa.png> <./img/logo.jpg>]) (./ewerkl1.tex) (./content/c1.tex
 
 Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                At least 18.85002pt needed,
@@ -987,37 +987,66 @@ Package scrlayer-scrpage Warning: \footheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting typearea's option
 (scrlayer-scrpage)                `footheight=18.85002pt'.
-(scrlayer-scrpage)                I'll also increase \footskip on input line 57.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 1.
 
 [1
 
+
+]) [2
 
 ] (./master.toc)
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
- [2
+ [3
 
 ] (./master.lof)
 \tf@lof=\write6
 \openout6 = `master.lof'.
 
- [3
+ [4
 
 ] (./master.lot)
 \tf@lot=\write7
 \openout7 = `master.lot'.
 
- (./acronyms.tex [4
+ (./acronyms.tex [5
 
-]) [5
+]) [6
 
 
 ]
 
 LaTeX Warning: Empty bibliography on input line 94.
 
-(./master.aux)
+(./content/c2.tex
+chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
+) (./content/c3.tex [10
+
+
+
+
+
+]
+chapter 2.
+) [11
+
+] (./master.aux)
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'master.run.xml'.
@@ -1025,18 +1054,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29006 strings out of 478268
- 569443 string characters out of 5846347
+ 29037 strings out of 478268
+ 569927 string characters out of 5846347
  1532846 words of memory out of 5000000
- 46813 multiletter control sequences out of 15000+600000
+ 46828 multiletter control sequences out of 15000+600000
  505477 words of font info for 48 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,19n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (6 pages, 353439 bytes).
+Output written on master.pdf (9 pages, 353962 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
