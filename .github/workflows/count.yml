@@ -15,10 +15,10 @@ jobs:
       - name: Count occurrences
         run: |
           ls
-          chmod +x ./texcount.pl
-          perl ./texcount.pl ./master.tex -inc -sum > output.texcount
+          chmod +x ./scripts/texcount.pl
+          perl ./scripts/texcount.pl ./latex/master.tex -inc -sum > output.texcount
       - name: Change README.md
-        run: python3 ./script.py
+        run: python3 ./scripts/change_readme.py
       - name: Clean up
         run: rm output.texcount
       - name: Update README.md counters
