@@ -59,8 +59,8 @@ class WordCountUpdater:
     def run(self):
         self.update_word_count()
         self.update_table_fig_count()
-        self.update_readme_file()
         self.update_total_pages()
+        self.update_readme_file()
         print(self.word_count)
         print(self.table_fig_count)
         print(self.total_pages)
