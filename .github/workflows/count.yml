@@ -15,6 +15,7 @@ jobs:
       - name: Count occurrences
         run: |
           ls
+          pip install PyPDF2
           chmod +x ./scripts/texcount.pl
           perl ./scripts/texcount.pl ./latex/master.tex -inc -sum > output.texcount
       - name: Change README.md
