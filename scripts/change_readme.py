@@ -26,13 +26,13 @@ class WordCountUpdater:
                 self.table_fig_count += int(last_match.group(1))
 
     def update_readme_file(self):
-        with open('../README.md', 'r') as file:
+        with open('README.md', 'r') as file:
             readme_content = file.read()
 
         readme_content = re.sub(r'Anzahl%20Wörter-\d+', f'Anzahl%20Wörter-{self.word_count}', readme_content)
         readme_content = re.sub(r'Tabellen/Abbildungen-\d+', f'Tabellen/Abbildungen-{self.table_fig_count}', readme_content)
 
-        with open('../README.md', 'w') as file:
+        with open('README.md', 'w') as file:
             file.write(readme_content)
 
     def run(self):
