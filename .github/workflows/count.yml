@@ -1,10 +1,9 @@
-
 name: Word Count for LaTeX projects baseed on Einar Andreas Rødland's TeXcount script
 
 on:
   push:
     branches:
-      - chapter/*
+      - main
 
 jobs:
   build:
@@ -12,18 +11,18 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v3
-    - name: Count occurrences
-      run: |
-        ls
-        chmod +x ./texcount.pl
-        perl ./texcount.pl ./master.tex -inc -sum > output.texcount
-    - name: Change README.md
-      run: python3 ./script.py    
-    - name: Clean up
-      run: rm output.texcount    
-    - name: Update README.md counters
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "README.md aktualisieren"
-        branch: ${{ github.ref }}      
+      - uses: actions/checkout@v3
+      - name: Count occurrences
+        run: |
+          ls
+          chmod +x ./texcount.pl
+          perl ./texcount.pl ./master.tex -inc -sum > output.texcount
+      - name: Change README.md
+        run: python3 ./script.py
+      - name: Clean up
+        run: rm output.texcount
+      - name: Update README.md counters
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'README.md aktualisieren'
+          branch: ${{ github.ref }}
