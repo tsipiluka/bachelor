@@ -31,7 +31,7 @@ class WordCountUpdater:
     def update_total_pages(self):
         with open("./latex/master.pdf", "rb") as file:
             pdf_reader = PyPDF2.PdfReader(file)
-            total_pages = pdf_reader.numPages
+            total_pages = len(pdf_reader.pages)
             if total_pages != self.total_pages:
                 self.total_pages = total_pages
 
