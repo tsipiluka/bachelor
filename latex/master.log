@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  26 MAY 2023 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  26 MAY 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,6 +1036,8 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
+Package acronym Info: Label `acro:LSY' newly defined as it shall be overridden
+although it is yet undefined on input line 5.
 ) (./content/c3.tex [10
 
 
@@ -1054,18 +1056,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29073 strings out of 478268
- 570861 string characters out of 5846347
- 1534869 words of memory out of 5000000
- 46857 multiletter control sequences out of 15000+600000
+ 29079 strings out of 478268
+ 570925 string characters out of 5846347
+ 1535927 words of memory out of 5000000
+ 46861 multiletter control sequences out of 15000+600000
  505477 words of font info for 48 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,19n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (9 pages, 359033 bytes).
+Output written on master.pdf (9 pages, 363958 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
