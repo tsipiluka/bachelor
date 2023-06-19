@@ -2,15 +2,45 @@
 
 \section{Einführung in cFront}
 
+\section{CIA-Triade}
+
 \section{Arten der Authentifizierung}
 
 \section{Multi-Faktor-Authentifizierung}
 
 \section{Passwortbasierte Authentifizierung}
 
+\begin{itemize}
+    \item Die heutzutage am häufigsten genutzte Methode zur Authentifizierung ist die passwortbasierte Authentifizierung \cite{chanda2016password}.
+    \item Dabei handelt es sich am häufigsten um alphanumerische Passwörter, welche aus einer Kombination von Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen bestehen \cite{chanda2016password}. 
+    \item Passwörter können durch verschiedene Angriffe kompromittiert werden. Angreifer können Zugriff auf die Datenbank erhalten, in welcher die Passwörter gespeichert sind. Aber auch auf persönlicher Ebene können Passwörter erlangt werden. Aufgeschriebene Passwörter können in fremde Hände geraten. Auch Social Engineering kann genutzt werden, um Passörter mit Hilfe von Phishing oder Keyloggern zu erlangen. Häufig lassen sich Passwörter allerdings auch mit Hilfe von Brute-Force- oder Dictionary-Attacken kompromittieren \cite{chanda2016password}.
+    \item Brute-Force-Attacken versuchen alle möglichen Kombinationen von Zeichen, welche ein Passwort enthalten kann, auszuprobieren. Je höher dabei die Anzahl an möglichen Kombinationen ist, desto aufwändiger wird es ein Passwort zu erraten.
+    \item Je länger ein Passwort, desto schwieriger zu knacken. Länge auch wichtiger als Zeichenraum \cite{chanda2016password}.
+    \item Hier auch kurz auf die Mathematik dahinter eingehen.
+    \item Studien zeigen, dass Nutzer dazu neigen gleiche oder ähnliche Passwörter für verschiedene Zugänge zu nutzen \cite{chanda2016password}.
+    \item Verfügen Angreifer über ein Passwort eines Nutzers, können häufig auch andere Zugänge übernommen werden \cite{chanda2016password}.
+    \item 
+\end{itemize}
+
 \subsection{Speicherung}
 
+\begin{itemize}
+    \item Passwörter können auf verschiedene Arten gespeichert werden. Dadurch können verschiedene Angriffsvektoren entstehen \cite{chanda2016password}.
+    \item Plaintext am schlechtesten. Werden die Passwörter in lesbarer Form gespeichert, können Angreifer alle Passwörter auslesen, sobald sie Zugriff auf die Datenbank haben. Dabei muss kein weiterer Aufwand betrieben werden \cite{chanda2016password}.
+    \item Verschlüssellung besser, aber nicht optimal. Verschlüssellung ist zurückführbar. Gelangen Angreifer an den benötigten Schlüssel, können sie alle Passwörter entschlüsseln und auslesen \cite{chanda2016password}.
+    \item AM besten Hashing mit Salt. Sobald ein Passwort gehasht wurde, kann es nicht mehr zurückgerechnet werden. Durch einen individuellen Salt kann ebenfalls verhindert werden, dass Angreifer die Passwörter mit Hilfe von Rainbow-Tables entschlüsseln können \cite{chanda2016password}.
+    \item auch noch zwei salts möglich - einer public einer private. schützt vor offline angriffen \cite{chanda2016password}.
+    \item Vielleicht hier noch ganz kurz auf Hash Funktionen eingehen?
+\end{itemize}
+
 \subsection{Faktor Mensch}
+
+\begin{itemize}
+    \item Von Menschen erstellte Passwörter sind keine echten Zufallswerte. Das liegt insbesondere daran, dass Nutzer sich Passwörter merken können müssen. Daher beinhalten Passwörter häufig Informationen, welche einen Bezug zum Nutzer haben. Dazu gehören beispielsweise Namen, Geburtsdaten, Adressen oder andere persönliche Informationen. Auch Passwörter, welche einfache Tastaturmuster beinhalten sind sehr beliebt. Dazu zählen beispielsweise \glqq qwertz\grqq{} oder \glqq 123456\grqq{} \cite{chanda2016password}.
+    \item Es ist sehr schwierig für Nutzer sich verschiedene komplexe Passwörter zu merken. Daher neigen Nutzer dazu, einfache Passwörter zu nutzen oder Passwörter für verschiedene Zugänge zu wiederholen \cite{chanda2016password}.
+    \item Das macht von Menschen erstellte Passwörter anfälliger für Angriffe, da diese einfacher zu erraten sind \cite{chanda2016password}.
+    \item 
+\end{itemize}
 
 \section{Passwortlose Authentifizierung}
 
@@ -22,3 +52,12 @@
 
 \subsection{Public Key Cryptography}
 
+\section{Yubikey}
+
+\section{Fido2}
+
+\subsection{Webauthn}
+
+\subsection{CTAP2}
+
+\subsection{Sicherheit}
