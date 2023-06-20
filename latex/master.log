@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  19 JUN 2023 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  20 JUN 2023 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -994,13 +994,13 @@ Package scrlayer-scrpage Warning: \footheight to low.
 
 ]) [2
 
-] (./master.toc [3
-
-])
+] (./master.toc)
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
- [4] (./master.lof)
+ [3
+
+] [4] (./master.lof)
 \tf@lof=\write6
 \openout6 = `master.lof'.
 
@@ -1046,64 +1046,198 @@ although it is yet undefined on input line 5.
 
 ]
 chapter 2.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 14.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 9.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Citation 'chanda2016password' on page 11 undefined on input line 14.
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 9.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 11 undefined on input line 15.
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 10.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 11 undefined on input line 16.
+Overfull \hbox (76.61185pt too wide) in paragraph at lines 10--11
+\T1/lmr/m/n/12 nur dem Nut-zer be-kannt sind, um sei-ne Iden-ti-tät zu be-stä-ti-gen []. 
+ []
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 11 undefined on input line 18.
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 11.
+
+
+Overfull \hbox (23.77141pt too wide) in paragraph at lines 11--12
+\T1/lmr/m/n/12 Da-zu ge-hö-ren u.a. Smart-cards und Hardware-Token []. 
+ []
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 12.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 13.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 14.
+
+
+Overfull \hbox (52.58315pt too wide) in paragraph at lines 14--15
+\T1/lmr/m/n/12 Un-ter-schrift des Nut-zers, um sei-ne Iden-ti-tät zu be-stä-ti-gen []. 
+ []
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 11 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 21.
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 11 undefined on input line 21.
+
+
+Overfull \hbox (78.6051pt too wide) in paragraph at lines 21--22
+\T1/lmr/m/n/12 die pass-wort-ba-sier-te Au-then-ti-fi-zie-rung [] []
+ []
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 11 undefined on input line 22.
 
 [11
 
 ]
 
-LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 20.
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 12 undefined on input line 23.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 21.
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 12 undefined on input line 24.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 28.
+LaTeX Warning: Citation 'boonkrong2012security' on page 12 undefined on input line 25.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 27.
 
 
 LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 29.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 30.
-
-
 LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'ives2004domino' on page 12 undefined on input line 31.
+
+
+Overfull \hbox (22.09679pt too wide) in paragraph at lines 31--32
+\T1/lmr/m/n/12 für ver-schie-de-ne Zu-gän-ge zu nut-zen [] []. 
+ []
 
 
 LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 32.
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 12 undefined on input line 39.
+LaTeX Warning: Citation 'ives2004domino' on page 12 undefined on input line 33.
 
 [12]
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 13 undefined on input line 39.
+
 
 LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 40.
 
 
-Overfull \hbox (11.82614pt too wide) in paragraph at lines 40--41
+LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 43.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 44.
+
+
+LaTeX Warning: Citation 'ives2004domino' on page 13 undefined on input line 51.
+
+
+Overfull \hbox (55.9716pt too wide) in paragraph at lines 51--52
+[]\T1/lmr/m/n/12 Die Si-cher-heit ist nicht nur von den tech-ni-schen Aspek-ten ab-hän-gig []. 
+ []
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 13 undefined on input line 52.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 13 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 13 undefined on input line 53.
+
+
+Overfull \hbox (60.29211pt too wide) in paragraph at lines 53--54
+\T1/lmr/m/n/12 spiels-wei-se ^^Rqwertz^^P oder ^^R123456^^P [] []
+ []
+
+[13]
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 54.
+
+
+LaTeX Warning: Citation 'chanda2016password' on page 14 undefined on input line 55.
+
+
+Overfull \hbox (11.82614pt too wide) in paragraph at lines 55--56
 \T1/lmr/m/n/12 Pass-wör-ter für ver-schie-de-ne Zu-gän-ge zu wie-der-ho-len []. 
  []
 
 
-LaTeX Warning: Citation 'chanda2016password' on page 13 undefined on input line 41.
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 56.
 
-) (./content/c4.tex [13] [14]
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 57.
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 59.
+
+
+Overfull \hbox (7.54472pt too wide) in paragraph at lines 59--60
+\T1/lmr/m/n/12 duk-ti-ven Ef-fekt, da die Si-cher-heit ge-rin-ger wird []. 
+ []
+
+
+LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 60.
+
+
+Overfull \hbox (82.91925pt too wide) in paragraph at lines 60--61
+\T1/lmr/m/n/12 he-ren Si-cher-heit. Viel-mehr kann das Ge-gen-teil er-reicht wer-den []. 
+ []
+
+
+LaTeX Warning: Citation 'ives2004domino' on page 14 undefined on input line 61.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 62.
+
+
+LaTeX Warning: Citation 'ives2004domino' on page 14 undefined on input line 63.
+
+[14]
+
+LaTeX Warning: Citation 'chanda2016password' on page 15 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'boonkrong2012security' on page 15 undefined on input line 74.
+
+) (./content/c4.tex [15]
 chapter 3.
-) [15
+) [16
 
 ] (./master.aux)
 
@@ -1121,18 +1255,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29374 strings out of 478268
- 577039 string characters out of 5846347
- 1542982 words of memory out of 5000000
- 47123 multiletter control sequences out of 15000+600000
+ 29373 strings out of 478268
+ 577029 string characters out of 5846347
+ 1543104 words of memory out of 5000000
+ 47122 multiletter control sequences out of 15000+600000
  508620 words of font info for 50 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,19n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (14 pages, 380880 bytes).
+Output written on master.pdf (15 pages, 386544 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
+ 284 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  53 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
