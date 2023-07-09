@@ -113,13 +113,31 @@
     \item Wurde 2019 ein offizieller Webstandard \cite{farke2020you}.
     \item Spezifiziert eine standardiserte, vom Browser unabhängige JavaScript API zur Authentifizierung von Nutzern für Webanwendungen. So können Webanwendungen eine Authentifizierung integrieren, welche resistent gegenüber Phishing, Datenlecks und Passwortdiebstahl ist. Anstelle von geteilten Geheimnissen nutzt WebAuthn public-key Kryptographie, um einzigartige Zugangsdaten für jede Webanwendung zu erstellen, welche nur auf dem Gerät des Nutzers gespeichert werden \cite{farke2020you}.
     \item Passwortloses Challenge-Response-Verfahren zwischen Client und Server \cite{barbosa2021provable}.
-    \item In der Registrierungsphase 
+    \item WebAuthn unterstützt zwei Opertationen: Registrierung und Anmeldung \cite{barbosa2021provable}.
+    \item In der Registrierungsphase sendet der Server dem Authentifizierungsgerät über den CLient eine zufällige Challenge. In dieser Phase signiert das Authentifizierungsgerät mit Hilfe seines privaten Schlüssels die CHallenge und sendet zusätzlich  öffentliche Anmeldedaten für zukünftige Anmeldungen an den Server. Meldet sich ein bereits registrierter Nutzer an, wird die Challenge des Servers erneut von dem Authentifizierungsgerät signiert zurück an den Server gesendet. Der Server kann die Signatur mit Hilfe des öffentlichen Schlüssels verifizieren und den Nutzer authentifizieren \cite{barbosa2021provable}.
+    \item Registrierungsphase:
+    Der Server \textit{S} sendet eine challenge message $m_{rch}$ über den Client \textit{C} an den Security Key. Diese Challenge beinhaltet eine randomisierte Nonce, Parameter (beispielsweise, ob eine Nutzerverifizierung notwendig ist) und optional einen wert \textit{tb}, welcher den zugrunde liegenden Kanal eindeutig identifiziert (typischerweise eine \ac{TLS} Verbindung). Der Client \textit{C} erhält die challenge message $m_{rch}$ und wandelt diese in eine command message $m_{rcom}$ und eine client mesasage $m_{rcl}$ um. die command message $m_{rcom}$ wird an den Security Key $T$ übermittelt. Der Security Key $T$ erzeugt öffentlich-privates Schlüsselpaar, welches an den Server $S$ gebunden ist und diesem ermöglicht eine Verifizierung, während der folgenden AUthentifizierungsphase durchzuführen. Zudem gibt der Security Key $T$ eine response message $m_{rrsp}$ aus. Der Client übergibt diese und die client message $m_{rcl}$ an den Server $S$. Die response message $m_{rrsp}$ beinhaltet einen \textit{attestation type}, welcher es dem Server $S$ ermöglicht eine Verifizierung während der Registrierungsphase durchzuführen und beinhaltet den öffentlichen Schlüssel. WebAuthN 2 unterstützt fünf \textit{attestation types}. Häufig werden die types \textit{None} und \textit{Basic} verwendet. 
+    \item Die Sicherheit von WebAuthn basiert auf dem Beweis, dass RSASSA PKCS1-v1\_5 und RSASSA-PSS als \ac{EUF-CMA} gelten und der Annahme, dass SHA-256 kollisionsresistent ist \cite{barbosa2021provable}.
+    \item 
 \end{itemize}
 
 \subsection{CTAP2}
 \begin{itemize}
     \item 2018 wurde \ac{CTAP2} als internationaler Standard der \ac{ITU-T} anerkannt \cite{barbosa2021provable}.
     \item \ac{CTAP2} ist ein Protokoll auf der Anwendungsebene, welches für die Kommunikation zwischen eines WebAuthn Clients und eines konformen Authentifizierungsgerätes genutzt wird. Das Authentifizierungsgerät kann dabei ein externes Gerät sein wie beispielsweise ein Security Key, welches über USB, Bluetooth oder NFC eine Verbindung mit dem Client aufbaut. Aber auch ein internes Gerät wie beispielsweise ein Fingerabdruckscanner oder ein Trusted Platform Module können als Authentifizierungsgerät genutzt werden \cite{lyastani2020fido2}.
+    \item \ac{CTAP2} spezifiziert, die Kommunikation zwischen einem Authentifizierungsgerät und einem Client. Der Client ist dabei üblicherweise ein Webbrowser. Das Ziel ist es zu garantieren, dass der CLient das AUthentifizierungsgerät nur nutzen darf, wenn der Nutzer dies erlaubt. Dafür muss der Nutzer beispielsweise einen Knopf am Authentifizierungsgerät drücken und/oder sich mit Hilfe eines PINs oder eines biometrischen Merkmals beim AUthentifizierungsgerät authentifizieren \cite{barbosa2021provable}.
+    \item Das Ziel ist es somit einen Client an das AUthentifizierungsgerät zu binden. Ist ein CLient nicht an das authentifizerungsgerät gebunden, kann dieser sich nicht authentifizieren \cite{barbosa2021provable}.
+    \item \ac{CTAP2} nutzt unauthentifizierten Diffie-Hellman Schlüsselaustausch \cite{barbosa2021provable}.
+    \item Dieser kann von \ac{MITM} Angriffen betroffen sein \cite{barbosa2021provable}.
+    \item In der Binding Phase sendet das Authentifizierungsgerät dem CLient ein pinToken, welcher beim hochfahren des Authentifizierungsgerätes generiert wird. Dieser pinToken wird lokal auf dem AUthentifizierungsgerät gespeichert und wird von dem verbundenen Client in der Access Channel Phase genutzt, um die nachfolgenden Nachrichten des Clients zu autorisieren \cite{barbosa2021provable}.
+    \item Jedem AUthentifizierungsgerät wird ein pinToken pro hochfahren zugeordnet. Das bedeutet mehrere CLients erezugen mehrere Access Channels mit dem selbem Authentifizierungsgerät und dem selben pinToken \cite{barbosa2021provable}.
+    \item Dadurch wird die Sicherheit von \ac{CTAP2} limitiert ??
+\end{itemize}
+
+\subsubsection{CTAP2.1}
+\begin{itemize}
+    \item Gilt in Verbindung mit WebAuthn 2 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, der nur symmetrisch kryptographische Primitive, digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
+    \item 
 \end{itemize}
 
 \subsection{Sicherheit}
@@ -130,6 +148,19 @@
     \item Es handelt sich dabei um ein Challenge-Response-Verfahren mittels Hardware basierten Authentifizierungsgeräten. Dies bietet einige Vorteile gegenüber passwortbasierten Verfahren. Es gibt keine geteilten Geheimnisse zwischen Usern und Diensten, welche durch Phishing oder Datenlecks kompromittiert werden können. Dabei ist das selbe Authentifizierungsgerät für mehrere Dienste nutzbar, ohne, dass sich dabei eine Verknüpfung zurückführen lässt \cite{lyastani2020fido2} \cite{farke2020you}.
     \item lediglich die Session kann kompromittiert werden \cite{morii2017research}.
     \item Authentifizierungsgeräte lassen sich mit zusätzlichen PINs oder biometrischen Merkmalen absichern, um sich ebenfalls vor Diebstahl schützen \cite{barbosa2021provable}.
+    \item Unauthentifizierter Diffie-Hellman Schlüsselaustausch könnte durch ein \ac{PAKE} Verfahren ersetzt werden \cite{barbosa2021provable}.
+    \item Das Paper gibt an, dass dieses sicherer und effizienter sein soll \cite{barbosa2021provable}.
+    \item In folgendem Szenario: 1. Der Nutzer besitzt einen Security Key, welcher mit einem drückbaren Knopf oder ähnlichen ausgestattet ist. 2. Der Security Key ist mit einem geheimen PIN geschützt. 3. Der Nutzer autorisiert vertrauten Clients auf den Security Key zuzugreifen. 4. Der Nutzer verbindet seinen Security Key mit mehreren Clients und nutzt diese um sich bei mehreren Webdiensten zu registrieren/anzumelden.
+    Dann ist versichert, dass:
+    1. Die Authentifizierung von dem Security Key durchgeführt wurde, welcher die genutzen Zugangsdaten bei dem Webdienst registriert hat.
+    2. ein autorisierter Befehl auf den Security Key zugegriffen hat.
+    3. und dieser autorisierte Befehl von einem autorisierten Client beauftragt wurde (sollte der Nutzer den korrekten PIN eingegeben haben).
+    Dies setzt voraus, dass:
+    1. Der Security Key nicht gestohlen wurde.
+    2. Der PIN des Security Keys nicht kompromittiert wurde.
+    3. Der autorisierte Client nicht kompromittiert wurde (korrekte Ausführung von \ac{CTAP2} und CLient ist nicht von böswilliger Software betroffen).
+    \cite{barbosa2021provable}.
+    \item Wird ein Security Key gestohlen, kann dieser nur genutzt werden, wenn ebenfalls der PIN bekannt ist \cite{barbosa2021provable}.
 \end{itemize}
 
 \subsection{Usability}

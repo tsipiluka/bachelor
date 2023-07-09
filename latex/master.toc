@@ -22,13 +22,14 @@
 \contentsline {section}{\numberline {2.7}Fido2}{16}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Webauthn}{17}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}CTAP2}{18}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{18}{subsection.2.7.3}%
-\contentsline {subsection}{\numberline {2.7.4}Usability}{18}{subsection.2.7.4}%
-\contentsline {chapter}{\numberline {3}Umsetzung}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Integration eines Yubikeys in die LSY}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Nutzung des passwortlosen Verfahrens im Unternehmenskontext}{21}{section.3.3}%
-\contentsline {section}{\numberline {3.4}User Feedback}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Zeitmessung}{21}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Nutzung des passwortlosen Verfahrens im privaten Kontext}{21}{section.3.6}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{20}{subsubsection.2.7.2.1}%
+\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{20}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Usability}{21}{subsection.2.7.4}%
+\contentsline {chapter}{\numberline {3}Umsetzung}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Integration eines Yubikeys in die LSY}{24}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Nutzung des passwortlosen Verfahrens im Unternehmenskontext}{24}{section.3.3}%
+\contentsline {section}{\numberline {3.4}User Feedback}{24}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Zeitmessung}{24}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Nutzung des passwortlosen Verfahrens im privaten Kontext}{24}{section.3.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

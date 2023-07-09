@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  5 JUL 2023 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  9 JUL 2023 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1373,136 +1373,218 @@ LaTeX Warning: Citation 'farke2020you' on page 17 undefined on input line 114.
 
 LaTeX Warning: Citation 'barbosa2021provable' on page 17 undefined on input line 115.
 
-Package acronym Info: Label `acro:ITU-T' newly defined as it shall be overridden
-although it is yet undefined on input line 121.
 
-Package acronym Warning: Acronym `ITU-T' is not defined on input line 121.
+LaTeX Warning: Citation 'barbosa2021provable' on page 17 undefined on input line 116.
 
 
-Package acronym Warning: Acronym `ITU-T' is not defined on input line 121.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 17 undefined on input line 121.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 17 undefined on input line 122.
+LaTeX Warning: Citation 'barbosa2021provable' on page 17 undefined on input line 117.
 
 [17]
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 18 undefined on input line 128.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 18 undefined on input line 129.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 18 undefined on input line 130.
+Package acronym Info: Label `acro:TLS' newly defined as it shall be overridden
+although it is yet undefined on input line 119.
+Package acronym Info: Label `acro:EUF-CMA' newly defined as it shall be overridden
+although it is yet undefined on input line 120.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 18 undefined on input line 130.
+LaTeX Warning: Citation 'barbosa2021provable' on page 18 undefined on input line 120.
 
 
-LaTeX Warning: Citation 'morii2017research' on page 18 undefined on input line 131.
+Overfull \hbox (8.40558pt too wide) in paragraph at lines 120--122
+[]\T1/lmr/m/n/12 Die Si-cher-heit von We-bAu-thn ba-siert auf dem Be-weis, dass RSAS-SA PKCS1-
+ []
+
+Package acronym Info: Label `acro:ITU-T' newly defined as it shall be overridden
+although it is yet undefined on input line 126.
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 18 undefined on input line 126.
 
 
-LaTeX Warning: Citation 'barbosa2021provable' on page 18 undefined on input line 132.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 18 undefined on input line 139.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 18 undefined on input line 127.
 
 [18]
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 140.
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 128.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 141.
+Overfull \hbox (3.29732pt too wide) in paragraph at lines 128--129
+[][][] \T1/lmr/m/n/12 spe-zi-fi-ziert, die Kom-mu-ni-ka-ti-on zwi-schen ei-nem Au-then-ti-fi-zie-rungs-
+ []
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 142.
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 129.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 19 undefined on input line 142.
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 130.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 143.
+Overfull \hbox (92.40929pt too wide) in paragraph at lines 130--131
+[][][] \T1/lmr/m/n/12 nutzt un-authen-ti-fi-zier-ten Diffie-Hellman Schlüs-se-laus-tausch []. 
+ []
+
+Package acronym Info: Label `acro:MITM' newly defined as it shall be overridden
+although it is yet undefined on input line 131.
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 131.
 
 
-Overfull \hbox (6.14685pt too wide) in paragraph at lines 143--144
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 132.
+
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 19 undefined on input line 133.
+
+Package acronym Info: Label `acro:PQ' newly defined as it shall be overridden
+although it is yet undefined on input line 139.
+Package acronym Info: Label `acro:KEM' newly defined as it shall be overridden
+although it is yet undefined on input line 139.
+
+LaTeX Warning: Citation 'bindel2022fido2' on page 19 undefined on input line 139.
+
+[19]
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 146.
+
+
+LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 147.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'morii2017research' on page 20 undefined on input line 149.
+
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 20 undefined on input line 150.
+
+Package acronym Info: Label `acro:PAKE' newly defined as it shall be overridden
+although it is yet undefined on input line 151.
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 20 undefined on input line 151.
+
+
+Overfull \hbox (29.7699pt too wide) in paragraph at lines 151--152
+[]\T1/lmr/m/n/12 Unauthentifizierter Diffie-Hellman Schlüs-se-laus-tausch könn-te durch ein [][][]Password
+ []
+
+
+Overfull \hbox (70.16429pt too wide) in paragraph at lines 151--152
+\T1/lmr/m/n/12 Au-then-ti-ca-ted Key Ex-change ([])[] Ver-fah-ren er-setzt wer-den []. 
+ []
+
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 20 undefined on input line 152.
+
+
+Overfull \hbox (57.10141pt too wide) in paragraph at lines 152--153
+[]\T1/lmr/m/n/12 Das Pa-per gibt an, dass die-ses si-che-rer und ef-fi-zi-en-ter sein soll []. 
+ []
+
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 20 undefined on input line 162.
+
+[20]
+
+LaTeX Warning: Citation 'barbosa2021provable' on page 21 undefined on input line 163.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 170.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 171.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 172.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 173.
+
+
+LaTeX Warning: Citation 'farke2020you' on page 21 undefined on input line 173.
+
+
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 174.
+
+
+Overfull \hbox (6.14685pt too wide) in paragraph at lines 174--175
 \T1/lmr/m/n/12 ne neu-en Pass-wör-ter mehr er-stel-len und mer-ken müs-sen []. 
  []
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 144.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 175.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 19 undefined on input line 144.
+LaTeX Warning: Citation 'farke2020you' on page 21 undefined on input line 175.
 
 
-Overfull \hbox (1.14337pt too wide) in paragraph at lines 144--145
+Overfull \hbox (1.14337pt too wide) in paragraph at lines 175--176
 \T1/lmr/m/n/12 lich-keit an sich mit Hil-fe von FI-DO2 zu au-then-ti-fi-zie-ren []
  []
 
 
-LaTeX Warning: Citation 'farke2020you' on page 19 undefined on input line 145.
+LaTeX Warning: Citation 'farke2020you' on page 21 undefined on input line 176.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 147.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 21 undefined on input line 178.
 
 
-Overfull \hbox (16.06906pt too wide) in paragraph at lines 147--148
+Overfull \hbox (16.06906pt too wide) in paragraph at lines 178--179
 \T1/lmr/m/n/12 um den Zu-griff wie-der-her-zu-stel-len (vor al-lem oh-ne Pau-se) []. 
  []
 
+[21]
 
-LaTeX Warning: Citation 'farke2020you' on page 19 undefined on input line 148.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 19 undefined on input line 149.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 179.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 150.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 180.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 151.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 181.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 19 undefined on input line 152.
-
-[19]
-
-LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 153.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 182.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 154.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 183.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 155.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 184.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 156.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 185.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 157.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 186.
 
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 158.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 187.
 
 
-LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 159.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 188.
 
 
-Overfull \hbox (44.3779pt too wide) in paragraph at lines 159--160
+LaTeX Warning: Citation 'lyastani2020fido2' on page 22 undefined on input line 189.
+
+
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 190.
+
+
+Overfull \hbox (44.3779pt too wide) in paragraph at lines 190--191
 []\T1/lmr/m/n/12 Nicht zwangs-wei-se schnel-ler als die Nut-zung von Pass-wort-ma-na-gern []. 
  []
 
 
-LaTeX Warning: Citation 'farke2020you' on page 20 undefined on input line 160.
+LaTeX Warning: Citation 'farke2020you' on page 22 undefined on input line 191.
 
+[22]
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 20 undefined on input line 162.
+LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 193.
 
-) (./content/c4.tex [20]
+) (./content/c4.tex [23]
 chapter 3.
-) [21
+) [24
 
 ] (./master.aux)
 
@@ -1523,18 +1605,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29428 strings out of 478268
- 577634 string characters out of 5846347
- 1543712 words of memory out of 5000000
- 47160 multiletter control sequences out of 15000+600000
+ 29493 strings out of 478268
+ 578704 string characters out of 5846347
+ 1544430 words of memory out of 5000000
+ 47208 multiletter control sequences out of 15000+600000
  508620 words of font info for 50 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,19n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on master.pdf (20 pages, 400189 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on master.pdf (23 pages, 419026 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
