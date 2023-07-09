@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {2.6}Yubikey}{16}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Fido2}{16}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Webauthn}{17}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}CTAP2}{18}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.2}CTAP2}{19}{subsection.2.7.2}%
 \contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{20}{subsubsection.2.7.2.1}%
 \contentsline {subsection}{\numberline {2.7.3}Sicherheit}{20}{subsection.2.7.3}%
 \contentsline {subsection}{\numberline {2.7.4}Usability}{21}{subsection.2.7.4}%
