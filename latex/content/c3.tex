@@ -142,7 +142,10 @@
 \subsubsection{CTAP2.1}
 \begin{itemize}
     \item Gilt in Verbindung mit WebAuthn 2 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, der nur symmetrisch kryptographische Primitive, digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
-    \item 
+    \item Im Gegensatz zu \ac{CTAP2} basiert CTAP2.1 nicht auf unauthentifizierten Diffie-Hellman Schlüsselaustausch, sondern auf einem sogeannten \ac{puvProtocol}, wodurch die \ac{PQ}-Sicherheit ermöglicht wird \cite{bindel2022fido2}.
+    \item In \ac{CTAP2} wird der Verbindungszustand als \textit{pinToken} definiert, welcher aus mehreren 128 Bit-Blöcken besteht und keine maximale Begrenzung der Länge beseitzt. In CTAP2.1 wird der Verbindungszustand als \textit{pinUvAuthToken} definiert welcher eine feste Länge von 128 oder 256 Bit besitzt \cite{bindel2022fido2}.
+    \item Der pinToken von \ac{CTAP2} wird bis zum nächsten Neustart wiederverwendet. Der pinUvAuthToken von CTAP2.1 wird nach jeder erfolgreichen Authentifizierung neu generiert. Das führt dazu, dass CTAP2.1 eine \ac{SUF}-t' Sicherheit aufweist und \ac{CTAP2} lediglich eine \ac{UF}-t' Sicherheit \cite{bindel2022fido2}.
+    \item \ac{CTAP2} erlaubt es Security Keys und Clients nur den pinUvAuthToken zu teilen, wenn der Nutzer den korrekten PIN eingegeben hat. CTAP2.1 ermöglicht zusätzlich, dass der Nutzer sich mit Hilfe eines biometrischen Merkmals authentifiziert \cite{bindel2022fido2}.
 \end{itemize}
 
 \subsection{Sicherheit}
