@@ -84,7 +84,46 @@
 
 \subsection{Public Key Cryptography}
 
-\section{Yubikey}
+\section{YubiKey}
+ \begin{itemize}
+    \item Ein Security Key ist eine Hardware, welche es ermöglicht einen Nutzer zu authentifizieren, indem dieser mit dem Security Key interagiert (beispielsweise durch einen Knopfdruck) \cite{reynolds2018tale}.
+    \item Häufig werden Security Keys so designed, dass sie per USB an einen Computer angeschlossen werden können \cite{reynolds2018tale}.
+    \item Die YubiKeys 5 ermöglichen drei Arten der Authentifizierung:
+    1. \ac{SFA} Ersetzt Passwörter durch ein passwortloses \textit{tap-n-go} Verfahren.
+    2. \ac{2FA} Sichert ein Passwort zusätzlich mit einem \textit{tap-n-go} Faktor ab. Der Security ist somit der zweite Faktor (\textit{something you have}).
+    3. \ac{MFA} Verbindet die passwortlose \textit{tap-n-go} Authentifizierung mit einer PIN. (EIG AUCH SFA ODER NICHT)
+ \end{itemize}
+
+\subsection{Usability}
+
+\begin{itemize}
+    \item Vorteile:
+    \item Ergebnisse zeigen, dass Nutzer grundsätzlich bereit sind, Passwörter durch passwortlose Verfahren zu ersetzen \cite{lyastani2020fido2}.
+    \item Passwortlose Verfahren mit Yubikey wurden mehr akzeptiert als tradionelle passwortbasierte Verfahren \cite{lyastani2020fido2}.
+    \item Implizite Garantie, dass sich lediglich Nutzer authentifizieren können, welche auch im Besitz des Authentifizierungsgerätes sind. \cite{lyastani2020fido2}.
+    \item Durch die Nutzung von FIDO2 kann die Usability verbessert werden, da Nutzer sich keine Passwörter mehr merken müssen. Häufig wird das Verwalten der immer höher werdenden Anzahl an Passwörtern als Problem angesehen \cite{lyastani2020fido2} \cite{farke2020you}.
+    \item Es wird ein deutlich geringerer kognitiver Aufwand benötigt, da Nutzer keine neuen Passwörter mehr erstellen und merken müssen \cite{lyastani2020fido2}.
+    \item Zum aktuellen Zeitpunkt wird FIDO2 bereits von einer Vielzahl an Browsern unterstützt. Zusätzlich bieten immer mehr Online-Dienste die Möglichkeit an sich mit Hilfe von FIDO2 zu authentifizieren \cite{lyastani2020fido2} \cite{farke2020you}.
+    \item Es handelt sich um offene und standardisierte Protokolle \cite{farke2020you}.
+    \item Nachteile:
+    \item Im Falle einer \ac{SFA} wird der Verlust des Authentifizierungsgerätes als größtes Problem angesehen. Bei Verlust hat auch der Nutzer keinen Zugriff mehr und aktuell gibt es noch keine sichere und effiziente Möglichkeiten, um den Zugriff wiederherzustellen (vor allem ohne Pause) \cite{lyastani2020fido2}.
+    \item Da es sich um zusätzliche Hardware handelt kann diese ebenfalls kaputt gehen \cite{farke2020you}.
+    \item Im Unternehmenskontext, kann die Verwaltung und Verteilung der Authentifizierungsgeräte zu einem Problem werden \cite{farke2020you}. 
+    \item Da es sich um Hardware handelt, können Zugänge nicht an vertraute Personen weitergegeben werden, da der Zugang nur mit dem Authentifizierungsgerät möglich ist \cite{lyastani2020fido2}.
+    \item Ohne das Authentifizierungsgerät sind keine spontanen Logins möglich \cite{lyastani2020fido2}.
+    \item Es wird ein physischer Aufwand benötigt, da das Authentifizierungsgerät mitgeführt werden muss \cite{lyastani2020fido2}.
+    \item Bereits das aus der Tasche holen des Authentifizierungsgerätes ist für manche Nutzer bereits eine Hürde \cite{farke2020you}.
+    \item Authentifizierungsgeräte sind häufig mit Kosten verbunden, welche vom Nutzer getragen werden müssen \cite{lyastani2020fido2}.
+    \item Nutzer haben Probleme ein neues Verfahren für die Authentifizierung zu nutzen, da sie sich an das alte Verfahren gewöhnt haben. Das führt dazu, dass Nutzer das neue Verfahren als kompliziert und ungewohnt empfinden. Sie verfügen häufig nicht über das nötige Wissen, um die Funktion und Sicherheit des Verafahrens zu verstehen \cite{lyastani2020fido2}.
+    \item Selbst Nutzern, welchen das Konzept der passwortlosen Authentifizierung gefällt, nutzen häufig weiterhin Passwörter \cite{farke2020you}.
+    \item Nutzer wollen keine Angewohnheiten verändern, wenn die nicht dazu gezwungen sind \cite{farke2020you}.
+    \item Nutzer verwenden lieber Passwörter, da sie das Konzept und die Technologie besser verstehen \cite{lyastani2020fido2}.
+    \item Nicht zwangsweise schneller als die Nutzung von Passwortmanagern \cite{farke2020you}.
+    \item Allgemein fällt das Feeback von Nutzern weniger positiv aus, wenn diese vorher bereits Passwortmanager genutzt haben \cite{farke2020you}.
+    \item Fazit:
+    \item Insgesamt lassen sich noch nicht alle Szenarien mit FIDO2 abdecken. Es gibt noch spezielle Fälle, in welchen die Nutzung von Passwörtern weiterhin notwendig ist \cite{lyastani2020fido2}.
+    \item 
+\end{itemize}
 
 \section{Fido2}
 
@@ -169,35 +208,4 @@
     3. Der autorisierte Client nicht kompromittiert wurde (korrekte Ausführung von \ac{CTAP2} und CLient ist nicht von böswilliger Software betroffen).
     \cite{barbosa2021provable}.
     \item Wird ein Security Key gestohlen, kann dieser nur genutzt werden, wenn ebenfalls der PIN bekannt ist \cite{barbosa2021provable}.
-\end{itemize}
-
-\subsection{Usability}
-
-\begin{itemize}
-    \item Vorteile:
-    \item Ergebnisse zeigen, dass Nutzer grundsätzlich bereit sind, Passwörter durch passwortlose Verfahren zu ersetzen \cite{lyastani2020fido2}.
-    \item Passwortlose Verfahren mit Yubikey wurden mehr akzeptiert als tradionelle passwortbasierte Verfahren \cite{lyastani2020fido2}.
-    \item Implizite Garantie, dass sich lediglich Nutzer authentifizieren können, welche auch im Besitz des Authentifizierungsgerätes sind. \cite{lyastani2020fido2}.
-    \item Durch die Nutzung von FIDO2 kann die Usability verbessert werden, da Nutzer sich keine Passwörter mehr merken müssen. Häufig wird das Verwalten der immer höher werdenden Anzahl an Passwörtern als Problem angesehen \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Es wird ein deutlich geringerer kognitiver Aufwand benötigt, da Nutzer keine neuen Passwörter mehr erstellen und merken müssen \cite{lyastani2020fido2}.
-    \item Zum aktuellen Zeitpunkt wird FIDO2 bereits von einer Vielzahl an Browsern unterstützt. Zusätzlich bieten immer mehr Online-Dienste die Möglichkeit an sich mit Hilfe von FIDO2 zu authentifizieren \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Es handelt sich um offene und standardisierte Protokolle \cite{farke2020you}.
-    \item Nachteile:
-    \item Im Falle einer \ac{SFA} wird der Verlust des Authentifizierungsgerätes als größtes Problem angesehen. Bei Verlust hat auch der Nutzer keinen Zugriff mehr und aktuell gibt es noch keine sichere und effiziente Möglichkeiten, um den Zugriff wiederherzustellen (vor allem ohne Pause) \cite{lyastani2020fido2}.
-    \item Da es sich um zusätzliche Hardware handelt kann diese ebenfalls kaputt gehen \cite{farke2020you}.
-    \item Im Unternehmenskontext, kann die Verwaltung und Verteilung der Authentifizierungsgeräte zu einem Problem werden \cite{farke2020you}. 
-    \item Da es sich um Hardware handelt, können Zugänge nicht an vertraute Personen weitergegeben werden, da der Zugang nur mit dem Authentifizierungsgerät möglich ist \cite{lyastani2020fido2}.
-    \item Ohne das Authentifizierungsgerät sind keine spontanen Logins möglich \cite{lyastani2020fido2}.
-    \item Es wird ein physischer Aufwand benötigt, da das Authentifizierungsgerät mitgeführt werden muss \cite{lyastani2020fido2}.
-    \item Bereits das aus der Tasche holen des Authentifizierungsgerätes ist für manche Nutzer bereits eine Hürde \cite{farke2020you}.
-    \item Authentifizierungsgeräte sind häufig mit Kosten verbunden, welche vom Nutzer getragen werden müssen \cite{lyastani2020fido2}.
-    \item Nutzer haben Probleme ein neues Verfahren für die Authentifizierung zu nutzen, da sie sich an das alte Verfahren gewöhnt haben. Das führt dazu, dass Nutzer das neue Verfahren als kompliziert und ungewohnt empfinden. Sie verfügen häufig nicht über das nötige Wissen, um die Funktion und Sicherheit des Verafahrens zu verstehen \cite{lyastani2020fido2}.
-    \item Selbst Nutzern, welchen das Konzept der passwortlosen Authentifizierung gefällt, nutzen häufig weiterhin Passwörter \cite{farke2020you}.
-    \item Nutzer wollen keine Angewohnheiten verändern, wenn die nicht dazu gezwungen sind \cite{farke2020you}.
-    \item Nutzer verwenden lieber Passwörter, da sie das Konzept und die Technologie besser verstehen \cite{lyastani2020fido2}.
-    \item Nicht zwangsweise schneller als die Nutzung von Passwortmanagern \cite{farke2020you}.
-    \item Allgemein fällt das Feeback von Nutzern weniger positiv aus, wenn diese vorher bereits Passwortmanager genutzt haben \cite{farke2020you}.
-    \item Fazit:
-    \item Insgesamt lassen sich noch nicht alle Szenarien mit FIDO2 abdecken. Es gibt noch spezielle Fälle, in welchen die Nutzung von Passwörtern weiterhin notwendig ist \cite{lyastani2020fido2}.
-    \item 
 \end{itemize}
