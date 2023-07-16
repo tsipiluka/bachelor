@@ -3,7 +3,7 @@ name: Word Count for LaTeX projects baseed on Einar Andreas Rødland's TeXcount 
 on:
   push:
     branches:
-      - main
+      - final
 
 jobs:
   build:

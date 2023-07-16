@@ -29,11 +29,14 @@ class WordCountUpdater:
                 self.table_fig_count += int(last_match.group(1))
 
     def update_total_pages(self):
-        with open("./latex/master.pdf", "rb") as file:
-            pdf_reader = PyPDF2.PdfReader(file)
-            total_pages = len(pdf_reader.pages)
-            if total_pages != self.total_pages:
-                self.total_pages = total_pages
+        try:
+            with open("./latex/master.pdf", "rb") as file:
+                pdf_reader = PyPDF2.PdfReader(file)
+                total_pages = len(pdf_reader.pages)
+                if total_pages != self.total_pages:
+                    self.total_pages = total_pages
+        except:
+            print("Could not open PDF")
 
     def update_readme_file(self):
         with open("README.md", "r") as file:
@@ -59,8 +62,8 @@ class WordCountUpdater:
     def run(self):
         self.update_word_count()
         self.update_table_fig_count()
-        self.update_readme_file()
         self.update_total_pages()
+        self.update_readme_file()
         print(self.word_count)
         print(self.table_fig_count)
         print(self.total_pages)
