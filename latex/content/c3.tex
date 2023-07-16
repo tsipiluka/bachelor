@@ -15,7 +15,7 @@
 \end{itemize}
 
 
-\section{Passwortbasierte Authentifizierung}
+\section[2.4]{Passwortbasierte Authentifizierung}\label{pw-auth}
 
 \begin{itemize}
     \item Die heutzutage am häufigsten genutzte Methode zur Authentifizierung ist die passwortbasierte Authentifizierung \cite{chanda2016password} \cite{boonkrong2012security} \cite{yildirim2019encouraging}.
@@ -70,7 +70,45 @@
 \section{Passwortlose Authentifizierung}
 
 \begin{itemize}
-    \item Die \ac{FIDO} Allianz nutzt die Bezeichnung passwortlos, um eine \ac{SFA} und \ac{MFA} mit Hilfe eines Authentifizierungsgerätes zu beschreiben \cite{farke2020you}.
+    \item Unter der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörtern ersetzen.
+    \item Während bei passwortbasierten Verfahren also der Faktor \textit{something you know} genutzt wird, wird bei passwortlosen Verfahren auf andere Faktoren zurückgegriffen.
+    \item Die \ac{FIDO} Allianz nutzt die Bezeichnung passwortlos, um eine \ac{SFA} oder \ac{MFA} mit Hilfe eines Authentifizierungsgerätes zu beschreiben \cite{farke2020you}.
+    \item Passwortlose Verfahren werden als sicherer angesehen, da viele der in \nameref{pw-auth} aufgeführten Angriffsvektoren nicht auf passwortlose Ansätze anwendbar sind \cite{chowhan2019password} \cite{parmar2022comprehensive}.
+    \item Auch die Benutzerfreundlichkeit soll durch passwortlose Verfahren verbessert werden, da diese sich keine Passwörter mehr merken müssen \cite{chowhan2019password}.
+    \item Allerdings haben sich passwortlose Verfahren noch nicht durchgesetzt und sind nicht weit verbreitet.
+    \item Das liegt auch daran, dass für passwortlose Verfahren häufig zusätzliche Hardware benötigt wird, welche mit zusätzlichen Kosten verbunden ist \cite{chowhan2019password}.
+    \item Auch die Umgewöhnung an eine neue Art der Authentifizierung wird als eine Hürde für die Etabliserung von passwortlosen Verfahren angesehen \cite{chowhan2019password}.
+    \item Viele verschieden Möglichkeiten Passswortlose Authentifizierung zu implementieren:
+    \item lediglich ein Überblick, da eine detailiertere BEschreibung den Scope dieser Arbeit überschreiten würde.
+    \item Magic Link:
+    Bei einem Magic Link handelt es sich um eine
+    Authentifizierungsmöglichkeit, bei welcher Nutzer
+    lediglich ihren Benutzernamen oder ihre E-Mail-Adresse
+    zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu bestätigen. \cite{chowhan2019password} \cite{parmar2022comprehensive}
+    Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der AUthentication Code seine Gültigkeit und somit auch der Link selbst. \cite{chowhan2019password}
+    Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren ohne autorisiert zu sein. \cite{chowhan2019password}
+    \item \ac{OTP}:
+    Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} beinhaltet \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
+    Dieses Wird vom System abgeglichen und validiert. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert das \ac{OTP} seine Gültigkeit. \cite{chowhan2019password}
+    Häufig werden \ac{OTP}s allerdings nicht für eine oben beschrieben \ac{SFA} genutzt, sondern dienen als zusätzlicher Faktor für eine \ac{MFA}. \cite{chowhan2019password} So können beispielsweise Authenticator Apps zur Bereitstellung con \ac{OTP}s genutzt werden, um die etabliertere passwortbasierte Authentifizierung sicherer zu gestalten.
+    Im Gegensatz zu statischen, von Anwendern gewählten
+    Passwörtern sind \ac{OTP}s dynamisch erzeugt und haben nur
+    eine geringe Lebensdauer. So wird eine höhere
+    Sicherheit gewährleistet, da OTPs nur schwierig durch
+    stupides Erraten oder Brute Force Attacken erbeutet
+    werden können. \cite{chowhan2019password}
+    Für die Umsetzung von OTPs gibt es mehrere Möglichkeiten. Zwei häufig verwendete Optionen sind \ac{HOTP} und \ac{TOTP}. \cite{chowhan2019password}
+    \ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden. \cite{chowhan2019password}
+    \ac{TOTP}s basieren auf der technischen Spezifikation RFC 6238 und werden in Abähngigkeit zu der Zeit erstellt. Sie ändern sich nach einem vordefinierten Zeitintervall und sind somit sehr kurzlebig. \cite{chowhan2019password}
+
+    \item Biometrische Daten:
+    Eine häufig genutzte Methode zur Authentifizierung auf mobilen Endgeräten ist die Nutzung von biometrischen Daten \cite{parmar2022comprehensive}. 
+    Hierbei werden einzigartige biometrische Merkmale des Nutzers genutzt um seine Identität zu verifizieren. Dazu gehören beispielsweise Fingerabdrücke oder eine Gesichtserkennung \cite{parmar2022comprehensive}. Diese Variante kann auch im Unternehmenskontext unter anderem mit Windows Hello for Business genutzt werden.
+
+    \item FIDO2:
+    WIRD IN KAPITEL GENAUWER BESCHRVIEBEN
+
+
 \end{itemize}
 
 \subsection{Magic Link}
@@ -180,7 +218,7 @@
 
 \subsubsection{CTAP2.1}
 \begin{itemize}
-    \item Gilt in Verbindung mit WebAuthn 2 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, der nur symmetrisch kryptographische Primitive, digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
+    \item Gilt in Verbindung mit WebAuthn 2 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, der nur kryptographische Primitive, digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
     \item Im Gegensatz zu \ac{CTAP2} basiert CTAP2.1 nicht auf unauthentifizierten Diffie-Hellman Schlüsselaustausch, sondern auf einem sogeannten \ac{puvProtocol}, wodurch die \ac{PQ}-Sicherheit ermöglicht wird \cite{bindel2022fido2}.
     \item In \ac{CTAP2} wird der Verbindungszustand als \textit{pinToken} definiert, welcher aus mehreren 128 Bit-Blöcken besteht und keine maximale Begrenzung der Länge beseitzt. In CTAP2.1 wird der Verbindungszustand als \textit{pinUvAuthToken} definiert welcher eine feste Länge von 128 oder 256 Bit besitzt \cite{bindel2022fido2}.
     \item Der pinToken von \ac{CTAP2} wird bis zum nächsten Neustart wiederverwendet. Der pinUvAuthToken von CTAP2.1 wird nach jeder erfolgreichen Authentifizierung neu generiert. Das führt dazu, dass CTAP2.1 eine \ac{SUF}-t' Sicherheit aufweist und \ac{CTAP2} lediglich eine \ac{UF}-t' Sicherheit \cite{bindel2022fido2}.
