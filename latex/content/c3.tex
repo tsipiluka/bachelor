@@ -87,6 +87,14 @@
     zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu bestätigen. \cite{chowhan2019password} \cite{parmar2022comprehensive}
     Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der AUthentication Code seine Gültigkeit und somit auch der Link selbst. \cite{chowhan2019password}
     Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren ohne autorisiert zu sein. \cite{chowhan2019password}
+    Passwort bleibt für Zugriff auf E-Mail Zugang notwendig, allerdings würde so die Anzahl an Passwörtern für den Nutzer reduziert werden.
+    Vorteile:
+    Sehr benutzerfreundlich und einfach \cite{parmar2022comprehensive}.
+    Implementierung und Kosten zur Instandshaltung verhältnißmäßig gering \cite{parmar2022comprehensive}.
+    Nachteile:
+    Nutzung von Spam-Filtern, kann die Benutzerfreundlichkeit stark beeinträchtigen. So könnten die zugehörigen Mails fälschlicherweise als Spam klassifiziert werden oder eine erhöhte Wartezeit auf die Mail entstehen \cite{parmar2022comprehensive}.
+    Die Sicherheit des Verfahrens hängt von der Sicherheit des Mail-Servers ab. Ist dieser nicht ausreichend geschützt, können Angreifer Zugriff auf die Mails erhalten und sich somit auch mit dem Link authentifizieren \cite{chowhan2019password}.
+    Dies kann geschehen, ohne dass der Nutzer davon etwas mitbekommt \cite{chowhan2019password}.
     \item \ac{OTP}:
     Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} beinhaltet \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
     Dieses Wird vom System abgeglichen und validiert. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert das \ac{OTP} seine Gültigkeit. \cite{chowhan2019password}
@@ -100,10 +108,29 @@
     Für die Umsetzung von OTPs gibt es mehrere Möglichkeiten. Zwei häufig verwendete Optionen sind \ac{HOTP} und \ac{TOTP}. \cite{chowhan2019password}
     \ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden. \cite{chowhan2019password}
     \ac{TOTP}s basieren auf der technischen Spezifikation RFC 6238 und werden in Abähngigkeit zu der Zeit erstellt. Sie ändern sich nach einem vordefinierten Zeitintervall und sind somit sehr kurzlebig. \cite{chowhan2019password}
-
+    \item Vorteile:
+    sehr effektiv für \ac{MFA} \cite{parmar2022comprehensive}.
+    sehr benutzerfr4eundlich und einfach \cite{parmar2022comprehensive}.
+    bieten eine erhöhte Sicherheit und verringern die Angriffsvektoren von statischen Passwörtern. \cite{chowhan2019password}
+    haben sich für \ac{MFA} bereits etabliert \cite{parmar2022comprehensive}.
+    Vielzahl an Möglichkeiten, per mail/sms/app oder security keys \cite{chowhan2019password} \cite{parmar2022comprehensive}.
+    \item Nachteile:
+    Häufig nur für \ac{MFA} genutzt also nicht passwortlose \ac{SFA} 
+    je nach implementierung ähnliche nachteile wie Magic Links
+    \ac{OTP}s als \ac{SFA} werden nicht überall unterstützt.
+    
     \item Biometrische Daten:
     Eine häufig genutzte Methode zur Authentifizierung auf mobilen Endgeräten ist die Nutzung von biometrischen Daten \cite{parmar2022comprehensive}. 
     Hierbei werden einzigartige biometrische Merkmale des Nutzers genutzt um seine Identität zu verifizieren. Dazu gehören beispielsweise Fingerabdrücke oder eine Gesichtserkennung \cite{parmar2022comprehensive}. Diese Variante kann auch im Unternehmenskontext unter anderem mit Windows Hello for Business genutzt werden.
+    Vorteile:
+    Viele mobile Endgeräte arbeiten bereits mit biometrischen Daten \cite{parmar2022comprehensive}.
+    Keine große Umgewöhnung für Nutzer, da diese oftmals bereits mit biometrischen Daten arbeiten \cite{parmar2022comprehensive}.
+    nahezu einzigartig und somit deutlich schwieriger anzugreifen als passwörter \cite{parmar2022comprehensive}.
+    Bereits für Unternehmenskontext verfügbar, beispielsweise mit Windows Hello for Business.
+    Nachteile:
+    Äußere Bedingungen können die Erkennung von biometrischen Daten beeinträchtigen. beispielsweise schlechtes licht bei Gesichtserkennung oder staubige Umgebungen bei Fingerabdruckscanner \cite{parmar2022comprehensive}.
+    Biometrische Daten können sich im Laufe der Zeit verändern. Auch Verletzungen oder Krankheiten können die biometrischen Daten verändern \cite{boonkrong2012security}.
+    Im Unternehmenskontext häufig verschiedene Hersteller und Geräte, welche nicht alle biometrischen Daten unterstützen oder nicht untereinander kompatibel sind \cite{parmar2022comprehensive}.
 
     \item FIDO2:
     WIRD IN KAPITEL GENAUWER BESCHRVIEBEN
