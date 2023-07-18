@@ -9,26 +9,26 @@
 \contentsline {chapter}{\numberline {2}Grundlagen}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Einführung in cFront}{11}{section.2.1}%
 \contentsline {section}{\numberline {2.2}CIA-Triade}{11}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{11}{section.2.3}%
-\contentsline {section}{\numberline {2.4}2.4}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Speicherung}{13}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Faktor Mensch}{14}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Passwortlose Authentifizierung}{15}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Magic Link}{18}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}One Time Password (OTP)}{18}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Biometrische Daten}{19}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Public Key Cryptography}{19}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}YubiKey}{19}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Usability}{19}{subsection.2.6.1}%
-\contentsline {section}{\numberline {2.7}Fido2}{21}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Webauthn}{22}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}CTAP2}{24}{subsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{25}{subsubsection.2.7.2.1}%
-\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{26}{subsection.2.7.3}%
-\contentsline {chapter}{\numberline {3}Umsetzung}{28}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Integration eines Yubikeys in die LSY}{28}{section.3.2}%
-\contentsline {section}{\numberline {3.3}User Feedback}{28}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Zeitmessung}{29}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Nutzung des passwortlosen Verfahrens im privaten Kontext}{29}{section.3.5}%
+\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Passwortbasierte Authentifizierung}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Speicherung}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Faktor Mensch}{15}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Passwortlose Authentifizierung}{16}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Magic Link}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}One Time Password (OTP)}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Biometrische Daten}{20}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Public Key Cryptography}{20}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}YubiKey}{20}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Usability}{20}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Fido2}{22}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Webauthn}{23}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}CTAP2}{25}{subsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{26}{subsubsection.2.7.2.1}%
+\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{27}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Umsetzung}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Integration eines Yubikeys in die LSY}{29}{section.3.2}%
+\contentsline {section}{\numberline {3.3}User Feedback}{29}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Zeitmessung}{30}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Nutzung des passwortlosen Verfahrens im privaten Kontext}{30}{section.3.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
