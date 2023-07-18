@@ -2,4 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{29}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{29}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{30}{figure.caption.33}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

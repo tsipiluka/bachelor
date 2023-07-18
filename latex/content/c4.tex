@@ -1,8 +1,38 @@
 \chapter{Umsetzung}
 
 \section{Aktueller Stand der LSY}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=1\textwidth]{img/abbildungen/Unknown.png}
+	\captionsetup{format=hang}
+	\caption{Aktuelle Umsetzung der Abteilung}
+\end{figure}
+
+\begin{itemize}
+    \item Innerhalb der Abteilung wird eine passwortbasierte Authentifizierung durchgeführt, welche zusätzlich durch \ac{MFA} geschützt wird.
+    \item Webanwendung nutzt einen eigene Anwendung, welche sich als Keycloak-Client aussgibt. Der Nutzer gibt seine Zugangsdaten an den Keycloak-Client weiter, welche diese verarbeitet. Dieser wandelt die Zugangsdaten in einen validen JWT-Token um und übergibt diesen an den Keycloak-Server. Dieser validiert die Zugangsdaten gegen die \ac{CDS}. Ist die Validierung erfolgreich, wird vom Keycloak-Server ein oAuth2-Token erstellt und zurück an die Applikation übergeben.
+    \item Innerhalb der \ac{LSY} können sich Applikationen allerdings auch gegen das Azure \ac{AD} authentifizieren lassen. 
+\end{itemize}
 
 \section{Integration eines Yubikeys in die LSY}
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.5\textwidth]{img/abbildungen/azure_umsetzung.png}
+	\captionsetup{format=hang}
+	\caption{Umsetzungsmöglichkeit mit Azure \ac{AD}}
+\end{figure}
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=1\textwidth]{img/abbildungen/keycloak_browser.png}
+	\captionsetup{format=hang}
+	\caption{Umsetzungsmöglichkeit mit Keycloak}
+\end{figure}
+
+\begin{itemize}
+    \item Grundsätzlich gibt es zwei Möglichkeiten in die aktuelle Applikation eine passwortlose Authentifizierung mit Hilfe eines Yubikeys zu integrieren: Die Nutzung der Authentifizierung gegen das Azure \ac{AD} oder die eine veränderte Nutzung der aktuellen Keycloak-Lösung.
+\end{itemize}
 
 \section{User Feedback}
 \begin{itemize}
