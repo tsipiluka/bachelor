@@ -27,7 +27,9 @@
 \contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{33}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Integration eines Yubikeys in die LSY}{33}{section.3.2}%
 \contentsline {section}{\numberline {3.3}User Feedback}{37}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Inhalt der Demonstration}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Rahmen des Feedbacks}{37}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Auswahl der Teilnehmer}{37}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Inhalt der Demonstration}{38}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Wirtschaftlichkeit}{40}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Nutzung des passwortlosen Verfahrens im privaten Kontext}{40}{section.3.5}%
 \contentsline {chapter}{\nonumberline Literaturverzeichnis}{41}{chapter*.53}%
