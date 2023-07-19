@@ -91,7 +91,44 @@ Für die Arbeit wurde der Anmeldevorgang für das Produkt cFront wie in Kapitel 
 Zur Durchführung des Fragebogens wurden alle Mitglieder des Teams eingeladen, eine Teilnahme war jedoch freiwillig. Zwei der Mitglieder der Abteilung konnten auf Grund eines Urlaubs nicht an der Befragung teilnehmen. Vor der Durchführung wurden alle Teilnehmer darüber informiert zu welchem Zweck die Daten für diese Arbeit erhoben werden. Die Befragung stand dabei nicht anonym statt, um einen Austausch zwischen dem Autor und den Teilnehmern zu ermöglichen. Da die Befragung die Abteilung der Teilnehmer betrifft sollten diese somit eine Möglichkeit bekommen, ihre Gedanken zu dem modifiziertem Anmeldevorgang zu teilen.
 
 \subsection{Inhalt der Demonstration}
-Allen Teilnehmern wurde vor der Befragung live eine Demonstration der Registrierung und Anmeldung mit Hilfe eines Security Keys gezeigt. 
+Allen Teilnehmern wurde vor der Befragung live eine Demonstration der Registrierung und Anmeldung mit Hilfe eines Security Keys gezeigt. Diese sind in mehrere Schritte unterteilt. Zunächst bestätigt der Nutzer, dass er sich mit Hilfe eines Security Keys anmelden/registrieren möchte:
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.7\textwidth]{img/abbildungen/reg001.png}
+	\captionsetup{format=hang}
+	\caption{Veränderter Keycloak-Login}
+\end{figure}
+
+Darauf folgt ein Dialogfeld des Browsers, welcher den Nutzer dazu auffordert zu bestätigen, dass der Security Key registriert wird. Dieser Schritt ist einmalig und findet nur bei der Registrierung statt. Ist der Security Key bereits registriert, wird dieser Schritt übersprungen:
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.7\textwidth]{img/abbildungen/reg002.png}
+	\captionsetup{format=hang}
+	\caption{Veränderter Keycloak-Login}
+\end{figure}
+
+Nach der Bestätigung des Dialogs muss der Nutzer den PIN des Security Keys eingeben:
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.7\textwidth]{img/abbildungen/reg003.png}
+	\captionsetup{format=hang}
+	\caption{Veränderter Keycloak-Login}
+\end{figure}
+
+Ist die richtige PIN eingegeben wurden, erscheint ein letztes Fenster, welches den Nutzer dazu auffordert den Knopf des Security Keys zu drücken. Erst danach ist der Browser dazu autorisert sich mit Hilfe des Security Keys gegen den Keycloak-Server zu registrieren oder anzumelden:
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.7\textwidth]{img/abbildungen/reg004.png}
+	\captionsetup{format=hang}
+	\caption{Veränderter Keycloak-Login}
+\end{figure}
+
+Sobald der Knopfdruck erfolgt, wird der Nutzer erfolgreich eingeloggt. Diese Informationen wurden den Teilnehmern ebenfalls während der Durchführung des Fragebogens mitgeteilt. 
+
 \begin{itemize}
     \item Fragebogen:
     \item How old are you?

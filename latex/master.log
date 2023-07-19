@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  19 JUL 2023 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  19 JUL 2023 18:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -921,16 +921,15 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `master.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'master.bbl' not found.
-
-No file master.bbl.
+Package biblatex Info: ... file 'master.bbl' found.
+ (./master.bbl)
 Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
 \c@lstlisting=\count458
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
@@ -994,35 +993,31 @@ Package scrlayer-scrpage Warning: \footheight to low.
 
 ]) [2
 
-] (./master.toc)
+] (./master.toc [3
+
+])
 \tf@toc=\write5
 \openout5 = `master.toc'.
 
- [3
-
-] (./master.lof
+ [4] (./master.lof
 Package acronym Info: Label `acro:AD' newly defined as it shall be overridden
-although it is yet undefined on input line 17.
+although it is yet undefined on input line 18.
 )
 \tf@lof=\write6
 \openout6 = `master.lof'.
 
- [4
+ [5
 
 ] (./master.lot)
 \tf@lot=\write7
 \openout7 = `master.lot'.
 
- (./acronyms.tex [5
+ (./acronyms.tex [6
 
-]) [6
+]) [7
 
 
-]
-
-LaTeX Warning: Empty bibliography on input line 94.
-
-(./content/c2.tex
+] (./content/c2.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1049,12 +1044,12 @@ although it is yet undefined on input line 5.
 
 ]
 chapter 2.
-<img/abbildungen/MicrosoftTeams-image (3).png, id=237, 1431.3475pt x 906.38625pt>
+<img/abbildungen/MicrosoftTeams-image (3).png, id=254, 1431.3475pt x 906.38625pt>
 File: img/abbildungen/MicrosoftTeams-image (3).png Graphic file (type png)
 <use img/abbildungen/MicrosoftTeams-image (3).png>
 Package pdftex.def Info: img/abbildungen/MicrosoftTeams-image (3).png  used on input line 6.
 (pdftex.def)             Requested size: 408.2971pt x 258.54405pt.
-<img/abbildungen/CIA-Triad.png, id=239, 495.8525pt x 338.26375pt>
+<img/abbildungen/CIA-Triad.png, id=256, 495.8525pt x 338.26375pt>
 File: img/abbildungen/CIA-Triad.png Graphic file (type png)
 <use img/abbildungen/CIA-Triad.png>
 Package pdftex.def Info: img/abbildungen/CIA-Triad.png  used on input line 16.
@@ -1062,7 +1057,7 @@ Package pdftex.def Info: img/abbildungen/CIA-Triad.png  used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/Schutzziele.png, id=240, 533.995pt x 222.8325pt>
+<img/abbildungen/Schutzziele.png, id=257, 533.995pt x 222.8325pt>
 File: img/abbildungen/Schutzziele.png Graphic file (type png)
 <use img/abbildungen/Schutzziele.png>
 Package pdftex.def Info: img/abbildungen/Schutzziele.png  used on input line 23.
@@ -1073,300 +1068,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 29.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-LaTeX Warning: Citation 'samonas2014cia' on page 11 undefined on input line 29.
-
-
-LaTeX Warning: Citation 'samonas2014cia' on page 11 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'samonas2014cia' on page 11 undefined on input line 31.
-
-
-LaTeX Warning: Citation 'samonas2014cia' on page 11 undefined on input line 32.
-
-[11
+) [11
 
  <./img/abbildungen/MicrosoftTeams-image (3).png>]
-
-LaTeX Warning: Citation 'samonas2014cia' on page 12 undefined on input line 33.
-
-
-Overfull \hbox (7.57164pt too wide) in paragraph at lines 33--34
-\T1/lmr/m/n/12 trau-lich-keit im Ver-gleich zu frü-her an Be-deu-tung ver-lo-ren []. 
- []
-
-
-LaTeX Warning: Citation 'agarwal2011security' on page 12 undefined on input line 34.
-
-
 Overfull \hbox (4.37488pt too wide) in paragraph at lines 34--35
 []\T1/lmr/m/n/12 Wird bei-spiels-wei-se ge-schützt durch Ver-schlüs-se-lung, Au-then-ti-fi-zie-rung oder
  []
 
-
-LaTeX Warning: Citation 'samonas2014cia' on page 12 undefined on input line 35.
-
-
-LaTeX Warning: Citation 'agarwal2011security' on page 12 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'agarwal2011security' on page 12 undefined on input line 37.
-
 [12 <./img/abbildungen/CIA-Triad.png> <./img/abbildungen/Schutzziele.png>]
-
-LaTeX Warning: Citation 'agarwal2011security' on page 13 undefined on input line 38.
-
-
-LaTeX Warning: Citation 'samonas2014cia' on page 13 undefined on input line 39.
-
-
-Overfull \hbox (47.79121pt too wide) in paragraph at lines 39--40
-[]\T1/lmr/m/n/12 kommt vom la-tei-ni-schen \T1/lmr/m/it/12 va-le-re \T1/lmr/m/n/12 was so viel be-deu-tet wie \T1/lmr/m/it/12 stark sein []\T1/lmr/m/n/12 . 
- []
-
-
-LaTeX Warning: Citation 'samonas2014cia' on page 13 undefined on input line 40.
-
-
-Overfull \hbox (28.26717pt too wide) in paragraph at lines 40--41
-\T1/lmr/m/n/12 na-hen und zu-ver-läs-si-gen Zu-griff auf In-for-ma-tio-nen und Da-ten []. 
- []
-
-
-LaTeX Warning: Citation 'agarwal2011security' on page 13 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'agarwal2011security' on page 13 undefined on input line 42.
-
-<img/abbildungen/factors.png, id=253, 240.9pt x 216.81pt>
+<img/abbildungen/factors.png, id=287, 240.9pt x 216.81pt>
 File: img/abbildungen/factors.png Graphic file (type png)
 <use img/abbildungen/factors.png>
 Package pdftex.def Info: img/abbildungen/factors.png  used on input line 49.
 (pdftex.def)             Requested size: 163.31635pt x 146.98885pt.
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 13 undefined on input line 55.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 13 undefined on input line 56.
-
-
-Overfull \hbox (76.61185pt too wide) in paragraph at lines 56--57
-\T1/lmr/m/n/12 nur dem Nut-zer be-kannt sind, um sei-ne Iden-ti-tät zu be-stä-ti-gen []. 
- []
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 13 undefined on input line 57.
-
-
-Overfull \hbox (23.77141pt too wide) in paragraph at lines 57--58
-\T1/lmr/m/n/12 Da-zu ge-hö-ren u.a. Smart-cards und Hardware-Token []. 
- []
-
-[13 <./img/abbildungen/factors.png>]
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 58.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 59.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 60.
-
-
-Overfull \hbox (52.58315pt too wide) in paragraph at lines 60--61
-\T1/lmr/m/n/12 Un-ter-schrift des Nut-zers, um sei-ne Iden-ti-tät zu be-stä-ti-gen []. 
- []
-
-<img/abbildungen/entropy-length.png, id=259, 597.23125pt x 377.41pt>
+ [13 <./img/abbildungen/factors.png>]
+<img/abbildungen/entropy-length.png, id=300, 597.23125pt x 377.41pt>
 File: img/abbildungen/entropy-length.png Graphic file (type png)
 <use img/abbildungen/entropy-length.png>
 Package pdftex.def Info: img/abbildungen/entropy-length.png  used on input line 68.
 (pdftex.def)             Requested size: 285.80672pt x 180.6134pt.
-<img/abbildungen/length-time.png, id=260, 594.22pt x 296.10625pt>
+<img/abbildungen/length-time.png, id=301, 594.22pt x 296.10625pt>
 File: img/abbildungen/length-time.png Graphic file (type png)
 <use img/abbildungen/length-time.png>
 Package pdftex.def Info: img/abbildungen/length-time.png  used on input line 75.
 (pdftex.def)             Requested size: 285.80672pt x 142.42758pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation 'chanda2016password' on page 14 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 81.
-
-
-Overfull \hbox (78.6051pt too wide) in paragraph at lines 81--82
-\T1/lmr/m/n/12 die pass-wort-ba-sier-te Au-then-ti-fi-zie-rung [] []
- []
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 14 undefined on input line 82.
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 14 undefined on input line 83.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 14 undefined on input line 83.
-
-[14 <./img/abbildungen/entropy-length.png>]
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 15 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 15 undefined on input line 85.
-
-
-Overfull \hbox (48.99976pt too wide) in paragraph at lines 85--86
-[]\T1/lmr/m/n/12 2017 wa-ren Phis-hing E-Mails die häu-figs-te An-griffs-me-tho-de []. 
- []
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 15 undefined on input line 86.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 15 undefined on input line 87.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 15 undefined on input line 88.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 15 undefined on input line 89.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 15 undefined on input line 89.
-
-[15 <./img/abbildungen/length-time.png>]
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 91.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'ives2004domino' on page 16 undefined on input line 93.
-
-
-Overfull \hbox (22.09679pt too wide) in paragraph at lines 93--94
-\T1/lmr/m/n/12 für ver-schie-de-ne Zu-gän-ge zu nut-zen [] []. 
- []
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 94.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 16 undefined on input line 94.
-
-
-Overfull \hbox (46.03995pt too wide) in paragraph at lines 94--95
-\T1/lmr/m/n/12 an-de-re Zu-gän-ge über-nom-men wer-den [] []. 
- []
-
-
-LaTeX Warning: Citation 'ives2004domino' on page 16 undefined on input line 95.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 16 undefined on input line 101.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 102.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 104.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 16 undefined on input line 105.
-
-[16]
-
-LaTeX Warning: Citation 'chanda2016password' on page 17 undefined on input line 106.
-
-
-LaTeX Warning: Citation 'ives2004domino' on page 17 undefined on input line 113.
-
-
-Overfull \hbox (55.9716pt too wide) in paragraph at lines 113--114
-[]\T1/lmr/m/n/12 Die Si-cher-heit ist nicht nur von den tech-ni-schen Aspek-ten ab-hän-gig []. 
- []
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 17 undefined on input line 114.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 17 undefined on input line 115.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 17 undefined on input line 115.
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 17 undefined on input line 115.
-
-
-Overfull \hbox (60.29211pt too wide) in paragraph at lines 115--116
-\T1/lmr/m/n/12 spiels-wei-se ^^Rqwertz^^P oder ^^R123456^^P [] []
- []
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 17 undefined on input line 116.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 17 undefined on input line 117.
-
-
-Overfull \hbox (11.82614pt too wide) in paragraph at lines 117--118
-\T1/lmr/m/n/12 Pass-wör-ter für ver-schie-de-ne Zu-gän-ge zu wie-der-ho-len []. 
- []
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 17 undefined on input line 118.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 17 undefined on input line 119.
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 17 undefined on input line 120.
-
-[17]
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 18 undefined on input line 121.
-
-
-Overfull \hbox (7.54472pt too wide) in paragraph at lines 121--122
-\T1/lmr/m/n/12 duk-ti-ven Ef-fekt, da die Si-cher-heit ge-rin-ger wird []. 
- []
-
-
-LaTeX Warning: Citation 'yildirim2019encouraging' on page 18 undefined on input line 122.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 18 undefined on input line 122.
-
-
-Overfull \hbox (79.65526pt too wide) in paragraph at lines 122--123
-\T1/lmr/m/n/12 he-ren Si-cher-heit. Viel-mehr kann das Ge-gen-teil er-reicht wer-den []
- []
-
-
-LaTeX Warning: Citation 'ives2004domino' on page 18 undefined on input line 123.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 18 undefined on input line 124.
-
-
-LaTeX Warning: Citation 'ives2004domino' on page 18 undefined on input line 125.
-
-
-LaTeX Warning: Citation 'chanda2016password' on page 18 undefined on input line 126.
-
+[14 <./img/abbildungen/entropy-length.png>] [15 <./img/abbildungen/length-time.png>] [16] [17]
 Package acronym Info: Label `acro:FIDO' newly defined as it shall be overridden
 although it is yet undefined on input line 135.
 Package acronym Info: Label `acro:SFA' newly defined as it shall be overridden
@@ -1374,300 +1104,51 @@ although it is yet undefined on input line 135.
 Package acronym Info: Label `acro:MFA' newly defined as it shall be overridden
 although it is yet undefined on input line 135.
 
-LaTeX Warning: Citation 'farke2020you' on page 18 undefined on input line 135.
-
-[18]
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 136.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 19 undefined on input line 136.
-
-
 Overfull \hbox (1.33218pt too wide) in paragraph at lines 136--137
 \T1/lmr/bx/n/12 wort-ba-sier-te Au-then-ti-fi-zie-rung[] \T1/lmr/m/n/12 auf-ge-führ-ten An-griffs-vek-to-ren nicht auf
  []
 
-
-Overfull \hbox (106.42398pt too wide) in paragraph at lines 136--137
-\T1/lmr/m/n/12 pass-wort-lo-se An-sät-ze an-wend-bar sind [] []. 
- []
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 137.
-
-
-Overfull \hbox (79.4209pt too wide) in paragraph at lines 137--138
-\T1/lmr/m/n/12 sert wer-den, da die-se sich kei-ne Pass-wör-ter mehr mer-ken müs-sen []. 
- []
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 139.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 140.
-
-<img/abbildungen/magic_link.png, id=288, 431.6125pt x 263.98625pt>
+[18]
+<img/abbildungen/magic_link.png, id=385, 431.6125pt x 263.98625pt>
 File: img/abbildungen/magic_link.png Graphic file (type png)
 <use img/abbildungen/magic_link.png>
 Package pdftex.def Info: img/abbildungen/magic_link.png  used on input line 147.
 (pdftex.def)             Requested size: 285.80672pt x 174.8115pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 157.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 19 undefined on input line 157.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 158.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 159.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 19 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 19 undefined on input line 163.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 19 undefined on input line 165.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 166.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 19 undefined on input line 167.
-
-[19]
+ [19 <./img/abbildungen/magic_link.png>]
 Package acronym Info: Label `acro:OTP' newly defined as it shall be overridden
 although it is yet undefined on input line 168.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 169.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 20 undefined on input line 169.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 170.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 171.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 177.
-
 Package acronym Info: Label `acro:HOTP' newly defined as it shall be overridden
 although it is yet undefined on input line 178.
 Package acronym Info: Label `acro:TOTP' newly defined as it shall be overridden
 although it is yet undefined on input line 178.
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 178.
-
 Package acronym Info: Label `acro:HMAC' newly defined as it shall be overridden
 although it is yet undefined on input line 179.
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 179.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 20 undefined on input line 180.
-
-
-Overfull \hbox (1.43788pt too wide) in paragraph at lines 168--181
-\T1/lmr/m/n/12 ten ei-ne E-Mail/SMS, wel-che ein [][] bein-hal-tet []
- []
-
-[20 <./img/abbildungen/magic_link.png>]
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 182.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 183.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 21 undefined on input line 184.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 185.
-
-
-LaTeX Warning: Citation 'chowhan2019password' on page 21 undefined on input line 186.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 186.
-
-
-Overfull \hbox (10.47238pt too wide) in paragraph at lines 181--187
-[]\T1/lmr/m/n/12 . Viel-zahl an Mög-lich-kei-ten, per mail/sms/app
- []
-
-
-Overfull \hbox (7.01009pt too wide) in paragraph at lines 181--187
-\T1/lmr/m/n/12 oder se-cu-ri-ty keys [] []. 
- []
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 193.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 194.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 196.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 197.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 198.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 201.
-
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 21 undefined on input line 202.
-
-
-LaTeX Warning: Citation 'parmar2022comprehensive' on page 21 undefined on input line 203.
-
-
-Overfull \hbox (111.31876pt too wide) in paragraph at lines 192--204
-\T1/lmr/m/n/12 auf mo-bi-len End-ge-rä-ten ist die Nut-zung von bio-me-tri-schen Da-ten [].
- []
-
-
-Overfull \hbox (17.4551pt too wide) in paragraph at lines 192--204
-\T1/lmr/m/n/12 deut-lich schwie-ri-ger an-zu-grei-fen als pass-wör-ter [].
- []
-
-[21]
-
-LaTeX Warning: Citation 'boonkrong2012security' on page 22 undefined on input line 215.
-
-<img/abbildungen/yubikey.jpeg, id=326, 770.88pt x 578.16pt>
+ [20] [21]
+<img/abbildungen/yubikey.jpeg, id=459, 770.88pt x 578.16pt>
 File: img/abbildungen/yubikey.jpeg Graphic file (type jpg)
 <use img/abbildungen/yubikey.jpeg>
 Package pdftex.def Info: img/abbildungen/yubikey.jpeg  used on input line 222.
 (pdftex.def)             Requested size: 122.49037pt x 91.86348pt.
-
-LaTeX Warning: Citation 'reynolds2018tale' on page 22 undefined on input line 228.
-
-
-LaTeX Warning: Citation 'reynolds2018tale' on page 22 undefined on input line 229.
-
 Package acronym Info: Label `acro:2FA' newly defined as it shall be overridden
 although it is yet undefined on input line 232.
 
-Package acronym Warning: Acronym `2FA' is not defined on input line 232.
-
 
 Package acronym Warning: Acronym `2FA' is not defined on input line 232.
 
-[22 <./img/abbildungen/yubikey.jpeg>]
 
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 240.
+Package acronym Warning: Acronym `2FA' is not defined on input line 232.
 
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 241.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 242.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 243.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 23 undefined on input line 243.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 244.
-
-
-Overfull \hbox (6.14685pt too wide) in paragraph at lines 244--245
-\T1/lmr/m/n/12 ne neu-en Pass-wör-ter mehr er-stel-len und mer-ken müs-sen []. 
- []
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 245.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 23 undefined on input line 245.
-
-
-Overfull \hbox (1.14337pt too wide) in paragraph at lines 245--246
-\T1/lmr/m/n/12 lich-keit an sich mit Hil-fe von FI-DO2 zu au-then-ti-fi-zie-ren []
- []
-
-
-LaTeX Warning: Citation 'farke2020you' on page 23 undefined on input line 246.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 23 undefined on input line 248.
-
-
-Overfull \hbox (16.06906pt too wide) in paragraph at lines 248--249
-\T1/lmr/m/n/12 um den Zu-griff wie-der-her-zu-stel-len (vor al-lem oh-ne Pau-se) []. 
- []
-
-[23]
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 249.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 250.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 251.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 252.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 253.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 254.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 255.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 256.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 257.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 258.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 24 undefined on input line 259.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 260.
-
-
-Overfull \hbox (44.3779pt too wide) in paragraph at lines 260--261
-[]\T1/lmr/m/n/12 Nicht zwangs-wei-se schnel-ler als die Nut-zung von Pass-wort-ma-na-gern []. 
- []
-
-
-LaTeX Warning: Citation 'farke2020you' on page 24 undefined on input line 261.
-
-[24]
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 25 undefined on input line 263.
-
-<img/abbildungen/fido2-simple.png, id=343, 638.385pt x 306.39468pt>
+[22 <./img/abbildungen/yubikey.jpeg>] [23]
+<img/abbildungen/fido2-simple.png, id=501, 638.385pt x 306.39468pt>
 File: img/abbildungen/fido2-simple.png Graphic file (type png)
 <use img/abbildungen/fido2-simple.png>
 Package pdftex.def Info: img/abbildungen/fido2-simple.png  used on input line 271.
 (pdftex.def)             Requested size: 408.2971pt x 195.9657pt.
-<img/abbildungen/Fido2.png, id=344, 457.71pt x 389.455pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/abbildungen/Fido2.png, id=502, 457.71pt x 389.455pt>
 File: img/abbildungen/Fido2.png Graphic file (type png)
 <use img/abbildungen/Fido2.png>
 Package pdftex.def Info: img/abbildungen/Fido2.png  used on input line 278.
@@ -1675,7 +1156,7 @@ Package pdftex.def Info: img/abbildungen/Fido2.png  used on input line 278.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/fido2_usability.png, id=345, 694.595pt x 372.39125pt>
+<img/abbildungen/fido2_usability.png, id=503, 694.595pt x 372.39125pt>
 File: img/abbildungen/fido2_usability.png Graphic file (type png)
 <use img/abbildungen/fido2_usability.png>
 Package pdftex.def Info: img/abbildungen/fido2_usability.png  used on input line 285.
@@ -1685,251 +1166,51 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package acronym Info: Label `acro:W3C' newly defined as it shall be overridden
 although it is yet undefined on input line 291.
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 25 undefined on input line 291.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 25 undefined on input line 291.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 25 undefined on input line 292.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 25 undefined on input line 292.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 25 undefined on input line 293.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 25 undefined on input line 293.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 25 undefined on input line 294.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 25 undefined on input line 294.
-
-[25 <./img/abbildungen/fido2-simple.png>]
-
-LaTeX Warning: Citation 'farke2020you' on page 26 undefined on input line 295.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 26 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 26 undefined on input line 296.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 26 undefined on input line 297.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 26 undefined on input line 298.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 26 undefined on input line 298.
-
-
-Overfull \hbox (35.6152pt too wide) in paragraph at lines 298--299
-[]\T1/lmr/m/n/12 FIDO2 un-ter-stützt so-wohl [][] als auch [][] [] []. 
- []
-
-[26 <./img/abbildungen/Fido2.png>]
-
-LaTeX Warning: Citation 'farke2020you' on page 27 undefined on input line 299.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 27 undefined on input line 300.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 27 undefined on input line 301.
-
-
-Overfull \hbox (41.14038pt too wide) in paragraph at lines 301--302
-\T1/lmr/m/n/12 Dienst exis-tie-ren, wel-che auf ei-nem Ser-ver ge-spei-chert wer-den []. 
- []
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 27 undefined on input line 302.
-
-
-Overfull \hbox (11.95259pt too wide) in paragraph at lines 302--303
-[]\T1/lmr/m/n/12 Wird von fast al-len Brow-sern stan-dard-mä-ÿig un-ter-stützt []. 
- []
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 27 undefined on input line 303.
-
-
-Overfull \hbox (25.21967pt too wide) in paragraph at lines 303--304
-\T1/lmr/m/n/12 Smart-pho-nes. Bei-spiels-wei-se App-les Touch ID oder Face ID []. 
- []
-
-
-LaTeX Warning: Citation 'farke2020you' on page 27 undefined on input line 304.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 27 undefined on input line 305.
-
+[24] [25 <./img/abbildungen/fido2-simple.png>] [26 <./img/abbildungen/Fido2.png>]
 Package acronym Info: Label `acro:CTAP2' newly defined as it shall be overridden
 although it is yet undefined on input line 311.
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 27 undefined on input line 311.
-
-[27 <./img/abbildungen/fido2_usability.png>]
-
-LaTeX Warning: Citation 'farke2020you' on page 28 undefined on input line 312.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 28 undefined on input line 313.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 28 undefined on input line 314.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 28 undefined on input line 315.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 28 undefined on input line 316.
-
+ [27 <./img/abbildungen/fido2_usability.png>]
 Package acronym Info: Label `acro:TLS' newly defined as it shall be overridden
 although it is yet undefined on input line 318.
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 28 undefined on input line 318.
-
-[28]
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 29 undefined on input line 320.
-
 Package acronym Info: Label `acro:EUF-CMA' newly defined as it shall be overridden
 although it is yet undefined on input line 321.
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 29 undefined on input line 321.
-
 
 Overfull \hbox (8.40558pt too wide) in paragraph at lines 321--322
 []\T1/lmr/m/n/12 Die Si-cher-heit von We-bAu-thn ba-siert auf dem Be-weis, dass RSAS-SA PKCS1-
  []
 
+[28]
 Package acronym Info: Label `acro:ITU-T' newly defined as it shall be overridden
 although it is yet undefined on input line 326.
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 29 undefined on input line 326.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 29 undefined on input line 327.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 29 undefined on input line 328.
-
 
 Overfull \hbox (3.29732pt too wide) in paragraph at lines 328--329
 [][][] \T1/lmr/m/n/12 spe-zi-fi-ziert, die Kom-mu-ni-ka-ti-on zwi-schen ei-nem Au-then-ti-fi-zie-rungs-
  []
 
 [29]
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 30 undefined on input line 329.
-
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 30 undefined on input line 333.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 30 undefined on input line 334.
-
-
-Overfull \hbox (92.40929pt too wide) in paragraph at lines 334--335
-[][][] \T1/lmr/m/n/12 nutzt un-authen-ti-fi-zier-ten Diffie-Hellman Schlüs-se-laus-tausch []. 
- []
-
 Package acronym Info: Label `acro:MITM' newly defined as it shall be overridden
 although it is yet undefined on input line 335.
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 30 undefined on input line 335.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 30 undefined on input line 336.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 30 undefined on input line 337.
-
-[30]
 Package acronym Info: Label `acro:PQ' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
 Package acronym Info: Label `acro:KEM' newly defined as it shall be overridden
 although it is yet undefined on input line 343.
-
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 31 undefined on input line 343.
-
 Package acronym Info: Label `acro:puvProtocol' newly defined as it shall be overridden
 although it is yet undefined on input line 344.
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 31 undefined on input line 344.
-
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 31 undefined on input line 345.
-
 Package acronym Info: Label `acro:SUF' newly defined as it shall be overridden
 although it is yet undefined on input line 346.
 Package acronym Info: Label `acro:UF' newly defined as it shall be overridden
 although it is yet undefined on input line 346.
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 31 undefined on input line 346.
-
-
-LaTeX Warning: Citation 'bindel2022fido2' on page 31 undefined on input line 347.
-
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 31 undefined on input line 353.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 31 undefined on input line 354.
-
-[31]
-
-LaTeX Warning: Citation 'lyastani2020fido2' on page 32 undefined on input line 355.
-
-
-LaTeX Warning: Citation 'farke2020you' on page 32 undefined on input line 355.
-
-
-LaTeX Warning: Citation 'morii2017research' on page 32 undefined on input line 356.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 32 undefined on input line 357.
-
+ [30]
 Package acronym Info: Label `acro:PAKE' newly defined as it shall be overridden
 although it is yet undefined on input line 358.
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 32 undefined on input line 358.
-
 
 Overfull \hbox (29.7699pt too wide) in paragraph at lines 358--359
 []\T1/lmr/m/n/12 Unauthentifizierter Diffie-Hellman Schlüs-se-laus-tausch könn-te durch ein [][][]Password
  []
 
-
-Overfull \hbox (70.16429pt too wide) in paragraph at lines 358--359
-\T1/lmr/m/n/12 Au-then-ti-ca-ted Key Ex-change ([])[] Ver-fah-ren er-setzt wer-den []. 
- []
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 32 undefined on input line 359.
-
-
-Overfull \hbox (57.10141pt too wide) in paragraph at lines 359--360
-[]\T1/lmr/m/n/12 Das Pa-per gibt an, dass die-ses si-che-rer und ef-fi-zi-en-ter sein soll []. 
- []
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 32 undefined on input line 369.
-
-
-LaTeX Warning: Citation 'barbosa2021provable' on page 32 undefined on input line 370.
-
-) (./content/c4.tex [32]
+[31]) (./content/c4.tex [32]
 chapter 3.
-<img/abbildungen/Unknown.png, id=419, 869.2475pt x 118.4425pt>
+<img/abbildungen/Unknown.png, id=640, 869.2475pt x 118.4425pt>
 File: img/abbildungen/Unknown.png Graphic file (type png)
 <use img/abbildungen/Unknown.png>
 Package pdftex.def Info: img/abbildungen/Unknown.png  used on input line 6.
@@ -1941,7 +1222,7 @@ Overfull \hbox (5.42049pt too wide) in paragraph at lines 12--13
 
 Package acronym Info: Label `acro:CDS' newly defined as it shall be overridden
 although it is yet undefined on input line 13.
-<img/abbildungen/azure_umsetzung.png, id=424, 363.3575pt x 74.2775pt>
+<img/abbildungen/azure_umsetzung.png, id=645, 363.3575pt x 74.2775pt>
 File: img/abbildungen/azure_umsetzung.png Graphic file (type png)
 <use img/abbildungen/azure_umsetzung.png>
 Package pdftex.def Info: img/abbildungen/azure_umsetzung.png  used on input line 21.
@@ -1949,61 +1230,134 @@ Package pdftex.def Info: img/abbildungen/azure_umsetzung.png  used on input line
 [33
 
  <./img/abbildungen/Unknown.png> <./img/abbildungen/azure_umsetzung.png>]
-<img/abbildungen/azure_seckey.png, id=437, 330.48468pt x 91.84312pt>
+<img/abbildungen/azure_seckey.png, id=660, 330.48468pt x 91.84312pt>
 File: img/abbildungen/azure_seckey.png Graphic file (type png)
 <use img/abbildungen/azure_seckey.png>
 Package pdftex.def Info: img/abbildungen/azure_seckey.png  used on input line 35.
 (pdftex.def)             Requested size: 244.98074pt x 68.08334pt.
-<img/abbildungen/keycloak_browser.png, id=439, 628.3475pt x 118.4425pt>
+<img/abbildungen/keycloak_browser.png, id=662, 628.3475pt x 118.4425pt>
 File: img/abbildungen/keycloak_browser.png Graphic file (type png)
 <use img/abbildungen/keycloak_browser.png>
 Package pdftex.def Info: img/abbildungen/keycloak_browser.png  used on input line 46.
 (pdftex.def)             Requested size: 408.2971pt x 76.96321pt.
  [34 <./img/abbildungen/azure_seckey.png> <./img/abbildungen/keycloak_browser.png>]
-<img/abbildungen/authentication_flow.png, id=446, 442.65375pt x 181.67876pt>
+<img/abbildungen/authentication_flow.png, id=669, 442.65375pt x 181.67876pt>
 File: img/abbildungen/authentication_flow.png Graphic file (type png)
 <use img/abbildungen/authentication_flow.png>
 Package pdftex.def Info: img/abbildungen/authentication_flow.png  used on input line 57.
 (pdftex.def)             Requested size: 285.80672pt x 117.31079pt.
-<img/abbildungen/register_simplified.png, id=448, 590.205pt x 201.75375pt>
+<img/abbildungen/register_simplified.png, id=671, 590.205pt x 201.75375pt>
 File: img/abbildungen/register_simplified.png Graphic file (type png)
 <use img/abbildungen/register_simplified.png>
 Package pdftex.def Info: img/abbildungen/register_simplified.png  used on input line 70.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
  [35 <./img/abbildungen/authentication_flow.png>]
-<img/abbildungen/login_simplified.png, id=454, 590.205pt x 201.75375pt>
+<img/abbildungen/login_simplified.png, id=677, 590.205pt x 201.75375pt>
 File: img/abbildungen/login_simplified.png Graphic file (type png)
 <use img/abbildungen/login_simplified.png>
 Package pdftex.def Info: img/abbildungen/login_simplified.png  used on input line 79.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
- [36 <./img/abbildungen/register_simplified.png> <./img/abbildungen/login_simplified.png>] [37]) [38] (./master.aux)
+ [36 <./img/abbildungen/register_simplified.png> <./img/abbildungen/login_simplified.png>]
+<img/abbildungen/reg001.png, id=685, 389.95688pt x 139.27031pt>
+File: img/abbildungen/reg001.png Graphic file (type png)
+<use img/abbildungen/reg001.png>
+Package pdftex.def Info: img/abbildungen/reg001.png  used on input line 98.
+(pdftex.def)             Requested size: 285.80672pt x 102.07661pt.
 
-LaTeX Warning: There were undefined references.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37]
+<img/abbildungen/reg002.png, id=690, 339.51843pt x 193.47281pt>
+File: img/abbildungen/reg002.png Graphic file (type png)
+<use img/abbildungen/reg002.png>
+Package pdftex.def Info: img/abbildungen/reg002.png  used on input line 107.
+(pdftex.def)             Requested size: 285.80672pt x 162.87326pt.
+<img/abbildungen/reg003.png, id=691, 338.01282pt x 207.77625pt>
+File: img/abbildungen/reg003.png Graphic file (type png)
+<use img/abbildungen/reg003.png>
+Package pdftex.def Info: img/abbildungen/reg003.png  used on input line 116.
+(pdftex.def)             Requested size: 285.80672pt x 175.69121pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/abbildungen/reg004.png, id=692, 338.01282pt x 200.24812pt>
+File: img/abbildungen/reg004.png Graphic file (type png)
+<use img/abbildungen/reg004.png>
+Package pdftex.def Info: img/abbildungen/reg004.png  used on input line 125.
+(pdftex.def)             Requested size: 285.80672pt x 169.32559pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[38 <./img/abbildungen/reg001.png> <./img/abbildungen/reg002.png>]) [39 <./img/abbildungen/reg003.png>] [40 <./img/abbildungen/reg004.png>]
+chapter without number
+
+Overfull \hbox (2.86087pt too wide) in paragraph at lines 103--103
+[]\T1/lmr/m/n/12 F. M. Far-ke, L. Lo-renz, T. Schnitz-ler, P. Mar-kert und M. Dür-muth, ^^R  $\OMS/lmsy/m/n/12 f$\T1/lmr/m/n/12 ^^PYou$\OMS/lmsy/m/n/12 g$
+ []
+
+[41
+
+] [42] (./master.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                master
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'master.run.xml'.
 \openout1 = `master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29742 strings out of 478268
- 584639 string characters out of 5846347
- 1544580 words of memory out of 5000000
- 47389 multiletter control sequences out of 15000+600000
+ 29881 strings out of 478268
+ 588849 string characters out of 5846347
+ 1544995 words of memory out of 5000000
+ 47486 multiletter control sequences out of 15000+600000
  508620 words of font info for 50 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,19n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on master.pdf (36 pages, 1356220 bytes).
+
+pdfTeX warning (dest): name{section*.43} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.24} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.41} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.19} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.10} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.53} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{chapter*.9} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on master.pdf (41 pages, 1398385 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 534 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 341 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 782 compressed objects within 8 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 369 words of extra memory for PDF output out of 10000 (max. 10000000)
 
