@@ -84,6 +84,14 @@ Sowie eine neue Anmeldung:
 Die Grafiken stellen den vereinfachten Ablauf der Registrierung und Anmeldung mit Hilfe eines Security Keys dar. Die detailierte Darstellung der Funktionsweise ist in Kapitel 2.7 zu finden. Der entscheidende Unterschied der beiden Prozesse ist allerdings, dass bei der Registrierung lediglich der öffentliche Schlüssel übergeben wird, während bei der Anmeldung der private Schlüssel benötigt wird. Dieser wird allerdings nicht übergeben, sondern signiert eine Login Challenge, welche vom Keycloak-Server generiert wird. Kann der Keycloak-Server die Signatur mit Hilfe des gespeicherten öffentlichen Schlüssels verifizieren, wird der Nutzer authentifiziert. Sowohl die Registrierung als auch die Anmeldung erfolgen hierbei also nicht über die Anwendung selbst, sondern über den Keycloak-Server und dessen Nutzeroberfläche.
 
 \section{User Feedback}
+Um eine Aussage über die Akzeptanz eines passwortlosen Verfahrens innerhalb der \ac{LSY} zu treffen wird ein interaktiver Fragebogen erstellt. Dieser wird in der Abteilung cGroup Solutions, welche zuständig für das in Kapitel beschriebene Produkt cFront ist, verteilt. Es handelt sich dabei um eine Abteilung mit 15 Personen. 
+
+Für die Arbeit wurde der Anmeldevorgang für das Produkt cFront wie in Kapitel beschrieben angepasst. Die Teilnehmer des Fragebogens wurden an einem Tag befragt. Alle Teilnehmer bekamen vor der Befragung eine Demonstration der Registrierung und Anmeldung mit Hilfe eines Security Keys, sowie eine Demonstration einer möglichen Anmeldung mit Hilfe eines Passkeys. Für die Demonstration wurde ein \textit{Yubikey Series 5 NFC} als Security Key verwendet. Während der Befragung wurden den Teilnehmern keine Informationen über die Funktionsweise oder die technischen Details des Fido2 Protokolls gegeben. Während der Demonstration und der Durchführung des Fragebogens erhielten alle Teilnehmer ebenfalls die Möglichkeit Kommentare zu hinterlassen, welche ebenfalls auf dem Fragebögen festgehalten wurden. Die Ergebnisse des Fragebogens sind im Anhang zu finden.
+
+Zur Durchführung des Fragebogens wurden alle Mitglieder des Teams eingeladen, eine Teilnahme war jedoch freiwillig. Zwei der Mitglieder der Abteilung konnten auf Grund eines Urlaubs nicht an der Befragung teilnehmen. Vor der Durchführung wurden alle Teilnehmer darüber informiert zu welchem Zweck die Daten für diese Arbeit erhoben werden. Die Befragung stand dabei nicht anonym statt, um einen Austausch zwischen dem Autor und den Teilnehmern zu ermöglichen. Da die Befragung die Abteilung der Teilnehmer betrifft sollten diese somit eine Möglichkeit bekommen, ihre Gedanken zu dem modifiziertem Anmeldevorgang zu teilen.
+
+\subsection{Inhalt der Demonstration}
+Allen Teilnehmern wurde vor der Befragung live eine Demonstration der Registrierung und Anmeldung mit Hilfe eines Security Keys gezeigt. 
 \begin{itemize}
     \item Fragebogen:
     \item How old are you?
