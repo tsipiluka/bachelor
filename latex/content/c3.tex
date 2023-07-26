@@ -20,32 +20,31 @@ Die CIA-Triade gehört zu den wichtigsten Darstellungen von Sicherheitszielen in
 	\includegraphics[width=0.5
     \textwidth]{img/abbildungen/CIA-Triad.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
+	\caption{CIA-Triad} \label{CIA-Triad}
 \end{figure}
+
+\paragraph*{Confidentiality} 
+Die Vertraulichkeit gehört zu den wichtigsten Schutzzielen in der Informationssicherheit \cite{samonas2014cia}. Das Wort \textit{Confedentiality} kommt vom lateinischen Wort \textit{confidere} und bedeutet so viel wie \textit{vertrauen} \cite{pons} \cite{samonas2014cia}. Das Schutzziel besagt, dass Informationen und Daten so geschützt sein müssen, dass diese nur von autorisierten Personen und für autorisierte Zwecke genutzt werden können \cite{samonas2014cia}. 
+Dies beinhaltet beispielsweise Einschränkungen des Zugriffs auf Informationen und Daten, um die Privatsspähre und persönliches Eigentum zu schützen \cite{samonas2014cia}. Aber auch Verschlüsselungen, eine sichere Authentifizierung und Sicherheitsprotokolle können zur Gewährleistung der Vertraulichkeit beitragen \cite{agarwal2011security}.
+Aufgrund der steigenden Wichtigkeit von wirtschaftlichen Aspekten hat die Vertraulichkeit im Vergleich zu früher an Bedeutung verloren \cite{samonas2014cia}. Häufig werden Schutzziele vernachlässigst, um im Gegenzug eine erhöhte Benutzerfreundlichkeit oder Wirtschaftlichkeit zu erreichen.
+
+\paragraph*{Integrity}  
+Das Wort Integrity leitet sich vom lateinischen Wort \textit{tangere} ab und bedeutet so viel wie \textit{berühren} \cite{pons}. Durch die Vorsilbe \textit{In-} soll eine Gegenteilige Bedeutung entstehen im Sinne von \textit{Unberührbarkeit} \cite{samonas2014cia}. 
+Die Integrität soll somit garantieren, dass Daten nicht verändert werden können, ohne dass dies bemerkt wird \cite{agarwal2011security}. Schickt ein Sender $S$ beispielsweise eine Nachricht an einen Empfänger $E$, so soll die Nachricht identisch beim Empfänger $E$ ankommen, wie sie vom Sender $S$ gesendet wurde \cite{agarwal2011security}.
+Umsetzungsmöglichkeiten die Integrität zu schützen beinhalten Maßnahmen wie beispielsweise das Verwenden einer Firewall, \ac{IDS} oder auch digitale Signaturen \cite{agarwal2011security}.
+\paragraph*{Availability}
+Das Wort Availability leitet sich vom lateinischen \textit{valere} ab und bedeutet so viel wie \textit{kräftig sein}. Die Verfügbarkeit bezieht sich also auf einen zeitnahen und und zuverlässigen Zugriff auf Informationen und Daten \cite{samonas2014cia}. Zuverlässig bedeutet dabei auch, dass ein Zugriff möglichst ohne Unterbrechungen und unabhängig vom Standort möglich ist \cite{agarwal2011security}.
+Verfügbarkeit kann beispielsweise durch Netzwerksicherheit (z.B. Schutz vor \ac{DDoS}) oder Fehlertoleranz (z.B. durch Limitierung von Authentifizierungsversuchen) gewährleistet werden \cite{agarwal2011security}.
+
+Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinander betrachtet werden dürfen. Vielmehr handelt es sich, um ein Zusammenspiel der verschiedenen Schutzziele (siehe \ref*{CIA-Triad}). So kann eine Maßnahme beispielsweise mehrer Schutzziele schützen. Ebenfalls lassen sich weitere Schutzziele aus den drei bestehenden ableiten. Häufig genannt werden ebenfalls Schutzziele wie beispielsweise Authenticity (Authentizität) oder Non-repudiation (Nicht-Abstreitbarkeit) \cite{samonas2014cia}. Diese Ableitungen können dabei ebenfalls von mehr als einem Schutzziel abgeleitet werden (siehe \ref*{Schutzziele}).
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.8\textwidth]{img/abbildungen/Schutzziele.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
+	\caption{Erweiterte Schutzziele} \label{Schutzziele}
 \end{figure}
 
-\begin{itemize}
-    \item Vertraulichkeit gehört zu den wichtigsten Schutzzielen in der Informationssicherheit \cite{samonas2014cia}.
-    \item Kommt vom lateinischen Wort \textit{confidere} \cite{samonas2014cia}.
-    \item besagt, dass Informationen und Daten geschützt werden müssen, sodass diese nur von autorisierten Personen und für autorisierte Zwecke genutzt werden können \cite{samonas2014cia}.
-    \item Einschränkungen des Zugriffs auf Informationen und Daten, um die Privatssphäre und persönliches Eigentum zu schützen \cite{samonas2014cia}.
-    \item Da der Fokus immer mehr auf wirtschaftliche Aspekte liegt, hat die Vertraulichkeit im Vergleich zu früher an Bedeutung verloren \cite{samonas2014cia}.
-    \item Wird beispielsweise geschützt durch Verschlüsselung, Authentifizierung oder Sicherheitsprotokolle \cite{agarwal2011security}.
-    \item kommt vom lateinischen \textit{tangere}, was so viel wie berühren bedeutet. Mit der Vorsilbe \textit{In-} wird daraus etwas, was so viel bedeutet wie \textit{unberührbar} \cite{samonas2014cia}.
-    \item Beinhaltet die Garantie, dass Daten nicht verändert werden können, ohne dass dies bemerkt wird \cite{agarwal2011security}.
-    \item Beispielsweis, dass eine empfangene Nachricht genau so ankommt, wie sie gesendet wurde \cite{agarwal2011security}.
-    \item Wird beispielsweise geschützt durch Firewall, Intrusion Detection Systeme oder digitale Signaturen \cite{agarwal2011security}.
-    \item kommt vom lateinischen \textit{valere} was so viel bedeutet wie \textit{stark sein} \cite{samonas2014cia}.
-    \item In der Informationssicherheit bezieht sich die Zuverlässigkeit auf einen zeitnahen und zuverlässigen Zugriff auf Informationen und Daten \cite{samonas2014cia}.
-    \item Das bedeutet dass der Zugriff möglichst ohne unterbrechungen und unabhängig vom Standort erreichbar werden kann \cite{agarwal2011security}. 
-    \item Verfügbarkeit kann beispielsweise durch Netzwerksicherheit oder Fehlertoleranz (beispielsweise bein Authentifizierungsversuche) gewährleistet werden \cite{agarwal2011security}.
-\end{itemize}
 
 \section{Arten der Authentifizierung}
 
