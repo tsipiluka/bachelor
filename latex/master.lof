@@ -1,32 +1,34 @@
 \babel@toc {ngerman}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{11}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{12}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{12}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{13}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{14}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{15}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{19}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{22}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{25}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{26}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{27}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{14}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{17}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{23}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{31}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{33}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{34}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{35}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{35}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{36}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{36}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{37}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Alter der Teilnehmer\relax }}{39}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Alter der Teilnehmer\relax }}{40}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Veränderter Keycloak-Login\relax }}{40}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Veränderter Keycloak-Login\relax }}{41}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Veränderter Keycloak-Login\relax }}{41}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Veränderter Keycloak-Login\relax }}{42}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Veränderter Keycloak-Login\relax }}{43}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Veränderter Keycloak-Login\relax }}{47}{figure.caption.75}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{38}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{39}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{40}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{41}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{41}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{42}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{42}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Alter der Teilnehmer\relax }}{45}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Alter der Teilnehmer\relax }}{46}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Veränderter Keycloak-Login\relax }}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Veränderter Keycloak-Login\relax }}{47}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Veränderter Keycloak-Login\relax }}{47}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Veränderter Keycloak-Login\relax }}{48}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Veränderter Keycloak-Login\relax }}{49}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Veränderter Keycloak-Login\relax }}{54}{figure.caption.75}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
