@@ -8,43 +8,43 @@
 \contentsline {section}{\numberline {1.3}Referenzierte Arbeiten}{12}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Grundlagen}{13}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Einführung in cFront}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}CIA-Triade}{13}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{15}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Passwortbasierte Authentifizierung}{16}{section.2.4}%
+\contentsline {section}{\numberline {2.2}CIA-Triade}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Passwortbasierte Authentifizierung}{17}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Speicherung}{19}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Faktor Mensch}{20}{subsection.2.4.2}%
 \contentsline {section}{\numberline {2.5}Passwortlose Authentifizierung}{21}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Magic Link}{25}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}One Time Password (OTP)}{25}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.1}Magic Link}{26}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}One Time Password (OTP)}{26}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}YubiKey}{26}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Usability}{26}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.1}Usability}{27}{subsection.2.6.1}%
 \contentsline {section}{\numberline {2.7}Fido2}{29}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}Webauthn}{32}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}CTAP2}{34}{subsection.2.7.2}%
-\contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{35}{subsubsection.2.7.2.1}%
-\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{36}{subsection.2.7.3}%
-\contentsline {chapter}{\numberline {3}Umsetzung}{38}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{38}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{38}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{39}{section.3.3}%
-\contentsline {section}{\numberline {3.4}User Feedback}{43}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{43}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{44}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{45}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{48}{subsection.3.4.4}%
-\contentsline {paragraph}{\nonumberline Frage 1:}{49}{paragraph*.58}%
-\contentsline {paragraph}{\nonumberline Frage 2:}{49}{paragraph*.60}%
-\contentsline {paragraph}{\nonumberline Frage 3:}{50}{paragraph*.62}%
-\contentsline {paragraph}{\nonumberline Frage 4:}{50}{paragraph*.64}%
-\contentsline {paragraph}{\nonumberline Frage 5:}{51}{paragraph*.66}%
-\contentsline {paragraph}{\nonumberline Frage 6:}{51}{paragraph*.68}%
-\contentsline {paragraph}{\nonumberline Frage 7:}{52}{paragraph*.70}%
-\contentsline {paragraph}{\nonumberline Frage 8:}{52}{paragraph*.72}%
-\contentsline {paragraph}{\nonumberline Frage 9:}{53}{paragraph*.74}%
-\contentsline {subsection}{\numberline {3.4.5}Auswertung}{53}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{57}{subsection.3.4.6}%
-\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{57}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{59}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Ausblick}{61}{chapter.5}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{62}{chapter*.77}%
+\contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{36}{subsubsection.2.7.2.1}%
+\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{37}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Umsetzung}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{39}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{39}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{40}{section.3.3}%
+\contentsline {section}{\numberline {3.4}User Feedback}{44}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{44}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{45}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{46}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{49}{subsection.3.4.4}%
+\contentsline {paragraph}{\nonumberline Frage 1:}{50}{paragraph*.58}%
+\contentsline {paragraph}{\nonumberline Frage 2:}{50}{paragraph*.60}%
+\contentsline {paragraph}{\nonumberline Frage 3:}{51}{paragraph*.62}%
+\contentsline {paragraph}{\nonumberline Frage 4:}{51}{paragraph*.64}%
+\contentsline {paragraph}{\nonumberline Frage 5:}{52}{paragraph*.66}%
+\contentsline {paragraph}{\nonumberline Frage 6:}{52}{paragraph*.68}%
+\contentsline {paragraph}{\nonumberline Frage 7:}{53}{paragraph*.70}%
+\contentsline {paragraph}{\nonumberline Frage 8:}{53}{paragraph*.72}%
+\contentsline {paragraph}{\nonumberline Frage 9:}{54}{paragraph*.74}%
+\contentsline {subsection}{\numberline {3.4.5}Auswertung}{54}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{58}{subsection.3.4.6}%
+\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{58}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{60}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Ausblick}{62}{chapter.5}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{63}{chapter*.77}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
