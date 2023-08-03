@@ -8,26 +8,26 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Entropie in Abhängigkiet der Passwortlänge\relax }}{20}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Zeit, um ein Passwort zu brechen in Abhängigkeit zu der Länge\relax }}{20}{figure.caption.25}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Beispielhafte Umsetzung eines Magic Links\relax }}{25}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{28}{figure.caption.36}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{31}{figure.caption.38}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{32}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{33}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Yubikey der Series 5\relax }}{29}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{33}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{34}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{35}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{41}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{42}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{43}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{44}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{44}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{45}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{45}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Alter der Teilnehmer\relax }}{48}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Alter der Teilnehmer\relax }}{49}{figure.caption.63}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Veränderter Keycloak-Login\relax }}{49}{figure.caption.64}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Veränderter Keycloak-Login\relax }}{50}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Veränderter Keycloak-Login\relax }}{50}{figure.caption.66}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Veränderter Keycloak-Login\relax }}{51}{figure.caption.67}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Veränderter Keycloak-Login\relax }}{52}{figure.caption.68}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Veränderter Keycloak-Login\relax }}{57}{figure.caption.87}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{42}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{43}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{44}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{45}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{45}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{46}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{46}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Alter der Teilnehmer\relax }}{49}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Alter der Teilnehmer\relax }}{50}{figure.caption.65}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Veränderter Keycloak-Login\relax }}{50}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Veränderter Keycloak-Login\relax }}{51}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Veränderter Keycloak-Login\relax }}{51}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Veränderter Keycloak-Login\relax }}{52}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Veränderter Keycloak-Login\relax }}{53}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Veränderter Keycloak-Login\relax }}{58}{figure.caption.89}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
