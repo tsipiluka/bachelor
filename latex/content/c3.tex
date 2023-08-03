@@ -1,4 +1,5 @@
 \chapter{Grundlagen}
+Im Folgenden werden auf Basis der fachlichen Literaturrechere die benötigten Grundlagen dieser Arbeit beschrieben und dargestellt:
 
 \section{Einführung in cFront}
 \textit{cFront} ist eine Anwendung, welche von der Abteilung cGroup Solutions innerhalb der \ac{LSY} entwickelt wird. Es handelt sich bei der Anwendung um ein Tool, welches an Flughafen Terminals eingesetzt wird. 
@@ -36,7 +37,7 @@ Umsetzungsmöglichkeiten die Integrität zu schützen beinhalten Maßnahmen wie 
 Das Wort Availability leitet sich vom lateinischen \textit{valere} ab und bedeutet so viel wie \textit{kräftig sein}. Die Verfügbarkeit bezieht sich also auf einen zeitnahen und und zuverlässigen Zugriff auf Informationen und Daten \cite{samonas2014cia}. Zuverlässig bedeutet dabei auch, dass ein Zugriff möglichst ohne Unterbrechungen und unabhängig vom Standort möglich ist \cite{agarwal2011security}.
 Verfügbarkeit kann beispielsweise durch Netzwerksicherheit (z.B. Schutz vor \ac{DDoS}) oder Fehlertoleranz (z.B. durch Limitierung von Authentifizierungsversuchen) gewährleistet werden \cite{agarwal2011security}.
 
-Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinander betrachtet werden dürfen. Vielmehr handelt es sich, um ein Zusammenspiel der verschiedenen Schutzziele (siehe \ref*{CIA-Triad}). So kann eine Maßnahme beispielsweise mehrer Schutzziele schützen. Ebenfalls lassen sich weitere Schutzziele aus den drei bestehenden ableiten. Häufig genannt werden ebenfalls Schutzziele wie beispielsweise Authenticity (Authentizität) oder Non-repudiation (Nicht-Abstreitbarkeit) \cite{samonas2014cia}. Diese Ableitungen können dabei ebenfalls von mehr als einem Schutzziel abgeleitet werden (siehe \ref*{Schutzziele}).
+Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinander betrachtet werden dürfen. Vielmehr handelt es sich, um ein Zusammenspiel der verschiedenen Schutzziele (siehe \ref*{CIA-Triad}). So kann eine Maßnahme beispielsweise mehrer Schutzziele schützen. Ebenfalls lassen sich weitere Schutzziele aus den drei bestehenden ableiten. Häufig werden erweiterte Schutzziele wie beispielsweise Authenticity (Authentizität) oder Non-repudiation (Nicht-Abstreitbarkeit) \cite{samonas2014cia} definiert. Diese können dabei zumeist von einem oder mehreren Schutzzielen der CIA-Triade abgeleitet werden. Die folgende Grafik zeigt beispielhaft einige erweiterte Schutzziele und deren Bezug zu der CIA-Triade:
 
 \begin{figure}[h]
 	\centering 
@@ -52,146 +53,119 @@ Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinand
 	\centering 
 	\includegraphics[width=0.4\textwidth]{img/abbildungen/factors.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
+	\caption{Faktoren der Authentifizierung}
 \end{figure}
 
-\begin{itemize}
-    \item Die Authentifizierung dient häufig als erste Verteidigungslinie von Systemen. \cite{boonkrong2012security}
-    \item Faktor Something you know. Diese Methode nutzt Informationen, welche nur dem Nutzer bekannt sind, um seine Identität zu bestätigen \cite{boonkrong2012security}.
-    \item Faktor Something you have. Diese Methode nutzt physische Objekte, welche sich im Besitz des Nutzers befinden, um seine Identität zu bestätigen. Dazu gehören u.a. Smartcards und Hardware-Token \cite{boonkrong2012security}.
-    \item Faktor Something you are. Diese Methode nutzt biometrische Daten des Nutzers, um seine Identität zu bestätigen. Dazu gehören u.a. Fingerabdrücke, Iris-Scans und Gesichtserkennung \cite{boonkrong2012security}.
-    \item Ein Problem dieser Methode ist, dass sich menschliche Eigenschaften im Laufe der Zeit verändern können. Auch Verletzungen oder Krankheiten können die biometrischen Daten verändern \cite{boonkrong2012security}.
-    \item Nicht standardmäßig, aber weiterer Faktor ist something you perform or produce. Diese Methode nutzt beispielsweise die Stimme oder die (digitale) Unterschrift des Nutzers, um seine Identität zu bestätigen \cite{boonkrong2012security}.
-\end{itemize}
+Die Authentifizerung dient häufig als erste Verteidigungslinie von Systemen \cite{boonkrong2012security}. Die Authentifizierung gilt als erweitertes Schutzziel und ist eine der wichtigsten Schutznmaßnahmen von Systemen. Sie übernimmt die Kontrolle über die Zugänge von Systemen und bestimmt wer oder was autorisiert ist diese zu nutzen. In der Fachliteratur wird häufig zwischen drei verschiedenen Arten der Authentifizierung unterschieden, welche umgangssprachlich auch als \textit{Faktoren} bekannt sind. Diese sollen im Folgenden beschrieben werden:
 
+\paragraph*{Something you know:}
+Die meistgenutzte Art der Authentifizierung basiert auf dem Wissen des Nutzers. Diese Methode nutzt Informationen - welche nur dem Nutzer bekannt sind - und bestätigt somit seine Identität \cite{boonkrong2012security}. Das bekannteste Verfahren ist dabei die Nutzung von Passwörtern, welche nur dem Nutzer bekannt sein sollten. Weitere Verfahren dieser Kategorie wären allerdings auch Sicherheitsfragen. Diese werden initial vom Nutzer beantwortet und im weiteren Verlauf zur Authentifizierung abgefragt.
+
+\paragraph*{Something you have:}
+Diese Art der Authentifizierung nutzt physische Objekte, um die Identität des Nutzers zu verifizieren. Es handelt sich um Objekte die sich lediglich im Besitz des Nutzers befinden \cite{boonkrong2012security}. Mögliche Beispiele für diese Methode sind Smartcards, welche an physische Zutrittskontrollen gehalten werden müssen oder Hardware Tokens, die für die Anmeldung an Systemen genutzt werden.
+
+\paragraph*{Something you are:}
+Diese Art der Authentifizierung basiert auf der Inhärenz. Das bedeutet, dass zur Verifizierung der Identität des Nutzers biometrische Merkmale verwendet werden \cite{boonkrong2012security}. Dazu gehören u.a. Fingerabdrücke, Geischtserkennung und Iris-Scans. Diese Methode hat sich besonders im Bereich der mobilen Systeme etabliert, so bietet Apple bei seinen Smartphones beispielsweise eine Authentifizierung per Fingerabdruck (\textit{Touch ID}) oder Gesichtserkennung (\textit{Face ID}) an CITE. Aber auch Microsoft bietet mittlerweile eine Authentifizierung mittels biometrischer Daten an (\textit{Windows Hello} und \textit{Hello for Business}) CITE.
+
+Wie schon bei der CIA-Triade lassen sich auch hier weitere Arten ergänzen oder ableiten. Eine weitere Art ist beispielsweise \textbf{something you produce} \cite{boonkrong2012security}. Diese Art der Authentifizierung leitet sich teilweise von dem Faktor \textit{something you are} ab. Sie nutzt beispielsweise die Stimme des Nutzers oder seine (digitale) Unterschrift, um seine Identität zu verifizieren \cite{boonkrong2012security}. 
+
+Die verschiedenen Arten der Authentifizierung spielen auch bei der Unterscheidung zwischen einer \ac{SFA} und einer  \ac{MFA} eine wichtige Rolle. Wird eine einzelner Faktor genutzt, so bezeichnet man dies als \ac{SFA}. Werden mehrere Faktoren genutzt handelt es sich um eine \ac{MFA}.
 
 \section{Passwortbasierte Authentifizierung}\label{pw-auth}
 
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=0.7\textwidth]{img/abbildungen/entropy-length.png}
-	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
-\end{figure}
+    Die heutzutage am häufigsten genutzte Methode zur Authentifizierung ist die passwortbasierte Authentifizierung \cite{chanda2016password} \cite{boonkrong2012security} \cite{yildirim2019encouraging}. Diese basiert auf dem Faktor \textit{something you know}, also auf dem Wissen der Nutzer. Zumeist handelt es sich um alphanumerische Passwörter, welche aus einer Kombination von Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen bestehen \cite{chanda2016password}. Die Sicherheit informationstechnischer Systeme ist somit abhängig von der Sicherheit der genutzten Passwörter \cite{boonkrong2012security}. Trotz ihrer weitreichenden Verbreitung gelten Passwörter als eine der größten Sicherheitsrisiken für Systeme, da sie vile Schwachstellen und Angriffsvektoren bieten \cite{yildirim2019encouraging} \cite{farke2020you}. Laut einer Studie von \textit{Verizon} basierten 2017 81\% der Hackerangriffe auf der Kompromittierung von Passörtern \cite{barbosa2021provable} \cite{verizon2017}. Eine weitere Studie zeigt auf, dass 2017 Phishing E-Mails die Angriffsmethode darstellte \cite{Symantec} \cite{barbosa2021provable}. Diese sind darauf ausgelegt an Passwörter von Nutzern zu gelangen. Eine Vielzahl von großen Unternehmen wurden bereits Opfer von der Veröffentlichung von Passwörtern, obwohl ein hoher Aufwand betrieben wird, um diese zu schützen \cite{boonkrong2012security}. Da sich die Enthüllung der Passwörter allerdings als Angriffsziel bei Angreifern etabliert hat, ist selbst ein hoher Aufwand nicht mehr immer ausreichend, um jene zu schützen \cite{boonkrong2012security}. Der entstehende Schaden ist immens, da es sich um einen hohen Geldwert, aber u.a. auch um einen Reputationsschaden handeln kann. Trotz der bekannten Schwachstellen und bereits entwickelten alternativen Ansätzen, bleibt das Passwort weiterhin genutzt \cite{ives2004domino}. Dies liegt insbesondere an der Einfachheit und dem geringen Aufwand, welche die Nutzung von Passwörtern mit sich bringt \cite{yildirim2019encouraging}.
 
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=0.7\textwidth]{img/abbildungen/length-time.png}
-	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
-\end{figure}
+    Passwörter können durch verschiedene Arten von Angriffen kompromittiert werden. So können Angreifer beispielsweise Zugriff auf die Datenbank erhalten, in welcher die Passwörter gespeicghert werden, aber auch auf persönlicher Ebene können Passörter erlangt werden. Dabei spielt das sog. Social Engineering eine große Rolle. Durch Shoulder Surfing können Angreifer versuchen Nutzern beim Passwort eintippen zuschauen. Mit Hilfe von Dumpster Diving können beispielsweise aufgeschriebene Passwörter erlangt werden. Zu den häufigsten Social Engineering Angriffen gehören allerdings die bereits beschriebenen Phishing Mails. Auf technischer Ebene ist ebenfalls ein Einsatz von Keyloggern möglich, welche alle Tastendrücke des Nutzers speichert. Ein häufig gewähltes und sehr effektives Mittel bei schlechten Passwörtern sind allerdings Brute-Force- und Dictionary-Angriffe. Diese kompromittieren Passwörter durch das stupide Ausprobieren aller möglichen Kombinationen oder die Nutzung von Tabellen, welche die meistgenutzten Passwörter beinhalten \cite{chanda2016password} \cite{morii2017research}.
 
-\begin{itemize}
-    \item Die heutzutage am häufigsten genutzte Methode zur Authentifizierung ist die passwortbasierte Authentifizierung \cite{chanda2016password} \cite{boonkrong2012security} \cite{yildirim2019encouraging}.
-    \item Die Sicherheit von Systemen basiert somit auf der Sicherheit der Passwörter \cite{boonkrong2012security}.
-    \item Passwörter gelten als eins der größten Risiken für Systeme, da sie viele Angriffsvektoren bieten \cite{yildirim2019encouraging} \cite{farke2020you}.
-    \item 81\% der Hackerangriffe basierten auf der Kompromittierung von Passwörtern \cite{barbosa2021provable}. 
-    \item 2017 waren Phishing E-Mails die häufigste Angriffsmethode \cite{barbosa2021provable}.
-    \item Obwohl es bereits alternative Ansätze gibt, werden Passwörter weiterhin genutzt. Das liegt an der Einfachheit und dem geringen Aufwand, welche die Nutzung von Passwörtern mit sich bringt \cite{yildirim2019encouraging}.
-    \item Eine Vielzahl an großen Unternehmen wurden bereits Opfer von der Veröffentlichung von Passwörtern, obwohl ein hoher Aufwand betrieben wird diese zu schützen. Da sich die Enthüllung der Passwörter allerdings als Angriffsziel bei Angreifern etabliert hat, ist selbst ein hoher Aufwand nicht ausreichend \cite{boonkrong2012security}.
-    \item Dabei handelt es sich am häufigsten um alphanumerische Passwörter, welche aus einer Kombination von Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen bestehen \cite{chanda2016password}. 
-    \item Passwörter können durch verschiedene Angriffe kompromittiert werden. Angreifer können Zugriff auf die Datenbank erhalten, in welcher die Passwörter gespeichert sind. Aber auch auf persönlicher Ebene können Passwörter erlangt werden. Aufgeschriebene Passwörter können in fremde Hände geraten. Auch Social Engineering kann genutzt werden, um Passörter mit Hilfe von Phishing oder Keyloggern zu erlangen. Häufig lassen sich Passwörter allerdings auch mit Hilfe von Brute-Force- oder Dictionary-Attacken kompromittieren \cite{chanda2016password} \cite{morii2017research}.
-    \item Brute-Force-Attacken versuchen alle möglichen Kombinationen von Zeichen, welche ein Passwort enthalten kann, auszuprobieren. Je höher dabei die Anzahl an möglichen Kombinationen ist, desto aufwändiger wird es ein Passwort zu erraten.
-    \item Je länger ein Passwort, desto schwieriger zu knacken. Länge auch wichtiger als Zeichenraum \cite{chanda2016password}.
-    \item Hier auch kurz auf die Mathematik dahinter eingehen.
-    \item Studien zeigen, dass Nutzer dazu neigen gleiche oder ähnliche Passwörter für verschiedene Zugänge zu nutzen \cite{chanda2016password} \cites{ives2004domino}.
-    \item Verfügen Angreifer über ein Passwort eines Nutzers, können häufig auch andere Zugänge übernommen werden \cite{chanda2016password} \cite{morii2017research}.
-    \item Obwohl die Angriffsvektoren und Schwachstellen von Passwörtern schon lange bekannt sind, bleiben diese unverändert bestehen. \cite{ives2004domino}.
-\end{itemize}
+    Um Passwörter resistenter gegen Brute-Force-Angriffe zu gestalten, kann eine Erweiterung des Zeichenraums oder der Passwort-Länge genutzt werden. So wird die mögliche Anzahl an Kombinationen des Passworts erhöht. Je mehr mögliche Kombinationen es gibt, desto schwieriger wird es Passwörter durch Erraten zu komprommittieren \cite{chanda2016password}. Wichtig ist hierbei, dass die Erweiterung der Passwortlänge deutlich effektiver ist als die Erweiterung des Zeichenraums. Betrachtet man die Anzahl aller Elemente des Zeichenraums $Z$ und die Passwortlänge $L$, so wird die Komplexität eines Passwortes durch $Z^L$ abgebildet. Während die Erweiterung der Passwortlänge ein exponentielles Wachstum aufweist, steigt bei einer Erweiterung des Zeichenraums die Steigung lediglich linear. Die Effektivität längerer Passwörter wird ebenfalls in \textbf{\ref{EntropyvsLength}} und \textbf{\ref{timetobreak}} dargestellt. \textbf{\ref{EntropyvsLength}} stellt die Entropie von Passwörtern in Abhängigkeit ihrer Länge dar. Dabei werden ebenfalls verschieden große Zeichenräume betrachtet. Es wird deutlich, dass selbst eine hohe Differenz des Zeichenraumes lediglich einen geringen Einfluss auf die Entropie hat. Unabhängig vom Zeichenraum aber dennoch eine hohe Entropie durch ein größere Länge möglich ist. \textbf{\ref{timetobreak}} stellt die benötigte Zeit zum Brechen von Passwörtern in Abhängigkeit zu ihrer Länge dar. Bei beiden Varianten handelt es sich um eine zu kurze Länge eines Passwortes, allerdings ist der signifikante Unterschied durch die Erweiterung der Passwortlänge um eins deutlich erkennbar.
 
-\subsection{Speicherung}
+    \begin{figure}[h]
+        \centering 
+        \includegraphics[width=0.7\textwidth]{img/abbildungen/entropy-length.png}
+        \captionsetup{format=hang}
+        \caption{Entropie in Abhängigkiet der Passwortlänge} \label{EntropyvsLength}
+    \end{figure}
+    
+    \begin{figure}[H]
+        \centering 
+        \includegraphics[width=0.7\textwidth]{img/abbildungen/length-time.png}
+        \captionsetup{format=hang}
+        \caption{Zeit, um ein Passwort zu brechen in Abhängigkeit zu der Länge} \label{timetobreak}
+    \end{figure}
 
-\begin{itemize}
-    \item Viele Angreifer versuchen Passwörter zu kompromittieren, indem sie Zugriff auf die Datenbank erhalten, in welcher die Passwörter gespeichert sind. Mit Hilfe von Passwörtern erhoffen sich die Angreifer Zugriff auf Systeme und Netzwerke \cite{boonkrong2012security}.
-    \item Passwörter können auf verschiedene Arten gespeichert werden. Dadurch können verschiedene Angriffsvektoren entstehen \cite{chanda2016password}.
-    \item Plaintext am schlechtesten. Werden die Passwörter in lesbarer Form gespeichert, können Angreifer alle Passwörter auslesen, sobald sie Zugriff auf die Datenbank haben. Dabei muss kein weiterer Aufwand betrieben werden \cite{chanda2016password}.
-    \item Verschlüssellung besser, aber nicht optimal. Verschlüssellung ist zurückführbar. Gelangen Angreifer an den benötigten Schlüssel, können sie alle Passwörter entschlüsseln und auslesen \cite{chanda2016password}.
-    \item AM besten Hashing mit Salt. Sobald ein Passwort gehasht wurde, kann es nicht mehr zurückgerechnet werden. Durch einen individuellen Salt kann ebenfalls verhindert werden, dass Angreifer die Passwörter mit Hilfe von Rainbow-Tables entschlüsseln können \cite{chanda2016password}.
-    \item auch noch zwei salts möglich - einer public einer private. schützt vor offline angriffen \cite{chanda2016password}.
-    \item Vielleicht hier noch ganz kurz auf Hash Funktionen eingehen?
-\end{itemize}
+    Zwei Angriffsvektoren sind dabei zumeist betroffen: die Speicherung und der Mensch. Im Folgenden soll präziser erläutert werden, was diese beiden Angriffsvektoren so verwundbar machen:
 
-\subsection{Faktor Mensch}
+    \textbf{Speicherung:}
 
-\begin{itemize}
-    \item Die Sicherheit ist nicht nur von den technischen Aspekten abhängig \cite{ives2004domino}.
-    \item Ein Großteil der Angriffsfläche von Passwörtern entsteht durch den Faktor Mensch \cite{yildirim2019encouraging}.
-    \item Von Menschen erstellte Passwörter sind keine echten Zufallswerte. Das liegt insbesondere daran, dass Nutzer sich Passwörter merken können müssen. Daher beinhalten Passwörter häufig Informationen, welche einen Bezug zum Nutzer haben. Dazu gehören beispielsweise Namen, Geburtsdaten, Adressen oder andere persönliche Informationen. Auch Passwörter, welche einfache Tastaturmuster beinhalten sind sehr beliebt. Dazu zählen beispielsweise \glqq qwertz\grqq{} oder \glqq 123456\grqq{} \cite{chanda2016password} \cite{boonkrong2012security} \cite{yildirim2019encouraging}.
-    \item Das Hauptproblem entsteht dabei durch die benötigte Einprägsamkeit der Passwörter \cite{yildirim2019encouraging}.
-    \item Es ist sehr schwierig für Nutzer sich verschiedene komplexe Passwörter zu merken. Daher neigen Nutzer dazu, einfache Passwörter zu nutzen oder Passwörter für verschiedene Zugänge zu wiederholen \cite{chanda2016password}.
-    \item Das ist der Hauptgrund dafür, dass Nutzer dazu neigen, einfache Passwörter zu nutzen oder Passwörter für verschiedene Zugänge zu wiederholen \cite{yildirim2019encouraging}.
-    \item Diese Faktoren führen dazu dass die Anzahl an genutzten Passwörtern deutlich geringer ist als die gesamte Menge an möglichen Passwörtern \cite{boonkrong2012security}.
-    \item Ebenfalls ist häufig die Motivation der Nutzer gering komplexe Passwörter zu erstellen. Dies liegt häufig daran, dass die Nutzer nicht die Gefahr erkennen und nicht überzeugt von Guidelines und Richtlinien zur Erstellung von Passwörtern sind \cite{yildirim2019encouraging}.
-    \item Nutzer tendieren dazu bewusst schwache Passwörter zu erstellen, die den Anforderungen der Richtlinien entsprechen. Das führt zu einem kontraproduktiven Effekt, da die Sicherheit geringer wird \cite{yildirim2019encouraging}.
-    \item Sehr komplexe Richtlinien führen demnach nicht zwangsmäßig zu einer höheren Sicherheit. Vielmehr kann das Gegenteil erreicht werden \cite{yildirim2019encouraging} \cite{morii2017research}.
-    \item Aktive Internet-Nutzer verwalten durchschnittlich 15 Passwörter pro Tag \cite{ives2004domino}.
-    \item Eine der größten Schwachstellen ist also die Wahl des Passwortes durch den Nutzer \cite{boonkrong2012security}.
-    \item Ein Domino Effekt kann entstehen, wenn mit Hilfe eines Passwortes weitere Passwörter kompromittiert werden. So können mehrere Systeme indirekt davon betroffen sein, sobald ein Passwort kompromittiert wurde \cite{ives2004domino}.
-    \item Das macht von Menschen erstellte Passwörter anfälliger für Angriffe, da diese einfacher zu erraten sind \cite{chanda2016password}.
-    \item 
-\end{itemize}
+    Viele Angreifer versuchen Passwörter zu kompromittieren, indem sie Zugriff auf die Datenbank erhalten, in welcher die Passwörter gespeichert sind. Mit Hilfe der erlangten Passwörtern erhoffen sie sich zumeist einen erweiterbaren Zugriff auf Systeme oder nutzen die Passwörter, um ihre Opfer zu erpressen \cite{boonkrong2012security}. Der wichtigste Faktor für den Erfolg solcher Angriffe spielt die Art der Speicherung. Abhängig von der Art wie Passwörter gespeichert sind offenbaren sich auch verschiedene Schwachstellen \cite{chanda2016password}.
+    Die schlechteste, aber dennoch immer noch genutzte Art Passwörter zu speichern ist die Speicherung von Passwörtern im Klartext. Die Passwörter werden also in lesbarer Form gespeichert. Haben Angreifer also Zugriff auf die Datenbank, so können sie alle gespeicherten Passwörter ohne weiteren Aufwand auslesen \cite{chanda2016password}.
+
+    Eine bessere Variante - allerdings weitaus nicht optimale - ist die Verschlüssellung der gespeicherten Passwörter. Der größte Kritikpunkt an dieser Variante ist allerdings, dass Verschlüssellungen zurückführbar sind. Das bedeutet mit dem Besitz des benötigten Schlüssels, lassen sich alle gespeicherten Daten ebenfalls in Klartext umwandeln. Hierbei müssen Angreifer also einen weiteren Aufwand erbringen, um an den benötigten Schlüssel zu gelangen. Sind sie allerdings im Besitz dieses Schlüssels können sie ebenfalls alle gespeicherten Passwörter auslesen \cite*{chanda2016password}. 
+
+    Um die Sepicherung weiter zu optimieren sollte somit keine Zurückführbarkeit bestehen. Dies kann mit Hilfe von Hashing umgesetzt werden. Sog. Hashfunktionen erhalten einen Eingabewert und bilden diesen auf (im Optimalfall) einen einzigen Ausgabewert ab. Dieser Ausgabewert ist nicht zurückführbar auf den Eingabewert. Komprommittieren Angreifer also die Datenbank, in welcher die Passwörter gespeichert sind, können diese die gespeicherten Werte nicht direkt weiterverwenden. Auch dieser Ansatz birgt allerdings Schwachstellen. So lassen sich beispielsweise sog. Rainbow-Tables nutzen, um Hash-Werte zurückzuführen. Dies wird ermöglicht indem häufig genutzte Passwörter gehashed werden und dann mit Hash-Werten innerhalb der Datenbank verglichen werden \cite{chanda2016password}. 
+
+    Um auch diese Schwachstelle zu verhindern, wird ein sog. Salt benötigt. Dabei wird an jedes Passwort, bevor es gehashed wird, ein individueller randomisierter Wert gehangen. Somit wird verhindert, dass sich der gespeicherte Hashwert mit Hilfe von Rainbow-Tables vergleichen lässt. Auch eine Umsetzung mit zwei Salt-Werten ist möglich. Dabei ist ein Salt öffentlich und der andere privat. So kann ebenfalls ein Schutz gegen offline-Angriffe geboten werden \cite{chanda2016password}.
+
+\textbf{Faktor Mensch:}
+
+Neben den aufgezählten technischen Aspekten, stellt der Mensch selbst eine der größten Angriffsvektoren bezogen auf Passwörter dar \cite{ives2004domino} \cite{yildirim2019encouraging}. Eins der größten Problem stellt der Aspekt dar, dass von Menschen erstellte Passwörter keine echten Zufallswerte sind. Das liegt insbesondere daran, dass Nutzer sich ihre Passwörter merken müssen. Je komplexer ein Passwort gestaltet ist, desto schwieriger wird es für Nutzer sich dieses zu merken - insbesonere, wenn sie sich mehrere verschiedene Passwörter merken müssen. Daher beinhalten Passwörter häufig Informationen, welche einen Bezug zum Inhaber haben. Dazu gehören Beispielsweise Namen, Geburtsdaten, Adressen, oder andere persönliche Informationen. Auch Passwörter, welche einfache Muster beinhalten sind sehr beliebt. Dazu gehören beispielsweise \textit{qwertz}, welches die ersten Buchstaben auf der Tastatur darstellt und \textit{123456}. Solche Passwörter können sich Menschen besser einprägen, was notwendig ist, wenn Passwörter häufig genutzt werden müssen. Aus dem identischen Grund neigen Nutzer ebenfalls dazu ein Passwort für mehrere Systeme zu nutzen \cite{chanda2016password} \cite{boonkrong2012security} \cite{yildirim2019encouraging}. 
+
+Die genannten Faktoren führen dazu, dass die Anzahl an genutzten Kombinationen für ein Passwort deutlich geringer ist als die gesamte Menge an möglichen Kombinationen \cite{boonkrong2012security}. Das macht von Menschen erstellte Passwörter deutlich anfälliger für Angriffe, da diese einfacher zu erraten sind \cite{chanda2016password}. Dies liegt häufig auch daran, dass die Motivation der Nutzer häufig gering ist, komplexe Passwörter zu erstellen, weil sie sich der Gefahr von schwachen Passwörtern nicht bewusst sind \cite{yildirim2019encouraging}. Kontraproduktiv wirken in diesem Zusammenhang auch Policies und Richtlinien zur Erstellung von Passwörtern \cite{yildirim2019encouraging}. Sind die Richtlinien zur Erstellung von Passwörtern zu komplex, tendieren Nutzer bewusst dazu Muster in das Passwort einzubauen, um sich dieses zu merken. Dies führt zu einem gegenteiligen Effekt, da die Sicherheit und die Komplexität der Passwörter dadurch sinkt. Die These, dass solche Richtlininien zwangsweise zu einer erhöhten Sicherheit beitragen ist somit ein Irrglaube \cite{yildirim2019encouraging} \cite{morii2017research}.
+
+Ein weiteres Problem stellt die die bereits genannte mehrfache Nutzung eines Passwortes für verschiedene Systeme dar. Aktive Internet-Nutzer verwalten im Durchschnitt 15 Passwörter pro Tag \cite{ives2004domino}. Um sich also das Einprägen verschiedener Passwörter zu ersparen, wählen Nutzer tendenziell lieber ein Passwort. Das führt häufig zu einem Domino-Effekt im Falle einer Passwort-Kompromittierung. Gelangen Angreifer an ein einzelnes Passwort des Nutzers, ist es häufig möglich mit diesem auch Zugriff auf andere Systeme zu gelangen \cite{ives2004domino} \cite{morii2017research}. 
+
 
 \section{Passwortlose Authentifizierung}
 
-\begin{itemize}
-    \item Unter der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörtern ersetzen.
-    \item Während bei passwortbasierten Verfahren also der Faktor \textit{something you know} genutzt wird, wird bei passwortlosen Verfahren auf andere Faktoren zurückgegriffen.
-    \item Die \ac{FIDO} Allianz nutzt die Bezeichnung passwortlos, um eine \ac{SFA} oder \ac{MFA} mit Hilfe eines Authentifizierungsgerätes zu beschreiben \cite{farke2020you}.
-    \item Passwortlose Verfahren werden als sicherer angesehen, da viele der in \textbf{\nameref{pw-auth}} aufgeführten Angriffsvektoren nicht auf passwortlose Ansätze anwendbar sind \cite{chowhan2019password} \cite{parmar2022comprehensive}.
-    \item Auch die Benutzerfreundlichkeit soll durch passwortlose Verfahren verbessert werden, da diese sich keine Passwörter mehr merken müssen \cite{chowhan2019password}.
-    \item Allerdings haben sich passwortlose Verfahren noch nicht durchgesetzt und sind nicht weit verbreitet.
-    \item Das liegt auch daran, dass für passwortlose Verfahren häufig zusätzliche Hardware benötigt wird, welche mit zusätzlichen Kosten verbunden ist \cite{chowhan2019password}.
-    \item Auch die Umgewöhnung an eine neue Art der Authentifizierung wird als eine Hürde für die Etabliserung von passwortlosen Verfahren angesehen \cite{chowhan2019password}.
-    \item Viele verschieden Möglichkeiten Passswortlose Authentifizierung zu implementieren:
-    \item lediglich ein Überblick, da eine detailiertere BEschreibung den Scope dieser Arbeit überschreiten würde.
-\end{itemize}
+Unter dem Sammelbegriff der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörten ersetzen sollen. Im Gegensatz zur passwortbasierten Authentifizierung steht also nicht mehr der Faktor \textit{something you know} im Vordergrund, da das Wissen des Nutzers nicht mehr die Grundlage zur Verifizierung seiner Identität darstellen soll. Die \ac{FIDO} Allianz nutzt den Begriff passwortlose Authentifizierung beispielsweise, um eine eine \ac{SFA} oder \ac{MFA} mit der Hilfe eines Security Keys zu beschreiben \cite{farke2020you}. 
+
+Passwortlose Verfahren werden dabei als sicherer im Vergleich zur passwortbasierten Alternative angesehen, da viele der in \textbf{\ref{pw-auth}} aufgeführten Angriffsvektoren passwortlosen Ansätze nicht existieren \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem erhofft man sich eine zusätzliche erhoffte Benutzerfreundlichkeit durch passwortlose Verfahren - insbesondere, weil Nutzer sich keine Passwörter mehr merken müssen und so ein geringerer Aufwand besteht \cite{chowhan2019password}.
+
+Passwortlose Verfahren haben sich jedoch noch nicht flächendeckend durchgesetzt und sind nicht annähernd so weit verbreitet wie die Nutzung von Passwörtern. Dies lässt sich auf mehrere Faktoren zurückführen. Häufig genannte Gründe innerhalb der Fachliteratur sind die Umgewöhnung der Nutzer an eine neuartige Authentifizierung, welches als Hürde zur Etablierung der passwortlosen Verfahren angesehen wird. Aber auch zusätzliche entstehende Kosten durch die Integration der neuen Verfahren können eine Verbereitung ausbremsen \cite{chowhan2019password}. Ein detailierter Einblick in die Vor- und Nachteile in Bezug auf der Benutzerfreundlichkeit wird in \textbf{\ref{Yubikey}} gegeben.
+
+Es gibt dabei eine Vielzahl an Möglichkeiten eine passwortlose AUthentifizierung umzusetzen. Eine der am häufigsten genutzen Varianten ist die Nutzung von Security Keys in Kombination mit FIDO2. Diese liegen im Fokus dieser Arbeit und werden in \textbf{\ref{Yubikey}} und \textbf{\ref{fido2}} genauer beschrieben. Dennoch sollen auch mögliche Alternativen kurz vorgestellt werden:
+
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.7\textwidth]{img/abbildungen/magic_link.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
+	\caption{Beispielhafte Umsetzung eines Magic Links} \label{magiclink}
 \end{figure}
 
+\textbf{Magic Link:}
+
+Bei einem Magic Link handelt es sich um eine
+Authentifizierungsmöglichkeit, bei welcher Nutzer
+lediglich ihren Benutzernamen oder ihre E-Mail-Adresse
+zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu verifizieren \cite{chowhan2019password} \cite{parmar2022comprehensive}.
+Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der AUthentication Code seine Gültigkeit und somit auch der Link selbst \cite{chowhan2019password}. Der Ablauf des Verfahrens wird ebenfalls vereinfacht in \textbf{\ref{magiclink}} dargestellt.
+Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren ohne autorisiert zu sein \cite{chowhan2019password}. 
+
+\paragraph*{Vorteile:} Ein Passwort bleibt zwar in den meisten Fällen für den Zugriff auf den E-Mail Zugang notwendig, würde aber zumindest die Anzahl an benötigten Passwörtern für Nutzer reduzieren. Zudem handelt es sich bei einem Magic Link um eine sehr benutzerfreundliche und einfach verständliche Art der Authentifizierung \cite{parmar2022comprehensive}. Auch die Implementierung und die Kosten zur Instandshaltung sind verhältnismäßig gering einzuorden \cite{parmar2022comprehensive}.
+
+\paragraph*{Nachteile:} Insbesondere im Unternehmenskontext kann die Nutzung von Spam-Filtern die Benutzerfreundlichkeit von Magic Links stark beeinträchtigen. So können beispielsweise die zugehörigen Mails fälschlicherweise als Spam klassifiziert werden oder eine erhöhte Wartezeit auf die E-Mail entstehen \cite{parmar2022comprehensive}. Auch im Bezug auf das Thema Sicherheit sind einige Aspekte fragwürdig. So hängt die Sicherheit des Verfahrens von der Sicherheit des Mail-Servers ab. Ist dieser nicht ausreichend geschützt, können Angreifer Zugriff auf die Mails erhalten und sich ebenfalls mit dem Link authentifizieren \cite{chowhan2019password}. Dies kann geschehen, ohne dass der Nutzer dies überhaupt bemerkt \cite{chowhan2019password}.
+
+\textbf{\ac{OTP}:}
+
+Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} beinhaltet \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
+Dieses wird vom System abgeglichen und validiert. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert das \ac{OTP} seine Gültigkeit \cite{chowhan2019password}.
+Häufig werden \ac{OTP}s allerdings nicht für eine oben beschrieben \ac{SFA} genutzt, sondern dienen als zusätzlicher Faktor für eine \ac{MFA} \cite{chowhan2019password}. So können beispielsweise Authenticator Apps zur Bereitstellung von \ac{OTP}s genutzt werden, um die etabliertere passwortbasierte Authentifizierung sicherer zu gestalten.
+Im Gegensatz zu statischen, von Anwendern gewählten
+Passwörtern sind \ac{OTP}s dynamisch erzeugt und haben nur
+eine geringe Lebensdauer. So wird eine höhere
+Sicherheit gewährleistet, da \ac{OTP}s nur schwierig durch
+stupides Erraten oder Brute Force Attacken erbeutet
+werden können \cite{chowhan2019password}.
+Für die Umsetzung von OTPs gibt es mehrere Möglichkeiten. Zwei häufig verwendete Optionen sind \ac{HOTP} und \ac{TOTP} \cite{chowhan2019password}.
+\ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden \cite{chowhan2019password}.
+\ac{TOTP}s basieren auf der technischen Spezifikation RFC 6238 und werden in Abähngigkeit zu der Zeit erstellt. Sie ändern sich nach einem vordefinierten Zeitintervall und sind somit sehr kurzlebig \cite{chowhan2019password}.
+
+\paragraph*{Vorteile:} Die Nutzung von \ac{OTP}s ist sehr effektiv für eine \ac{MFA}, da die Sicherheit im Vergleich zu einer passwortbasierten \ac{SFA} signifikant erhöht werden kann \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem handelt es sich um eine sehr benutzerfreundliche und einfachz anwendbare Methode, welche sich bereits für die Nutzung von \ac{MFA} weitreichend etabliert hat \cite{parmar2022comprehensive}. Dies liegt auch an der Vielzahl an Umsetzungsmöglichkeiten von \ac{OTP}s, da diese beispielsweise via E-Mail, SMS, Authenticator App oder auch Security Key an den Nutzer übermittelt werden können \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
+
+\paragraph*{Nachteile:} Da sich diese Arbeit auf die Nutzung einer passwortlosen Authentifizierung als \ac{SFA} fokussiert, wird es hier als Nachteil eingeordnet, dass sich die Nutzung von \ac{OTP}s hauptsächlich für die Umsetzung einer \ac{MFA} anbietet. Eine Nutzung von \ac{OTP}s als \ac{SFA} wird häufig nicht unterstützt. Zudem ist je nach Implementierung wie auch bei einem Magic Link eine Abhängigkeit auf einen anderen Dienst gegeben, welche die Sicherheit des Verfahrens beeinträchtigen können.
+
 \begin{itemize}
-    \item Magic Link:
-    Bei einem Magic Link handelt es sich um eine
-    Authentifizierungsmöglichkeit, bei welcher Nutzer
-    lediglich ihren Benutzernamen oder ihre E-Mail-Adresse
-    zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu bestätigen. \cite{chowhan2019password} \cite{parmar2022comprehensive}
-    Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der AUthentication Code seine Gültigkeit und somit auch der Link selbst. \cite{chowhan2019password}
-    Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren ohne autorisiert zu sein. \cite{chowhan2019password}
-    Passwort bleibt für Zugriff auf E-Mail Zugang notwendig, allerdings würde so die Anzahl an Passwörtern für den Nutzer reduziert werden.
-    Vorteile:
-    Sehr benutzerfreundlich und einfach \cite{parmar2022comprehensive}.
-    Implementierung und Kosten zur Instandshaltung verhältnißmäßig gering \cite{parmar2022comprehensive}.
-    Nachteile:
-    Nutzung von Spam-Filtern, kann die Benutzerfreundlichkeit stark beeinträchtigen. So könnten die zugehörigen Mails fälschlicherweise als Spam klassifiziert werden oder eine erhöhte Wartezeit auf die Mail entstehen \cite{parmar2022comprehensive}.
-    Die Sicherheit des Verfahrens hängt von der Sicherheit des Mail-Servers ab. Ist dieser nicht ausreichend geschützt, können Angreifer Zugriff auf die Mails erhalten und sich somit auch mit dem Link authentifizieren \cite{chowhan2019password}.
-    Dies kann geschehen, ohne dass der Nutzer davon etwas mitbekommt \cite{chowhan2019password}.
-    \item \ac{OTP}:
-    Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} beinhaltet \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
-    Dieses Wird vom System abgeglichen und validiert. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert das \ac{OTP} seine Gültigkeit. \cite{chowhan2019password}
-    Häufig werden \ac{OTP}s allerdings nicht für eine oben beschrieben \ac{SFA} genutzt, sondern dienen als zusätzlicher Faktor für eine \ac{MFA}. \cite{chowhan2019password} So können beispielsweise Authenticator Apps zur Bereitstellung con \ac{OTP}s genutzt werden, um die etabliertere passwortbasierte Authentifizierung sicherer zu gestalten.
-    Im Gegensatz zu statischen, von Anwendern gewählten
-    Passwörtern sind \ac{OTP}s dynamisch erzeugt und haben nur
-    eine geringe Lebensdauer. So wird eine höhere
-    Sicherheit gewährleistet, da OTPs nur schwierig durch
-    stupides Erraten oder Brute Force Attacken erbeutet
-    werden können. \cite{chowhan2019password}
-    Für die Umsetzung von OTPs gibt es mehrere Möglichkeiten. Zwei häufig verwendete Optionen sind \ac{HOTP} und \ac{TOTP}. \cite{chowhan2019password}
-    \ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden. \cite{chowhan2019password}
-    \ac{TOTP}s basieren auf der technischen Spezifikation RFC 6238 und werden in Abähngigkeit zu der Zeit erstellt. Sie ändern sich nach einem vordefinierten Zeitintervall und sind somit sehr kurzlebig. \cite{chowhan2019password}
-    \item Vorteile:
-    sehr effektiv für \ac{MFA} \cite{parmar2022comprehensive}.
-    sehr benutzerfr4eundlich und einfach \cite{parmar2022comprehensive}.
-    bieten eine erhöhte Sicherheit und verringern die Angriffsvektoren von statischen Passwörtern. \cite{chowhan2019password}
-    haben sich für \ac{MFA} bereits etabliert \cite{parmar2022comprehensive}.
-    Vielzahl an Möglichkeiten, per mail/sms/app oder security keys \cite{chowhan2019password} \cite{parmar2022comprehensive}.
-    \item Nachteile:
-    Häufig nur für \ac{MFA} genutzt also nicht passwortlose \ac{SFA} 
-    je nach implementierung ähnliche nachteile wie Magic Links
-    \ac{OTP}s als \ac{SFA} werden nicht überall unterstützt.
     
     \item Biometrische Daten:
     Eine häufig genutzte Methode zur Authentifizierung auf mobilen Endgeräten ist die Nutzung von biometrischen Daten \cite{parmar2022comprehensive}. 
@@ -212,14 +186,8 @@ Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinand
 
 \end{itemize}
 
-\subsection{Magic Link}
 
-\subsection{One Time Password (OTP)}
-\begin{itemize}
-    \item Passwörter die sich mit jedem Login ändern. Dadurch wird das Risiko verringert, dass das Passwort erraten werden kann \cite{boonkrong2012security}.
-\end{itemize}
-
-\section{YubiKey}
+\section{YubiKey} \label{Yubikey}
 
 \begin{figure}[h]
 	\centering 
@@ -268,7 +236,7 @@ Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinand
     \item 
 \end{itemize}
 
-\section{Fido2}
+\section{Fido2} \label{fido2}
 
 \begin{figure}[h]
 	\centering 
