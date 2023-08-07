@@ -15,8 +15,8 @@
 \contentsline {section}{\numberline {2.6}YubiKey}{29}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Usability}{30}{subsection.2.6.1}%
 \contentsline {section}{\numberline {2.7}FIDO2}{32}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}WebAuthn}{36}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}CTAP2}{38}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.1}WebAuthn}{35}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}CTAP2}{37}{subsection.2.7.2}%
 \contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{40}{subsubsection.2.7.2.1}%
 \contentsline {subsection}{\numberline {2.7.3}Sicherheit}{41}{subsection.2.7.3}%
 \contentsline {chapter}{\numberline {3}Umsetzung}{43}{chapter.3}%
