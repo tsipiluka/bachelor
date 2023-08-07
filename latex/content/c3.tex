@@ -115,7 +115,7 @@ Die genannten Faktoren führen dazu, dass die Anzahl an genutzten Kombinationen 
 Ein weiteres Problem stellt die die bereits genannte mehrfache Nutzung eines Passwortes für verschiedene Systeme dar. Aktive Internet-Nutzer verwalten im Durchschnitt 15 Passwörter pro Tag \cite{ives2004domino}. Um sich also das Einprägen verschiedener Passwörter zu ersparen, wählen Nutzer tendenziell lieber ein Passwort. Das führt häufig zu einem Domino-Effekt im Falle einer Passwort-Kompromittierung. Gelangen Angreifer an ein einzelnes Passwort des Nutzers, ist es häufig möglich mit diesem auch Zugriff auf andere Systeme zu gelangen \cite{ives2004domino} \cite{morii2017research}. 
 
 
-\section{Passwortlose Authentifizierung}
+\section{Passwortlose Authentifizierung} \label{alts}
 
 Unter dem Sammelbegriff der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörten ersetzen sollen. Im Gegensatz zur passwortbasierten Authentifizierung steht also nicht mehr der Faktor \textit{something you know} im Vordergrund, da das Wissen des Nutzers nicht mehr die Grundlage zur Verifizierung seiner Identität darstellen soll. Die \ac{FIDO} Allianz nutzt den Begriff passwortlose Authentifizierung beispielsweise, um eine eine \ac{SFA} oder \ac{MFA} mit der Hilfe eines Security Keys zu beschreiben \cite{farke2020you}. 
 
@@ -232,48 +232,42 @@ Es gibt bereits Fachliteratur, welche sich mit der Benutzerfreundlichkeit von Se
 
 Insgesamt lassen sich noch nicht alle Szenarien mit Security Keys abdecken. Es gibt noch spezielle Fälle, in welchen die Nutzung von Passwörtern weiterhin notwendig ist \cite{lyastani2020fido2}. Auffälig jedoch ist, dass die Teilnehmer der Studien häufig einen skeptischen Blick auf die neuartige Authentifizierung werfen. Trotz der gesammelten Vor- und Nachteile kann keine Annahme darüber getroffen werden, ob die Vor- oder die Nachteile überwiegen und ob das Verfahren grundsätzlich gegenüber der passwortbasierten Alternative bevorzugt wird. Dies wird in \textbf{\ref{questions}} mit Hilfe der hier erarbeiteten Grundlage genauer analysiert.
 
-\section{Fido2} \label{fido2}
+\section{FIDO2} \label{fido2}
 
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=1\textwidth]{img/abbildungen/fido2-simple.png}
-	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
-\end{figure}
+Es gibt bereits viele Alternativen zur passwortbasierten Authentifizierung. Einzelne wurden in \textbf{\ref{alts}} bereits beispielhaft beschrieben. Der Großteil dieser Alternativen wird allerdings nur in einem sehr geringen Ausmaß genutzt \cite{farke2020you}. \ac{FIDO}2 gehört zu den passwortlosen Verfahren, welche am meisten unterstützt werden. Das Protokoll wird von der \ac{FIDO} Allianz und dem \ac{W3C} entwickelt und bereitgestellt. Die \ac{FIDO} Allianz ist eine Organisation mit weltweit über 250 Mitgliedern. Darunter befinden sich Unternehmen wie Google, Microsoft, Apple, Amazon, Visa und viele mehr. Das \ac{W3C} wurde 1994 - mit dem Ziel das Wachstum des Internets zu gewährleisten - von Tim Berners-Lee gegründet. Es hat über 300 Mitglieder, darunter auch die hier aufgezählten Mitglieder der \ac{FIDO} Allianz  \cite{lyastani2020fido2} \cite{farke2020you} \cite{w3cabout}. Aus diesem Grund wird \ac{FIDO}2 von vielen Browsern standardmäßig unterstützt. Zudem gibt es eine Vielzahl an \ac{FIDO}2 kompatiblen Authentifizierungsgeräte, darunter u.A. Security Keys oder auch Smartphones \cite{lyastani2020fido2}.
 
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=1\textwidth]{img/abbildungen/Fido2.png}
-	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
-\end{figure}
+Das Ziel bei der ENtwicklung von \ac{FIDO2} ist es Nutzer zu authentifizieren, ohne dass diese ein Passwort verwenden müssen. Statt der Nutzung von Passwörtern basiert das Protokoll auf der Nutzung von Schlüsselpaareen. Dabei können Security Keys genutzt werden, aber auch das Gerät selber oder andere Authentifizierungsgeräte \cite{barbosa2021provable} \cite{morii2017research}. Diese können zusätzlich ebenfalls mit einer PIN oder biometrischen Daten abgesichert werden. Dabei ist die PIN nicht mit einem Passwort gleichzusetzen. Die PIN wird lediglich für das Authentifizierungsgerät genutzt und wird auch nur auf diesem gespeichert \cite{farke2020you} \cite{barbosa2021provable}. \ac{FIDO}2 unterstützt somit sowohl \ac{SFA} als auch \ac{MFA} \cite{lyastani2020fido2} \cite{farke2020you}. Zudem wird eine hohe Sicherheit ermöglicht, da Zugangsdaten bereitgestellt werden, welche nicht von Phishing oder Datenlecks betroffen sein können \cite{lyastani2020fido2}. Dies ist der Fall, da keine geteilten Geheimnisse zwischen Nutzer und Dienst existieren, welche auf einem Server gespeichert werden \cite{morii2017research}. 
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/fido2_usability.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
+	\caption{Mögliche Vorteile von FIDO2} \label{fido2-pros}
 \end{figure}
 
-\begin{itemize}
-    \item FIDO2 wird von der \ac{FIDO} und dem \ac{W3C} entwickelt und bereitgestellt \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Die \ac{FIDO} Allianz ist eine Organisation mit weltweit über 250 Mitgliedern. Darunter befinden sich Unternehmen wie Google, Microsoft, Apple Amazon, Facebook, Visa und viele mehr \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Ziel ist es Nutzer zu authentifizieren, ohne, dass diese eine Passwort nutzen müssen \cite{morii2017research} \cite{barbosa2021provable}.
-    \item Basiert auf der Nutzung eines internen oder externen Authentifizierungsgerätes \cite{morii2017research} \cite{barbosa2021provable}.
-    \item Dabei können Authentifizierungsgeräte, ebenfalls mit einer PIN oder einem biometrischen Merkmal, geschützt werden \cite{farke2020you}.
-    \item Hierbei ist ein PIN allerdings nicht gleichzusetzen mit einem Passwort. Der PIN wird lediglich für das Authentifizierungsgerät genutzt und wird auch nur auf diesem gespeichert \cite{farke2020you} \cite{barbosa2021provable}.
-    \item Es handelt sich dabei also auch nicht um eine \ac{MFA}, sondern, um einen einzelnen Faktor, welcher lediglich den Zugriff das Gerät selbst authentifiziert \cite{barbosa2021provable}.
-    \item FIDO2 unterstützt sowohl \ac{MFA} als auch \ac{SFA} \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Viele Alternativen zur passwortbasierten AUthentifizierung existieren bereits. Diese werden allerdings nur in einem sehr geringen Ausmaß genutzt \cite{farke2020you}.
-    \item Stellt Zugangsdaten bereit, welche nicht gephisht oder von Datenlecks betroffen sein können \cite{lyastani2020fido2}.
-    \item Das liegt daran, dass keine geteilten Geheimnisse zwischen Nutzer und Dienst existieren, welche auf einem Server gespeichert werden \cite{morii2017research}.
-    \item Wird von fast allen Browsern standardmäßig unterstützt \cite{lyastani2020fido2}.
-    \item Viele verfügbare Authentifizierungsgeräte. Z.B. Security Keys oder auch Smartphones. Beispielsweise Apples Touch ID oder Face ID \cite{lyastani2020fido2}.
-    \item Besteht aus zwei Komponenten: CTAP2 für die Kommunikation zwischen Client und Authentifizierungsgerät und WebAuthn für die Kommunikation zwischen Client und Server \cite{farke2020you}.
-    \item Dabei wird WebAuthn von der \ac{W3C} spezifiziert und CTAP2 von der \ac{FIDO} Allianz \cite{farke2020you}.
-\end{itemize}
+In \textbf{\ref{fido2-pros}} werden die möglichen Vor- und Nachteile von \ac{FIDO}2 aufgezeigt. Dabei steht die Zeile \textit{1FA} für eine \ac{SFA} mit Hilfe von \ac{FIDO}2, welche mit der Nutzung von Passwörtern verglichen wird. Orange markiert in der \textit{1FA}-Zeile sind Bereiche, welche grundsätzlich von \ac{FIDO}2 abhängig sind. Weiß hinterlegte Bereiche sind zusätzlich abhängig vom genutzten Authentifizierungsgerät. Auffälig ist, dass insbesondere der Bereich \textit{Sicherheit} viele Vorteile bietet, welche grundsätzlich durch \ac{FIDO}2 ermöglicht werden und unabhängig vom genutzten Authentifizierungsgerät sind. Einige dieser Vorteile wurden bereits im Rahmen dieser Arbeit betrachtet. So lassen sich \ac{FIDO}2 Nutzerdaten beispielsweise nicht erraten oder phishen. Ebenfalls können diese nicht betroffen sein von Datenlecks und auch nicht durch Shoulder Surfing erlangt werden. Ein aufgezeigter Nachteil im Vergleich zu Passwörtern ist jedoch die Möglichkeit des Diebstahls eines Authentifizierungsgerätes. Dies ist allerdings abhängig vom genutzten Gerät und ergibt sich nicht durch die Nutzung von \ac{FIDO}2. Auch aufällig ist die große Abhängigkeit zum Authentifizierungsgerät im Bereich der Benutzerfreundlichkeit. Dort sind grundsätzlich zwar Vorteile gegenüber der Nutzung von Passwörtern möglich, aber nicht automatisch durch die Nutzung von \ac{FIDO2} gegeben. 
 
-\subsection{Webauthn}
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.8\textwidth]{img/abbildungen/fido2_com.png}
+	\captionsetup{format=hang}
+	\caption{FIDO2 Teilnehmer} \label{fido2-channels}
+\end{figure}
+
+Bei der Nutzung von \ac{FIDO}2 werden vier Kommunikationskanäle genutzt. Diese werden in \textbf{\ref{fido2-channels}} abgebildet. Es besteht eine Kommunikation zwischen User, Authentifizerungsgerät und dem Client. Der CLient ist üblicherweise ein Browser und übernimmt die Kommunikation mit dem Server. Vereinfacht wird der \ac{FIDO}2 Ablauf in \textbf{\ref{fido2-simple}} dargestellt. Der User meldet sich über den Client beim Server an (oder registriert sich erstmalig). Daraufhin sendet der Server eine Challenge an den Client weiter, welche vom Authentifizierungsgerät signiert werden muss. Der Client gibt die Challenge an das Authentifizierungsgerät weiter. Bevor dieser die Challenge signieren kann, muss der User die Aktion mit Hilfe einer Geste am Authentifizierungsgerät autorisieren (z.B. ein Knopfdruck). Anschließend signiert das Authentifizierungsgerät die Challenge und sendet diese an den Client zurück. Der Client sendet die signierte Challenge an den Server weiter. Der Server kann die Signatur mit Hilfe des öffentlichen Schlüssels verifizieren und den User authentifizieren \cite{lyastani2020fido2} \cite{farke2020you}. Dieser Ablauf wird im weiteren Verlauf genauer erläutert.
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.8\textwidth]{img/abbildungen/fido2_flow.png}
+	\captionsetup{format=hang}
+	\caption{Vereinfachter FIDO2 Ablauf} \label{fido2-simple}
+\end{figure}
+
+Dieser aufgezeigte Ablauf besteht aus den zwei Subprotokollen \ac{CTAP2}, welches für die Kommunikation zwischen Client und Authentifizierungsgerät genutzt wird und WebAuthn, welches für die Kommunikation zwischen Client und Server zuständig ist. Dabei wird WebAuthn von dem \ac{W3C} spezifiziert und \ac{CTAP2} von der \ac{FIDO} Allianz \cite{farke2020you}.
+
+
+NOCH AUF 2.9 und 2.11 EINGEHEN!!
+\subsection{WebAuthn}
 
 \begin{itemize}
     \item WebAuthn ist ein Standard, welcher von dem \ac{W3C} entwickelt wird. Das Protokoll erlaubt es Webanwendungen Nutzer zu authentifizieren. Dies kann dabei auch über \ac{CTAP2} erfolgen \cite{lyastani2020fido2}. ?
@@ -288,6 +282,13 @@ Insgesamt lassen sich noch nicht alle Szenarien mit Security Keys abdecken. Es g
     Der Client empfängt die challenge message $m_{ach}$ von Server $S$ und wandelt diese in eine command message $m_{acom}$ und eine client message $m_{acl}$ um. Die command message $m_{acom}$ wird an den Security Key $T$ übermittelt. Der Security Key $T$ erzeugt eine response message $m_{arsp}$, welche mit dem privaten Schlüssel signiert wird und sendet diese an den Server $S$ (über den Client $C$). Der Server $S$ akzeptiert die response message $m_{arsp}$ und die client message $m_{acl}$ nur, wenn sie sich mit dem dazugehörigen öffentlichen Schlüssel verifizieren lassen. \cite{bindel2022fido2}
     \item Die Sicherheit von WebAuthn basiert auf dem Beweis, dass RSASSA PKCS1-v1\_5 und RSASSA-PSS als \ac{EUF-CMA} gelten und der Annahme, dass SHA-256 kollisionsresistent ist \cite{barbosa2021provable}.
 \end{itemize}
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=1\textwidth]{img/abbildungen/Fido2.png}
+	\captionsetup{format=hang}
+	\caption{FIDO2 Darstellung} \label{fido2}
+\end{figure}
 
 \subsection{CTAP2}
 \begin{itemize}
