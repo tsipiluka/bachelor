@@ -274,7 +274,7 @@ Dieser Prozess wird in \textbf{\ref{fido2-process}} genauer beschrieben (als sch
 
 Ist ein Nutzer bereits registriert, so empfängt der Client eine challenge message $m_{ach}$ von Server $S$ und wandelt diese in eine command message $m_{acom}$ und eine client message $m_{acl}$ um. Die command message $m_{acom}$ wird an das Authentifizierungsgerät $T$ übermittelt. Das Authentifizierungsgerät $T$ erzeugt eine response message $m_{arsp}$, welche mit dem privaten Schlüssel signiert wird und sendet diese an den Server $S$ (über den Client $C$). Der Server $S$ akzeptiert die response message $m_{arsp}$ und die client message $m_{acl}$ nur, wenn sie sich mit dem dazugehörigen öffentlichen Schlüssel und privaten Schlüssel des Servers $S$ verifizieren lassen. \cite{bindel2022fido2}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/Fido2.png}
 	\captionsetup{format=hang}
@@ -299,41 +299,55 @@ Mit Hilfe von \ac{CTAP2} wird die Kommunikation zwischen einem Authentifizierung
 Eine in der Fachliteratur häufig genannte Kritik an \ac{CTAP2} ist die Verwendung des unauthentifizierten \ac{ECDH}, welcher während der Binding und Setup Phase genutzt wird. Dieser kann von \ac{MITM} Angriffen betroffen sein \cite{barbosa2021provable}.
 Zudem wird auch die Umsetzung der pinTokens kritisiert. Jedem Authentifizierungsgerät wird beim Hochfahren je ein pinToken zugeteilt. Das bedeutet mehrere Authentifizierungsgeräte können den gleichen pinToken besitzen. Dadurch wird die Sicherheit von \ac{CTAP2} limitiert \cite{barbosa2021provable}.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/ctap2-process.png}
 	\captionsetup{format=hang}
 	\caption{CTAP2} \label{ctap2-process}
 \end{figure}
 
-\subsubsection{CTAP2.1}
-\begin{itemize}
-    \item Gilt in Verbindung mit WebAuthn 2 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, der nur kryptographische Primitive, digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
-    \item Im Gegensatz zu \ac{CTAP2} basiert CTAP2.1 nicht auf unauthentifizierten Diffie-Hellman Schlüsselaustausch, sondern auf einem sogeannten \ac{puvProtocol}, wodurch die \ac{PQ}-Sicherheit ermöglicht wird \cite{bindel2022fido2}.
-    \item In \ac{CTAP2} wird der Verbindungszustand als \textit{pinToken} definiert, welcher aus mehreren 128 Bit-Blöcken besteht und keine maximale Begrenzung der Länge beseitzt. In CTAP2.1 wird der Verbindungszustand als \textit{pinUvAuthToken} definiert welcher eine feste Länge von 128 oder 256 Bit besitzt \cite{bindel2022fido2}.
-    \item Der pinToken von \ac{CTAP2} wird bis zum nächsten Neustart wiederverwendet. Der pinUvAuthToken von CTAP2.1 wird nach jeder erfolgreichen Authentifizierung neu generiert. Das führt dazu, dass CTAP2.1 eine \ac{SUF}-t' Sicherheit aufweist und \ac{CTAP2} lediglich eine \ac{UF}-t' Sicherheit \cite{bindel2022fido2}.
-    \item \ac{CTAP2} erlaubt es Security Keys und Clients nur den pinUvAuthToken zu teilen, wenn der Nutzer den korrekten PIN eingegeben hat. CTAP2.1 ermöglicht zusätzlich, dass der Nutzer sich mit Hilfe eines biometrischen Merkmals authentifiziert \cite{bindel2022fido2}.
-\end{itemize}
+\subsubsection*{CTAP2.1}
+Um diese Kritikpunkte zu beheben wurde CTAP2.1 entwickelt. CTAP2.1 basiert nicht mehr auf unauthentifizierten \ac{ECDH}, sondern auf einem sog. \ac{puvProtocol}. In Verbindung mit WebAuthn gilt CTAP2.1 als \ac{PQ} bereit, da ein Operationsmodus ermöglicht wird, welcher nur kryptographische Primitive und digitale Signaturen und \ac{KEM} verwendet \cite{bindel2022fido2}.
+
+Zusätzlich werden die pinTokens im Vergleich zu \ac{CTAP2} anders erstellt. Während der pinToken bei \ac{CTAP2} aus mehreren 128 Bit-Blöcken besteht und keine maximale Begrenzung der Länge besitzt, wird der pinToken bei CTAP2.1 als pinUvAuthToken definiert. Dieser hat eine feste Länge von 128 oder 256 Bit. Der pinToken von \ac{CTAP2} wird bis zum nächsten Neustart wiederverwendet. Der pinUvAuthToken von CTAP2.1 wird nach jeder erfolgreichen Authentifizierung neu generiert. So besteht ein verringertes Risiko, dass sich mehrere Authentifizierungsgeräte den gleichen pinToken teilen. Das führt dazu, dass CTAP2.1 eine \ac{SUF}-t' Sicherheit aufweist und \ac{CTAP2} lediglich eine \ac{UF}-t' Sicherheit \cite{bindel2022fido2}. Ebenfalls ermöglicht CTAP2.1 die Nutzung von biometrischen Merkmalen, anstelle von einer individuellen PIN \cite{bindel2022fido2}.
+
 
 \subsection{Sicherheit}
 
+\ac{FIDO}2 wird in der Fachliteratur als grundsätzlich sicheres Protokoll angesehen. Es ist eine Erweiterung des \ac{FIDO} \ac{U2F} Protokolls und es handelt sich um geprüfte asymmetrische Kryptographie \cite{lyastani2020fido2} \cite{farke2020you}. Im Folgenden sollen kurz die wichtigsten Vorteile im Aspekt der Sicherheit aufgezeigt werden:
+
+
 \begin{itemize}
-    \item FIDO2 ist eine Erweiterung des FIDO U2F Protokolls und bietet die selbe Sicherheit wie public key Kryptographie \cite{lyastani2020fido2}.
-    \item Es handelt sich um geprüfte assymetrische Kryptographie \cite{farke2020you}.
-    \item Es handelt sich dabei um ein Challenge-Response-Verfahren mittels Hardware basierten Authentifizierungsgeräten. Dies bietet einige Vorteile gegenüber passwortbasierten Verfahren. Es gibt keine geteilten Geheimnisse zwischen Usern und Diensten, welche durch Phishing oder Datenlecks kompromittiert werden können. Dabei ist das selbe Authentifizierungsgerät für mehrere Dienste nutzbar, ohne, dass sich dabei eine Verknüpfung zurückführen lässt \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item lediglich die Session kann kompromittiert werden \cite{morii2017research}.
+    \item Es gibt keine geteilten Geheimnisse zwischen Usern und Diensten, welche durch Phishing oder Datenlecks kompromittiert werden können \cite{lyastani2020fido2} \cite{farke2020you}. 
+    \item Dasas selbe Authentifizierungsgerät für mehrere Dienste nutzbar, ohne dass sich dabei eine Verknüpfung zurückführen lässt \cite{lyastani2020fido2} \cite{farke2020you}.
+    \item es kann lediglich die Session kompromittiert werden und nicht die Zugangsdaten selbst \cite{morii2017research}.
     \item Authentifizierungsgeräte lassen sich mit zusätzlichen PINs oder biometrischen Merkmalen absichern, um sich ebenfalls vor Diebstahl schützen \cite{barbosa2021provable}.
-    \item Unauthentifizierter Diffie-Hellman Schlüsselaustausch könnte durch ein \ac{PAKE} Verfahren ersetzt werden \cite{barbosa2021provable}.
-    \item Das Paper gibt an, dass dieses sicherer und effizienter sein soll \cite{barbosa2021provable}.
-    \item In folgendem Szenario: 1. Der Nutzer besitzt einen Security Key, welcher mit einem drückbaren Knopf oder ähnlichen ausgestattet ist. 2. Der Security Key ist mit einem geheimen PIN geschützt. 3. Der Nutzer autorisiert vertrauten Clients auf den Security Key zuzugreifen. 4. Der Nutzer verbindet seinen Security Key mit mehreren Clients und nutzt diese um sich bei mehreren Webdiensten zu registrieren/anzumelden.
-    Dann ist versichert, dass:
-    1. Die Authentifizierung von dem Security Key durchgeführt wurde, welcher die genutzen Zugangsdaten bei dem Webdienst registriert hat.
-    2. ein autorisierter Befehl auf den Security Key zugegriffen hat.
-    3. und dieser autorisierte Befehl von einem autorisierten Client beauftragt wurde (sollte der Nutzer den korrekten PIN eingegeben haben).
-    Dies setzt voraus, dass:
-    1. Der Security Key nicht gestohlen wurde.
-    2. Der PIN des Security Keys nicht kompromittiert wurde.
-    3. Der autorisierte Client nicht kompromittiert wurde (korrekte Ausführung von \ac{CTAP2} und CLient ist nicht von böswilliger Software betroffen).
-    \cite{barbosa2021provable}.
+    \item Zugangsdaten können nicht durch systematisches erraten kompromittiert werden \cite{barbosa2021provable}.
     \item Wird ein Security Key gestohlen, kann dieser nur genutzt werden, wenn ebenfalls der PIN bekannt ist \cite{barbosa2021provable}.
 \end{itemize}
+
+In folgendem Szenario:
+
+\begin{enumerate}
+    \item Der Nutzer besitzt ein Authentifizierungsgerät, welcher mit einem drückbaren Knopf oder ähnlichen ausgestattet ist.
+    \item Das Authentifizierungsgerät ist mit einem geheimen PIN oder biometrischen Merkmalen geschützt.
+    \item Der Nutzer autorisiert vertrauten Clients auf das Authentifizierungsgerät zuzugreifen.
+    \item Der Nutzer verbindet sein Authentifizierungsgerät mit mehreren Clients und nutzt diese um sich bei mehreren Webdiensten zu registrieren/anzumelden.
+\end{enumerate}
+
+Dann ist versichert, dass:
+
+\begin{enumerate}
+    \item Die Authentifizierung von dem Authentifizierungsgerät durchgeführt wurde, welcher die genutzen Zugangsdaten bei dem Webdienst registriert hat.
+    \item Ein autorisierter Befehl auf das Authentifizierungsgerät zugegriffen hat.
+    \item Dieser autorisierte Befehl von einem autorisierten Client beauftragt wurde (sollte der Nutzer den korrekten PIN eingegeben haben).
+\end{enumerate}
+
+Unter der Voraussetzung, dass:
+
+\begin{enumerate}
+    \item Das Authentifizierungsgerät nicht gestohlen wurde.
+    \item Der PIN des Authentifizierungsgerätes nicht kompromittiert wurde.
+    \item Der autorisierte Client nicht kompromittiert wurde (korrekte Ausführung von \ac{CTAP2} und Client ist nicht von böswilliger Software betroffen).
+\end{enumerate}
+
