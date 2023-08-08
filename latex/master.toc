@@ -19,28 +19,28 @@
 \contentsline {subsection}{\numberline {2.7.2}CTAP2}{37}{subsection.2.7.2}%
 \contentsline {subsubsection}{\numberline {2.7.2.1}CTAP2.1}{40}{subsubsection.2.7.2.1}%
 \contentsline {subsection}{\numberline {2.7.3}Sicherheit}{41}{subsection.2.7.3}%
-\contentsline {chapter}{\numberline {3}Umsetzung}{43}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{43}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{43}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{44}{section.3.3}%
-\contentsline {section}{\numberline {3.4}User Feedback}{48}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{48}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{49}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{50}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{53}{subsection.3.4.4}%
-\contentsline {paragraph}{\nonumberline Frage 1:}{54}{paragraph*.74}%
-\contentsline {paragraph}{\nonumberline Frage 2:}{54}{paragraph*.76}%
-\contentsline {paragraph}{\nonumberline Frage 3:}{55}{paragraph*.78}%
-\contentsline {paragraph}{\nonumberline Frage 4:}{55}{paragraph*.80}%
-\contentsline {paragraph}{\nonumberline Frage 5:}{56}{paragraph*.82}%
-\contentsline {paragraph}{\nonumberline Frage 6:}{56}{paragraph*.84}%
-\contentsline {paragraph}{\nonumberline Frage 7:}{57}{paragraph*.86}%
-\contentsline {paragraph}{\nonumberline Frage 8:}{57}{paragraph*.88}%
-\contentsline {paragraph}{\nonumberline Frage 9:}{58}{paragraph*.90}%
-\contentsline {subsection}{\numberline {3.4.5}Auswertung}{58}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{62}{subsection.3.4.6}%
-\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{62}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{64}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Ausblick}{66}{chapter.5}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{67}{chapter*.93}%
+\contentsline {chapter}{\numberline {3}Umsetzung}{44}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{44}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{44}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}User Feedback}{49}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{49}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{50}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{51}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{54}{subsection.3.4.4}%
+\contentsline {paragraph}{\nonumberline Frage 1:}{55}{paragraph*.76}%
+\contentsline {paragraph}{\nonumberline Frage 2:}{55}{paragraph*.78}%
+\contentsline {paragraph}{\nonumberline Frage 3:}{56}{paragraph*.80}%
+\contentsline {paragraph}{\nonumberline Frage 4:}{56}{paragraph*.82}%
+\contentsline {paragraph}{\nonumberline Frage 5:}{57}{paragraph*.84}%
+\contentsline {paragraph}{\nonumberline Frage 6:}{57}{paragraph*.86}%
+\contentsline {paragraph}{\nonumberline Frage 7:}{58}{paragraph*.88}%
+\contentsline {paragraph}{\nonumberline Frage 8:}{58}{paragraph*.90}%
+\contentsline {paragraph}{\nonumberline Frage 9:}{59}{paragraph*.92}%
+\contentsline {subsection}{\numberline {3.4.5}Auswertung}{59}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{63}{subsection.3.4.6}%
+\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{63}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{65}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Ausblick}{67}{chapter.5}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{68}{chapter*.95}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -282,21 +282,29 @@ Ist ein Nutzer bereits registriert, so empfängt der Client eine challenge messa
 \end{figure}
 
 \subsection{CTAP2}
-\begin{itemize}
-    \item 2018 wurde \ac{CTAP2} als internationaler Standard der \ac{ITU-T} anerkannt \cite{barbosa2021provable}.
-    \item \ac{CTAP2} ist ein Protokoll auf der Anwendungsebene, welches für die Kommunikation zwischen eines WebAuthn Clients und eines konformen Authentifizierungsgerätes genutzt wird. Das Authentifizierungsgerät kann dabei ein externes Gerät sein wie beispielsweise ein Security Key, welches über USB, Bluetooth oder NFC eine Verbindung mit dem Client aufbaut. Aber auch ein internes Gerät wie beispielsweise ein Fingerabdruckscanner oder ein Trusted Platform Module können als Authentifizierungsgerät genutzt werden \cite{lyastani2020fido2}.
-    \item \ac{CTAP2} spezifiziert, die Kommunikation zwischen einem Authentifizierungsgerät und einem Client. Der Client ist dabei üblicherweise ein Webbrowser. Das Ziel ist es zu garantieren, dass der CLient das AUthentifizierungsgerät nur nutzen darf, wenn der Nutzer dies erlaubt. Dafür muss der Nutzer beispielsweise einen Knopf am Authentifizierungsgerät drücken und/oder sich mit Hilfe eines PINs oder eines biometrischen Merkmals beim AUthentifizierungsgerät authentifizieren \cite{barbosa2021provable}.
-    \item Das Ziel ist es somit einen Client an das AUthentifizierungsgerät zu binden. Ist ein CLient nicht an das authentifizerungsgerät gebunden, kann dieser sich nicht authentifizieren \cite{barbosa2021provable}.
-    \item besteht aus mehreren Phasen. 
-    1. In der Setup Phase initialisiert ein Client $C'$ einen PIN, welcher vom User übergeben wird an den Security Key $T$.
-    2. In der Binding Phase tauschen ein Client $C$ (nicht zwangsweise $C'$) und der Security Key $T$ einen gemeinsamen Verbindungsstatus aus, wenn der Client $C$ in der Lage ist, Informationen über die auf dem Security Key $T$ gespeicherte PIN zu liefern. So soll eine einzigartige Verbindung zwischen dem Client $C$ und dem Security Key $T$ hergestellt werden. Schlägt der Client $C$ drei mal in Folge fehl die PIN zu liefern, wird der Security Key $T$ neu gestartet und der Verbindungsstatus wird zurückgesetzt. Schlägt der Client $C$ insgesamt acht mal fehl, wird der Security Key $T$ gesperrt.
-    3. Ist diese Phase erfolgreich, autorisiert der Client $C$ jeden Befehl, indem eer einen Tag $t$ ausgibt, welcher mit der command message an den Security Key $T$ übermittelt wird. Der Security Key $T$ fährt lediglich fort, wenn eine \textit{positive decision} $d$ des Users vorliegt (beispielsweise einem Knopfdruck) und validiert darauf hin die command message und den Tag $t$. \cite{bindel2022fido2}
-    \item \ac{CTAP2} nutzt unauthentifizierten Diffie-Hellman Schlüsselaustausch \cite{barbosa2021provable}.
-    \item Dieser kann von \ac{MITM} Angriffen betroffen sein \cite{barbosa2021provable}.
-    \item In der Binding Phase sendet das Authentifizierungsgerät dem CLient ein pinToken, welcher beim hochfahren des Authentifizierungsgerätes generiert wird. Dieser pinToken wird lokal auf dem AUthentifizierungsgerät gespeichert und wird von dem verbundenen Client in der Access Channel Phase genutzt, um die nachfolgenden Nachrichten des Clients zu autorisieren \cite{barbosa2021provable}.
-    \item Jedem AUthentifizierungsgerät wird ein pinToken pro hochfahren zugeordnet. Das bedeutet mehrere CLients erezugen mehrere Access Channels mit dem selbem Authentifizierungsgerät und dem selben pinToken \cite{barbosa2021provable}.
-    \item Dadurch wird die Sicherheit von \ac{CTAP2} limitiert ??
-\end{itemize}
+
+\ac{CTAP2} wurde 2018 als internationaler Standard der \ac{ITU-T} anerkannt \cite{barbosa2021provable}. Es handelt sich um ein Protokoll auf der Anwendungsebene, welches für die Kommunikation zwischen eines WebAuthn Clients und eines konformen Authentifizierungsgerätes genutzt wird. Das Authentifizierungsgerät kann dabei ein externes Gerät sein, z.B. ein Security Key, welcher über USB, Bluetooth oder NFC eine Verbindung mit dem Client aufbaut. Aber auch interne Hardware eines Gerätes wie beispielsweise ein Fingerabdruckscanner oder ein Trusted Platform Module können als Authentifizierungsgerät genutzt werden \cite{lyastani2020fido2}.
+
+Mit Hilfe von \ac{CTAP2} wird die Kommunikation zwischen einem Authentifizierungsgerät und einem Client spezifiziert. Der Client ist dabei üblicherweise ein Webbrowser. Das Ziel ist es zu garantieren, dass der Client das Authentifizierungsgerät nur nutzen darf, wenn der Nutzer dies autorisiert. Dafür muss der Nutzer beispielsweise einen Knopf am Authentifizierungsgerät drücken und/oder sich mit Hilfe eines PINs oder eines biometrischen Merkmals beim Authentifizierungsgerät authentifizieren. Das Ziel von \ac{CTAP2} ist es zunächst den Client an das Authentifizierungsgerät zu binden. Ist dies nicht der Fall, so wird es dem Client nicht ermöglicht sich zu authentifizieren. Dies wird auch in \textbf{\ref{fido2-process}} abgebildet. Die blauen Darstellungen betreffen den Prozess von \ac{CTAP2}. Bevor die command message $m_{rcom}$ an das Authentifizierungsgerät $T$ gelangt, muss der Nutzer mit Hilfe der persönlichen PIN $t$ die Aktion über den  Client $C$ autorisieren. Nach der Eingabe erfolgt die Übergabe an das Authentifizierungsgerät $T$, welcher diese validiert. Bei nicht erfolgreicher Validierung wird der Prozess abgebrochen \cite{barbosa2021provable}.
+
+\ac{CTAP2} besteht dabei aus vier Phasen. Diese werden im Folgenden kurz erläutert. Da eine zu detailierte Beschreibung den Rahmen dieser Arbeit übertreffen würde, werden die Phasen lediglich in verinfachter Form erläutert. Eine detaillierte Darstellung ist \textbf{\ref{ctap2-process}} und wird genauer in \cite{barbosa2021provable} beschrieben. Folgende Phasen beinhaltet \ac{CTAP2}:
+
+\begin{enumerate}
+    \item In der Reboot Phase wird mit Hilfe eines unauthentifizierten \ac{ECDH} nach der NIST P-256 Spezifikation ein Schlüsselpaar $(a, aG)$ generiert (in \textbf{\ref{ctap2-process}} bezeichnet als ECKG). Zudem wird ein pinToken $pt$ erstellt und der mismatch counter $m$ auf den Wert drei gesetzt. Der mismatch counter $m$ wird genutzt, um die Anzahl der fehlgeschlagenen PIN Eingaben zu zählen \cite{barbosa2021provable}.  
+    \item In der Setup Phase erfolgt ein unauthentifizierter \ac{ECDH} Schlüsselaustausch, gefolgt von der Übertragung des verschlüsselten PIN $c_p$ des Nutzers an das Authentifizierungsgerät $T$. Der geteilte Schlüssel $K$ für die Entschlüssellung ermittelt sich durch das Hashen der x-Koordinate $abG.x$ des \ac{ECDH}. Durch die Nutzung von AES-256-CBC $CBC_0$ und des Schlüssels $K$ lässt sich die PIN $c_p$ entschlüsseln. Diese wird vom Authentifizierungsgerät $T$ validiert. Ist die Validierung erfolgreich, wird Hash des PIN $pin_u$ als statisches Geheimnis $st_T.s$ lokal auf dem Authentifizierungsgerät $T$ gespeichert und der retries counter $st_T.n$ auf den standard Wert von acht gesetzt. Fallen diese acht Versuche fehl, so wird das Authentifizierungsgerät $T$ gesperrt \cite{barbosa2021provable} \cite{bindel2022fido2}.
+    \item Die Bind Phase beginnt ebenfalls mit einem unauthentifizierten \ac{ECDH}. Darauf folgt eine Übertragung der erst gehashten und dann verschlüsselten PIN $c_{ph}$ vom Client $C$ an das Authentifizierungsgerät $T$. Diese wird vom AUthentifizierungsgerät $T$ entschlüsselt und mit dem statischen Geheimnis $st_T.s$ verglichen. Ist dieser Vergleich erfolgreich wird der pinToken $pt$ sowohl beim Authentifizerungsgerät $T$ als auch beim Client $C$ als binding state gesetzt \cite{barbosa2021provable} \cite{bindel2022fido2}.
+    \item Zuletzt findet die Validierungs- und Autorisierungsphase statt. Der Client $C$ schickt einen Befehl mit einem HMAC Tag an das Authentifizerungsgerät $T$. Dieses validiert den Tag und autorisiert den Befehl nur, wenn eine \textit{positive decision} $d$ des Nutzers vorliegt (beispielsweise einem Knopfdruck) \cite{barbosa2021provable} \cite{bindel2022fido2}.
+\end{enumerate}
+
+Eine in der Fachliteratur häufig genannte Kritik an \ac{CTAP2} ist die Verwendung des unauthentifizierten \ac{ECDH}, welcher während der Binding und Setup Phase genutzt wird. Dieser kann von \ac{MITM} Angriffen betroffen sein \cite{barbosa2021provable}.
+Zudem wird auch die Umsetzung der pinTokens kritisiert. Jedem Authentifizierungsgerät wird beim Hochfahren je ein pinToken zugeteilt. Das bedeutet mehrere Authentifizierungsgeräte können den gleichen pinToken besitzen. Dadurch wird die Sicherheit von \ac{CTAP2} limitiert \cite{barbosa2021provable}.
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=1\textwidth]{img/abbildungen/ctap2-process.png}
+	\captionsetup{format=hang}
+	\caption{CTAP2} \label{ctap2-process}
+\end{figure}
 
 \subsubsection{CTAP2.1}
 \begin{itemize}
