@@ -1,6 +1,14 @@
 \chapter{Umsetzung}
 
+Im Folgenden wird die Umsetzung einer Integration eines Security Keys in Kombination mit \ac{FIDO}2 innerhalb der \ac{LSY} beschrieben. Dabei wird der aktuelle Stand berücksichtigt und begründet ein passender Ansatz für die Integration gewählt. Zusätzlich wird die Umsetzung zum Aspekt der Benutzerfreundlichkeit analysiert.
+
 \section{Aktueller Stand der LSY}
+Innerhalb der \ac{LSY} werden aktuell verschiedene Verfahren zur Authentifizierung genutzt. Grundsätzlich besteht eine zentrale Nutzerverwaltung innerhalb der \ac{LSY}, welche innerhalb einer Microsoft Azure \ac{AD} verwaltet wird. Wie diese an eine Applikation gebunden ist, ist dabei nicht vorgegeben und kann von den jeweiligen ABteilungen individuell festgelegt werden. Auch Lösungsansätze ohne die Nutzung der Azure \ac{AD} sind je nach Abteilung möglich. Die einzige zentrale Schnittstelle ist somit die genannte Azure \ac{AD}.
+
+Diese bestehende Nutzerverwaltung basiert auf einer passwortbasierten Authentifizierung inklusive \ac{MFA}. Das Passwort muss von allen Nutzern in regelmäßigen Abständen (drei Monate) geändert werden. Der weitere Faktor für die Nutzung der \ac{MFA} kann frei von den Nutzern gewählt werden, solange er mit der Azure \ac{AD} kompatibel ist. Zusätzlich zur regelmäßigen Passwortänderungen, gibt es Richtlinien zur Passworterstellung, welche von den Nutzern eingehalten werden müsse. 
+
+
+Um die Integration eines Security Keys innerhalb der Lufthansa Systems zu testen, wird zunächst eine Integration in die aktuelle Umsetzung der Abteilung cGroup Solutions betrachtet. Diese Abteilung ist zuständig für das Produkt cFront, welches in \textbf{\ref{cFront-exp}} beschrieben ist. 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/Unknown.png}
