@@ -15,9 +15,9 @@
 \contentsline {figure}{\numberline {2.12}{\ignorespaces FIDO2 Darstellung\relax }}{29}{figure.caption.48}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces CTAP2\relax }}{32}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{38}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{39}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Keycloak\relax }}{40}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Security Key als zweiter Faktor in der Azure \ac {AD}\relax }}{37}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{38}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{40}{figure.caption.62}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{40}{figure.caption.63}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{41}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{42}{figure.caption.65}%

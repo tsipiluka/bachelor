@@ -2,12 +2,19 @@
 
 Im Folgenden wird die Umsetzung einer Integration eines Security Keys in Kombination mit \ac{FIDO}2 innerhalb der \ac{LSY} beschrieben. Dabei wird der aktuelle Stand berücksichtigt und begründet ein passender Ansatz für die Integration gewählt. Zusätzlich wird die Umsetzung zum Aspekt der Benutzerfreundlichkeit analysiert.
 
-\section{Aktueller Stand der LSY}
+\section{Aktueller Stand der LSY} \label{current}
 Innerhalb der \ac{LSY} werden aktuell verschiedene Verfahren zur Authentifizierung genutzt. Grundsätzlich besteht eine zentrale Nutzerverwaltung innerhalb der \ac{LSY}, welche innerhalb einer Microsoft Azure \ac{AD} verwaltet wird. Wie diese an eine Applikation gebunden ist, ist dabei nicht vorgegeben und kann von den jeweiligen ABteilungen individuell festgelegt werden. Auch Lösungsansätze ohne die Nutzung der Azure \ac{AD} sind je nach Abteilung möglich. Die einzige zentrale Schnittstelle ist somit die genannte Azure \ac{AD}.
 
 Diese bestehende Nutzerverwaltung basiert auf einer passwortbasierten Authentifizierung inklusive \ac{MFA}. Das Passwort muss von allen Nutzern in regelmäßigen Abständen (drei Monate) geändert werden. Der weitere Faktor für die Nutzung der \ac{MFA} kann frei von den Nutzern gewählt werden, solange er mit der Azure \ac{AD} kompatibel ist. Zusätzlich zur regelmäßigen Passwortänderungen, gibt es Richtlinien zur Passworterstellung, welche von den Nutzern eingehalten werden müssen. 
 
-Grundsätzlich ist eine Integration eines Security Keys als \ac{SFA} mit Hilfe einer Azure \ac{AD} möglich. Auch als zweiten Faktor für eine \ac{MFA} kann ein Security Key genutzt werden. Diese Funktion ist innerhalb der \ac{LSY} allerdings nicht aktiviert, da diese Art der Authentifizierung nicht den Richtlinien des Unternehmens entspricht. Eine Änderung dieser Richtlinien ist möglich, erfordert allerdings einen sehr hohen Aufwand und viel Zeit. Da der Bearbeitungsraum dieser Arbeit zeitlich limitiert ist, wird aus den genannten Gründen keine \ac{LSY} weite Integration eines Security Keys betrachtet. Dennoch soll eine Integration in einem kleinerem Rahmen auf Abteilungsebene getestet werden. Dies soll eine Aussage ermöglichen, ob eine Umstellung der aktuellen Richtlinien sinnvoll ist und eine Integration eines Security Keys in der gesamten \ac{LSY} möglich ist.
+Grundsätzlich ist eine Integration eines Security Keys als \ac{SFA} mit Hilfe einer Azure \ac{AD} möglich. Diese Funktion ist innerhalb der \ac{LSY} allerdings nicht aktiviert, da diese Art der Authentifizierung nicht den Richtlinien des Unternehmens entspricht. Eine Änderung dieser Richtlinien ist möglich, erfordert allerdings einen sehr hohen Aufwand und viel Zeit. Lediglich die Verwendung eines Security Keys als zweiten Faktor für eine \ac{MFA} wird von der \ac{LSY} unterstützt und ist auch mit der Azure \ac{AD} kompatibel (siehe \textbf{\ref{azure-seckey}}) Da der Bearbeitungsraum dieser Arbeit zeitlich limitiert ist, wird aus den genannten Gründen keine \ac{LSY} weite Integration eines Security Keys betrachtet. Dennoch soll eine Integration in einem kleinerem Rahmen auf Abteilungsebene getestet werden. Dies soll eine Aussage ermöglichen, ob eine Umstellung der aktuellen Richtlinien sinnvoll ist und eine Integration eines Security Keys in der gesamten \ac{LSY} möglich ist.
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.6\textwidth]{img/abbildungen/azure_seckey.png}
+	\captionsetup{format=hang}
+	\caption{Security Key als zweiter Faktor in der Azure \ac{AD}} \label{azure-seckey}
+\end{figure}
 
 Für diese Testphase wird die Abteilung cGroup Solutions ausgewählt. Diese ist zuständig für das Produkt cFront, welches in \textbf{\ref{cFront-exp}} beschrieben ist. Innerhalb der Abteilung wird aktuell eine passwortbasierte Authentifizierung gegen die Azure \ac{AD} inklusive \ac{MFA} genutzt. Vorteilhaft für die Integration eines Security Keys ist, dass die Abteilung zusätzlich Keycloak für die Identitäts- und Zugriffsverwaltung nutzt. Keycloak ist eine Open-Source-Plattform für Identitäts- und Zugriffsmanagement, die Single Sign-On, Benutzerverwaltung und Sicherheitsfunktionen bietet, um die Authentifizierung und Autorisierung in Anwendungen zu erleichtern. Es wird verwendet, um Benutzer sicher anzumelden, ihre Zugriffsrechte zu verwalten und die Integration mit anderen Identitätsdiensten zu unterstützen \cite{keycloak}. Somit bietet sich eine neue Schnittstelle für die testweise Integration eines Security Keys an, da Keycloak zwar die Schnittstelle zur Azure \ac{AD} nutzt, allerdings zusätzlich auch eine eigene Nutzerverwaltung besitzt. Dies erfordert keine Änderungen der aktuellen Richtlinien oder große technische Umstellungen innerhalb der gesamten \ac{LSY}, sondern ermöglicht eine Integration auf Abteilungsebene.
 
@@ -35,58 +42,44 @@ Die Wahl des Security Keys richtete sich allerdings unter anderem an der Kompati
 
 Die endgültige Auswahl basiert auf dem bestehenden Bestand eines Yubikeys der Series 5 mit NFC. Dieser ist mit der Azure \ac{AD} nutzbar. Grundsätzlich ist allerdings auch eine Nutzung eines anderen Security Keys möglich, sofern dieser das \ac{FIDO}2-Protokoll unterstützt, in der Kompatibilitätsliste von Microsoft aufgeführt ist und und offiziel von der \ac{FIDO} Allianz zertifiziert wurde.
 
-Sollte die Nutzung eines Security Keys innerhalb der \ac{LSY} in Zukunft erweitert werden, so wird eine neue weitreichende Analsyse notwendig. Da im Rahmen dieser Arbeit lediglich eine Testphase auf Abteilungsebene stattfindet und die grundsätzliche Funktionsweise der unterschiedlichen Security Keys ähnlich ist, wird auf eine detaillierte Analyse der unterschiedlichen Security Keys verzichtet.
+Sollte die Nutzung eines Security Keys innerhalb der \ac{LSY} in Zukunft erweitert werden, so wird eine neue weitreichende Analyse notwendig. Da im Rahmen dieser Arbeit lediglich eine Testphase auf Abteilungsebene stattfindet und die grundsätzliche Funktionsweise der unterschiedlichen Security Keys ähnlich ist, wird auf eine detaillierte Analyse der unterschiedlichen Security Keys verzichtet.
 
 \section{Integration eines Yubikeys in die LSY}
+
+Grundsätzlich bieten sich zwei Möglichkeiten für die Integration eines Security Keys in die Abteilung cGroup Solutions an. Die erste Option wurde bereits \textbf{\ref{current}} beschrieben. Hierbei würde eine Authentifizierung der Nutzer ohne Umwege gegen die Azure \ac{AD} stattfinden, wie in \textbf{\ref{azure-imp}} vereinfacht dargestellt. Diese Option ist nativ mit der Azure \ac{AD} kompatibel und erfordert technisch lediglich eine Anpassung der aktuellen Konfiguration. Dies würde zu einer \ac{LSY} weiten Integration führen, da die Azure \ac{AD} als zentrale Nutzerverwaltung genutzt wird.
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.6\textwidth]{img/abbildungen/azure_umsetzung.png}
 	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Azure \ac{AD}}
+	\caption{Umsetzungsmöglichkeit mit Azure \ac{AD}} \label{azure-imp}
 \end{figure}
 
-\begin{itemize}
-    \item Grundsätzlich gibt es zwei Möglichkeiten in die aktuelle Applikation eine passwortlose Authentifizierung mit Hilfe eines Yubikeys zu integrieren: Die Nutzung der Authentifizierung gegen das Azure \ac{AD} oder die eine veränderte Nutzung der aktuellen Keycloak-Lösung.
+Die zweite Option würde Gebrauch von der Schnittstelle des Keycloak-Servers innerhalb der Abteilung cGroup Solutions zu machen. Diese Option würde somit nur die Abteilung betreffen und erfordert eine technische Veränderung der aktuellen Konfiguration des Keycloak-Servers. Hierbei würden nur bestimmten Nutzern die Möglichkeit gegeben werden, sich mit Hilfe eines Security Keys anzumelden, da der Security Key lediglich vom Keycloak-Server dem Nutzer zugeordnet wird. Also hat diese Option keine Auswirkungen auf die zentrale Nutzerverwaltung. 
 
-\end{itemize}
+Da es sich wie in \textbf{\ref{current}} beschrieben lediglich um eine Testphase handelt, welche nur die Abteilung cGroup Solutions betrifft, wird die zweite Option gewählt. Dies liegt insbesondere an dem hohen organisatorischen Aufwand die aktuellen Richtlinien der \ac{LSY} verändern zu lassen und die technische Umstellung der Azure \ac{AD} zu beantragen. Da die zentrale Nutzerverwaltung ein wichtiger Bestandteil aller Applikationen ist, wäre zudem ein zu hohes Risiko vorhanden, sollten technische Probleme auftreten. 
 
-Eine Lufthansa-weite Policy für die Nutzung der Azure \ac{AD} verbietet allerdings die Nutzung eines Security Keys für eine \ac{SFA}. Hier kann der Security Key lediglich als zweiter Faktor genutzt werden. Dies kann jeder Nutzer selber verwalten. Registriert ein Nutzer seinen Security Key in seinem Profil, erscheint bei der Anmeldung (nach der Eingabe des Passwortes) ein zusätzliches Feld:
+Um die genannte Option mit Hilfe von Keycloak umzusetzen, müsste der aktuelle Prozess aus \textbf{\ref{current-imp}} wie folgt angepasst werden:
 
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=0.6\textwidth]{img/abbildungen/azure_seckey.png}
-	\captionsetup{format=hang}
-	\caption{Umsetzungsmöglichkeit mit Keycloak}
-\end{figure}
-
-Verwendet der Nutzer einen Security Key wird dieser im Folenden aufgefordert die zugehörige PIN einzugeben und den Knopf des Security Keys zu drücken. Grundsätzlich ist eine passwortlose Authentifizierung mit Hilfe eines Security Keys innerhalb der Azure \ac{AD} möglich. Da eine Änderung dieser Lufthansa Policy notwendig wäre, übersteigt dies allerdings den Rahmen dieser Arbeit.
-
-Da allerdings aktuell eine beschriebene Nutzung von Keycloak stattfindet und Keycloak eine passwortlose Authentifizierung mit Hilfe eines Security Keys unterstützt, wäre eine Umsetzung mit Hilfe von Keycloak möglich. Hierbei wird die aktuelle Lösung verändert und entsprechend angepasst:
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/keycloak_browser.png}
 	\captionsetup{format=hang}
 	\caption{Veränderter Keycloak-Login}
 \end{figure}
 
-Statt bei einer Anmeldung einen Client zu simulieren bietet Keycloak die Möglichkeit eine Anmeldung über eine Nutzeroberfläche zu realisieren. Dafür wird ein redirect auf die Keycloak-Login-Seite durchgeführt. Bei einer erfolgreichen Verifizierung wird der Nutzer zurück auf die Applikation geleitet und vom Keycloak-Server mit Hilfe eines oAuth2-Tokens authentifiziert. 
+Statt die Anmeldung eines Client zu simulieren, lässt sich mit  Keycloak eine Anmeldung über eine Nutzeroberfläche realisieren. Diese wird dabei selbst von Keycloak gestellt. Dafür wird ein redirect auf die Keycloak Login-Seite durchgeführt. Bei einer erfolgreichen Verifizierung wird der Nutzer zurück auf die Applikation geleitet und vom Keycloak-Server mit Hilfe eines oAuth2-Tokens authentifiziert. 
 
-Um eine Passwortlose Authentifizierung in Keycloak zu ermöglichen, muss der Authentication Flow für eine Browser-Anmeldung modifiziert werden. Der angepasste Authentication Flow besteht aus folgenden Schritten:
+Diese Umstellung muss in Keycloak selbst konfiguriert werden. Dafür muss der sog. \textit{Authentication Flow} modifiziert werden. Statt einer Client-Anmeldung erfolgt eine Anmeldung via Browser. Für die Testphase werden zwei Optionen in den Authentication Flow integriert, welcher in \textbf{\ref{auth-flow}} dargestellt sind. Der obere Pfad wird für die passwortlose Authentifizierung genutzt. Dabei gibt der Nutzer zunächst seinen Username ein und authentifiziert sich anschließend mit Hilfe eines Security Keys und WebAuthn (inklusive CTAP2.1). Der Username wird dabei benötigt, um Nutzern die Möglichkeit zu geben sich mit einem Security Key für mehrere Zugänge zu authentifizieren. Darf ein Nutzer lediglich einen Zugang zur Anwendung besitzen, so kann die Eingabe des Username grundsätzlich entfallen. Der untere Pfad wird für die typische passwortbasierte Authentifizierung genutzt. Diese wird nur integriert da es sich um eine Testphase handelt und dient als Absicherung im Falle von technischen Problemen. Grundsätzlich ist eine Authentifizierung entsprechend des oberen Pfades ausreichend.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering 
 	\includegraphics[width=0.7\textwidth]{img/abbildungen/authentication_flow.png}
 	\captionsetup{format=hang}
-	\caption{Authentication Flow}
+	\caption{Authentication Flow} \label{auth-flow}
 \end{figure}
 
-Hierbei wird die untere Hälfte der Grafik weiterhin ermöglicht, da es sich lediglich um einen Test handelt. Grundsätzlich wird diese nicht ermöglicht, da Keycloak eine reine passwortlose \ac{SFA} unterstützt.
-
-Die obere Hälfte der Grafik entspricht dem für diese Arbeit relevanten Authentication Flow. Dabei wird der User zunächst aufgefordert seinen Nutzernamen einzugeben und anschließend seinen Security Key zu verwenden. Dies ist notwendig, um die Nutzung eines Security Keys für mehrere Zugänge zu ermöglichen. Ermöglicht man lediglich die Nutzung eines Zugangs pro Security Key, so wird die Eingabe des Nutzernamens nicht benötigt. Zusätzlich erfolgt eine Konfiguration des Keycloak-Servers, welche die Registrierung eines Security Keys bei der Registrierung eines neuen Nutzers ermöglicht.
-
-Mit Hilfe dieser Konfiguration werden zwei Abläufe ermöglicht. Eine neue Registrierung:
+Nach der einer erfolgreichen Konfiguration des Authentication Flows, entstehen zwei neue Prozesse für die Anmeldung und für die Registrierung eines Nutzers. Diese werden in den folgenden Grafiken dargestellt:
 
 \begin{figure}[H]
 	\centering 
@@ -95,8 +88,6 @@ Mit Hilfe dieser Konfiguration werden zwei Abläufe ermöglicht. Eine neue Regis
 	\caption{Registrierung (vereinfacht)}
 \end{figure}
 
-Sowie eine neue Anmeldung:
-
 \begin{figure}[H]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/login_simplified.png}
@@ -104,7 +95,7 @@ Sowie eine neue Anmeldung:
 	\caption{Anmeldung (vereinfacht)}
 \end{figure}
 
-Die Grafiken stellen den vereinfachten Ablauf der Registrierung und Anmeldung mit Hilfe eines Security Keys dar. Die detailierte Darstellung der Funktionsweise ist in Kapitel 2.7 zu finden. Der entscheidende Unterschied der beiden Prozesse ist allerdings, dass bei der Registrierung lediglich der öffentliche Schlüssel übergeben wird, während bei der Anmeldung der private Schlüssel benötigt wird. Dieser wird allerdings nicht übergeben, sondern signiert eine Login Challenge, welche vom Keycloak-Server generiert wird. Kann der Keycloak-Server die Signatur mit Hilfe des gespeicherten öffentlichen Schlüssels verifizieren, wird der Nutzer authentifiziert. Sowohl die Registrierung als auch die Anmeldung erfolgen hierbei also nicht über die Anwendung selbst, sondern über den Keycloak-Server und dessen Nutzeroberfläche.
+Die Grafiken stellen den vereinfachten Ablauf der Registrierung und Anmeldung mit Hilfe eines Security Keys dar. Eine detailierte technische Erläuterung und Darstellung der Funktionsweise ist \textbf{\ref{fido2}}zu finden. Der entscheidende Unterschied der beiden Prozesse ist allerdings, dass bei der Registrierung lediglich der öffentliche Schlüssel übergeben wird, während bei der Anmeldung der private Schlüssel benötigt wird. Dieser wird allerdings nicht übergeben, sondern signiert eine Login Challenge, welche vom Keycloak-Server generiert wird. Kann der Keycloak-Server die Signatur mit Hilfe des gespeicherten öffentlichen Schlüssels verifizieren, wird der Nutzer authentifiziert. Sowohl die Registrierung als auch die Anmeldung erfolgen hierbei also nicht über die Anwendung selbst, sondern über den Keycloak-Server und dessen Nutzeroberfläche.
 
 \section{User Feedback}
 Um eine Aussage über die Akzeptanz und die Benutzerfreundlichkeit der aufgezeigten Umsetzung zu treffen, wird ein Feedback von den Nutzern der Abteilung cGroup Solutions eingeholt. Um eine wissenschaftliche Aussage zu treffen wird ein Fragebogen erstellt. Es handelt sich dabei um eine Mischform aus einer qualitativen und einer quantitativen Befragung. So wird es ermöglicht eine numerische Auswertung der Antworten zu erhalten, sowie eine qualitative Auswertung der Kommentare. Im Folgenden wird die Durchführung des Fragebogens beschrieben.

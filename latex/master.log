@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  9 AUG 2023 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  9 AUG 2023 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1234,127 +1234,138 @@ Package acronym Info: Label `acro:U2F' newly defined as it shall be overridden
 although it is yet undefined on input line 317.
  [33] [34]) (./content/c4.tex [35]
 chapter 3.
+
+LaTeX Warning: Reference `azure-seckey' on page 36 undefined on input line 10.
+
 [36
 
 ]
-
-LaTeX Warning: Citation 'keycloak' on page 37 undefined on input line 12.
-
-
-Overfull \hbox (6.53319pt too wide) in paragraph at lines 14--15
-\T1/lmr/m/n/12 Server, son-dern nutzt ei-ne selbst ent-wi-ckel-te An-wen-dung, wel-che sich als Keycloak-
- []
-
-[37]
-<img/abbildungen/Unknown.png, id=845, 869.2475pt x 118.4425pt>
-File: img/abbildungen/Unknown.png Graphic file (type png)
-<use img/abbildungen/Unknown.png>
-Package pdftex.def Info: img/abbildungen/Unknown.png  used on input line 19.
-(pdftex.def)             Requested size: 408.2971pt x 55.63544pt.
-
-
-LaTeX Warning: Citation 'compWin' on page 38 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'seckeytest' on page 38 undefined on input line 34.
-
-[38 <./img/abbildungen/Unknown.png>]
-<img/abbildungen/azure_umsetzung.png, id=860, 363.3575pt x 74.2775pt>
-File: img/abbildungen/azure_umsetzung.png Graphic file (type png)
-<use img/abbildungen/azure_umsetzung.png>
-Package pdftex.def Info: img/abbildungen/azure_umsetzung.png  used on input line 44.
-(pdftex.def)             Requested size: 244.98074pt x 50.0796pt.
-<img/abbildungen/azure_seckey.png, id=866, 330.48468pt x 91.84312pt>
+<img/abbildungen/azure_seckey.png, id=836, 330.48468pt x 91.84312pt>
 File: img/abbildungen/azure_seckey.png Graphic file (type png)
 <use img/abbildungen/azure_seckey.png>
-Package pdftex.def Info: img/abbildungen/azure_seckey.png  used on input line 58.
+Package pdftex.def Info: img/abbildungen/azure_seckey.png  used on input line 14.
 (pdftex.def)             Requested size: 244.98074pt x 68.08334pt.
 
 
+LaTeX Warning: Citation 'keycloak' on page 37 undefined on input line 19.
+
+
+Overfull \hbox (6.53319pt too wide) in paragraph at lines 21--22
+\T1/lmr/m/n/12 Server, son-dern nutzt ei-ne selbst ent-wi-ckel-te An-wen-dung, wel-che sich als Keycloak-
+ []
+
+[37 <./img/abbildungen/azure_seckey.png>]
+<img/abbildungen/Unknown.png, id=852, 869.2475pt x 118.4425pt>
+File: img/abbildungen/Unknown.png Graphic file (type png)
+<use img/abbildungen/Unknown.png>
+Package pdftex.def Info: img/abbildungen/Unknown.png  used on input line 26.
+(pdftex.def)             Requested size: 408.2971pt x 55.63544pt.
+
+
+LaTeX Warning: Citation 'compWin' on page 38 undefined on input line 41.
+
+
+LaTeX Warning: Citation 'seckeytest' on page 38 undefined on input line 41.
+
+[38 <./img/abbildungen/Unknown.png>]
+
+LaTeX Warning: Reference `current' on page 39 undefined on input line 49.
+
+
+LaTeX Warning: Reference `azure-imp' on page 39 undefined on input line 49.
+
+<img/abbildungen/azure_umsetzung.png, id=870, 363.3575pt x 74.2775pt>
+File: img/abbildungen/azure_umsetzung.png Graphic file (type png)
+<use img/abbildungen/azure_umsetzung.png>
+Package pdftex.def Info: img/abbildungen/azure_umsetzung.png  used on input line 53.
+(pdftex.def)             Requested size: 244.98074pt x 50.0796pt.
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[39 <./img/abbildungen/azure_umsetzung.png>]
-<img/abbildungen/keycloak_browser.png, id=874, 628.3475pt x 118.4425pt>
+[39]
+
+LaTeX Warning: Reference `current' on page 40 undefined on input line 60.
+
+<img/abbildungen/keycloak_browser.png, id=881, 628.3475pt x 118.4425pt>
 File: img/abbildungen/keycloak_browser.png Graphic file (type png)
 <use img/abbildungen/keycloak_browser.png>
-Package pdftex.def Info: img/abbildungen/keycloak_browser.png  used on input line 69.
+Package pdftex.def Info: img/abbildungen/keycloak_browser.png  used on input line 66.
 (pdftex.def)             Requested size: 408.2971pt x 76.96321pt.
-<img/abbildungen/authentication_flow.png, id=875, 442.65375pt x 181.67876pt>
+[40 <./img/abbildungen/azure_umsetzung.png> <./img/abbildungen/keycloak_browser.png>]
+
+LaTeX Warning: Reference `auth-flow' on page 41 undefined on input line 73.
+
+<img/abbildungen/authentication_flow.png, id=888, 442.65375pt x 181.67876pt>
 File: img/abbildungen/authentication_flow.png Graphic file (type png)
 <use img/abbildungen/authentication_flow.png>
-Package pdftex.def Info: img/abbildungen/authentication_flow.png  used on input line 80.
+Package pdftex.def Info: img/abbildungen/authentication_flow.png  used on input line 77.
 (pdftex.def)             Requested size: 285.80672pt x 117.31079pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[40 <./img/abbildungen/azure_seckey.png> <./img/abbildungen/keycloak_browser.png>]
-<img/abbildungen/register_simplified.png, id=883, 590.205pt x 201.75375pt>
+<img/abbildungen/register_simplified.png, id=889, 590.205pt x 201.75375pt>
 File: img/abbildungen/register_simplified.png Graphic file (type png)
 <use img/abbildungen/register_simplified.png>
-Package pdftex.def Info: img/abbildungen/register_simplified.png  used on input line 93.
+Package pdftex.def Info: img/abbildungen/register_simplified.png  used on input line 86.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
- [41 <./img/abbildungen/authentication_flow.png>]
-<img/abbildungen/login_simplified.png, id=889, 590.205pt x 201.75375pt>
+[41 <./img/abbildungen/authentication_flow.png>]
+<img/abbildungen/login_simplified.png, id=895, 590.205pt x 201.75375pt>
 File: img/abbildungen/login_simplified.png Graphic file (type png)
 <use img/abbildungen/login_simplified.png>
-Package pdftex.def Info: img/abbildungen/login_simplified.png  used on input line 102.
+Package pdftex.def Info: img/abbildungen/login_simplified.png  used on input line 93.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
  [42 <./img/abbildungen/register_simplified.png> <./img/abbildungen/login_simplified.png>] [43]
-<img/abbildungen/chart-2.png, id=901, 1606.0pt x 903.375pt>
+<img/abbildungen/chart-2.png, id=908, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart-2.png Graphic file (type png)
 <use img/abbildungen/chart-2.png>
-Package pdftex.def Info: img/abbildungen/chart-2.png  used on input line 126.
+Package pdftex.def Info: img/abbildungen/chart-2.png  used on input line 117.
 (pdftex.def)             Requested size: 326.63892pt x 183.73193pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [44]
-<img/abbildungen/chart_rollen.png, id=906, 1606.0pt x 903.375pt>
+<img/abbildungen/chart_rollen.png, id=913, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart_rollen.png Graphic file (type png)
 <use img/abbildungen/chart_rollen.png>
-Package pdftex.def Info: img/abbildungen/chart_rollen.png  used on input line 137.
+Package pdftex.def Info: img/abbildungen/chart_rollen.png  used on input line 128.
 (pdftex.def)             Requested size: 285.80672pt x 160.76715pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/reg001.png, id=907, 389.95688pt x 139.27031pt>
+<img/abbildungen/reg001.png, id=914, 389.95688pt x 139.27031pt>
 File: img/abbildungen/reg001.png Graphic file (type png)
 <use img/abbildungen/reg001.png>
-Package pdftex.def Info: img/abbildungen/reg001.png  used on input line 149.
+Package pdftex.def Info: img/abbildungen/reg001.png  used on input line 140.
 (pdftex.def)             Requested size: 285.80672pt x 102.07661pt.
 [45 <./img/abbildungen/chart-2.png>]
-<img/abbildungen/reg002.png, id=914, 339.51843pt x 193.47281pt>
+<img/abbildungen/reg002.png, id=921, 339.51843pt x 193.47281pt>
 File: img/abbildungen/reg002.png Graphic file (type png)
 <use img/abbildungen/reg002.png>
-Package pdftex.def Info: img/abbildungen/reg002.png  used on input line 158.
+Package pdftex.def Info: img/abbildungen/reg002.png  used on input line 149.
 (pdftex.def)             Requested size: 285.80672pt x 162.87326pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/reg003.png, id=915, 338.01282pt x 207.77625pt>
+<img/abbildungen/reg003.png, id=922, 338.01282pt x 207.77625pt>
 File: img/abbildungen/reg003.png Graphic file (type png)
 <use img/abbildungen/reg003.png>
-Package pdftex.def Info: img/abbildungen/reg003.png  used on input line 167.
+Package pdftex.def Info: img/abbildungen/reg003.png  used on input line 158.
 (pdftex.def)             Requested size: 285.80672pt x 175.69121pt.
 [46 <./img/abbildungen/chart_rollen.png> <./img/abbildungen/reg001.png>]
-<img/abbildungen/reg004.png, id=922, 338.01282pt x 200.24812pt>
+<img/abbildungen/reg004.png, id=929, 338.01282pt x 200.24812pt>
 File: img/abbildungen/reg004.png Graphic file (type png)
 <use img/abbildungen/reg004.png>
-Package pdftex.def Info: img/abbildungen/reg004.png  used on input line 176.
+Package pdftex.def Info: img/abbildungen/reg004.png  used on input line 167.
 (pdftex.def)             Requested size: 285.80672pt x 169.32559pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47 <./img/abbildungen/reg002.png> <./img/abbildungen/reg003.png>]
-<img/abbildungen/passkey_demo.png, id=929, 479.7925pt x 350.30875pt>
+<img/abbildungen/passkey_demo.png, id=936, 479.7925pt x 350.30875pt>
 File: img/abbildungen/passkey_demo.png Graphic file (type png)
 <use img/abbildungen/passkey_demo.png>
-Package pdftex.def Info: img/abbildungen/passkey_demo.png  used on input line 187.
+Package pdftex.def Info: img/abbildungen/passkey_demo.png  used on input line 178.
 (pdftex.def)             Requested size: 285.80672pt x 208.67415pt.
 
 
@@ -1362,35 +1373,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [48 <./img/abbildungen/reg004.png>]
 
-LaTeX Warning: Citation 'techstat' on page 49 undefined on input line 214.
+LaTeX Warning: Citation 'techstat' on page 49 undefined on input line 205.
 
 [49 <./img/abbildungen/passkey_demo.png>]
 
-LaTeX Warning: Citation 'lyastani2020fido' on page 50 undefined on input line 234.
+LaTeX Warning: Citation 'lyastani2020fido' on page 50 undefined on input line 225.
 
 [50] [51] [52]
 
-LaTeX Warning: Citation 'techstat' on page 53 undefined on input line 290.
+LaTeX Warning: Citation 'techstat' on page 53 undefined on input line 281.
 
-<img/abbildungen/chart_anmeldung_register.png, id=978, 1606.0pt x 903.375pt>
+<img/abbildungen/chart_anmeldung_register.png, id=985, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart_anmeldung_register.png Graphic file (type png)
 <use img/abbildungen/chart_anmeldung_register.png>
-Package pdftex.def Info: img/abbildungen/chart_anmeldung_register.png  used on input line 294.
+Package pdftex.def Info: img/abbildungen/chart_anmeldung_register.png  used on input line 285.
 (pdftex.def)             Requested size: 285.80672pt x 160.76715pt.
 [53] [54 <./img/abbildungen/chart_anmeldung_register.png>]
 Package acronym Info: Label `acro:SSO' newly defined as it shall be overridden
-although it is yet undefined on input line 316.
+although it is yet undefined on input line 307.
  [55]
-Overfull \hbox (9.83685pt too wide) in paragraph at lines 323--324
+Overfull \hbox (9.83685pt too wide) in paragraph at lines 314--315
 []\T1/lmr/m/n/12 Zur rei-nen Be-nut-zer-freund-lich-keit merk-te ein Teil-neh-mer an, dass ein schlech-
  []
 
 [56] [57]
 
-LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 340.
+LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 331.
 
 
-LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 340.
+LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 331.
 
 ) (./content/c5.tex [58]
 chapter 4.
@@ -1413,6 +1424,9 @@ Overfull \hbox (2.86087pt too wide) in paragraph at lines 107--107
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1425,18 +1439,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30107 strings out of 478268
- 592729 string characters out of 5846347
+ 30111 strings out of 478268
+ 592774 string characters out of 5846347
  1547967 words of memory out of 5000000
- 47614 multiletter control sequences out of 15000+600000
+ 47618 multiletter control sequences out of 15000+600000
  509035 words of font info for 51 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on master.pdf (73 pages, 1952809 bytes).
+Output written on master.pdf (73 pages, 1954031 bytes).
 PDF statistics:
- 1253 PDF objects out of 1440 (max. 8388607)
- 1087 compressed objects within 11 object streams
+ 1260 PDF objects out of 1440 (max. 8388607)
+ 1093 compressed objects within 11 object streams
  255 named destinations out of 1000 (max. 500000)
  423 words of extra memory for PDF output out of 10000 (max. 10000000)
 
