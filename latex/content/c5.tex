@@ -13,3 +13,36 @@ Grundsätzlich ist eine Nutzung von FIDO2 als Alternative zur klassischen Passwo
 Daraus folgt die Empfehlung für die \ac{LSY} nicht direkt auf FIDO2 in Kombination mit Security Keys zu setzen. Stattdessen sollte das Bewusstsein für passwortlose Alternativen erweitert werden. Die Offenheit für Alternativen sollte ebenfalls gefördert. Zusätzlich sollte die Etablierung von FIDO2 weiter beobachtet werden. Sobald eine ausschließliche Nutzung möglich ist, sollte eine Umstellung erfolgen.
 
 \chapter{Ausblick Passkeys}
+Ein Problem der Nutzung von FIDO2 mit Hilfe von Security Keys ist die Abhängigkeit an ein einzelnes Gerät. Mit Passkeys stellt FIDO2 eine Alternative, welche multi-device fähige Zugangsdaten ermöglicht \cite{usecasfido}.
+
+Abhängigkeit von Anbietern für beispielsweise Authenticator Apps, welche diese Möglichkeit integrieren müssen. Technisch ist dies mit FIDO2 allerdings schon integriert \cite{usecasfido}.
+
+Erhöhte Benutzerfreundlichkeit gegenüber Security Keys. Keine zusätzliche Hardware notwendig, bzw. möglich mehrere Geräte zu nutzen \cite{usecasfido}.
+
+Vergleichbar wie die Nutzung von auto fill Passwortmanagern, allerdings mit erhöhter Sicherheit und ohne Notwendigkeit von \ac{MFA} \cite{usecasfido} \cite{passkeysgoogle}.
+
+Typischerweise würde die für CTAP2.1 benötigte autorisierung mit Hilfe eines biometrisches Merkmales erfolgen \cite{usecasfido}.
+
+So würde eine Abhängigkeit an die Hardware-Anbieter bestehen. Denn die Sicherheit der Passkeys würde von der Sicherheit der Hardware und des Betriebsystems abhängen, auf welchem die Passkeys gespeichert werden \cite{usecasfido}.
+
+Zusätzlich ermöglicht der FIDO2 Standard die Nutzung von Bluetooth. Dies ermöglicht eine Nutzung von Passkeys mit mobilen Geräten. Dies ist eine Absicherung, falls eine Synchronisierung von Passkeys nicht möglich ist. Dies könnte beispielsweise der Fall sein, wenn Geräte unterschiedlicher Anbieter genutzt werden \cite{usecasfido}.
+
+Dabei kann zusätzlich zum synchronisierten Passkey optional ein Gerätespezifischer Schlüssel erzeugt werden. Der Passkey kann somit nur mit den Geräten genutzt werden, welche einen Gerätespezifischen Schlüssel besitzen \cite{usecasfido}. Dies würde die Sicherheit erhöhen, da die Anbieter der Synchronisierungsdienste keinen Zugriff auf die Passkeys hätten.
+
+Der Google Password Manager ermöglicht bereits eine Synchronisierung der Passkeys und verschlüsselt diese zusätzlich. Der benötigte private Schlüssel für die Verschlüssellung wird dabei lediglich auf dem Gerät selbst gespeichert und ist dort zusätzlich verschlüsselt \cite{passkeysgoogle}.
+
+Zusätzlich ermöglicht dieser auch die Nutzung des Passkeys inklusive eines device-bound Schlüssels. Dieser Schlüssel wird auf Android Geräten auf der \ac{TEE} gespeichert. Somit ist dieser zusätzlich auf der Hardware-Ebene geschützt. Das bedeutet allerdings auch, dass dieser nicht von Backups betroffen ist und nicht wiederherstellbar ist \cite{passkeysgoogle}.
+
+Auch Apple bietet die synchronisierte Nutzung von Passkeys an. Diese werden dabei in der iCloud Keychain gespeichert. Diese ist dabei ebenfalls lediglich in verschlüsselter Form synchronisiert. Eine Möglichkeit zur Nutzung von Passkeys inkluse eines device-bound Schlüssels wird aktuell nicht in der Dokumentation von Apple erwähnt \cite{passkeysapple}.
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.7\textwidth]{img/abbildungen/multi-device-fido2.png}
+	\captionsetup{format=hang}
+	\caption{Multi-device FIDO und Single-device FIDO \cite{usecasfido}} \label{azure-seckey}
+\end{figure}
+
+
+
+
+

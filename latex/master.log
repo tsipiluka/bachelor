@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  9 AUG 2023 17:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  10 AUG 2023 16:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -821,7 +821,11 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./master.aux)
+) (./master.aux
+
+LaTeX Warning: Label `azure-seckey' multiply defined.
+
+)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1003,7 +1007,7 @@ Package scrlayer-scrpage Warning: \footheight to low.
 
  [4] (./master.lof
 Package acronym Info: Label `acro:AD' newly defined as it shall be overridden
-although it is yet undefined on input line 19.
+although it is yet undefined on input line 18.
  [5
 
 ])
@@ -1051,7 +1055,7 @@ l.11
 
 ] [2]) (./content/c3.tex [3]
 chapter 2.
-<img/abbildungen/MicrosoftTeams-image (3).png, id=318, 1431.3475pt x 906.38625pt>
+<img/abbildungen/MicrosoftTeams-image (3).png, id=326, 1431.3475pt x 906.38625pt>
 File: img/abbildungen/MicrosoftTeams-image (3).png Graphic file (type png)
 <use img/abbildungen/MicrosoftTeams-image (3).png>
 Package pdftex.def Info: img/abbildungen/MicrosoftTeams-image (3).png  used on input line 10.
@@ -1059,7 +1063,7 @@ Package pdftex.def Info: img/abbildungen/MicrosoftTeams-image (3).png  used on i
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/CIA-Triad.png, id=320, 495.8525pt x 338.26375pt>
+<img/abbildungen/CIA-Triad.png, id=328, 495.8525pt x 338.26375pt>
 File: img/abbildungen/CIA-Triad.png Graphic file (type png)
 <use img/abbildungen/CIA-Triad.png>
 Package pdftex.def Info: img/abbildungen/CIA-Triad.png  used on input line 22.
@@ -1067,27 +1071,21 @@ Package pdftex.def Info: img/abbildungen/CIA-Triad.png  used on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation 'pons' on page 4 undefined on input line 28.
-
 [4
 
 ]
-
-LaTeX Warning: Citation 'pons' on page 5 undefined on input line 33.
-
 Package acronym Info: Label `acro:IDS' newly defined as it shall be overridden
 although it is yet undefined on input line 35.
-[5 <./img/abbildungen/MicrosoftTeams-image (3).png>]
+ [5 <./img/abbildungen/MicrosoftTeams-image (3).png>]
 Package acronym Info: Label `acro:DDoS' newly defined as it shall be overridden
 although it is yet undefined on input line 38.
  [6 <./img/abbildungen/CIA-Triad.png>]
-<img/abbildungen/Schutzziele.png, id=357, 533.995pt x 222.8325pt>
+<img/abbildungen/Schutzziele.png, id=368, 533.995pt x 222.8325pt>
 File: img/abbildungen/Schutzziele.png Graphic file (type png)
 <use img/abbildungen/Schutzziele.png>
 Package pdftex.def Info: img/abbildungen/Schutzziele.png  used on input line 44.
 (pdftex.def)             Requested size: 326.63892pt x 136.30844pt.
-<img/abbildungen/factors.png, id=358, 240.9pt x 216.81pt>
+<img/abbildungen/factors.png, id=369, 240.9pt x 216.81pt>
 File: img/abbildungen/factors.png Graphic file (type png)
 <use img/abbildungen/factors.png>
 Package pdftex.def Info: img/abbildungen/factors.png  used on input line 54.
@@ -1097,20 +1095,13 @@ Package acronym Info: Label `acro:SFA' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
 Package acronym Info: Label `acro:MFA' newly defined as it shall be overridden
 although it is yet undefined on input line 72.
-
-
-LaTeX Warning: Citation 'verizon2017' on page 9 undefined on input line 76.
-
-
-LaTeX Warning: Citation 'Symantec' on page 9 undefined on input line 76.
-
-[9] [10]
-<img/abbildungen/entropy-length.png, id=418, 597.23125pt x 377.41pt>
+ [9] [10]
+<img/abbildungen/entropy-length.png, id=434, 597.23125pt x 377.41pt>
 File: img/abbildungen/entropy-length.png Graphic file (type png)
 <use img/abbildungen/entropy-length.png>
 Package pdftex.def Info: img/abbildungen/entropy-length.png  used on input line 84.
 (pdftex.def)             Requested size: 285.80672pt x 180.6134pt.
-<img/abbildungen/length-time.png, id=419, 594.22pt x 296.10625pt>
+<img/abbildungen/length-time.png, id=435, 594.22pt x 296.10625pt>
 File: img/abbildungen/length-time.png Graphic file (type png)
 <use img/abbildungen/length-time.png>
 Package pdftex.def Info: img/abbildungen/length-time.png  used on input line 91.
@@ -1119,7 +1110,7 @@ Package pdftex.def Info: img/abbildungen/length-time.png  used on input line 91.
 Package acronym Info: Label `acro:FIDO' newly defined as it shall be overridden
 although it is yet undefined on input line 120.
  [14]
-<img/abbildungen/magic_link.png, id=472, 431.6125pt x 263.98625pt>
+<img/abbildungen/magic_link.png, id=487, 431.6125pt x 263.98625pt>
 File: img/abbildungen/magic_link.png Graphic file (type png)
 <use img/abbildungen/magic_link.png>
 Package pdftex.def Info: img/abbildungen/magic_link.png  used on input line 131.
@@ -1138,48 +1129,42 @@ although it is yet undefined on input line 160.
 Package acronym Info: Label `acro:HMAC' newly defined as it shall be overridden
 although it is yet undefined on input line 161.
 [17] [18] [19]
-<img/abbildungen/yubikey.jpeg, id=564, 770.88pt x 578.16pt>
+<img/abbildungen/yubikey.jpeg, id=579, 770.88pt x 578.16pt>
 File: img/abbildungen/yubikey.jpeg Graphic file (type jpg)
 <use img/abbildungen/yubikey.jpeg>
 Package pdftex.def Info: img/abbildungen/yubikey.jpeg  used on input line 186.
 (pdftex.def)             Requested size: 122.49037pt x 91.86348pt.
-
-
-LaTeX Warning: Citation 'yuibkey2023fido2' on page 20 undefined on input line 194.
-
-[20 <./img/abbildungen/yubikey.jpeg>]
+ [20 <./img/abbildungen/yubikey.jpeg>]
 Package acronym Info: Label `acro:2FA' newly defined as it shall be overridden
 although it is yet undefined on input line 195.
-
-
-LaTeX Warning: Citation 'yuibkey2023fido2' on page 21 undefined on input line 195.
-
-
-LaTeX Warning: Citation 'yuibkey2023fido2' on page 21 undefined on input line 196.
-
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 205.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [21] [22] [23]
+) [21] [22]
 Package acronym Info: Label `acro:W3C' newly defined as it shall be overridden
 although it is yet undefined on input line 237.
-
-
-LaTeX Warning: Citation 'w3cabout' on page 24 undefined on input line 237.
-
-[24]
-<img/abbildungen/fido2_usability.png, id=649, 694.595pt x 372.39125pt>
+ [23]
+<img/abbildungen/fido2_usability.png, id=664, 694.595pt x 372.39125pt>
 File: img/abbildungen/fido2_usability.png Graphic file (type png)
 <use img/abbildungen/fido2_usability.png>
 Package pdftex.def Info: img/abbildungen/fido2_usability.png  used on input line 243.
 (pdftex.def)             Requested size: 408.2971pt x 218.90773pt.
- [25 <./img/abbildungen/fido2_usability.png>]
-<img/abbildungen/fido2_com.png, id=664, 501.875pt x 86.3225pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24]
+<img/abbildungen/fido2_com.png, id=680, 501.875pt x 86.3225pt>
 File: img/abbildungen/fido2_com.png Graphic file (type png)
 <use img/abbildungen/fido2_com.png>
 Package pdftex.def Info: img/abbildungen/fido2_com.png  used on input line 252.
 (pdftex.def)             Requested size: 326.63892pt x 56.18402pt.
-<img/abbildungen/fido2_flow.png, id=671, 539.01375pt x 109.40875pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 <./img/abbildungen/fido2_usability.png>]
+<img/abbildungen/fido2_flow.png, id=692, 539.01375pt x 109.40875pt>
 File: img/abbildungen/fido2_flow.png Graphic file (type png)
 <use img/abbildungen/fido2_flow.png>
 Package pdftex.def Info: img/abbildungen/fido2_flow.png  used on input line 261.
@@ -1196,10 +1181,10 @@ Package acronym Info: Label `acro:API' newly defined as it shall be overridden
 although it is yet undefined on input line 269.
 Package acronym Info: Label `acro:EUF-CMA' newly defined as it shall be overridden
 although it is yet undefined on input line 269.
- [27]
 Package acronym Info: Label `acro:TLS' newly defined as it shall be overridden
 although it is yet undefined on input line 273.
-<img/abbildungen/Fido2.png, id=700, 457.71pt x 389.455pt>
+ [27]
+<img/abbildungen/Fido2.png, id=721, 457.71pt x 389.455pt>
 File: img/abbildungen/Fido2.png Graphic file (type png)
 <use img/abbildungen/Fido2.png>
 Package pdftex.def Info: img/abbildungen/Fido2.png  used on input line 279.
@@ -1213,7 +1198,7 @@ although it is yet undefined on input line 293.
  [30]
 Package acronym Info: Label `acro:MITM' newly defined as it shall be overridden
 although it is yet undefined on input line 299.
-<img/abbildungen/ctap2-process.png, id=748, 735.74875pt x 721.69624pt>
+<img/abbildungen/ctap2-process.png, id=770, 735.74875pt x 721.69624pt>
 File: img/abbildungen/ctap2-process.png Graphic file (type png)
 <use img/abbildungen/ctap2-process.png>
 Package pdftex.def Info: img/abbildungen/ctap2-process.png  used on input line 304.
@@ -1234,85 +1219,60 @@ Package acronym Info: Label `acro:U2F' newly defined as it shall be overridden
 although it is yet undefined on input line 317.
  [33] [34]) (./content/c4.tex [35]
 chapter 3.
-
-LaTeX Warning: Reference `azure-seckey' on page 36 undefined on input line 10.
-
 [36
 
 ]
-<img/abbildungen/azure_seckey.png, id=836, 330.48468pt x 91.84312pt>
+<img/abbildungen/azure_seckey.png, id=859, 330.48468pt x 91.84312pt>
 File: img/abbildungen/azure_seckey.png Graphic file (type png)
 <use img/abbildungen/azure_seckey.png>
 Package pdftex.def Info: img/abbildungen/azure_seckey.png  used on input line 14.
 (pdftex.def)             Requested size: 244.98074pt x 68.08334pt.
-
-
-LaTeX Warning: Citation 'keycloak' on page 37 undefined on input line 19.
-
 
 Overfull \hbox (6.53319pt too wide) in paragraph at lines 21--22
 \T1/lmr/m/n/12 Server, son-dern nutzt ei-ne selbst ent-wi-ckel-te An-wen-dung, wel-che sich als Keycloak-
  []
 
 [37 <./img/abbildungen/azure_seckey.png>]
-<img/abbildungen/Unknown.png, id=852, 869.2475pt x 118.4425pt>
+<img/abbildungen/Unknown.png, id=876, 869.2475pt x 118.4425pt>
 File: img/abbildungen/Unknown.png Graphic file (type png)
 <use img/abbildungen/Unknown.png>
 Package pdftex.def Info: img/abbildungen/Unknown.png  used on input line 26.
 (pdftex.def)             Requested size: 408.2971pt x 55.63544pt.
-
-
-LaTeX Warning: Citation 'compWin' on page 38 undefined on input line 41.
-
-
-LaTeX Warning: Citation 'seckeytest' on page 38 undefined on input line 41.
-
-[38 <./img/abbildungen/Unknown.png>]
-
-LaTeX Warning: Reference `current' on page 39 undefined on input line 49.
-
-
-LaTeX Warning: Reference `azure-imp' on page 39 undefined on input line 49.
-
-<img/abbildungen/azure_umsetzung.png, id=870, 363.3575pt x 74.2775pt>
+ [38 <./img/abbildungen/Unknown.png>]
+<img/abbildungen/azure_umsetzung.png, id=898, 363.3575pt x 74.2775pt>
 File: img/abbildungen/azure_umsetzung.png Graphic file (type png)
 <use img/abbildungen/azure_umsetzung.png>
 Package pdftex.def Info: img/abbildungen/azure_umsetzung.png  used on input line 53.
 (pdftex.def)             Requested size: 244.98074pt x 50.0796pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [39]
-
-LaTeX Warning: Reference `current' on page 40 undefined on input line 60.
-
-<img/abbildungen/keycloak_browser.png, id=881, 628.3475pt x 118.4425pt>
+<img/abbildungen/keycloak_browser.png, id=910, 628.3475pt x 118.4425pt>
 File: img/abbildungen/keycloak_browser.png Graphic file (type png)
 <use img/abbildungen/keycloak_browser.png>
 Package pdftex.def Info: img/abbildungen/keycloak_browser.png  used on input line 66.
 (pdftex.def)             Requested size: 408.2971pt x 76.96321pt.
-[40 <./img/abbildungen/azure_umsetzung.png> <./img/abbildungen/keycloak_browser.png>]
-
-LaTeX Warning: Reference `auth-flow' on page 41 undefined on input line 73.
-
-<img/abbildungen/authentication_flow.png, id=888, 442.65375pt x 181.67876pt>
+ [40 <./img/abbildungen/azure_umsetzung.png> <./img/abbildungen/keycloak_browser.png>]
+<img/abbildungen/authentication_flow.png, id=918, 442.65375pt x 181.67876pt>
 File: img/abbildungen/authentication_flow.png Graphic file (type png)
 <use img/abbildungen/authentication_flow.png>
 Package pdftex.def Info: img/abbildungen/authentication_flow.png  used on input line 77.
 (pdftex.def)             Requested size: 285.80672pt x 117.31079pt.
-<img/abbildungen/register_simplified.png, id=889, 590.205pt x 201.75375pt>
+<img/abbildungen/register_simplified.png, id=919, 590.205pt x 201.75375pt>
 File: img/abbildungen/register_simplified.png Graphic file (type png)
 <use img/abbildungen/register_simplified.png>
 Package pdftex.def Info: img/abbildungen/register_simplified.png  used on input line 86.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
-[41 <./img/abbildungen/authentication_flow.png>]
-<img/abbildungen/login_simplified.png, id=895, 590.205pt x 201.75375pt>
+ [41 <./img/abbildungen/authentication_flow.png>]
+<img/abbildungen/login_simplified.png, id=925, 590.205pt x 201.75375pt>
 File: img/abbildungen/login_simplified.png Graphic file (type png)
 <use img/abbildungen/login_simplified.png>
 Package pdftex.def Info: img/abbildungen/login_simplified.png  used on input line 93.
 (pdftex.def)             Requested size: 408.2971pt x 139.57349pt.
  [42 <./img/abbildungen/register_simplified.png> <./img/abbildungen/login_simplified.png>] [43]
-<img/abbildungen/chart-2.png, id=908, 1606.0pt x 903.375pt>
+<img/abbildungen/chart-2.png, id=938, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart-2.png Graphic file (type png)
 <use img/abbildungen/chart-2.png>
 Package pdftex.def Info: img/abbildungen/chart-2.png  used on input line 117.
@@ -1322,7 +1282,7 @@ Package pdftex.def Info: img/abbildungen/chart-2.png  used on input line 117.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [44]
-<img/abbildungen/chart_rollen.png, id=913, 1606.0pt x 903.375pt>
+<img/abbildungen/chart_rollen.png, id=943, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart_rollen.png Graphic file (type png)
 <use img/abbildungen/chart_rollen.png>
 Package pdftex.def Info: img/abbildungen/chart_rollen.png  used on input line 128.
@@ -1331,13 +1291,13 @@ Package pdftex.def Info: img/abbildungen/chart_rollen.png  used on input line 12
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/reg001.png, id=914, 389.95688pt x 139.27031pt>
+<img/abbildungen/reg001.png, id=944, 389.95688pt x 139.27031pt>
 File: img/abbildungen/reg001.png Graphic file (type png)
 <use img/abbildungen/reg001.png>
 Package pdftex.def Info: img/abbildungen/reg001.png  used on input line 140.
 (pdftex.def)             Requested size: 285.80672pt x 102.07661pt.
 [45 <./img/abbildungen/chart-2.png>]
-<img/abbildungen/reg002.png, id=921, 339.51843pt x 193.47281pt>
+<img/abbildungen/reg002.png, id=951, 339.51843pt x 193.47281pt>
 File: img/abbildungen/reg002.png Graphic file (type png)
 <use img/abbildungen/reg002.png>
 Package pdftex.def Info: img/abbildungen/reg002.png  used on input line 149.
@@ -1346,13 +1306,13 @@ Package pdftex.def Info: img/abbildungen/reg002.png  used on input line 149.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/abbildungen/reg003.png, id=922, 338.01282pt x 207.77625pt>
+<img/abbildungen/reg003.png, id=952, 338.01282pt x 207.77625pt>
 File: img/abbildungen/reg003.png Graphic file (type png)
 <use img/abbildungen/reg003.png>
 Package pdftex.def Info: img/abbildungen/reg003.png  used on input line 158.
 (pdftex.def)             Requested size: 285.80672pt x 175.69121pt.
 [46 <./img/abbildungen/chart_rollen.png> <./img/abbildungen/reg001.png>]
-<img/abbildungen/reg004.png, id=929, 338.01282pt x 200.24812pt>
+<img/abbildungen/reg004.png, id=959, 338.01282pt x 200.24812pt>
 File: img/abbildungen/reg004.png Graphic file (type png)
 <use img/abbildungen/reg004.png>
 Package pdftex.def Info: img/abbildungen/reg004.png  used on input line 167.
@@ -1362,7 +1322,7 @@ Package pdftex.def Info: img/abbildungen/reg004.png  used on input line 167.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47 <./img/abbildungen/reg002.png> <./img/abbildungen/reg003.png>]
-<img/abbildungen/passkey_demo.png, id=936, 479.7925pt x 350.30875pt>
+<img/abbildungen/passkey_demo.png, id=966, 479.7925pt x 350.30875pt>
 File: img/abbildungen/passkey_demo.png Graphic file (type png)
 <use img/abbildungen/passkey_demo.png>
 Package pdftex.def Info: img/abbildungen/passkey_demo.png  used on input line 178.
@@ -1371,24 +1331,13 @@ Package pdftex.def Info: img/abbildungen/passkey_demo.png  used on input line 17
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48 <./img/abbildungen/reg004.png>]
-
-LaTeX Warning: Citation 'techstat' on page 49 undefined on input line 205.
-
-[49 <./img/abbildungen/passkey_demo.png>]
-
-LaTeX Warning: Citation 'lyastani2020fido' on page 50 undefined on input line 225.
-
-[50] [51] [52]
-
-LaTeX Warning: Citation 'techstat' on page 53 undefined on input line 281.
-
-<img/abbildungen/chart_anmeldung_register.png, id=985, 1606.0pt x 903.375pt>
+[48 <./img/abbildungen/reg004.png>] [49 <./img/abbildungen/passkey_demo.png>] [50] [51] [52] [53]
+<img/abbildungen/chart_anmeldung_register.png, id=1024, 1606.0pt x 903.375pt>
 File: img/abbildungen/chart_anmeldung_register.png Graphic file (type png)
 <use img/abbildungen/chart_anmeldung_register.png>
 Package pdftex.def Info: img/abbildungen/chart_anmeldung_register.png  used on input line 285.
 (pdftex.def)             Requested size: 285.80672pt x 160.76715pt.
-[53] [54 <./img/abbildungen/chart_anmeldung_register.png>]
+ [54 <./img/abbildungen/chart_anmeldung_register.png>]
 Package acronym Info: Label `acro:SSO' newly defined as it shall be overridden
 although it is yet undefined on input line 307.
  [55]
@@ -1396,36 +1345,115 @@ Overfull \hbox (9.83685pt too wide) in paragraph at lines 314--315
 []\T1/lmr/m/n/12 Zur rei-nen Be-nut-zer-freund-lich-keit merk-te ein Teil-neh-mer an, dass ein schlech-
  []
 
-[56] [57]
-
-LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 331.
-
-
-LaTeX Warning: Citation 'databreach' on page 58 undefined on input line 331.
-
-) (./content/c5.tex [58]
+[56] [57]) (./content/c5.tex [58]
 chapter 4.
 [59
 
 ] [60]
 chapter 5.
-) [61
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 18.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 20.
+
+
+Overfull \hbox (2.73924pt too wide) in paragraph at lines 20--21
+[]\T1/lmr/m/n/12 Erhöhte Be-nut-zer-freund-lich-keit ge-gen-über Se-cu-ri-ty Keys. Kei-ne zu-sätz-li-che Hard-
+ []
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'passkeysgoogle' on page 61 undefined on input line 22.
+
+
+Overfull \hbox (18.52573pt too wide) in paragraph at lines 22--23
+\T1/lmr/m/n/12 höh-ter Si-cher-heit und oh-ne Not-wen-dig-keit von [][] [] []. 
+ []
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 24.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 26.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 28.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 61 undefined on input line 30.
+
+[61
 
 ]
-chapter without number
 
+LaTeX Warning: Citation 'passkeysgoogle' on page 62 undefined on input line 32.
+
+Package acronym Info: Label `acro:TEE' newly defined as it shall be overridden
+although it is yet undefined on input line 34.
+
+LaTeX Warning: Citation 'passkeysgoogle' on page 62 undefined on input line 34.
+
+
+Overfull \hbox (1.99939pt too wide) in paragraph at lines 34--35
+[]\T1/lmr/m/n/12 Zusätzlich er-mög-licht die-ser auch die Nut-zung des Pass-keys in-klu-si-ve ei-nes device-
+ []
+
+
+LaTeX Warning: Citation 'passkeysapple' on page 62 undefined on input line 36.
+
+<img/abbildungen/multi-device-fido2.png, id=1075, 704.6325pt x 697.60625pt>
+File: img/abbildungen/multi-device-fido2.png Graphic file (type png)
+<use img/abbildungen/multi-device-fido2.png>
+Package pdftex.def Info: img/abbildungen/multi-device-fido2.png  used on input line 40.
+(pdftex.def)             Requested size: 285.80672pt x 282.95476pt.
+
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 42.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 42.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [62] [63 <./img/abbildungen/multi-device-fido2.png>]
+chapter without number
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 107.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 Overfull \hbox (2.86087pt too wide) in paragraph at lines 107--107
 []\T1/lmr/m/n/12 F. M. Far-ke, L. Lo-renz, T. Schnitz-ler, P. Mar-kert und M. Dür-muth, ^^R  $\OMS/lmsy/m/n/12 f$\T1/lmr/m/n/12 ^^PYou$\OMS/lmsy/m/n/12 g$
  []
 
-[62
+[64
 
-] [63] (./master.aux)
+] [65]
+Overfull \hbox (25.60593pt too wide) in paragraph at lines 107--107
+\T1/lmtt/m/n/12 concept -[] authentication -[] passwordless # fido2 -[] security -[] key -[] providers %
+ []
+
+
+Overfull \hbox (17.93092pt too wide) in paragraph at lines 107--107
+\T1/lmtt/m/n/12 statistik / daten / studie / 1313711 / umfrage / alternative -[] technologien -[]
+ []
+
+
+Overfull \hbox (11.25592pt too wide) in paragraph at lines 107--107
+\T1/lmtt/m/n/12 20Umfrage % 20gaben ,[] Passwort % 20im % 20Alltag % 20gerne % 20beibehalten .
+ []
+
+[66] (./master.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1439,18 +1467,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30111 strings out of 478268
- 592774 string characters out of 5846347
- 1547967 words of memory out of 5000000
- 47618 multiletter control sequences out of 15000+600000
- 509035 words of font info for 51 fonts, out of 8000000 for 9000
+ 30210 strings out of 478268
+ 595150 string characters out of 5846347
+ 1548638 words of memory out of 5000000
+ 47697 multiletter control sequences out of 15000+600000
+ 509353 words of font info for 52 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,20n,106p,10642b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on master.pdf (73 pages, 1954031 bytes).
+ 108i,20n,106p,10642b,2722s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on master.pdf (76 pages, 2245026 bytes).
 PDF statistics:
- 1260 PDF objects out of 1440 (max. 8388607)
- 1093 compressed objects within 11 object streams
- 255 named destinations out of 1000 (max. 500000)
- 423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1336 PDF objects out of 1440 (max. 8388607)
+ 1161 compressed objects within 12 object streams
+ 270 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
