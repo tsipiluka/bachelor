@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  10 AUG 2023 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.23)  13 AUG 2023 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -821,11 +821,7 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 29.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./master.aux
-
-LaTeX Warning: Label `azure-seckey' multiply defined.
-
-)
+) (./master.aux)
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1349,79 +1345,65 @@ Overfull \hbox (9.83685pt too wide) in paragraph at lines 314--315
 chapter 4.
 [59
 
-] [60] [61] [62]
+] [60] [61]
 chapter 5.
 
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 24.
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 19.
 
 
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 26.
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 20.
 
 
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 28.
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 22.
 
-
-Overfull \hbox (2.73924pt too wide) in paragraph at lines 28--29
-[]\T1/lmr/m/n/12 Erhöhte Be-nut-zer-freund-lich-keit ge-gen-über Se-cu-ri-ty Keys. Kei-ne zu-sätz-li-che Hard-
- []
-
-
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 30.
-
-
-LaTeX Warning: Citation 'passkeysgoogle' on page 63 undefined on input line 30.
-
-
-Overfull \hbox (18.52573pt too wide) in paragraph at lines 30--31
-\T1/lmr/m/n/12 höh-ter Si-cher-heit und oh-ne Not-wen-dig-keit von [][] [] []. 
- []
-
-
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 32.
-
-
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 34.
-
-
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 38.
-
-[63
-
-]
-
-LaTeX Warning: Citation 'passkeysgoogle' on page 64 undefined on input line 40.
-
-Package acronym Info: Label `acro:TEE' newly defined as it shall be overridden
-although it is yet undefined on input line 42.
-
-LaTeX Warning: Citation 'passkeysgoogle' on page 64 undefined on input line 42.
-
-
-Overfull \hbox (1.99939pt too wide) in paragraph at lines 42--43
-[]\T1/lmr/m/n/12 Zusätzlich er-mög-licht die-ser auch die Nut-zung des Pass-keys in-klu-si-ve ei-nes device-
- []
-
-
-LaTeX Warning: Citation 'passkeysapple' on page 64 undefined on input line 44.
-
-<img/abbildungen/multi-device-fido2.png, id=1096, 704.6325pt x 697.60625pt>
+<img/abbildungen/multi-device-fido2.png, id=1084, 704.6325pt x 697.60625pt>
 File: img/abbildungen/multi-device-fido2.png Graphic file (type png)
 <use img/abbildungen/multi-device-fido2.png>
-Package pdftex.def Info: img/abbildungen/multi-device-fido2.png  used on input line 48.
+Package pdftex.def Info: img/abbildungen/multi-device-fido2.png  used on input line 26.
 (pdftex.def)             Requested size: 285.80672pt x 282.95476pt.
 
-LaTeX Warning: Citation 'usecasfido' on page 64 undefined on input line 50.
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 28.
 
 
-LaTeX Warning: Citation 'usecasfido' on page 64 undefined on input line 50.
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 28.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [64] [65 <./img/abbildungen/multi-device-fido2.png>]
+
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'passkeysgoogle' on page 62 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 31.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 62 undefined on input line 31.
+
+[62
+
+]
+
+LaTeX Warning: Citation 'passkeysgoogle' on page 63 undefined on input line 33.
+
+Package acronym Info: Label `acro:TEE' newly defined as it shall be overridden
+although it is yet undefined on input line 33.
+
+LaTeX Warning: Citation 'passkeysgoogle' on page 63 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'usecasfido' on page 63 undefined on input line 33.
+
+[63 <./img/abbildungen/multi-device-fido2.png>]
+
+LaTeX Warning: Citation 'passkeysapple' on page 64 undefined on input line 35.
+
+) [64]
 chapter without number
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 107.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -1431,9 +1413,9 @@ Overfull \hbox (2.86087pt too wide) in paragraph at lines 107--107
 []\T1/lmr/m/n/12 F. M. Far-ke, L. Lo-renz, T. Schnitz-ler, P. Mar-kert und M. Dür-muth, ^^R  $\OMS/lmsy/m/n/12 f$\T1/lmr/m/n/12 ^^PYou$\OMS/lmsy/m/n/12 g$
  []
 
-[66
+[65
 
-] [67]
+] [66]
 Overfull \hbox (25.60593pt too wide) in paragraph at lines 107--107
 \T1/lmtt/m/n/12 concept -[] authentication -[] passwordless # fido2 -[] security -[] key -[] providers %
  []
@@ -1448,12 +1430,9 @@ Overfull \hbox (11.25592pt too wide) in paragraph at lines 107--107
 \T1/lmtt/m/n/12 20Umfrage % 20gaben ,[] Passwort % 20im % 20Alltag % 20gerne % 20beibehalten .
  []
 
-[68] (./master.aux)
+[67] (./master.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `master.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1467,18 +1446,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30216 strings out of 478268
- 595205 string characters out of 5846347
- 1548698 words of memory out of 5000000
- 47698 multiletter control sequences out of 15000+600000
+ 30217 strings out of 478268
+ 595222 string characters out of 5846347
+ 1548785 words of memory out of 5000000
+ 47700 multiletter control sequences out of 15000+600000
  509353 words of font info for 52 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,106p,10642b,2722s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on master.pdf (78 pages, 2249331 bytes).
+Output written on master.pdf (77 pages, 2249554 bytes).
 PDF statistics:
- 1356 PDF objects out of 1440 (max. 8388607)
- 1179 compressed objects within 12 object streams
- 275 named destinations out of 1000 (max. 500000)
+ 1353 PDF objects out of 1440 (max. 8388607)
+ 1177 compressed objects within 12 object streams
+ 274 named destinations out of 1000 (max. 500000)
  428 words of extra memory for PDF output out of 10000 (max. 10000000)
 
