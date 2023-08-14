@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{boonkrong2012security}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bd2c5bc3dca2f7f69dcc8e5fea0f390f}{%
+           family={Boonkrong},
+           familyi={B\bibinitperiod},
+           given={Sirapat},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \strng{fullhash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \strng{bibnamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \strng{authorbibnamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \strng{authornamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \strng{authorfullhash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Technology Journal}
+      \field{number}{2}
+      \field{title}{Security of passwords}
+      \field{volume}{8}
+      \field{year}{2012}
+      \field{pages}{112\bibrangedash 117}
+      \range{pages}{6}
+    \endentry
     \entry{samonas2014cia}{article}{}
       \name{author}{2}{}{%
         {{hash=dca709fa7838f41ad0236487d19ded3d}{%
@@ -38,8 +64,8 @@
       \strng{authorbibnamehash}{3afa5b60c24578156ef3d0817b48f6c9}
       \strng{authornamehash}{3afa5b60c24578156ef3d0817b48f6c9}
       \strng{authorfullhash}{3afa5b60c24578156ef3d0817b48f6c9}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Information System Security}
@@ -47,6 +73,556 @@
       \field{title}{The CIA strikes back: Redefining confidentiality, integrity and availability in security.}
       \field{volume}{10}
       \field{year}{2014}
+    \endentry
+    \entry{chanda2016password}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a4af4a1b8bc875fabc055561aa9f9844}{%
+           family={Chanda},
+           familyi={C\bibinitperiod},
+           given={Katha},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Modern Education}%
+        {Computer Science Press}%
+      }
+      \strng{namehash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \strng{fullhash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \strng{bibnamehash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \strng{authorbibnamehash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \strng{authornamehash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \strng{authorfullhash}{a4af4a1b8bc875fabc055561aa9f9844}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Computer Network and Information Security}
+      \field{number}{7}
+      \field{title}{Password security: an analysis of password strengths and vulnerabilities}
+      \field{volume}{8}
+      \field{year}{2016}
+      \field{pages}{23}
+      \range{pages}{1}
+    \endentry
+    \entry{ives2004domino}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bfe0a83c22bc9263b8624c7fbdc0273e}{%
+           family={Ives},
+           familyi={I\bibinitperiod},
+           given={Blake},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d291d78c64c1a4e1fb0348577434ce52}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Kenneth\bibnamedelima R},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=37efe341927030865521f3587def955e}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM New York, NY, USA}%
+      }
+      \strng{namehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \strng{fullhash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \strng{bibnamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \strng{authorbibnamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \strng{authornamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \strng{authorfullhash}{a85c317b0b6435b6c3f96b1ac64bcff4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications of the ACM}
+      \field{number}{4}
+      \field{title}{The domino effect of password reuse}
+      \field{volume}{47}
+      \field{year}{2004}
+      \field{pages}{75\bibrangedash 78}
+      \range{pages}{4}
+    \endentry
+    \entry{yildirim2019encouraging}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d785f0ee719a82559e359e8e7812b7f8}{%
+           family={Y{ı}ld{ı}r{ı}m},
+           familyi={Y\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=20976903f8e2a8ed6f9d7e4631a273c6}{%
+           family={Mackie},
+           familyi={M\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{fece9b47469b083c3d5a31c16f47cb91}
+      \strng{fullhash}{fece9b47469b083c3d5a31c16f47cb91}
+      \strng{bibnamehash}{fece9b47469b083c3d5a31c16f47cb91}
+      \strng{authorbibnamehash}{fece9b47469b083c3d5a31c16f47cb91}
+      \strng{authornamehash}{fece9b47469b083c3d5a31c16f47cb91}
+      \strng{authorfullhash}{fece9b47469b083c3d5a31c16f47cb91}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Information Security}
+      \field{title}{Encouraging users to improve password security and memorability}
+      \field{volume}{18}
+      \field{year}{2019}
+      \field{pages}{741\bibrangedash 759}
+      \range{pages}{19}
+    \endentry
+    \entry{chowhan2019password}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=4b564f4bfb7dd0a976a92adc7a402b22}{%
+           family={Chowhan},
+           familyi={C\bibinitperiod},
+           given={Rahul\bibnamedelima Singh},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4bb2283897271cd676c2f3eb5c19a337}{%
+           family={Tanwar},
+           familyi={T\bibinitperiod},
+           given={Rohit},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IGI global}%
+      }
+      \strng{namehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \strng{fullhash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \strng{bibnamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \strng{authorbibnamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \strng{authornamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \strng{authorfullhash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Machine Learning and Cognitive Science Applications in Cyber Security}
+      \field{title}{Password-less authentication: methods for user verification and identification to login securely over remote sites}
+      \field{year}{2019}
+      \field{pages}{190\bibrangedash 212}
+      \range{pages}{23}
+    \endentry
+    \entry{parmar2022comprehensive}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=b0fe8088ff45e6302a220a546a6cbeab}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Viral},
+           giveni={V\bibinitperiod}}}%
+        {{hash=5919346a764c9838b00fdbe58d1fba8e}{%
+           family={Sanghvi},
+           familyi={S\bibinitperiod},
+           given={Harshal\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=99cbbb16d5f34dd9f5d942ca4bc08a14}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Riki\bibnamedelima H},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=0fe43bdbca8e002144cfbbb4c7af9d82}{%
+           family={Pandya},
+           familyi={P\bibinitperiod},
+           given={Abhijit\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{9437412e555673d9dc2e37124c6e98d6}
+      \strng{fullhash}{b2bb65a84e9edb0a5ff074218d5fbf70}
+      \strng{bibnamehash}{b2bb65a84e9edb0a5ff074218d5fbf70}
+      \strng{authorbibnamehash}{b2bb65a84e9edb0a5ff074218d5fbf70}
+      \strng{authornamehash}{9437412e555673d9dc2e37124c6e98d6}
+      \strng{authorfullhash}{b2bb65a84e9edb0a5ff074218d5fbf70}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2022 International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)}
+      \field{title}{A comprehensive study on passwordless authentication}
+      \field{year}{2022}
+      \field{pages}{1266\bibrangedash 1275}
+      \range{pages}{10}
+    \endentry
+    \entry{yuibkey2023fido2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3789e082f9e842d41f8c3bbd1aa648f4}{%
+           family={yubico},
+           familyi={y\bibinitperiod}}}%
+      }
+      \strng{namehash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \strng{fullhash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \strng{bibnamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \strng{authorbibnamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \strng{authornamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \strng{authorfullhash}{3789e082f9e842d41f8c3bbd1aa648f4}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{YubiKey 5 Series}
+      \field{year}{2023}
+    \endentry
+    \entry{farke2020you}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=f84037301221ac4236a1cdc980388bfa}{%
+           family={Farke},
+           familyi={F\bibinitperiod},
+           given={Florian\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=01773dd35b2185cbca0c39de7c9f31a0}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Lennart},
+           giveni={L\bibinitperiod}}}%
+        {{hash=0db7ac11d3b81cdb2bbc5d1694e18b8f}{%
+           family={Schnitzler},
+           familyi={S\bibinitperiod},
+           given={Theodor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4bd266e3376b01acb9748333ecb179a9}{%
+           family={Markert},
+           familyi={M\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=129f7c592724ce2789240bf154bfc83a}{%
+           family={Dürmuth},
+           familyi={D\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f75bfc1c13aa4bfe64accd156a736820}
+      \strng{fullhash}{e906ceeb85e29552a3c260a6667721fa}
+      \strng{bibnamehash}{e906ceeb85e29552a3c260a6667721fa}
+      \strng{authorbibnamehash}{e906ceeb85e29552a3c260a6667721fa}
+      \strng{authornamehash}{f75bfc1c13aa4bfe64accd156a736820}
+      \strng{authorfullhash}{e906ceeb85e29552a3c260a6667721fa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Sixteenth Symposium on Usable Privacy and Security (SOUPS 2020)}
+      \field{title}{$\{$“You$\}$ still use the password after $\{$all”$\}$--Exploring $\{$FIDO2$\}$ Security Keys in a Small Company}
+      \field{year}{2020}
+      \field{pages}{19\bibrangedash 35}
+      \range{pages}{17}
+    \endentry
+    \entry{lyastani2020fido2}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=cff12686dc90f0a9500cb67416de79b1}{%
+           family={Lyastani},
+           familyi={L\bibinitperiod},
+           given={Sanam\bibnamedelima Ghorbani},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2a7fa6e3c2d709b1d80ce3af2cca9909}{%
+           family={Schilling},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b14333526129cdda7b37945c794a4ba6}{%
+           family={Neumayr},
+           familyi={N\bibinitperiod},
+           given={Michaela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4b96cad75f27ce1349d97e2aea69ac76}{%
+           family={Backes},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b8ae0d597552d2baf4099027cd21d0b2}{%
+           family={Bugiel},
+           familyi={B\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{abbc280231a5833a51d7c2ae1625f9eb}
+      \strng{fullhash}{6d320a461b4520d9dcfa0a22a5cb8afb}
+      \strng{bibnamehash}{6d320a461b4520d9dcfa0a22a5cb8afb}
+      \strng{authorbibnamehash}{6d320a461b4520d9dcfa0a22a5cb8afb}
+      \strng{authornamehash}{abbc280231a5833a51d7c2ae1625f9eb}
+      \strng{authorfullhash}{6d320a461b4520d9dcfa0a22a5cb8afb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
+      \field{title}{Is FIDO2 the kingslayer of user authentication? A comparative usability study of FIDO2 passwordless authentication}
+      \field{year}{2020}
+      \field{pages}{268\bibrangedash 285}
+      \range{pages}{18}
+    \endentry
+    \entry{reynolds2018tale}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=2f18422e58daef31ddcc75dfa6a6361d}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=020d9b481e45df6f1369b3a43c07abfa}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e475606afdedb2bfc2e55b3ec6678496}{%
+           family={Reese},
+           familyi={R\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=140a6b58b030f38bbe156ad4cc2cbe51}{%
+           family={Dickinson},
+           familyi={D\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4d9ed90d8398079be98f2e325765443c}{%
+           family={Ruoti},
+           familyi={R\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=339004d5360268eec7587b603342682e}{%
+           family={Seamons},
+           familyi={S\bibinitperiod},
+           given={Kent},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{214eaa57f36e2282873e13457440a4db}
+      \strng{fullhash}{3d0c47bbb4b966e30f4a66b7c6929faf}
+      \strng{bibnamehash}{3d0c47bbb4b966e30f4a66b7c6929faf}
+      \strng{authorbibnamehash}{3d0c47bbb4b966e30f4a66b7c6929faf}
+      \strng{authornamehash}{214eaa57f36e2282873e13457440a4db}
+      \strng{authorfullhash}{3d0c47bbb4b966e30f4a66b7c6929faf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 IEEE Symposium on Security and Privacy (SP)}
+      \field{title}{A tale of two studies: The best and worst of yubikey usability}
+      \field{year}{2018}
+      \field{pages}{872\bibrangedash 888}
+      \range{pages}{17}
+    \endentry
+    \entry{barbosa2021provable}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=9f57cce40b57fc93fb67f72834028011}{%
+           family={Barbosa},
+           familyi={B\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4203a914c6d4972afacbd9d4f9352db1}{%
+           family={Boldyreva},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+        {{hash=83a50488c5c529f30eeb030cbc13a67e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Shan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=544d0213d5f0f3d311b6c6c6e081ece0}{%
+           family={Warinschi},
+           familyi={W\bibinitperiod},
+           given={Bogdan},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{b13018c4ee60e258f0bba4d115467ccf}
+      \strng{fullhash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
+      \strng{bibnamehash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
+      \strng{authorbibnamehash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
+      \strng{authornamehash}{b13018c4ee60e258f0bba4d115467ccf}
+      \strng{authorfullhash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Cryptology--CRYPTO 2021: 41st Annual International Cryptology Conference, CRYPTO 2021, Virtual Event, August 16--20, 2021, Proceedings, Part III 41}
+      \field{title}{Provable security analysis of FIDO2}
+      \field{year}{2021}
+      \field{pages}{125\bibrangedash 156}
+      \range{pages}{32}
+    \endentry
+    \entry{bindel2022fido2}{article}{}
+      \name{author}{3}{}{%
+        {{hash=39fa08977ade401d96ef2d9d11718616}{%
+           family={Bindel},
+           familyi={B\bibinitperiod},
+           given={Nina},
+           giveni={N\bibinitperiod}}}%
+        {{hash=bc7d1ce35e2914b340dfcc7ae46ff575}{%
+           family={Cremers},
+           familyi={C\bibinitperiod},
+           given={Cas},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aca2d4b4f11dbdfc69dcb5d46862b575}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Mang},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \strng{fullhash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \strng{bibnamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \strng{authorbibnamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \strng{authornamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \strng{authorfullhash}{ad998479db2eb9d2cb397eb4dc4389fb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cryptology ePrint Archive}
+      \field{title}{FIDO2, CTAP 2.1, and WebAuthn 2: Provable security and post-quantum instantiation}
+      \field{year}{2022}
+    \endentry
+    \entry{databreach}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={IBM},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Cost of a Data Breach Report 2023}
+      \field{urlday}{26}
+      \field{urlmonth}{7}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{usecasfido}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=6fd8f7cc6f4c31f3b5ece5337cc24d05}{%
+           family={Alliance},
+           familyi={A\bibinitperiod},
+           given={FIDO},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \strng{fullhash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \strng{bibnamehash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \strng{authorbibnamehash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \strng{authornamehash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \strng{authorfullhash}{6fd8f7cc6f4c31f3b5ece5337cc24d05}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How FIDO Addresses a Full Range of Use Cases}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb \url{https://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf%7D
+      \endverb
+    \endentry
+    \entry{passkeysapple}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{%
+           family={Apple},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{bibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorbibnamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authornamehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{authorfullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Passkeys}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb \url{https://developer.apple.com/passkeys/}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://developer.apple.com/passkeys/%7D
+      \endverb
+    \endentry
+    \entry{passkeysgoogle}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Security of Passkeys in the Google Password Manager}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb \url{https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html?m=1}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html?m=1%7D
+      \endverb
+    \endentry
+    \entry{passkeysgoogledev}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Anmeldung ohne Passwort mit Passkeys}
+      \field{urlday}{10}
+      \field{urlmonth}{8}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb \url{https://developers.google.com/identity/passkeys?hl=de}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://developers.google.com/identity/passkeys?hl=de%7D
+      \endverb
     \endentry
     \entry{pons}{misc}{}
       \field{sortinit}{2}
@@ -86,8 +662,8 @@
       \strng{authorbibnamehash}{f2c9fd58822db2f37df1184042556b56}
       \strng{authornamehash}{f2c9fd58822db2f37df1184042556b56}
       \strng{authorfullhash}{f2c9fd58822db2f37df1184042556b56}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Computer Applications in Engineering Sciences}
@@ -97,181 +673,6 @@
       \field{year}{2011}
       \field{pages}{257\bibrangedash 259}
       \range{pages}{3}
-    \endentry
-    \entry{boonkrong2012security}{article}{}
-      \name{author}{1}{}{%
-        {{hash=bd2c5bc3dca2f7f69dcc8e5fea0f390f}{%
-           family={Boonkrong},
-           familyi={B\bibinitperiod},
-           given={Sirapat},
-           giveni={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \strng{fullhash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \strng{bibnamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \strng{authorbibnamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \strng{authornamehash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \strng{authorfullhash}{bd2c5bc3dca2f7f69dcc8e5fea0f390f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Information Technology Journal}
-      \field{number}{2}
-      \field{title}{Security of passwords}
-      \field{volume}{8}
-      \field{year}{2012}
-      \field{pages}{112\bibrangedash 117}
-      \range{pages}{6}
-    \endentry
-    \entry{chanda2016password}{article}{}
-      \name{author}{1}{}{%
-        {{hash=a4af4a1b8bc875fabc055561aa9f9844}{%
-           family={Chanda},
-           familyi={C\bibinitperiod},
-           given={Katha},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {Modern Education}%
-        {Computer Science Press}%
-      }
-      \strng{namehash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \strng{fullhash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \strng{bibnamehash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \strng{authorbibnamehash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \strng{authornamehash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \strng{authorfullhash}{a4af4a1b8bc875fabc055561aa9f9844}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Computer Network and Information Security}
-      \field{number}{7}
-      \field{title}{Password security: an analysis of password strengths and vulnerabilities}
-      \field{volume}{8}
-      \field{year}{2016}
-      \field{pages}{23}
-      \range{pages}{1}
-    \endentry
-    \entry{yildirim2019encouraging}{article}{}
-      \name{author}{2}{}{%
-        {{hash=d785f0ee719a82559e359e8e7812b7f8}{%
-           family={Y{ı}ld{ı}r{ı}m},
-           familyi={Y\bibinitperiod},
-           given={M},
-           giveni={M\bibinitperiod}}}%
-        {{hash=20976903f8e2a8ed6f9d7e4631a273c6}{%
-           family={Mackie},
-           familyi={M\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{fece9b47469b083c3d5a31c16f47cb91}
-      \strng{fullhash}{fece9b47469b083c3d5a31c16f47cb91}
-      \strng{bibnamehash}{fece9b47469b083c3d5a31c16f47cb91}
-      \strng{authorbibnamehash}{fece9b47469b083c3d5a31c16f47cb91}
-      \strng{authornamehash}{fece9b47469b083c3d5a31c16f47cb91}
-      \strng{authorfullhash}{fece9b47469b083c3d5a31c16f47cb91}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{International Journal of Information Security}
-      \field{title}{Encouraging users to improve password security and memorability}
-      \field{volume}{18}
-      \field{year}{2019}
-      \field{pages}{741\bibrangedash 759}
-      \range{pages}{19}
-    \endentry
-    \entry{farke2020you}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=f84037301221ac4236a1cdc980388bfa}{%
-           family={Farke},
-           familyi={F\bibinitperiod},
-           given={Florian\bibnamedelima M},
-           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=01773dd35b2185cbca0c39de7c9f31a0}{%
-           family={Lorenz},
-           familyi={L\bibinitperiod},
-           given={Lennart},
-           giveni={L\bibinitperiod}}}%
-        {{hash=0db7ac11d3b81cdb2bbc5d1694e18b8f}{%
-           family={Schnitzler},
-           familyi={S\bibinitperiod},
-           given={Theodor},
-           giveni={T\bibinitperiod}}}%
-        {{hash=4bd266e3376b01acb9748333ecb179a9}{%
-           family={Markert},
-           familyi={M\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=129f7c592724ce2789240bf154bfc83a}{%
-           family={Dürmuth},
-           familyi={D\bibinitperiod},
-           given={Markus},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{f75bfc1c13aa4bfe64accd156a736820}
-      \strng{fullhash}{e906ceeb85e29552a3c260a6667721fa}
-      \strng{bibnamehash}{e906ceeb85e29552a3c260a6667721fa}
-      \strng{authorbibnamehash}{e906ceeb85e29552a3c260a6667721fa}
-      \strng{authornamehash}{f75bfc1c13aa4bfe64accd156a736820}
-      \strng{authorfullhash}{e906ceeb85e29552a3c260a6667721fa}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Sixteenth Symposium on Usable Privacy and Security (SOUPS 2020)}
-      \field{title}{$\{$“You$\}$ still use the password after $\{$all”$\}$--Exploring $\{$FIDO2$\}$ Security Keys in a Small Company}
-      \field{year}{2020}
-      \field{pages}{19\bibrangedash 35}
-      \range{pages}{17}
-    \endentry
-    \entry{barbosa2021provable}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=9f57cce40b57fc93fb67f72834028011}{%
-           family={Barbosa},
-           familyi={B\bibinitperiod},
-           given={Manuel},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4203a914c6d4972afacbd9d4f9352db1}{%
-           family={Boldyreva},
-           familyi={B\bibinitperiod},
-           given={Alexandra},
-           giveni={A\bibinitperiod}}}%
-        {{hash=83a50488c5c529f30eeb030cbc13a67e}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Shan},
-           giveni={S\bibinitperiod}}}%
-        {{hash=544d0213d5f0f3d311b6c6c6e081ece0}{%
-           family={Warinschi},
-           familyi={W\bibinitperiod},
-           given={Bogdan},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Springer}%
-      }
-      \strng{namehash}{b13018c4ee60e258f0bba4d115467ccf}
-      \strng{fullhash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
-      \strng{bibnamehash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
-      \strng{authorbibnamehash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
-      \strng{authornamehash}{b13018c4ee60e258f0bba4d115467ccf}
-      \strng{authorfullhash}{2836d06ca9daa2a5be17b4f7c34b1bf8}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Advances in Cryptology--CRYPTO 2021: 41st Annual International Cryptology Conference, CRYPTO 2021, Virtual Event, August 16--20, 2021, Proceedings, Part III 41}
-      \field{title}{Provable security analysis of FIDO2}
-      \field{year}{2021}
-      \field{pages}{125\bibrangedash 156}
-      \range{pages}{32}
     \endentry
     \entry{verizon2017}{misc}{}
       \name{author}{1}{}{%
@@ -285,8 +686,8 @@
       \strng{authorbibnamehash}{9ef23a446a119387586d089c425f2d55}
       \strng{authornamehash}{9ef23a446a119387586d089c425f2d55}
       \strng{authorfullhash}{9ef23a446a119387586d089c425f2d55}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{2017 data breach investigations report}
@@ -315,8 +716,8 @@
       \strng{authorbibnamehash}{7a3940825621d3fb79be8cc56328e090}
       \strng{authornamehash}{7a3940825621d3fb79be8cc56328e090}
       \strng{authorfullhash}{7a3940825621d3fb79be8cc56328e090}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Email threats 2017. Symantec. Internet Security Threat Report (2017)}
@@ -324,45 +725,6 @@
       \field{urlmonth}{8}
       \field{urlyear}{2023}
       \field{urldateera}{ce}
-    \endentry
-    \entry{ives2004domino}{article}{}
-      \name{author}{3}{}{%
-        {{hash=bfe0a83c22bc9263b8624c7fbdc0273e}{%
-           family={Ives},
-           familyi={I\bibinitperiod},
-           given={Blake},
-           giveni={B\bibinitperiod}}}%
-        {{hash=d291d78c64c1a4e1fb0348577434ce52}{%
-           family={Walsh},
-           familyi={W\bibinitperiod},
-           given={Kenneth\bibnamedelima R},
-           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=37efe341927030865521f3587def955e}{%
-           family={Schneider},
-           familyi={S\bibinitperiod},
-           given={Helmut},
-           giveni={H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {ACM New York, NY, USA}%
-      }
-      \strng{namehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \strng{fullhash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \strng{bibnamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \strng{authorbibnamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \strng{authornamehash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \strng{authorfullhash}{a85c317b0b6435b6c3f96b1ac64bcff4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Communications of the ACM}
-      \field{number}{4}
-      \field{title}{The domino effect of password reuse}
-      \field{volume}{47}
-      \field{year}{2004}
-      \field{pages}{75\bibrangedash 78}
-      \range{pages}{4}
     \endentry
     \entry{morii2017research}{inproceedings}{}
       \name{author}{7}{}{%
@@ -411,8 +773,8 @@
       \strng{authorbibnamehash}{7033f1c5ab1e50df78e05898c6da6294}
       \strng{authornamehash}{7033f1c5ab1e50df78e05898c6da6294}
       \strng{authorfullhash}{316360513ef34dff1fa8086ea8fd8eb3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE 41st annual computer software and applications conference (COMPSAC)}
@@ -421,198 +783,6 @@
       \field{year}{2017}
       \field{pages}{682\bibrangedash 685}
       \range{pages}{4}
-    \endentry
-    \entry{chowhan2019password}{incollection}{}
-      \name{author}{2}{}{%
-        {{hash=4b564f4bfb7dd0a976a92adc7a402b22}{%
-           family={Chowhan},
-           familyi={C\bibinitperiod},
-           given={Rahul\bibnamedelima Singh},
-           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=4bb2283897271cd676c2f3eb5c19a337}{%
-           family={Tanwar},
-           familyi={T\bibinitperiod},
-           given={Rohit},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {IGI global}%
-      }
-      \strng{namehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \strng{fullhash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \strng{bibnamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \strng{authorbibnamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \strng{authornamehash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \strng{authorfullhash}{044e5aaf93f0afc0ea2f7c5f1b266a36}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Machine Learning and Cognitive Science Applications in Cyber Security}
-      \field{title}{Password-less authentication: methods for user verification and identification to login securely over remote sites}
-      \field{year}{2019}
-      \field{pages}{190\bibrangedash 212}
-      \range{pages}{23}
-    \endentry
-    \entry{parmar2022comprehensive}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=b0fe8088ff45e6302a220a546a6cbeab}{%
-           family={Parmar},
-           familyi={P\bibinitperiod},
-           given={Viral},
-           giveni={V\bibinitperiod}}}%
-        {{hash=5919346a764c9838b00fdbe58d1fba8e}{%
-           family={Sanghvi},
-           familyi={S\bibinitperiod},
-           given={Harshal\bibnamedelima A},
-           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=99cbbb16d5f34dd9f5d942ca4bc08a14}{%
-           family={Patel},
-           familyi={P\bibinitperiod},
-           given={Riki\bibnamedelima H},
-           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=0fe43bdbca8e002144cfbbb4c7af9d82}{%
-           family={Pandya},
-           familyi={P\bibinitperiod},
-           given={Abhijit\bibnamedelima S},
-           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{9437412e555673d9dc2e37124c6e98d6}
-      \strng{fullhash}{b2bb65a84e9edb0a5ff074218d5fbf70}
-      \strng{bibnamehash}{b2bb65a84e9edb0a5ff074218d5fbf70}
-      \strng{authorbibnamehash}{b2bb65a84e9edb0a5ff074218d5fbf70}
-      \strng{authornamehash}{9437412e555673d9dc2e37124c6e98d6}
-      \strng{authorfullhash}{b2bb65a84e9edb0a5ff074218d5fbf70}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2022 International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)}
-      \field{title}{A comprehensive study on passwordless authentication}
-      \field{year}{2022}
-      \field{pages}{1266\bibrangedash 1275}
-      \range{pages}{10}
-    \endentry
-    \entry{reynolds2018tale}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=2f18422e58daef31ddcc75dfa6a6361d}{%
-           family={Reynolds},
-           familyi={R\bibinitperiod},
-           given={Joshua},
-           giveni={J\bibinitperiod}}}%
-        {{hash=020d9b481e45df6f1369b3a43c07abfa}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod}}}%
-        {{hash=e475606afdedb2bfc2e55b3ec6678496}{%
-           family={Reese},
-           familyi={R\bibinitperiod},
-           given={Ken},
-           giveni={K\bibinitperiod}}}%
-        {{hash=140a6b58b030f38bbe156ad4cc2cbe51}{%
-           family={Dickinson},
-           familyi={D\bibinitperiod},
-           given={Luke},
-           giveni={L\bibinitperiod}}}%
-        {{hash=4d9ed90d8398079be98f2e325765443c}{%
-           family={Ruoti},
-           familyi={R\bibinitperiod},
-           given={Scott},
-           giveni={S\bibinitperiod}}}%
-        {{hash=339004d5360268eec7587b603342682e}{%
-           family={Seamons},
-           familyi={S\bibinitperiod},
-           given={Kent},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{214eaa57f36e2282873e13457440a4db}
-      \strng{fullhash}{3d0c47bbb4b966e30f4a66b7c6929faf}
-      \strng{bibnamehash}{3d0c47bbb4b966e30f4a66b7c6929faf}
-      \strng{authorbibnamehash}{3d0c47bbb4b966e30f4a66b7c6929faf}
-      \strng{authornamehash}{214eaa57f36e2282873e13457440a4db}
-      \strng{authorfullhash}{3d0c47bbb4b966e30f4a66b7c6929faf}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2018 IEEE Symposium on Security and Privacy (SP)}
-      \field{title}{A tale of two studies: The best and worst of yubikey usability}
-      \field{year}{2018}
-      \field{pages}{872\bibrangedash 888}
-      \range{pages}{17}
-    \endentry
-    \entry{yuibkey2023fido2}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3789e082f9e842d41f8c3bbd1aa648f4}{%
-           family={yubico},
-           familyi={y\bibinitperiod}}}%
-      }
-      \strng{namehash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \strng{fullhash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \strng{bibnamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \strng{authorbibnamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \strng{authornamehash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \strng{authorfullhash}{3789e082f9e842d41f8c3bbd1aa648f4}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{YubiKey 5 Series}
-      \field{year}{2023}
-    \endentry
-    \entry{lyastani2020fido2}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=cff12686dc90f0a9500cb67416de79b1}{%
-           family={Lyastani},
-           familyi={L\bibinitperiod},
-           given={Sanam\bibnamedelima Ghorbani},
-           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=2a7fa6e3c2d709b1d80ce3af2cca9909}{%
-           family={Schilling},
-           familyi={S\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b14333526129cdda7b37945c794a4ba6}{%
-           family={Neumayr},
-           familyi={N\bibinitperiod},
-           given={Michaela},
-           giveni={M\bibinitperiod}}}%
-        {{hash=4b96cad75f27ce1349d97e2aea69ac76}{%
-           family={Backes},
-           familyi={B\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=b8ae0d597552d2baf4099027cd21d0b2}{%
-           family={Bugiel},
-           familyi={B\bibinitperiod},
-           given={Sven},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{abbc280231a5833a51d7c2ae1625f9eb}
-      \strng{fullhash}{6d320a461b4520d9dcfa0a22a5cb8afb}
-      \strng{bibnamehash}{6d320a461b4520d9dcfa0a22a5cb8afb}
-      \strng{authorbibnamehash}{6d320a461b4520d9dcfa0a22a5cb8afb}
-      \strng{authornamehash}{abbc280231a5833a51d7c2ae1625f9eb}
-      \strng{authorfullhash}{6d320a461b4520d9dcfa0a22a5cb8afb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2020 IEEE Symposium on Security and Privacy (SP)}
-      \field{title}{Is FIDO2 the kingslayer of user authentication? A comparative usability study of FIDO2 passwordless authentication}
-      \field{year}{2020}
-      \field{pages}{268\bibrangedash 285}
-      \range{pages}{18}
     \endentry
     \entry{w3cabout}{misc}{}
       \name{author}{1}{}{%
@@ -641,38 +811,6 @@
       \verb{url}
       \verb %5Curl%7Bhttps://www.w3.org/about/%7D
       \endverb
-    \endentry
-    \entry{bindel2022fido2}{article}{}
-      \name{author}{3}{}{%
-        {{hash=39fa08977ade401d96ef2d9d11718616}{%
-           family={Bindel},
-           familyi={B\bibinitperiod},
-           given={Nina},
-           giveni={N\bibinitperiod}}}%
-        {{hash=bc7d1ce35e2914b340dfcc7ae46ff575}{%
-           family={Cremers},
-           familyi={C\bibinitperiod},
-           given={Cas},
-           giveni={C\bibinitperiod}}}%
-        {{hash=aca2d4b4f11dbdfc69dcb5d46862b575}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Mang},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \strng{fullhash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \strng{bibnamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \strng{authorbibnamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \strng{authornamehash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \strng{authorfullhash}{ad998479db2eb9d2cb397eb4dc4389fb}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Cryptology ePrint Archive}
-      \field{title}{FIDO2, CTAP 2.1, and WebAuthn 2: Provable security and post-quantum instantiation}
-      \field{year}{2022}
     \endentry
     \entry{keycloak}{misc}{}
       \name{author}{1}{}{%
@@ -706,7 +844,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{title}{FIDO2-Sicherheitsschlusselanbieter}
+      \field{title}{FIDO2-Sicherheitsschlüsselanbieter}
       \field{urlday}{20}
       \field{urlmonth}{7}
       \field{urlyear}{2023}
@@ -719,8 +857,8 @@
       \endverb
     \endentry
     \entry{techstat}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{title}{Durch welche Technologien würden Sie Passworter in Ihrem Alltag gerne ersetzen wollen?}
       \field{urlday}{20}
@@ -733,28 +871,6 @@
       \verb{url}
       \verb %5Curl%7Bhttps://de.statista.com/statistik/daten/studie/1313711/umfrage/alternative-technologien-zum-passwort-in-deutschland/#:~:text=Im%20Rahmen%20der%20Umfrage%20gaben,Passwort%20im%20Alltag%20gerne%20beibehalten.%7D
       \endverb
-    \endentry
-    \entry{databreach}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
-           family={IBM},
-           familyi={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Cost of a Data Breach Report 2023}
-      \field{urlday}{26}
-      \field{urlmonth}{7}
-      \field{urlyear}{2023}
-      \field{urldateera}{ce}
     \endentry
   \enddatalist
 \endrefsection
