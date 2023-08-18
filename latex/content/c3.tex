@@ -1,16 +1,20 @@
 \chapter{Grundlagen}
-Im Folgenden werden auf Basis der fachlichen Literaturrechere die benötigten Grundlagen dieser Arbeit beschrieben und dargestellt:
+Auf der Basis einer wissenschaftlichen Literaturrecherche werden im Folgenden die benötigten Grundlagen für den weiteren Verlauf dieser Arbeit aufgezeigt:
 
 \section{Einführung in cFront} \label{cFront-exp}
-\textit{cFront} ist eine Anwendung, welche von der Abteilung cGroup Solutions innerhalb der \ac{LSY} entwickelt wird. Es handelt sich bei der Anwendung um ein Tool, welches an Flughafen Terminals eingesetzt wird. 
+Die Abteilung \textit{cGroup Solutions} beschäftigt sich mit der Entwicklung von Anwendungen zur Unterstützung von Airlines und Flughäfen. Dazu gehört u.a. auch das Produkt \textit{cFront}. Ziel dieses Produkts ist es, eine gemeinsame Nutzung der digitalen Infrastruktur an Flughäfen für Airlines zu ermöglichen.
+Es wird dabei an Terminals verschiedener Flughäfen eingesetzt wird. So können beispielsweise die Passagier- und Flugabfertigung verschiedener Airlines über die gleiche Hardware erfolgen. \textit{cFront} bietet somit eine standardisierte Schnittstelle zu den individuellen Applikationen der verschiedenen Airlines.
 
-Es agiert dabei als Interface für mehrere Anwendung und ermöglicht es dem Nutzer, diese Anwendungen zu starten. Welche Anwendungen sichtbar sind, können je nach Kunde individuell konfiguriert werden. Ein Beispiel für ein solches Startportal wird in \textbf{\ref{cFront}} dargestellt.
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=1\textwidth]{img/abbildungen/MicrosoftTeams-image (3).png}
 	\captionsetup{format=hang}
 	\caption{cFront Startportal} \label{cFront}
 \end{figure}
+
+Es agiert dabei als Interface für mehrere Anwendung und ermöglicht es den Kunden, diese Anwendungen zu starten. Welche Anwendungen sichtbar sind, kann je nach Kunde individuell konfiguriert werden. Ein Beispiel für ein solches Interface wird in \textbf{\ref{cFront}} dargestellt.
+Die verschiedenen Icons im mittleren Bereich der Abbildungen stellen die individuellen Applikationen der jeweiligen Airline da. Bei der Abbildung handelt es sich lediglich um Beispieldaten und keine reale Konfiguration.
+
 
 \section{CIA-Triade}
 
@@ -25,29 +29,33 @@ Die CIA-Triade gehört zu den wichtigsten Darstellungen von Sicherheitszielen in
 \end{figure}
 
 \paragraph*{Confidentiality} 
-Die Vertraulichkeit gehört zu den wichtigsten Schutzzielen in der Informationssicherheit \cite{samonas2014cia}. Das Wort \textit{Confidentiality} kommt vom lateinischen Wort \textit{confidere} und bedeutet so viel wie \textit{vertrauen} \cite{pons} \cite{samonas2014cia}. Das Schutzziel besagt, dass Informationen und Daten so geschützt sein müssen, dass diese nur von autorisierten Personen und für autorisierte Zwecke genutzt werden können \cite{samonas2014cia}. 
+Die Vertraulichkeit gehört zu den wichtigsten Schutzzielen in der Informationssicherheit \cite{samonas2014cia}. Das Wort \textit{Confidentiality} kommt vom lateinischen Wort \textit{confidere} und bedeutet \textit{vertrauen} \cite{pons} \cite{samonas2014cia}. Das Schutzziel der Vertraulichkeit besagt, dass Informationen und Daten so geschützt sein müssen, dass diese nur von autorisierten Personen und für autorisierte Zwecke genutzt werden können \cite{samonas2014cia}. 
 Dies beinhaltet beispielsweise Einschränkungen des Zugriffs auf Informationen und Daten, um die Privatsspähre und persönliches Eigentum zu schützen \cite{samonas2014cia}. Aber auch Verschlüsselungen, eine sichere Authentifizierung und Sicherheitsprotokolle können zur Gewährleistung der Vertraulichkeit beitragen \cite{agarwal2011security}.
 Aufgrund der steigenden Wichtigkeit von wirtschaftlichen Aspekten hat die Vertraulichkeit im Vergleich zu früher an Bedeutung verloren \cite{samonas2014cia}. Häufig werden Schutzziele vernachlässigst, um im Gegenzug eine erhöhte Benutzerfreundlichkeit oder Wirtschaftlichkeit zu erreichen.
 
 \paragraph*{Integrity}  
-Das Wort Integrity leitet sich vom lateinischen Wort \textit{tangere} ab und bedeutet so viel wie \textit{berühren} \cite{pons}. Durch die Vorsilbe \textit{In-} soll eine Gegenteilige Bedeutung entstehen im Sinne von \textit{Unberührbarkeit} \cite{samonas2014cia}. 
+Das Wort \textit{Integrity} leitet sich vom lateinischen Wort \textit{tangere} ab und bedeutet so viel wie \textit{berühren} \cite{pons}. Durch die Vorsilbe \textit{In-} soll eine gegenteilige Bedeutung  im Sinne von \textit{Unberührbarkeit} entstehen \cite{samonas2014cia}. 
 Die Integrität soll somit garantieren, dass Daten nicht verändert werden können, ohne dass dies bemerkt wird \cite{agarwal2011security}. Schickt ein Sender $S$ beispielsweise eine Nachricht an einen Empfänger $E$, so soll die Nachricht identisch beim Empfänger $E$ ankommen, wie sie vom Sender $S$ gesendet wurde \cite{agarwal2011security}.
-Umsetzungsmöglichkeiten die Integrität zu schützen beinhalten Maßnahmen wie beispielsweise das Verwenden einer Firewall, \ac{IDS} oder auch digitale Signaturen \cite{agarwal2011security}.
+Umsetzungsmöglichkeiten die Integrität zu schützen beinhalten Maßnahmen wie beispielsweise das Verwenden einer Firewall, eines \ac{IDS} oder auch digitale Signaturen \cite{agarwal2011security}.
+
 \paragraph*{Availability}
-Das Wort Availability leitet sich vom lateinischen \textit{valere} ab und bedeutet so viel wie \textit{kräftig sein}. Die Verfügbarkeit bezieht sich also auf einen zeitnahen und und zuverlässigen Zugriff auf Informationen und Daten \cite{samonas2014cia}. Zuverlässig bedeutet dabei auch, dass ein Zugriff möglichst ohne Unterbrechungen und unabhängig vom Standort möglich ist \cite{agarwal2011security}.
+Das Wort Availability leitet sich vom lateinischen \textit{valere} ab und bedeutet so viel wie \textit{kräftig sein}. Die Verfügbarkeit bezieht sich somit auf einen zeitnahen und und zuverlässigen Zugriff auf Informationen und Daten \cite{samonas2014cia}. Zuverlässig bedeutet dabei auch, dass ein Zugriff möglichst ohne Unterbrechungen und unabhängig vom Standort möglich ist \cite{agarwal2011security}.
 Verfügbarkeit kann beispielsweise durch Netzwerksicherheit (z.B. Schutz vor \ac{DDoS}) oder Fehlertoleranz (z.B. durch Limitierung von Authentifizierungsversuchen) gewährleistet werden \cite{agarwal2011security}.
 
-Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinander betrachtet werden dürfen. Vielmehr handelt es sich, um ein Zusammenspiel der verschiedenen Schutzziele (siehe \ref*{CIA-Triad}). So kann eine Maßnahme beispielsweise mehrer Schutzziele schützen. Ebenfalls lassen sich weitere Schutzziele aus den drei bestehenden ableiten. Häufig werden erweiterte Schutzziele wie beispielsweise Authenticity (Authentizität) oder Non-repudiation (Nicht-Abstreitbarkeit) \cite{samonas2014cia} definiert. Diese können dabei zumeist von einem oder mehreren Schutzzielen der CIA-Triade abgeleitet werden. Die folgende Grafik zeigt beispielhaft einige erweiterte Schutzziele und deren Bezug zu der CIA-Triade:
+Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinander betrachtet werden dürfen. Vielmehr handelt es sich, um ein Zusammenspiel der verschiedenen Schutzziele (siehe \textbf{\ref{CIA-Triad}}). So kann eine einzelne Sicherheitsmaßnahme beispielsweise mehrere Schutzziele schützen. Ebenfalls lassen sich weitere Schutzziele aus den drei bestehenden ableiten. Häufig werden erweiterte Schutzziele wie beispielsweise die \textit{Authenticity} (Authentizität) oder die \textit{Non-repudiation} (Nicht-Abstreitbarkeit) \cite{samonas2014cia} definiert. Diese können dabei zumeist von einem oder mehreren Schutzzielen der CIA-Triade abgeleitet werden. Die folgende Grafik zeigt beispielhaft einige erweiterte Schutzziele und deren Bezug zu der CIA-Triade:
 
 \begin{figure}[h]
 	\centering 
 	\includegraphics[width=0.8\textwidth]{img/abbildungen/Schutzziele.png}
 	\captionsetup{format=hang}
-	\caption{Erweiterte Schutzziele} \label{Schutzziele}
+	\caption{Erweiterte Schutzziele \cite{samonas2014cia}} \label{Schutzziele}
 \end{figure}
 
 
+
 \section{Arten der Authentifizierung}
+
+Die Authentifizerung dient häufig als erste Verteidigungslinie von Systemen \cite{boonkrong2012security}. Die Authentifizierung gilt als erweitertes Schutzziel und ist eine der wichtigsten Schutznmaßnahmen von Systemen. Sie übernimmt die Kontrolle über die Zugänge von Systemen und bestimmt wer oder was autorisiert ist diese zu nutzen. In der Fachliteratur wird häufig zwischen drei verschiedenen Arten der Authentifizierung unterschieden, welche umgangssprachlich auch als \textit{Faktoren} bekannt sind. Diese sollen im Folgenden beschrieben werden:
 
 \begin{figure}[h]
 	\centering 
@@ -55,8 +63,6 @@ Ein wichtiger Aspekt der Schutzziele ist, dass diese nicht unabhängig voneinand
 	\captionsetup{format=hang}
 	\caption{Faktoren der Authentifizierung}
 \end{figure}
-
-Die Authentifizerung dient häufig als erste Verteidigungslinie von Systemen \cite{boonkrong2012security}. Die Authentifizierung gilt als erweitertes Schutzziel und ist eine der wichtigsten Schutznmaßnahmen von Systemen. Sie übernimmt die Kontrolle über die Zugänge von Systemen und bestimmt wer oder was autorisiert ist diese zu nutzen. In der Fachliteratur wird häufig zwischen drei verschiedenen Arten der Authentifizierung unterschieden, welche umgangssprachlich auch als \textit{Faktoren} bekannt sind. Diese sollen im Folgenden beschrieben werden:
 
 \paragraph*{Something you know:}
 Die meistgenutzte Art der Authentifizierung basiert auf dem Wissen des Nutzers. Diese Methode nutzt Informationen - welche nur dem Nutzer bekannt sind - und bestätigt somit seine Identität \cite{boonkrong2012security}. Das bekannteste Verfahren ist dabei die Nutzung von Passwörtern, welche nur dem Nutzer bekannt sein sollten. Weitere Verfahren dieser Kategorie wären allerdings auch Sicherheitsfragen. Diese werden initial vom Nutzer beantwortet und im weiteren Verlauf zur Authentifizierung abgefragt.

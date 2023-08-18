@@ -8,8 +8,8 @@
 \contentsline {section}{\numberline {1.3}Referenzierte Arbeiten}{3}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Grundlagen}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Einführung in cFront}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}CIA-Triade}{7}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.2}CIA-Triade}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Arten der Authentifizierung}{11}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Passwortbasierte Authentifizierung}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Passwortlose Authentifizierung}{18}{section.2.5}%
 \contentsline {section}{\numberline {2.6}YubiKey}{23}{section.2.6}%

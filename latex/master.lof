@@ -3,10 +3,10 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces cFront Startportal\relax }}{8}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces CIA-Triad\relax }}{9}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Erweiterte Schutzziele\relax }}{10}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Faktoren der Authentifizierung\relax }}{10}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Entropie in Abhängigkiet der Passwortlänge\relax }}{14}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Zeit, um ein Passwort zu brechen in Abhängigkeit zu der Länge\relax }}{15}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Erweiterte Schutzziele \blx@tocontentsinit {0}\cite {samonas2014cia}\relax }}{10}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Faktoren der Authentifizierung\relax }}{11}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Zeit, um ein Passwort zu brechen in Abhängigkeit zu der Länge\relax }}{14}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Entropie in Abhängigkiet der Passwortlänge\relax }}{15}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Beispielhafte Umsetzung eines Magic Links\relax }}{19}{figure.caption.28}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Yubikey der Series 5\relax }}{23}{figure.caption.39}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Mögliche Vorteile von FIDO2\relax }}{28}{figure.caption.42}%
