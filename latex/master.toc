@@ -16,30 +16,30 @@
 \contentsline {subsection}{\numberline {2.6.1}Usability}{24}{subsection.2.6.1}%
 \contentsline {section}{\numberline {2.7}FIDO2}{27}{section.2.7}%
 \contentsline {subsection}{\numberline {2.7.1}WebAuthn}{30}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}CTAP2}{32}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{36}{subsection.2.7.3}%
-\contentsline {chapter}{\numberline {3}Umsetzung}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{39}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{41}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{42}{section.3.3}%
-\contentsline {section}{\numberline {3.4}User Feedback}{46}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{46}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{47}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{48}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{51}{subsection.3.4.4}%
-\contentsline {paragraph}{\nonumberline Frage 1:}{52}{paragraph*.75}%
-\contentsline {paragraph}{\nonumberline Frage 2:}{52}{paragraph*.77}%
-\contentsline {paragraph}{\nonumberline Frage 3:}{53}{paragraph*.79}%
-\contentsline {paragraph}{\nonumberline Frage 4:}{53}{paragraph*.81}%
-\contentsline {paragraph}{\nonumberline Frage 5:}{54}{paragraph*.83}%
-\contentsline {paragraph}{\nonumberline Frage 6:}{54}{paragraph*.85}%
-\contentsline {paragraph}{\nonumberline Frage 7:}{55}{paragraph*.87}%
-\contentsline {paragraph}{\nonumberline Frage 8:}{55}{paragraph*.89}%
-\contentsline {paragraph}{\nonumberline Frage 9:}{56}{paragraph*.91}%
-\contentsline {subsection}{\numberline {3.4.5}Auswertung}{56}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{60}{subsection.3.4.6}%
-\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{60}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{62}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Ausblick Passkeys}{65}{chapter.5}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{68}{chapter*.99}%
+\contentsline {subsection}{\numberline {2.7.2}CTAP2}{33}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Sicherheit}{37}{subsection.2.7.3}%
+\contentsline {chapter}{\numberline {3}Umsetzung}{40}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{40}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Wahl des Security Keys}{42}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{43}{section.3.3}%
+\contentsline {section}{\numberline {3.4}User Feedback}{47}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{47}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{48}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Inhalt der Demonstration}{49}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Herleitung der Fragen}{52}{subsection.3.4.4}%
+\contentsline {paragraph}{\nonumberline Frage 1:}{53}{paragraph*.75}%
+\contentsline {paragraph}{\nonumberline Frage 2:}{53}{paragraph*.77}%
+\contentsline {paragraph}{\nonumberline Frage 3:}{54}{paragraph*.79}%
+\contentsline {paragraph}{\nonumberline Frage 4:}{54}{paragraph*.81}%
+\contentsline {paragraph}{\nonumberline Frage 5:}{55}{paragraph*.83}%
+\contentsline {paragraph}{\nonumberline Frage 6:}{55}{paragraph*.85}%
+\contentsline {paragraph}{\nonumberline Frage 7:}{56}{paragraph*.87}%
+\contentsline {paragraph}{\nonumberline Frage 8:}{56}{paragraph*.89}%
+\contentsline {paragraph}{\nonumberline Frage 9:}{57}{paragraph*.91}%
+\contentsline {subsection}{\numberline {3.4.5}Auswertung}{57}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Fazit \& Reflexion}{61}{subsection.3.4.6}%
+\contentsline {section}{\numberline {3.5}Wirtschaftlichkeit}{61}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Fazit \& Empfehlung}{63}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Ausblick Passkeys}{66}{chapter.5}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{69}{chapter*.99}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
