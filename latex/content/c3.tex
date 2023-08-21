@@ -127,14 +127,26 @@ Ein weiteres Problem stellt die bereits genannte, mehrfache Nutzung eines Passwo
 
 \section{Passwortlose Authentifizierung} \label{alts}
 
-Unter dem Sammelbegriff der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörten ersetzen sollen. Im Gegensatz zur passwortbasierten Authentifizierung steht also nicht mehr der Faktor \textit{something you know} im Vordergrund, da das Wissen des Nutzers nicht mehr die Grundlage zur Verifizierung seiner Identität darstellen soll. Die \ac{FIDO} Allianz nutzt den Begriff passwortlose Authentifizierung beispielsweise, um eine eine \ac{SFA} oder \ac{MFA} mit der Hilfe eines Security Keys zu beschreiben \cite{farke2020you}. 
+Unter dem Sammelbegriff der passwortlosen Authentifizierung werden verschiedene Verfahren zusammengefasst, welche die Nutzung von Passwörten ersetzen sollen. Im Gegensatz zur passwortbasierten Authentifizierung steht also nicht mehr der Faktor \textit{something you know} im Vordergrund, da das Wissen des Nutzers nicht mehr die Grundlage zur Verifizierung seiner Identität darstellen soll. Die \ac{FIDO} Allianz nutzt den Begriff passwortlose Authentifizierung beispielsweise, um eine eine \ac{SFA} oder \ac{MFA} mit der Hilfe eines Authentifizierungsgerätes zu beschreiben \cite{farke2020you}. 
 
-Passwortlose Verfahren werden dabei als sicherer im Vergleich zur passwortbasierten Alternative angesehen, da viele der in \textbf{\ref{pw-auth}} aufgeführten Angriffsvektoren passwortlosen Ansätze nicht existieren \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem erhofft man sich eine zusätzliche erhoffte Benutzerfreundlichkeit durch passwortlose Verfahren - insbesondere, weil Nutzer sich keine Passwörter mehr merken müssen und so ein geringerer Aufwand besteht \cite{chowhan2019password}.
+Passwortlose Verfahren werden dabei als sicherer im Vergleich zur passwortbasierten Alternative angesehen, da viele der in \textbf{\ref{pw-auth}} aufgeführten Angriffsvektoren nicht die passwortlosen Ansätze betreffen \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem erhofft man sich eine erhöhte Benutzerfreundlichkeit durch passwortlose Verfahren - insbesondere, weil Nutzer sich keine Passwörter mehr merken müssen und so ein geringerer Aufwand besteht \cite{chowhan2019password}.
 
-Passwortlose Verfahren haben sich jedoch noch nicht flächendeckend durchgesetzt und sind nicht annähernd so weit verbreitet wie die Nutzung von Passwörtern. Dies lässt sich auf mehrere Faktoren zurückführen. Häufig genannte Gründe innerhalb der Fachliteratur sind die Umgewöhnung der Nutzer an eine neuartige Authentifizierung, welches als Hürde zur Etablierung der passwortlosen Verfahren angesehen wird. Aber auch zusätzliche entstehende Kosten durch die Integration der neuen Verfahren können eine Verbereitung ausbremsen \cite{chowhan2019password}. Ein detailierter Einblick in die Vor- und Nachteile in Bezug auf der Benutzerfreundlichkeit wird in \textbf{\ref{Yubikey}} gegeben.
+Passwortlose Verfahren haben sich zum aktuellen Zeitpunkt jedoch noch nicht flächendeckend durchgesetzt und sind nicht annähernd so weit verbreitet wie die Nutzung von Passwörtern. Dies lässt sich auf mehrere Faktoren zurückführen. Häufig genannte Gründe innerhalb der Fachliteratur sind die Umgewöhnung der Nutzer an eine neuartige Authentifizierung, welches als Hürde zur Etablierung der passwortlosen Verfahren angesehen wird \cite{chowhan2019password}. Aber auch zusätzliche entstehende Kosten durch die Integration der neuen Verfahren können eine Verbereitung ausbremsen \cite{chowhan2019password}. Ein detailierter Einblick in die Vor- und Nachteile in Bezug auf der Benutzerfreundlichkeit wird in \textbf{\ref{Yubikey}} gegeben.
 
-Es gibt dabei eine Vielzahl an Möglichkeiten eine passwortlose AUthentifizierung umzusetzen. Eine der am häufigsten genutzen Varianten ist die Nutzung von Security Keys in Kombination mit FIDO2. Diese liegen im Fokus dieser Arbeit und werden in \textbf{\ref{Yubikey}} und \textbf{\ref{fido2}} genauer beschrieben. Dennoch sollen auch mögliche Alternativen kurz vorgestellt werden:
+Es gibt eine Vielzahl an Möglichkeiten eine passwortlose Authentifizierung umzusetzen. Eine der am häufigsten genutzen Varianten, ist die Nutzung eines Authentifizierungsgerätes in Kombination mit \ac{FIDO}2. Diese Variante liegt im Fokus dieser Arbeit und wird in \textbf{\ref{Yubikey}} und \textbf{\ref{fido2}} genauer beschrieben. Dennoch sollen auch andere mögliche Alternativen kurz vorgestellt werden:
 
+\textbf{Magic Link:}
+
+Bei einem Magic Link handelt es sich um eine
+Authentifizierungsmöglichkeit, bei welcher Nutzer
+lediglich ihren Benutzernamen oder ihre E-Mail-Adresse
+zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu verifizieren \cite{chowhan2019password} \cite{parmar2022comprehensive}.
+Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der Authentication Code seine Gültigkeit und somit auch der Link selbst \cite{chowhan2019password}. Der Ablauf des Verfahrens wird ebenfalls vereinfacht in \textbf{\ref{magiclink}} dargestellt.
+Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben, können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren, ohne autorisiert zu sein \cite{chowhan2019password}. 
+
+\paragraph*{Vorteile:} Ein Passwort bleibt zwar in den meisten Fällen für den Zugriff auf den E-Mail Zugang notwendig, würde aber zumindest die Anzahl an benötigten Passwörtern für Nutzer reduzieren. Zudem handelt es sich bei einem Magic Link um eine sehr benutzerfreundliche und einfach verständliche Art der Authentifizierung \cite{parmar2022comprehensive}. Auch die Implementierung und die Kosten zur Instandhaltung sind verhältnismäßig gering \cite{parmar2022comprehensive}.
+
+\paragraph*{Nachteile:} Insbesondere im Unternehmenskontext kann die Nutzung von Spam-Filtern die Benutzerfreundlichkeit von Magic Links stark beeinträchtigen. So können beispielsweise die zugehörigen Mails fälschlicherweise als Spam klassifiziert werden oder eine erhöhte Wartezeit auf die E-Mail entstehen \cite{parmar2022comprehensive}. Auch im Bezug auf das Thema Sicherheit sind einige Aspekte fragwürdig. So hängt die Sicherheit des Verfahrens von der Sicherheit des Mail-Servers ab. Ist dieser nicht ausreichend geschützt, können Angreifer Zugriff auf die Mails erhalten und sich ebenfalls mit dem Link authentifizieren \cite{chowhan2019password}. Dies kann geschehen, ohne dass der Nutzer dies überhaupt bemerkt \cite{chowhan2019password}.
 
 \begin{figure}[h]
 	\centering 
@@ -143,24 +155,11 @@ Es gibt dabei eine Vielzahl an Möglichkeiten eine passwortlose AUthentifizierun
 	\caption{Beispielhafte Umsetzung eines Magic Links} \label{magiclink}
 \end{figure}
 
-\textbf{Magic Link:}
-
-Bei einem Magic Link handelt es sich um eine
-Authentifizierungsmöglichkeit, bei welcher Nutzer
-lediglich ihren Benutzernamen oder ihre E-Mail-Adresse
-zur Anmeldung angeben müssen. Anschließend erhält der Nutzer eine E-Mail mit einem dazugehörigen Link, welcher genutzt wird, um seine Identität zu verifizieren \cite{chowhan2019password} \cite{parmar2022comprehensive}.
-Dieser Link beinhaltet einen Authentication Code, welcher im Hintergrund abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert der AUthentication Code seine Gültigkeit und somit auch der Link selbst \cite{chowhan2019password}. Der Ablauf des Verfahrens wird ebenfalls vereinfacht in \textbf{\ref{magiclink}} dargestellt.
-Die Sicherheit dieses Verfahrens basiert dabei auf der Annahme, dass der Mail-Server bzw. der Zugang zum Account des Nutzers ausreichend geschützt ist. Ist diese Annahme nicht gegeben können sich auch andere Personen mit dem Link des eigentlichen Nutzers authentifizieren ohne autorisiert zu sein \cite{chowhan2019password}. 
-
-\paragraph*{Vorteile:} Ein Passwort bleibt zwar in den meisten Fällen für den Zugriff auf den E-Mail Zugang notwendig, würde aber zumindest die Anzahl an benötigten Passwörtern für Nutzer reduzieren. Zudem handelt es sich bei einem Magic Link um eine sehr benutzerfreundliche und einfach verständliche Art der Authentifizierung \cite{parmar2022comprehensive}. Auch die Implementierung und die Kosten zur Instandshaltung sind verhältnismäßig gering einzuorden \cite{parmar2022comprehensive}.
-
-\paragraph*{Nachteile:} Insbesondere im Unternehmenskontext kann die Nutzung von Spam-Filtern die Benutzerfreundlichkeit von Magic Links stark beeinträchtigen. So können beispielsweise die zugehörigen Mails fälschlicherweise als Spam klassifiziert werden oder eine erhöhte Wartezeit auf die E-Mail entstehen \cite{parmar2022comprehensive}. Auch im Bezug auf das Thema Sicherheit sind einige Aspekte fragwürdig. So hängt die Sicherheit des Verfahrens von der Sicherheit des Mail-Servers ab. Ist dieser nicht ausreichend geschützt, können Angreifer Zugriff auf die Mails erhalten und sich ebenfalls mit dem Link authentifizieren \cite{chowhan2019password}. Dies kann geschehen, ohne dass der Nutzer dies überhaupt bemerkt \cite{chowhan2019password}.
-
 \textbf{\ac{OTP}:}
 
-Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} beinhaltet \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
-Dieses wird vom System abgeglichen und validiert. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Anmeldung verliert das \ac{OTP} seine Gültigkeit \cite{chowhan2019password}.
-Häufig werden \ac{OTP}s allerdings nicht für eine oben beschrieben \ac{SFA} genutzt, sondern dienen als zusätzlicher Faktor für eine \ac{MFA} \cite{chowhan2019password}. So können beispielsweise Authenticator Apps zur Bereitstellung von \ac{OTP}s genutzt werden, um die etabliertere passwortbasierte Authentifizierung sicherer zu gestalten.
+Das Konzept hinter \ac{OTP}s ähnelt dem des Magic Links. Nutzer geben ihre E-Mail-Adresse oder ihre Handynummer an (diese können ebenfalls einem Benutzernamen zugewiesen sein) und erhalten eine E-Mail/SMS, welche ein \ac{OTP} enthält \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
+Der Nutzer übergibt das \ac{OTP}, welches daraufhin vom System abgeglichen und validiert wird. Ist die Validierung erfolgreich wird der Nutzer authentifiziert und angemeldet. Nach der Authentifizierung verliert das \ac{OTP} seine Gültigkeit \cite{chowhan2019password}.
+Häufig werden \ac{OTP}s allerdings nicht für eine oben beschrieben \ac{SFA} genutzt, sondern dienen als zusätzlicher Faktor für eine \ac{MFA} \cite{chowhan2019password}. So können beispielsweise Authenticator Apps zur Bereitstellung von \ac{OTP}s genutzt werden, um die passwortbasierte Authentifizierung sicherer zu gestalten.
 Im Gegensatz zu statischen, von Anwendern gewählten
 Passwörtern sind \ac{OTP}s dynamisch erzeugt und haben nur
 eine geringe Lebensdauer. So wird eine höhere
@@ -168,43 +167,43 @@ Sicherheit gewährleistet, da \ac{OTP}s nur schwierig durch
 stupides Erraten oder Brute Force Attacken erbeutet
 werden können \cite{chowhan2019password}.
 Für die Umsetzung von OTPs gibt es mehrere Möglichkeiten. Zwei häufig verwendete Optionen sind \ac{HOTP} und \ac{TOTP} \cite{chowhan2019password}.
-\ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden \cite{chowhan2019password}.
+\ac{HOTP}s basieren auf der technischen Spezifikation RFC 4226. Sie werden mit Hilfe von einem \ac{HMAC} und unabhängig von der Zeit generiert. Neue \ac{HOTP}s können Event-basiert von dem Nutzer angefordert werden \cite{chowhan2019password}.
 \ac{TOTP}s basieren auf der technischen Spezifikation RFC 6238 und werden in Abähngigkeit zu der Zeit erstellt. Sie ändern sich nach einem vordefinierten Zeitintervall und sind somit sehr kurzlebig \cite{chowhan2019password}.
 
-\paragraph*{Vorteile:} Die Nutzung von \ac{OTP}s ist sehr effektiv für eine \ac{MFA}, da die Sicherheit im Vergleich zu einer passwortbasierten \ac{SFA} signifikant erhöht werden kann \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem handelt es sich um eine sehr benutzerfreundliche und einfachz anwendbare Methode, welche sich bereits für die Nutzung von \ac{MFA} weitreichend etabliert hat \cite{parmar2022comprehensive}. Dies liegt auch an der Vielzahl an Umsetzungsmöglichkeiten von \ac{OTP}s, da diese beispielsweise via E-Mail, SMS, Authenticator App oder auch Security Key an den Nutzer übermittelt werden können \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
+\paragraph*{Vorteile:} Die Nutzung von \ac{OTP}s ist sehr effektiv für eine \ac{MFA}, da die Sicherheit im Vergleich zu einer passwortbasierten \ac{SFA} signifikant erhöht werden kann \cite{chowhan2019password} \cite{parmar2022comprehensive}. Zudem handelt es sich um eine sehr benutzerfreundliche und leicht anwendbare Methode, welche sich bereits für die Nutzung von \ac{MFA} weitreichend etabliert hat \cite{parmar2022comprehensive}. Dies liegt auch an der Vielzahl an Umsetzungsmöglichkeiten von \ac{OTP}s, da diese beispielsweise via E-Mail, SMS, Authenticator App oder auch Security Key an den Nutzer übermittelt werden können \cite{chowhan2019password} \cite{parmar2022comprehensive}. 
 
 \paragraph*{Nachteile:} Da sich diese Arbeit auf die Nutzung einer passwortlosen Authentifizierung als \ac{SFA} fokussiert, wird es hier als Nachteil eingeordnet, dass sich die Nutzung von \ac{OTP}s hauptsächlich für die Umsetzung einer \ac{MFA} anbietet. Eine Nutzung von \ac{OTP}s als \ac{SFA} wird häufig nicht unterstützt. Zudem ist je nach Implementierung wie auch bei einem Magic Link eine Abhängigkeit auf einen anderen Dienst gegeben, welche die Sicherheit des Verfahrens beeinträchtigen können.
 
 \textbf{Biometrische Daten:}
 
-Eine bereits weitreichend etablierte Methode zur passwortlosen AUthentifizierung ist die Nutzung von biometrischen Daten. Diese wird insbesondere im Bereich der mobilen Endgeräte häufig genutzt \cite{parmar2022comprehensive}. Dabei werden einzigartige biometrische Merkmale des Nutzers genutzt um seine Identität zu verifizieren. Dazu gehören beispielsweise Fingerabdrücke oder eine Gesichtserkennung \cite{parmar2022comprehensive}. Im Bereich der Smartphones wird dieses Beispielsweise von Apple durch die Technologien \textit{Touch ID} und \textit{Face ID} umgesetzt. Aber auch Microsoft bietet mittlerweile eine Authentifizierung mittels biometrischer Daten an (\textit{Windows Hello} und \textit{Hello for Business}). Diese Methode lässt sich ebenfalls für eine Integration in den Unternehmenskontext nutzen und ist nicht nur für mobile Endgeräte verfügbar. Wichtig ist hierbei, dass lediglich der reine Zugriff mit biometrischen Daten ermöglicht wird. Die Authentifizierung selbst basiert im Verlauf auf der Nutzung von öffentlich/privaten Schlüsselpaaren.
+Eine bereits weitreichend etablierte Methode zur passwortlosen Authentifizierung ist die Nutzung von biometrischen Daten. Diese wird insbesondere im Bereich der mobilen Endgeräte genutzt \cite{parmar2022comprehensive}. Dabei werden einzigartige biometrische Merkmale des Nutzers genutzt um seine Identität zu verifizieren. Dazu gehören beispielsweise Fingerabdrücke oder eine Gesichtserkennung \cite{parmar2022comprehensive}. Im Bereich der Smartphones wird dieser Ansatz u.a. von Apple durch die Technologien \textit{Touch ID} und \textit{Face ID} integriert. Aber auch Microsoft ermöglicht mittlerweile eine Authentifizierung mittels biometrischer Daten an (\textit{Windows Hello} und \textit{Hello for Business}). Diese Technologie lässt sich ebenfalls für eine Integration in den Unternehmenskontext nutzen und ist nicht nur für mobile Endgeräte verfügbar. Wichtig ist hierbei, dass die Authentifizierung selbst auf der Nutzung von Schlüsselpaaren basiert. Lediglich der Zugriff auf die Schlüssel wird mit Hilfe der biometrischen Daten gewährt.
 
-\paragraph*{Vorteile:} Viele mobile Endgeräte arbeiten bereits mit biometrischen Daten. Daher ist für eine Vielzahl an Nutzern keine große Umgewöhnung an die neue Art der Authentifizierung notwendig \cite{parmar2022comprehensive}. Da biometrische Daten nahezu einzigartig sind, sind diese ebenfalls deutlich schwieriger anzugreifen als Passwörter. Auch durch die Unterstützung von Microsoft über Windows Hello for Business ist diese Methode bereits für den Unternehmenskontext verfügbar \cite{parmar2022comprehensive}.
+\paragraph*{Vorteile:} Viele mobile Endgeräte arbeiten bereits mit biometrischen Daten. Daher ist für Nutzer keine große Umgewöhnung an die neue Art der Authentifizierung notwendig \cite{parmar2022comprehensive}. Da biometrische Daten nahezu einzigartig sind, sind diese ebenfalls deutlich schwieriger anzugreifen als Passwörter. Durch die Unterstützung von Microsoft mit Hello for Business ist diese Methode bereits für den Unternehmenskontext verfügbar \cite{parmar2022comprehensive}.
 
-\paragraph*{Nachteile:} Äußere Bedingungen können die Erkennung von biometrischen Daten beeinträchtigen. So kann beispielsweise schlechtes Licht bei einer Gesichtserkennung oder staubige Umgebungen bei einem Fingerabdruckscanner die Erkennung beeinträchtigen \cite{parmar2022comprehensive}. Zudem können sich biometrische Daten im Laufe der Zeit verändern. Auch Verletzungen oder Krankheiten können zu Veränderungen der biometrischen Daten beitragen \cite{boonkrong2012security}. Auch wenn Microsoft bereits biometrische Daten unterstützt ist es im Unternehmenskontext häufig so, dass verschiedene Hersteller und Geräte genutzt werden. Diese unterstützen nicht alle biometrischen Daten oder sind nicht untereinander kompatibel \cite{parmar2022comprehensive}.
+\paragraph*{Nachteile:} Äußere Bedingungen können die Erkennung von biometrischen Daten beeinträchtigen. So kann beispielsweise schlechtes Licht bei einer Gesichtserkennung oder staubige Umgebungen bei einem Fingerabdruckscanner die Erkennung beeinträchtigen \cite{parmar2022comprehensive}. Zudem können sich biometrische Daten im Laufe der Zeit verändern. Auch Verletzungen oder Krankheiten können zu Veränderungen der biometrischen Daten beitragen \cite{boonkrong2012security}. Auch wenn Microsoft bereits biometrische Daten unterstützt ist es im Unternehmenskontext häufig so, dass verschiedene Hersteller und Geräte genutzt werden. Diese unterstützen nicht immer zwangsweise biometrischen Daten oder sind nicht untereinander kompatibel \cite{parmar2022comprehensive}.
 
 \textbf{Öffentliche/Private Schlüsselpaare:}
 
-Bei der Nutzung von öffentlichen und privaten Schlüsselpaaren handelt es sich um eine asymmetrische Verschlüsselung. Dabei wird ein öffentlicher und ein privater Schlüssel generiert. Der öffentliche Schlüssel wird dabei an den Server übermittelt und der private Schlüssel wird auf dem Gerät des Nutzers gespeichert. Die AUthentifizierung erfolgt durch die Nutzung des privaten Schlüssels. Mit Hilfe des öffentlichen Schlüssels kann der Server die Identität des Nutzers verifizieren. Eine genaue Beschreibung des Verfahrens an Hand des FIDO2 Protokolls wird in \textbf{\ref{fido2}} gegeben.
+Bei der Nutzung von öffentlichen und privaten Schlüsselpaaren handelt es sich um eine asymmetrische Verschlüsselung. Dabei werden ein öffentlicher und ein privater Schlüssel generiert. Der öffentliche Schlüssel wird an den Server übermittelt und der private Schlüssel wird auf dem Gerät des Nutzers gespeichert. Die Authentifizierung erfolgt durch die Nutzung des privaten Schlüssels. Mit Hilfe des öffentlichen Schlüssels kann der Server die Identität des Nutzers verifizieren. Eine genaue Beschreibung des Verfahrens an Hand des \ac{FIDO}2 Protokolls wird in \textbf{\ref{fido2}} gegeben.
 
 
 \section{YubiKey} \label{Yubikey}
-Ein Security Key ist eine Hardware, welche es ermöglicht einen Nutzer zu authentifizieren, indem dieser mit dem Security Key interagiert (beispielsweise durch einen Knopfdruck) \cite{reynolds2018tale}. In der Fachliteratur lassen sich viele verschiedene Bezeichnungen für Security Keys finden. Dazu gehören beispielsweise \textit{Security Token}, \textit{Hardware Token}, \textit{Authentifizierungsgerät}. Um eine einheitliche Bezeichnung zu gewährleisten, wird in dieser Arbeit der Begriff \textit{Security Key} genutzt. Beispielhaft wird in dieser Arbeit ein YubiKey der Series 5 (siehe \textbf{\ref{yubikey}}) als Referenzmodell genutzt. Dies basiert auf der Entscheidung, welche in \textbf{\ref{secwahl}} getroffen wird. Grundsätzlich sind die Funktionsweisen der verschiedenen Security Keys allerdings sehr ähnlich.
-
-\begin{figure}[h]
-	\centering 
-	\includegraphics[width=0.3\textwidth]{img/abbildungen/yubikey.jpeg}
-	\captionsetup{format=hang}
-	\caption{Yubikey der Series 5} \label{yubikey}
-\end{figure}
+Ein Security Key ist eine Hardware, welche es ermöglicht einen Nutzer zu authentifizieren. Der Nutzer muss dazu mit dem Security Key interagieren (beispielsweise durch einen Knopfdruck) \cite{reynolds2018tale}. In der Fachliteratur lassen sich viele verschiedene Bezeichnungen für Security Keys finden. Dazu gehören beispielsweise \textit{Security Token}, \textit{Hardware Token}, \textit{Authentifizierungsgerät}. Um eine einheitliche Bezeichnung zu gewährleisten, wird in dieser Arbeit der Begriff \textit{Security Key} genutzt. Beispielhaft wird in dieser Arbeit ein YubiKey der Series 5 (siehe \textbf{\ref{yubikey}}) als Referenzmodell genutzt. Dies basiert auf der Entscheidung, welche in \textbf{\ref{secwahl}} getroffen wird. Grundsätzlich sind die Funktionsweisen der verschiedenen Security Keys allerdings sehr ähnlich.
 
 Der YubiKey 5 ermöglicht grundsätzlich drei Arten der Authentifizierung:
 
 \begin{enumerate}
     \item Eine \ac{SFA}, welche Passwörter durch ein passwortloses \textit{tap-n-go} Verfahren ersetzt \cite{yuibkey2023fido2}.
-    \item Eine Nutzung des Secruity Keys als zusätzlicher Faktor für eine \ac{2FA}. Somit wird das Passwort zusätzlich abgesichert. Der Security entspricht somit dem zweiten Faktor (\textit{something you have}) \cite{yuibkey2023fido2}.
+    \item Eine Nutzung des Security Keys als zusätzlicher Faktor für eine \ac{2FA}. Somit wird das Passwort zusätzlich abgesichert. Der Security entspricht somit dem zweiten Faktor (\textit{something you have}) \cite{yuibkey2023fido2}.
     \item Eine passwortlose \ac{MFA} mit Hilfe einer zusätzlichen PIN für den Security Key \cite{yuibkey2023fido2}.
 \end{enumerate}
+
+\begin{figure}[h]
+	\centering 
+	\includegraphics[width=0.3\textwidth]{img/abbildungen/yubikey.jpeg}
+	\captionsetup{format=hang}
+	\caption{Yubikey der Series 5 \cite{yubikeypic}} \label{yubikey}
+\end{figure}
 
 \subsection{Usability}
 Es gibt bereits Fachliteratur, welche sich mit der Benutzerfreundlichkeit von Security Keys beschäftigen. Diese beziehen sich zumeist auf die Implementierung von Security Keys in Kleinunternehmen. Die gesammelte Recherche soll genutzt werden um im Folgenden Vor- und Nachteile der Nutzung von Security Keys im Bezug auf deren Benutzerfreundlichkeit zu erläutern. Dies wird in \textbf{\ref{questions}} als Basis für die Evaluation eines Fragebogens für die \ac{LSY} genutzt.
@@ -213,10 +212,10 @@ Es gibt bereits Fachliteratur, welche sich mit der Benutzerfreundlichkeit von Se
 
 \begin{itemize}
     \item Ergebnisse zeigen, dass Nutzer grundsätzlich bereit sind, Passwörter durch passwortlose Verfahren zu ersetzen \cite{lyastani2020fido2}.
-    \item Passwortlose Verfahren mit Security Key wurden mehr akzeptiert als tradionelle passwortbasierte Verfahren \cite{lyastani2020fido2}.
+    \item Passwortlose Verfahren mit einem Security Key weisen eine höhere Akzeptanz auf als traditionelle passwortbasierte Verfahren \cite{lyastani2020fido2}.
     \item Es handelt sich um eine implizite Garantie, dass sich lediglich Nutzer authentifizieren können, welche auch im Besitz des Security Keys sind \cite{lyastani2020fido2}.
-    \item Durch die Nutzung von FIDO2 kann die Benutzerfreundlichkeit erhöht werden, da Nutzer sich keine Passwörter mehr merken müssen. Häufig wird das Verwalten der immer höher werdenden Anzahl an Passwörtern als Problem angesehen \cite{lyastani2020fido2} \cite{farke2020you}.
-    \item Es wird ein deutlich geringerer kognitiver Aufwand benötigt, da Nutzer keine neuen Passwörter mehr erstellen und merken müssen \cite{lyastani2020fido2}.
+    \item Durch die Nutzung eines Security Keys und \ac{FIDO}2 kann die Benutzerfreundlichkeit erhöht werden, da Nutzer sich keine Passwörter mehr merken müssen. Häufig wird das Verwalten der immer höher werdenden Anzahl an Passwörtern als Problem angesehen \cite{lyastani2020fido2} \cite{farke2020you}.
+    \item Es wird ein deutlich geringerer kognitiver Aufwand benötigt, da Nutzer keine neuen Passwörter mehr erstellen müssen \cite{lyastani2020fido2}.
     \item Zum aktuellen Zeitpunkt wird FIDO2 bereits von einer Vielzahl an Browsern unterstützt (und somit auch die Nutzung von Security Keys). Zusätzlich bieten immer mehr Online-Dienste die Möglichkeit an sich mit Hilfe von FIDO2 zu authentifizieren \cite{lyastani2020fido2} \cite{farke2020you}.
     \item Es handelt sich um offene und standardisierte Protokolle. Das verhindert verschieden Lösungsansätze verschiedener Hersteller und führt zu einer unabhängigeren und universellen Lösung \cite{farke2020you}.
 \end{itemize}
@@ -224,23 +223,23 @@ Es gibt bereits Fachliteratur, welche sich mit der Benutzerfreundlichkeit von Se
 \textbf{Nachteile:}
 
 \begin{itemize}
-    \item Im Falle einer \ac{SFA} wird der Verlust des Security Keys als größtes Problem angesehen. Bei Verlust hat auch der Nutzer keinen Zugriff mehr und aktuell gibt es noch keine sichere und effiziente Möglichkeiten, um den Zugriff wiederherzustellen \cite{lyastani2020fido2}.
+    \item Im Falle einer \ac{SFA} wird der Verlust des Security Keys als größtes Problem angesehen. Bei einem Verlust verliert der Nutzer seinen Zugriff. Aktuell gibt es noch keine sichere und effiziente Möglichkeiten, um den Zugriff wiederherzustellen \cite{lyastani2020fido2}.
     \item Da es sich um zusätzliche Hardware handelt kann diese ebenfalls kaputt gehen \cite{farke2020you}.
-    \item Im Unternehmenskontext, kann die Verwaltung und Verteilung der Authentifizierungsgeräte zu einem Problem werden \cite{farke2020you}. 
-    \item Da es sich um Hardware handelt, können Zugänge nicht an vertraute Personen weitergegeben werden, da der Zugang nur mit dem Authentifizierungsgerät möglich ist \cite{lyastani2020fido2}.
-    \item Ohne das Authentifizierungsgerät sind keine spontanen Logins möglich \cite{lyastani2020fido2}.
-    \item Bereits das aus der Tasche holen des Authentifizierungsgerätes ist für manche Nutzer bereits eine Hürde \cite{farke2020you}.
-    \item Es wird ein physischer Aufwand benötigt, da das Authentifizierungsgerät mitgeführt werden muss \cite{lyastani2020fido2}.
-    \item Authentifizierungsgeräte sind häufig mit Kosten verbunden, welche vom Nutzer getragen werden müssen \cite{lyastani2020fido2}.
+    \item Im Unternehmenskontext, kann die Verwaltung und Verteilung der Security Keys zu einem Problem werden \cite{farke2020you}. 
+    \item Da es sich um Hardware handelt, können Zugänge nicht an vertraute Personen weitergegeben werden, da der Zugang nur mit dem Security Key möglich ist \cite{lyastani2020fido2}.
+    \item Ohne den Security Key sind keine spontanen Logins möglich \cite{lyastani2020fido2}.
+    \item Bereits das aus der Tasche holen des Security Keys ist für manche Nutzer eine Hürde \cite{farke2020you}.
+    \item Es wird ein physischer Aufwand benötigt, da der Secuirty Key mitgeführt werden muss \cite{lyastani2020fido2}.
+    \item Security Keys sind häufig mit Kosten verbunden, welche vom Nutzer getragen werden müssen \cite{lyastani2020fido2}.
     \item Nutzer haben Probleme ein neues Verfahren für die Authentifizierung zu nutzen, da sie sich an das alte Verfahren gewöhnt haben. Das führt dazu, dass Nutzer das neue Verfahren als kompliziert und ungewohnt empfinden. Sie verfügen häufig nicht über das nötige Wissen, um die Funktion und Sicherheit des Verafahrens zu verstehen \cite{lyastani2020fido2}.
     \item Selbst Nutzern, welchen das Konzept der passwortlosen Authentifizierung gefällt, nutzen in der Praxis häufig weiterhin Passwörter \cite{farke2020you}.
     \item Nutzer wollen keine Angewohnheiten verändern, wenn die nicht dazu gezwungen sind \cite{farke2020you}.
     \item Nutzer verwenden lieber Passwörter, da sie das Konzept und die Technologie besser verstehen \cite{lyastani2020fido2}.
-    \item Nicht zwangsweise schneller als die Nutzung von Passwortmanagern \cite{farke2020you}.
+    \item Eine Authentifizierung mit einem Security Key ist nicht zwangsweise schneller als die Nutzung von Passwortmanagern \cite{farke2020you}.
     \item Allgemein fällt das Feeback von Nutzern weniger positiv aus, wenn diese vorher bereits Passwortmanager genutzt haben \cite{farke2020you}.
 \end{itemize}
 
-Insgesamt lassen sich noch nicht alle Szenarien mit Security Keys abdecken. Es gibt noch spezielle Fälle, in welchen die Nutzung von Passwörtern weiterhin notwendig ist \cite{lyastani2020fido2}. Auffälig jedoch ist, dass die Teilnehmer der Studien häufig einen skeptischen Blick auf die neuartige Authentifizierung werfen. Trotz der gesammelten Vor- und Nachteile kann keine Annahme darüber getroffen werden, ob die Vor- oder die Nachteile überwiegen und ob das Verfahren grundsätzlich gegenüber der passwortbasierten Alternative bevorzugt wird. Dies wird in \textbf{\ref{questions}} mit Hilfe der hier erarbeiteten Grundlage genauer analysiert.
+Insgesamt lassen sich noch nicht alle Szenarien mit Security Keys abdecken. Es gibt noch spezielle Fälle, in welchen die Nutzung von Passwörtern weiterhin notwendig ist \cite{lyastani2020fido2}. Auffälig jedoch ist, dass die Teilnehmer der Studien häufig einen skeptischen Blick auf die neuartige Authentifizierung werfen. Trotz der gesammelten Vor- und Nachteile kann keine Annahme darüber getroffen werden, ob die Vor- oder die Nachteile überwiegen und ob die Nutzung von Security Keys grundsätzlich gegenüber der passwortbasierten Alternative bevorzugt wird. Dies wird in \textbf{\ref{questions}} mit Hilfe der hier erarbeiteten Grundlage genauer analysiert.
 
 \section{FIDO2} \label{fido2}
 
