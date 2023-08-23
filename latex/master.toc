@@ -1,7 +1,6 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{v}{chapter*.5}%
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{vii}{chapter*.8}%
-\contentsline {chapter}{Abkürzungsverzeichnis}{viii}{chapter*.9}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{v}{chapter*.6}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{vii}{chapter*.9}%
 \contentsline {chapter}{\numberline {1}Einführung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Problemstellung \& Ziel der Arbeit}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Aufbau der Arbeit}{2}{section.1.2}%

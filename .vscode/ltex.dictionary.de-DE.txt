@@ -7,3 +7,4 @@ passwortbasierte
 Authenticator
 WebAuthn
 Passkeys
+FIDO
