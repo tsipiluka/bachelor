@@ -2562,4 +2562,75 @@
     <bcf:citekey order="223">lyastani2020fido2</bcf:citekey>
     <bcf:citekey order="224">farke2020you</bcf:citekey>
     <bcf:citekey order="225">morii2017research</bcf:citekey>
-    <bcf:citekey order="226">barbosa2021provable</bcf:c
+    <bcf:citekey order="226">barbosa2021provable</bcf:citekey>
+    <bcf:citekey order="227">barbosa2021provable</bcf:citekey>
+    <bcf:citekey order="228">barbosa2021provable</bcf:citekey>
+    <bcf:citekey order="229">barbosa2021provable</bcf:citekey>
+    <bcf:citekey order="230">keycloak</bcf:citekey>
+    <bcf:citekey order="231">compWin</bcf:citekey>
+    <bcf:citekey order="232">farke2020you</bcf:citekey>
+    <bcf:citekey order="233">techstat</bcf:citekey>
+    <bcf:citekey order="234">farke2020you</bcf:citekey>
+    <bcf:citekey order="235">techstat</bcf:citekey>
+    <bcf:citekey order="236">databreach</bcf:citekey>
+    <bcf:citekey order="237">databreach</bcf:citekey>
+    <bcf:citekey order="238">usecasfido</bcf:citekey>
+    <bcf:citekey order="239">usecasfido</bcf:citekey>
+    <bcf:citekey order="240">usecasfido</bcf:citekey>
+    <bcf:citekey order="241">usecasfido</bcf:citekey>
+    <bcf:citekey order="242">usecasfido</bcf:citekey>
+    <bcf:citekey order="243">usecasfido</bcf:citekey>
+    <bcf:citekey order="244">passkeysgoogle</bcf:citekey>
+    <bcf:citekey order="245">usecasfido</bcf:citekey>
+    <bcf:citekey order="246">usecasfido</bcf:citekey>
+    <bcf:citekey order="247">passkeysgoogle</bcf:citekey>
+    <bcf:citekey order="248">passkeysgoogle</bcf:citekey>
+    <bcf:citekey order="249">usecasfido</bcf:citekey>
+    <bcf:citekey order="250">usecasfido</bcf:citekey>
+    <bcf:citekey order="251">passkeysapple</bcf:citekey>
+    <bcf:citekey order="252">boonkrong2012security</bcf:citekey>
+    <bcf:citekey order="253">samonas2014cia</bcf:citekey>
+    <bcf:citekey order="254">chanda2016password</bcf:citekey>
+    <bcf:citekey order="255">ives2004domino</bcf:citekey>
+    <bcf:citekey order="256">yildirim2019encouraging</bcf:citekey>
+    <bcf:citekey order="257">chowhan2019password</bcf:citekey>
+    <bcf:citekey order="258">parmar2022comprehensive</bcf:citekey>
+    <bcf:citekey order="259">yuibkey2023fido2</bcf:citekey>
+    <bcf:citekey order="260">farke2020you</bcf:citekey>
+    <bcf:citekey order="261">lyastani2020fido2</bcf:citekey>
+    <bcf:citekey order="262">reynolds2018tale</bcf:citekey>
+    <bcf:citekey order="263">barbosa2021provable</bcf:citekey>
+    <bcf:citekey order="264">bindel2022fido2</bcf:citekey>
+    <bcf:citekey order="265">databreach</bcf:citekey>
+    <bcf:citekey order="266">usecasfido</bcf:citekey>
+    <bcf:citekey order="267">passkeysapple</bcf:citekey>
+    <bcf:citekey order="268">passkeysgoogle</bcf:citekey>
+    <bcf:citekey order="269">passkeysgoogledev</bcf:citekey>
+    <bcf:citekey order="270">pons</bcf:citekey>
+    <bcf:citekey order="271">agarwal2011security</bcf:citekey>
+    <bcf:citekey order="272">verizon2017</bcf:citekey>
+    <bcf:citekey order="273">Symantec</bcf:citekey>
+    <bcf:citekey order="274">morii2017research</bcf:citekey>
+    <bcf:citekey order="275">yubikeypic</bcf:citekey>
+    <bcf:citekey order="276">w3cabout</bcf:citekey>
+    <bcf:citekey order="277">keycloak</bcf:citekey>
+    <bcf:citekey order="278">compWin</bcf:citekey>
+    <bcf:citekey order="279">techstat</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="none">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
