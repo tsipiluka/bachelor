@@ -8,7 +8,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Entropie in Abhängigkeit der Passwortlänge \blx@tocontentsinit {0}\cite {chanda2016password}\relax }}{15}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Benötigte Zeit, um ein Passwort zu brechen in Abhängigkeit der Länge \blx@tocontentsinit {0}\cite {chanda2016password}\relax }}{15}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Beispielhafte Umsetzung eines Magic Links\relax }}{20}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Yubikey der Series 5 \blx@tocontentsinit {0}\cite {yubikeypic}\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces YubiKey der Series 5 \blx@tocontentsinit {0}\cite {yubikeypic}\relax }}{24}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Mögliche Vorteile von FIDO2 \blx@tocontentsinit {0}\cite {lyastani2020fido2}\relax }}{28}{figure.caption.42}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces FIDO2 Teilnehmer \blx@tocontentsinit {0}\cite {barbosa2021provable}\relax }}{29}{figure.caption.43}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Vereinfachter FIDO2 Ablauf \blx@tocontentsinit {0}\cite {barbosa2021provable}\relax }}{29}{figure.caption.44}%
@@ -18,20 +18,20 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Security Key als zweiter Faktor in der Azure \ac {AD}\relax }}{40}{figure.caption.60}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Aktuelle Umsetzung der Abteilung\relax }}{41}{figure.caption.61}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Umsetzungsmöglichkeit mit Azure \ac {AD}\relax }}{43}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{43}{figure.caption.63}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{44}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Veränderter Keycloak-Login\relax }}{44}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Authentication Flow\relax }}{45}{figure.caption.64}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Registrierung (vereinfacht)\relax }}{45}{figure.caption.65}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{45}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Anmeldung (vereinfacht)\relax }}{46}{figure.caption.66}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Alter der Teilnehmer\relax }}{48}{figure.caption.67}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Rollen der Teilnehmer\relax }}{49}{figure.caption.68}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Register\relax }}{49}{figure.caption.69}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Register\relax }}{50}{figure.caption.69}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Dialog des Browsers\relax }}{50}{figure.caption.70}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces PIN-Eingabe\relax }}{50}{figure.caption.71}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces PIN-Eingabe\relax }}{51}{figure.caption.71}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces Aufforderung des Browsers\relax }}{51}{figure.caption.72}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Dialog Passkey\relax }}{51}{figure.caption.73}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Auswertung Frage 5 \& 6\relax }}{57}{figure.caption.92}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Dialog Passkey\relax }}{52}{figure.caption.73}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Auswertung Frage 5 \& 6\relax }}{58}{figure.caption.92}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Multi-Device \ac {FIDO} und Single-Device \ac {FIDO} \blx@tocontentsinit {0}\cite {usecasfido}\relax }}{66}{figure.caption.97}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Multi-Device \ac {FIDO} und Single-Device \ac {FIDO} \blx@tocontentsinit {0}\cite {usecasfido}\relax }}{67}{figure.caption.97}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
