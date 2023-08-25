@@ -634,10 +634,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://de.pons.com/}
+      \verb https://de.pons.com/
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://de.pons.com/%7D
+      \verb https://de.pons.com/
       \endverb
     \endentry
     \entry{agarwal2011security}{article}{}
@@ -696,10 +696,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://enterprise.verizon.com/ resources/reports/2017_dbir.pdf}
+      \verb https://enterprise.verizon.com/ resources/reports/2017_dbir.pdf
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://enterprise.verizon.com/%20resources/reports/2017_dbir.pdf%7D
+      \verb https://enterprise.verizon.com/%20resources/reports/2017_dbir.pdf
       \endverb
     \endentry
     \entry{Symantec}{misc}{}
@@ -878,10 +878,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://learn.microsoft.com/de-de/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-key-providers}
+      \verb https://learn.microsoft.com/de-de/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-key-providers
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://learn.microsoft.com/de-de/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-key-providers%7D
+      \verb https://learn.microsoft.com/de-de/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-key-providers
       \endverb
     \endentry
     \entry{techstat}{misc}{}
@@ -894,10 +894,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://de.statista.com/statistik/daten/studie/1313711/umfrage/alternative-technologien-zum-passwort-in-deutschland/#:~:text=Im%20Rahmen%20der%20Umfrage%20gaben,Passwort%20im%20Alltag%20gerne%20beibehalten.}
+      \verb https://de.statista.com/statistik/daten/studie/1313711/umfrage/alternative-technologien-zum-passwort-in-deutschland/#:~:text=Im%20Rahmen%20der%20Umfrage%20gaben,Passwort%20im%20Alltag%20gerne%20beibehalten.
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://de.statista.com/statistik/daten/studie/1313711/umfrage/alternative-technologien-zum-passwort-in-deutschland/#:~:text=Im%20Rahmen%20der%20Umfrage%20gaben,Passwort%20im%20Alltag%20gerne%20beibehalten.%7D
+      \verb https://de.statista.com/statistik/daten/studie/1313711/umfrage/alternative-technologien-zum-passwort-in-deutschland/#:~:text=Im%20Rahmen%20der%20Umfrage%20gaben,Passwort%20im%20Alltag%20gerne%20beibehalten.
       \endverb
     \endentry
   \enddatalist
