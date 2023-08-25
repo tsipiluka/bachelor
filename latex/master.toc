@@ -20,7 +20,7 @@
 \contentsline {chapter}{\numberline {3}Umsetzung}{39}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Aktueller Stand der LSY}{39}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Wahl des Security Keys}{41}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Integration eines Yubikeys in die LSY}{42}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Integration eines YubiKeys in die LSY}{42}{section.3.3}%
 \contentsline {section}{\numberline {3.4}User Feedback}{46}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Rahmen des Feedbacks}{46}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Auswahl der Teilnehmer}{47}{subsection.3.4.2}%
