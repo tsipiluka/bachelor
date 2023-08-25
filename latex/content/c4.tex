@@ -6,9 +6,9 @@ Im Folgenden wird die Umsetzung einer Integration eines Security Keys in Kombina
 \section{Aktueller Stand der LSY} \label{current}
 Innerhalb der \ac{LSY} werden aktuell verschiedene Verfahren zur Authentifizierung genutzt. Grundsätzlich besteht eine zentrale Nutzerverwaltung innerhalb der \ac{LSY}, welche innerhalb einer Microsoft Azure \ac{AD} verwaltet wird. Wie diese an eine Applikation gebunden ist, ist dabei nicht vorgegeben und kann von den jeweiligen Abteilungen individuell festgelegt werden. Auch Lösungsansätze ohne die Nutzung der Azure \ac{AD} sind je nach Abteilung möglich. Die einzige zentrale Schnittstelle ist somit die genannte Azure \ac{AD}.
 
-Diese bestehende Nutzerverwaltung basiert auf einer passwortbasierten Authentifizierung inklusive \ac{MFA}. Das Passwort muss von allen Nutzern in regelmäßigen Abständen (drei Monaten) geändert werden. Der weitere Faktor für die Nutzung der \ac{MFA} kann frei von den Nutzern gewählt werden, solange er mit der Azure \ac{AD} kompatibel ist. Zusätzlich zur regelmäßigen Passwortänderungen, gibt es Richtlinien zur Passworterstellung, welche von den Nutzern eingehalten werden müssen. 
+Diese bestehende Nutzerverwaltung basiert auf einer passwortbasierten Authentifizierung inklusive \ac{MFA}. Das Passwort muss von allen Nutzern in regelmäßigen Abständen (drei Monaten) geändert werden. Der weitere Faktor für die Nutzung der \ac{MFA} kann frei von den Nutzern gewählt werden, solange er mit der Azure \ac{AD} kompatibel ist. Zusätzlich zu regelmäßigen Passwortänderungen, gibt es Richtlinien zur Passworterstellung, welche von den Nutzern eingehalten werden müssen. 
 
-Grundsätzlich ist eine Integration eines Security Keys als \ac{SFA} mit Hilfe einer Azure \ac{AD} möglich. Diese Funktion ist innerhalb der \ac{LSY} allerdings nicht aktiviert, da diese Art der Authentifizierung nicht den Richtlinien des Unternehmens entspricht. Eine Änderung dieser Richtlinien ist möglich, erfordert allerdings einen sehr hohen Aufwand und viel Zeit. Lediglich die Verwendung eines Security Keys als zweiten Faktor für eine \ac{MFA} wird von der \ac{LSY} unterstützt und ist auch mit der Azure \ac{AD} kompatibel (siehe \textbf{\ref{azure-seckey}}) Da der Bearbeitungsraum dieser Arbeit zeitlich limitiert ist, wird aus den genannten Gründen keine \ac{LSY} weite Integration eines Security Keys betrachtet. Dennoch soll eine Integration in einem kleinerem Rahmen auf Abteilungsebene getestet werden. Dies soll eine Aussage ermöglichen, ob eine Umstellung der aktuellen Richtlinien sinnvoll ist und eine Integration eines Security Keys in der gesamten \ac{LSY} möglich ist.
+Grundsätzlich ist eine Integration eines Security Keys als \ac{SFA} mithilfe einer Azure \ac{AD} möglich. Diese Funktion ist innerhalb der \ac{LSY} allerdings nicht aktiviert, da diese Art der Authentifizierung nicht den Richtlinien des Unternehmens entspricht. Eine Änderung dieser Richtlinien ist möglich, erfordert allerdings einen sehr hohen Aufwand und viel Zeit. Lediglich die Verwendung eines Security Keys als zweiten Faktor für eine \ac{MFA} wird von der \ac{LSY} unterstützt und ist auch mit der Azure \ac{AD} kompatibel (siehe \textbf{\ref{azure-seckey}}). Da der Bearbeitungsraum dieser Arbeit zeitlich limitiert ist, wird aus den genannten Gründen keine \ac{LSY} weite Integration eines Security Keys betrachtet. Dennoch soll eine Integration in einem kleineren Rahmen auf Abteilungsebene getestet werden. Dies soll eine Aussage ermöglichen, ob eine Umstellung der aktuellen Richtlinien sinnvoll ist und eine Integration eines Security Keys in der gesamten \ac{LSY} möglich ist.
 
 \begin{figure}[h]
 	\centering 
@@ -30,7 +30,7 @@ Die aktuelle Umsetzung der Abteilung zur Authentifizierung ist vereinfacht in \t
 \end{figure}
 
 \section{Wahl des Security Keys} \label{secwahl}
-Für die Umsetzung der passwortlosen Authentifizierung innerhalb der \ac{LSY} wurde ein Yubikey der Series 5 mit NFC gewählt. Dieser wurde in \textbf{\ref{Yubikey}} vorgestellt. Hingewiesen sei an dieser Stelle, dass auch andere Hersteller Security Keys anbieten, welche das FIDO2-Protokoll unterstützen. 
+Für die Umsetzung der passwortlosen Authentifizierung innerhalb der \ac{LSY} wurde ein YubiKey der Series 5 mit NFC gewählt. Dieser wurde in \textbf{\ref{Yubikey}} vorgestellt. Hingewiesen sei an dieser Stelle, dass auch andere Hersteller Security Keys anbieten, welche das FIDO2-Protokoll unterstützen. 
 
 Dazu gehören unter anderem:
 \begin{itemize}
@@ -39,13 +39,13 @@ Dazu gehören unter anderem:
     \item \textit{SafeNet eToken} des Herstellers Thales Group
 \end{itemize}
 
-Die Wahl des Security Keys richtete sich allerdings unter anderem an der Kompatibilitätsliste \cite{compWin} von Microsoft. Diese listet alle Security Keys auf, welche für eine passwortlose Authentifizierung gegen eine Microsoft Azure \ac{AD} genutzt werden können. Nicht auffindbar in der Liste ist beispielsweise der Google Titan. Dieser unterstützt aktuell nicht FIDO2, sondern lediglich FIDO und \ac{U2F}. Microsoft ist allerdings nicht abwärtskompatibel, was bedeutet, dass der Google Titan nicht für eine passwortlose Authentifizierung gegen das Azure \ac{AD} genutzt werden kann .
+Die Wahl des Security Keys richtete sich allerdings unter anderem an der Kompatibilitätsliste \cite{compWin} von Microsoft. Diese listet alle Security Keys auf, welche für eine passwortlose Authentifizierung gegen eine Microsoft Azure \ac{AD} genutzt werden können. Nicht auffindbar in der Liste ist beispielsweise der Google Titan. Dieser unterstützt aktuell nicht FIDO2, sondern lediglich FIDO und \ac{U2F}. Microsoft ist allerdings nicht abwärtskompatibel, was bedeutet, dass der Google Titan nicht für eine passwortlose Authentifizierung gegen das Azure \ac{AD} genutzt werden kann.
 
-Die endgültige Auswahl basiert auf dem bestehenden Bestand eines Yubikeys der Series 5 mit NFC. Dieser ist mit der Azure \ac{AD} nutzbar. Grundsätzlich ist allerdings auch eine Nutzung eines anderen Security Keys möglich, sofern dieser das \ac{FIDO}2-Protokoll unterstützt, in der Kompatibilitätsliste von Microsoft aufgeführt ist und offiziel von der \ac{FIDO} Allianz zertifiziert wurde.
+Die endgültige Auswahl basiert auf dem bestehenden Bestand eines YubiKeys der Series 5 mit NFC. Dieser ist mit der Azure \ac{AD} nutzbar. Grundsätzlich ist allerdings auch eine Nutzung eines anderen Security Keys möglich, sofern dieser das \ac{FIDO}2-Protokoll unterstützt, in der Kompatibilitätsliste von Microsoft aufgeführt ist und offiziell von der \ac{FIDO} Allianz zertifiziert wurde.
 
 Sollte die Nutzung eines Security Keys innerhalb der \ac{LSY} in Zukunft erweitert werden, so wird eine neue weitreichende Analyse notwendig. Da im Rahmen dieser Arbeit lediglich eine Testphase auf Abteilungsebene stattfindet und die grundsätzliche Funktionsweise der unterschiedlichen Security Keys ähnlich ist, wird auf eine detaillierte Analyse der unterschiedlichen Security Keys verzichtet.
 
-\section{Integration eines Yubikeys in die LSY}
+\section{Integration eines YubiKeys in die LSY}
 
 Grundsätzlich bieten sich zwei Möglichkeiten für die Integration eines Security Keys in die Abteilung cGroup Solutions an. Die erste Option wurde bereits \textbf{\ref{current}} beschrieben. Hierbei würde eine Authentifizierung der Nutzer ohne Umwege gegen die Azure \ac{AD} stattfinden, wie in \textbf{\ref{azure-imp}} vereinfacht dargestellt. Diese Option ist nativ mit der Azure \ac{AD} kompatibel und erfordert technisch lediglich eine Anpassung der aktuellen Konfiguration. Dies würde zu einer \ac{LSY} weiten Integration führen, da die Azure \ac{AD} als zentrale Nutzerverwaltung genutzt wird.
 
@@ -56,11 +56,11 @@ Grundsätzlich bieten sich zwei Möglichkeiten für die Integration eines Securi
 	\caption{Umsetzungsmöglichkeit mit Azure \ac{AD}} \label{azure-imp}
 \end{figure}
 
-Die zweite Option würde Gebrauch von der Schnittstelle des Keycloak-Servers innerhalb der Abteilung cGroup Solutions zu machen. Diese Option würde somit nur die Abteilung betreffen und erfordert eine technische Veränderung der aktuellen Konfiguration des Keycloak-Servers. Hierbei würden nur bestimmten Nutzern die Möglichkeit gegeben werden, sich mit Hilfe eines Security Keys anzumelden, da der Security Key lediglich vom Keycloak-Server dem Nutzer zugeordnet wird. Also hat diese Option keine Auswirkungen auf die zentrale Nutzerverwaltung. 
+Die zweite Option würde Gebrauch von der Schnittstelle des Keycloak-Servers innerhalb der Abteilung cGroup Solutions zu machen. Diese Option würde somit nur die Abteilung betreffen und erfordert eine technische Veränderung der aktuellen Konfiguration des Keycloak-Servers. Hierbei würden nur bestimmten Nutzern die Möglichkeit gegeben werden, sich mithilfe eines Security Keys anzumelden, da der Security Key lediglich vom Keycloak-Server dem Nutzer zugeordnet wird. Also hat diese Option keine Auswirkungen auf die zentrale Nutzerverwaltung. 
 
 Da es sich wie in \textbf{\ref{current}} beschrieben lediglich um eine Testphase handelt, welche nur die Abteilung cGroup Solutions betrifft, wird die zweite Option gewählt. Dies liegt insbesondere an dem hohen organisatorischen Aufwand die aktuellen Richtlinien der \ac{LSY} verändern zu lassen und die technische Umstellung der Azure \ac{AD} zu beantragen. Da die zentrale Nutzerverwaltung ein wichtiger Bestandteil aller Applikationen ist, wäre zudem ein zu hohes Risiko vorhanden, sollten technische Probleme auftreten. 
 
-Um die genannte Option mit Hilfe von Keycloak umzusetzen, müsste der aktuelle Prozess aus \textbf{\ref{current-imp}} wie folgt angepasst werden:
+Um die genannte Option mithilfe von Keycloak umzusetzen, müsste der aktuelle Prozess aus \textbf{\ref{current-imp}} wie folgt angepasst werden:
 
 \begin{figure}[H]
 	\centering 
@@ -69,9 +69,9 @@ Um die genannte Option mit Hilfe von Keycloak umzusetzen, müsste der aktuelle P
 	\caption{Veränderter Keycloak-Login}
 \end{figure}
 
-Statt die Anmeldung eines Client zu simulieren, lässt sich mit  Keycloak eine Anmeldung über eine Nutzeroberfläche realisieren. Diese wird dabei selbst von Keycloak gestellt. Dafür wird ein redirect auf die Keycloak Login-Seite durchgeführt. Bei einer erfolgreichen Verifizierung wird der Nutzer zurück auf die Applikation geleitet und vom Keycloak-Server mit Hilfe eines oAuth2-Tokens authentifiziert. 
+Statt die Anmeldung eines Client zu simulieren, lässt sich mit  Keycloak eine Anmeldung über eine Nutzeroberfläche realisieren. Diese wird dabei selbst von Keycloak gestellt. Dafür wird ein redirect auf die Keycloak Login-Seite durchgeführt. Bei einer erfolgreichen Verifizierung wird der Nutzer zurück auf die Applikation geleitet und vom Keycloak-Server mithilfe eines oAuth2-Tokens authentifiziert. 
 
-Diese Umstellung muss in Keycloak selbst konfiguriert werden. Dafür muss der sog. \textit{Authentication Flow} modifiziert werden. Statt einer Client-Anmeldung erfolgt eine Anmeldung via Browser. Für die Testphase werden zwei Optionen in den Authentication Flow integriert, welcher in \textbf{\ref{auth-flow}} dargestellt sind. Der obere Pfad wird für die passwortlose Authentifizierung genutzt. Dabei gibt der Nutzer zunächst seinen Username ein und authentifiziert sich anschließend mit Hilfe eines Security Keys und WebAuthn (inklusive CTAP2.1). Der Username wird dabei benötigt, um Nutzern die Möglichkeit zu geben sich mit einem Security Key für mehrere Zugänge zu authentifizieren. Darf ein Nutzer lediglich einen Zugang zur Anwendung besitzen, so kann die Eingabe des Username grundsätzlich entfallen. Der untere Pfad wird für die typische passwortbasierte Authentifizierung genutzt. Diese wird nur integriert da es sich um eine Testphase handelt und dient als Absicherung im Falle von technischen Problemen. Grundsätzlich ist eine Authentifizierung entsprechend des oberen Pfades ausreichend.
+Diese Umstellung muss in Keycloak selbst konfiguriert werden. Dafür muss der sog. \textit{Authentication Flow} modifiziert werden. Statt einer Client-Anmeldung erfolgt eine Anmeldung via Browser. Für die Testphase werden zwei Optionen in den Authentication Flow integriert, welcher in \textbf{\ref{auth-flow}} dargestellt sind. Der obere Pfad wird für die passwortlose Authentifizierung genutzt. Dabei gibt der Nutzer zunächst seinen Username ein und authentifiziert sich anschließend mithilfe eines Security Keys und WebAuthn (inklusive CTAP2.1). Der Username wird dabei benötigt, um Nutzern die Möglichkeit zu geben sich mit einem Security Key für mehrere Zugänge zu authentifizieren. Darf ein Nutzer lediglich einen Zugang zur Anwendung besitzen, so kann die Eingabe des Username grundsätzlich entfallen. Der untere Pfad wird für die typische passwortbasierte Authentifizierung genutzt. Diese wird nur integriert da es sich um eine Testphase handelt und dient als Absicherung im Falle von technischen Problemen. Grundsätzlich ist eine Authentifizierung entsprechend dem oberen Pfad ausreichend.
 
 \begin{figure}[H]
 	\centering 
@@ -96,7 +96,7 @@ Nach einer erfolgreichen Konfiguration des Authentication Flows, entstehen zwei 
 	\caption{Anmeldung (vereinfacht)}
 \end{figure}
 
-Die Grafiken stellen den vereinfachten Ablauf der Registrierung und Anmeldung mit Hilfe eines Security Keys dar. Eine detailierte technische Erläuterung und Darstellung der Funktionsweise ist in \textbf{\ref{fido2}} beschrieben. Der entscheidende Unterschied der beiden Prozesse ist allerdings, dass bei der Registrierung lediglich der öffentliche Schlüssel übergeben wird, während bei der Anmeldung der private Schlüssel benötigt wird. Dieser wird allerdings nicht übergeben, sondern signiert eine Login Challenge, welche vom Keycloak-Server generiert wird. Kann der Keycloak-Server die Signatur mit Hilfe des gespeicherten öffentlichen Schlüssels verifizieren, wird der Nutzer authentifiziert. Sowohl die Registrierung als auch die Anmeldung erfolgen hierbei also nicht über die Anwendung selbst, sondern über den Keycloak-Server und dessen Nutzeroberfläche.
+Die Grafiken stellen den vereinfachten Ablauf der Registrierung und Anmeldung mithilfe eines Security Keys dar. Eine detaillierte technische Erläuterung und Darstellung der Funktionsweise ist in \textbf{\ref{fido2}} beschrieben. Der entscheidende Unterschied der beiden Prozesse ist allerdings, dass bei der Registrierung lediglich der öffentliche Schlüssel übergeben wird, während bei der Anmeldung der private Schlüssel benötigt wird. Dieser wird allerdings nicht übergeben, sondern signiert eine Login Challenge, welche vom Keycloak-Server generiert wird. Kann der Keycloak-Server die Signatur mithilfe des gespeicherten öffentlichen Schlüssels verifizieren, wird der Nutzer authentifiziert. Sowohl die Registrierung als auch die Anmeldung erfolgen hierbei also nicht über die Anwendung selbst, sondern über den Keycloak-Server und dessen Nutzeroberfläche.
 
 \section{User Feedback}
 Um eine Aussage über die Akzeptanz und die Benutzerfreundlichkeit der aufgezeigten Umsetzung zu treffen, wird ein Feedback von den Nutzern der Abteilung cGroup Solutions eingeholt. Um eine wissenschaftliche Aussage zu treffen wird ein Fragebogen erstellt. Es handelt sich dabei um eine Mischform aus einer qualitativen und einer quantitativen Befragung. So wird es ermöglicht eine numerische Auswertung der Antworten zu erhalten, sowie eine qualitative Auswertung der Kommentare. Im Folgenden wird die Durchführung des Fragebogens beschrieben.
@@ -106,12 +106,12 @@ Da zum Zeitpunkt der Erstellung dieser Arbeit die Nutzung keine Umsetzung einer 
 
 Über einem Zeitraum von zwei Wochen werden alle Mitglieder eingeladen an der Befragung teilzunehmen. Eine Teilnahme ist freiwillig. Die Befragung findet im Büro der Abteilung statt und wird von dem Autor dieser Arbeit durchgeführt. Jeder Teilnehmer wird einzeln und vor Ort befragt. Dies ermöglicht es mit jedem Teilnehmer eine Live-Demonstration durchzuführen. So wird ebenfalls ermöglicht, dass Teilnehmer bereits während der Befragung und der Demonstration Kommentare hinterlassen können. Diese werden auf dem Fragebogen festgehalten und werden für die qualitative Auswertung genutzt werden.
 
-Während der gesamten Demonstration und Befragung werden den Teilnehmern keine Informationen zum FIDO2 Protkoll vermittelt, da sonst die Aussagekraft des Feedbacks verfälscht werden könnte. Ziel ist es den ersten Eindruck aller Teilnehmer zu erhalten, ohne dass diese eine Einführung in die Thematik erhalten. Die Live-Demonstration beinhaltet die Registrierung und Anmeldung mit Hilfe eines Security Keys, sowie eine Demonstration einer möglichen Anmeldung mit Hilfe eines Passkeys. Zusätzlich erhalten die Teilnehmer die Möglichkeit den Security Key physich zu betrachten. Ein detailierter Verlauf der Demonstration wird im weiteren Verlauf beschrieben.
+Während der gesamten Demonstration und Befragung werden den Teilnehmern keine Informationen zum FIDO2 Protokoll vermittelt, da sonst die Aussagekraft des Feedbacks verfälscht werden könnte. Ziel ist es den ersten Eindruck aller Teilnehmer zu erhalten, ohne dass diese eine Einführung in die Thematik erhalten. Die Live-Demonstration beinhaltet die Registrierung und Anmeldung mithilfe eines Security Keys, sowie eine Demonstration einer möglichen Anmeldung mithilfe eines Passkeys. Zusätzlich erhalten die Teilnehmer die Möglichkeit den Security Key physisch zu betrachten. Ein detaillierter Verlauf der Demonstration wird im weiteren Verlauf beschrieben.
 
 \subsection{Auswahl der Teilnehmer}
-Zur Durchführung des Fragebogens wurden alle Mitglieder des Teams eingeladen, eine Teilnahme war jedoch freiwillig. Drei Mitglieder der Abteilung konnten auf Grund eines Urlaubs nicht an der Befragung teilnehmen. Vor der Durchführung wurden alle Teilnehmer darüber informiert, zu welchem Zweck die Daten für diese Arbeit erhoben werden. Die Befragung fand dabei nicht anonym statt, um einen Austausch zwischen dem Autor und den Teilnehmern zu ermöglichen. Da die Befragung nur die Abteilung der Teilnehmer betrifft, sollten diese somit eine Möglichkeit bekommen, ihre Gedanken zu dem modifiziertem Anmeldevorgang zu teilen.
+Zur Durchführung des Fragebogens wurden alle Mitglieder des Teams eingeladen, eine Teilnahme war jedoch freiwillig. Drei Mitglieder der Abteilung konnten aufgrund eines Urlaubs nicht an der Befragung teilnehmen. Vor der Durchführung wurden alle Teilnehmer darüber informiert, zu welchem Zweck die Daten für diese Arbeit erhoben werden. Die Befragung fand dabei nicht anonym statt, um einen Austausch zwischen dem Autor und den Teilnehmern zu ermöglichen. Da die Befragung nur die Abteilung der Teilnehmer betrifft, sollten diese somit eine Möglichkeit bekommen, ihre Gedanken zu dem modifiziertem Anmeldevorgang zu teilen.
 
-12 Mitglieder der Abteilung stimmten der Teilnahme an der Befragung zu. Das durchschnittsalter der Teilnehmer beträgt 45,4 Jahre. Die genaue Verteilung wird in der folgenden Grafik sichtbar:
+12 Mitglieder der Abteilung stimmten der Teilnahme an der Befragung zu. Das durchschnittliche Alter der Teilnehmer beträgt 45,4 Jahre. Die genaue Verteilung wird in der folgenden Grafik sichtbar:
 
 \begin{figure}[H]
 	\centering 
@@ -132,9 +132,9 @@ Vor Beginn der Befragung wurden die Teilnehmer gebeten anzugeben, welche Rolle s
 \end{figure}
 
 \subsection{Inhalt der Demonstration}
-Allen Teilnehmern wurde vor der Befragung eine Live-Demonstration der Registrierung und Anmeldung mit Hilfe eines Security Keys gezeigt. Der Security Key wurde zu Beginn der Demonstration in einen üblichen USB-Slot eines Firmenlaptops eingesteckt und nach der Demonstration an die Teilnehmer übergeben. 
+Allen Teilnehmern wurde vor der Befragung eine Live-Demonstration der Registrierung und Anmeldung mithilfe eines Security Keys gezeigt. Der Security Key wurde zu Beginn der Demonstration in einen üblichen USB-Slot eines Firmenlaptops eingesteckt und nach der Demonstration an die Teilnehmer übergeben. 
 
-Die Anmeldung/Registrierung ist in mehrere Schritte unterteilt. Zunächst bestätigt der Nutzer, dass er sich mit Hilfe eines Security Keys anmelden/registrieren möchte:
+Die Anmeldung/Registrierung ist in mehrere Schritte unterteilt. Zunächst bestätigt der Nutzer, dass er sich mithilfe eines Security Keys anmelden/registrieren möchte:
 
 \begin{figure}[h]
 	\centering 
@@ -161,7 +161,7 @@ Nach der Bestätigung des Dialogs muss der Nutzer den PIN des Security Keys eing
 	\caption{PIN-Eingabe}
 \end{figure}
 
-Ist die richtige PIN eingegeben, erscheint ein letztes Fenster, welches den Nutzer dazu auffordert den Knopf des Security Keys zu drücken. Erst danach ist der Browser dazu autorisert, sich mit Hilfe des Security Keys gegen den Keycloak-Server zu registrieren oder anzumelden:
+Ist die richtige PIN eingegeben, erscheint ein letztes Fenster, welches den Nutzer dazu auffordert den Knopf des Security Keys zu drücken. Erst danach ist der Browser dazu autorisiert, sich mithilfe des Security Keys gegen den Keycloak-Server zu registrieren oder anzumelden:
 
 \begin{figure}[h]
 	\centering 
@@ -172,7 +172,7 @@ Ist die richtige PIN eingegeben, erscheint ein letztes Fenster, welches den Nutz
 
 Sobald der Knopfdruck erfolgt, wird der Nutzer erfolgreich eingeloggt. Diese Informationen wurden den Teilnehmern ebenfalls während der Durchführung des Fragebogens mitgeteilt. 
 
-Nachdem die Registrierung und Anmeldung mit Hilfe eines Security Keys demonstriert wurde, wurde den Teilnehmern ebenfalls eine mögliche Anmeldung mit Hilfe eines Passkeys gezeigt. Passkeys werden in \textbf{\ref{passkeys}} beschrieben. Dieser Prozess ist deutlich kürzer und besteht lediglich aus folgendem Dialog:
+Nachdem die Registrierung und Anmeldung mithilfe eines Security Keys demonstriert wurde, wurde den Teilnehmern ebenfalls eine mögliche Anmeldung mithilfe eines Passkeys gezeigt. Passkeys werden in \textbf{\ref{passkeys}} beschrieben. Dieser Prozess ist deutlich kürzer und besteht lediglich aus folgendem Dialog:
 
 \begin{figure}[H]
 	\centering 
@@ -185,14 +185,14 @@ Für die Demonstration wurde hierbei ein privates Gerät genutzt (Apple Macbook 
 
 
 \subsection{Herleitung der Fragen} \label{questions}
-Aufgrund des Ziels der Befragung, eine Aussage über die Akzeptanz und die Benutzerfreundlichkeit einer passwortlosen Authentifizierung zu treffen, werden lediglich Fragen gestellt, die sich auf diese beiden Punkte beziehen. Um eine hohe Teilnahme zu gewährleisten, werden die Fragen möglichst kurz gehalten und nur wenige Fragen gestellt. Die Fragen werden so gestaltet, dass sie dem Teilnehmer die Möglichkeit bietet Kommentare zu hinterlassen oder seine Antwort zu begründen. Die Fragen werden so gestellt, dass sie einfach zu verstehen sind und keine Vorkenntnisse im Bereich der passwortlosen Authentifizierung voraussetzen. Im folgenden werden die Fragen begründet aufgelistet und erläutert:
+Aufgrund des Ziels der Befragung, eine Aussage über die Akzeptanz und die Benutzerfreundlichkeit einer passwortlosen Authentifizierung zu treffen, werden lediglich Fragen gestellt, die sich auf diese beiden Punkte beziehen. Um eine hohe Teilnahme zu gewährleisten, werden die Fragen möglichst kurz gehalten und nur wenige Fragen gestellt. Die Fragen werden so gestaltet, dass sie dem Teilnehmer die Möglichkeit bietet Kommentare zu hinterlassen oder seine Antwort zu begründen. Die Fragen werden so gestellt, dass sie einfach zu verstehen sind und keine Vorkenntnisse im Bereich der passwortlosen Authentifizierung voraussetzen. Im Folgenden werden die Fragen begründet aufgelistet und erläutert:
 
 \paragraph{Frage 1:}
 
 \begin{quote}
     \textit{Hast du schonmal einen Security Key genutzt?}
 \end{quote}
-\textbf{Antwörtmöglichkeiten:} Ja; Nein; 
+\textbf{Antwortmöglichkeiten:} Ja; Nein; 
 
 Diese Frage leitet sich aus \cite{farke2020you} ab. Die Antwortmöglichkeiten werden im Vergleich aber angepasst und reduziert. Durch die Reduzierung auf zwei Antwortmöglichkeiten wird eine bessere Auswertung ermöglicht. Antworten Teilnehmer mit \textit{Ja}, werden sie gefragt in welchem Kontext sie den Security Key genutzt haben. So lassen sich zusätzliche Informationen über die Nutzungsdauer und den Zweck der Nutzung zu erhalten.
 
@@ -201,7 +201,7 @@ Diese Frage leitet sich aus \cite{farke2020you} ab. Die Antwortmöglichkeiten we
 \begin{quote}
     \textit{Bist du generell bereit, deine Passwörter durch eine andere Art der Authentifizierung zu ersetzen?}
 \end{quote}
-\textbf{Antwörtmöglichkeiten:} Ja; Nein; 
+\textbf{Antwortmöglichkeiten:} Ja; Nein; 
 
 Diese Frage ergibt sich aus einer Umfrage von Statista, in welcher Teilnehmer gefragt wurden, durch welche Art der Authentifizierung sie das Passwort ersetzen würden. Lediglich 22 \% der Teilnehmer gaben an, dass sie ihr Passwort lieber beibehalten würden \cite{techstat}. Daraus folgt die Annahme, dass eine Vielzahl an Nutzern grundsätzlich dazu bereit wäre, ihr Passwort zu ersetzen. Die Frage soll eine bessere Analyse der folgenden Fragen ermöglichen und zielt auf die Akzeptanz einer passwortlosen Authentifizierung ab.
 
@@ -211,9 +211,9 @@ Diese Frage ergibt sich aus einer Umfrage von Statista, in welcher Teilnehmer ge
     \textit{Benutzt du auf der Arbeit aktuell einen Passwort Manager?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Ja; Nein;
+\textbf{Antwortmöglichkeiten:} Ja; Nein;
 
-Verwandte Studien zeigen, dass Nutzer eines Passwort Managers teilweise eine geringere Anmeldezeit auf Grund eines Passwort Managers aufweisen (insbesondere bei einer Nutzung von autofill) \cite{farke2020you}. Die Frage soll einen Zusammenhang zwischen der Nutzung eines Passwort Managers und der Einschätzung der Benutzerfreundlichkeit einer passwortlosen Authentifizierung ermöglichen.
+Verwandte Studien zeigen, dass Nutzer eines Passwort Managers teilweise eine geringere Anmeldezeit aufgrund eines Passwort Managers aufweisen (insbesondere bei einer Nutzung von autofill) \cite{farke2020you}. Die Frage soll einen Zusammenhang zwischen der Nutzung eines Passwort Managers und der Einschätzung der Benutzerfreundlichkeit einer passwortlosen Authentifizierung ermöglichen.
 
 \paragraph{Frage 4:}
 
@@ -221,7 +221,7 @@ Verwandte Studien zeigen, dass Nutzer eines Passwort Managers teilweise eine ger
     \textit{Kennst du das FIDO2-Protokoll und weißt du grob wie es funktioniert?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Ja; Nein;
+\textbf{Antwortmöglichkeiten:} Ja; Nein;
 
 Diese Frage bezieht sich auf die in \textbf{\ref{Yubikey}} aufgeführte Problematik, dass Nutzer lieber Passwörter nutzen, da sie die Funktionsweise und Technologie im Hintergrund besser verstehen. Dieser mögliche Zusammenhang soll betrachtet werden. Antworten Teilnehmer mit \textit{Ja}, werden sie gefragt, ob sie die Funktionsweise des FIDO2-Protokolls erklären können. So lässt sich eine Aussage über die Kenntnisse der Teilnehmer treffen. 
 
@@ -231,7 +231,7 @@ Diese Frage bezieht sich auf die in \textbf{\ref{Yubikey}} aufgeführte Problema
     \textit{Wie bewertest du die Benutzerfreundlichkeit der Registrierung mithilfe eines Security Keys?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Besser als mit einem Passwort; Gleich gut wie mit einem Passwort; Schlechter als mit einem Passwort;
+\textbf{Antwortmöglichkeiten:} Besser als mit einem Passwort; Gleich gut wie mit einem Passwort; Schlechter als mit einem Passwort;
 
 Diese Frage soll einen Vergleich zwischen der Benutzerfreundlichkeit einer passwortlosen Authentifizierung und einer passwortbasierten Authentifizierung ermöglichen. Aus diesem Grund werden die Antwortmöglichkeiten bewusst so gewählt, dass sie einen Vergleich ermöglichen. Eine generelle Bewertung würde die Auswertung erschweren, da die Teilnehmer unterschiedliche Vergleichswerte wählen könnten.
 
@@ -241,7 +241,7 @@ Diese Frage soll einen Vergleich zwischen der Benutzerfreundlichkeit einer passw
     \textit{Wie bewertest du die Benutzerfreundlichkeit der Anmeldung mithilfe eines Security Keys?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Besser als mit einem Passwort und \ac{MFA}; Gleich gut wie mit einem Passwort und \ac{MFA}; Schlechter als mit einem Passwort und \ac{MFA};
+\textbf{Antwortmöglichkeiten:} Besser als mit einem Passwort und \ac{MFA}; Gleich gut wie mit einem Passwort und \ac{MFA}; Schlechter als mit einem Passwort und \ac{MFA};
 
 Wie auch die vorherige Frage zielt diese Frage auf die Benutzerfreundlichkeit ab. Die Unterteilung in zwei Fragen ergibt sich vor allem aus der Tatsache, dass sich die Registrierung und die Anmeldung, insbesondere bei einer passwortbasierten Authentifizierung, deutlich unterscheiden. Während es sich bei einer Anmeldung lediglich um eine Wissensabfrage handelt, muss bei der Registrierung zunächst ein eigenes Passwort erstellt werden. Dies könnte dazu führen, dass die beiden Abläufe unterschiedlich bewertet werden und somit der Vergleich zur passwortlosen Authentifizierung erschwert wird.
 
@@ -251,9 +251,9 @@ Wie auch die vorherige Frage zielt diese Frage auf die Benutzerfreundlichkeit ab
     \textit{Wärst du dazu bereit einen Security Key für den privaten Gebrauch zu kaufen, wenn der Preis bei ca. 50 € liegt?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Ja; Nein;
+\textbf{Antwortmöglichkeiten:} Ja; Nein;
 
-Diese Frage zielt auf die Akzeptanz einer passwortlosen Authentifizierung im privaten Kontext ab und basiert auf dem Ergebnis in \textbf{\ref{Yubikey}}. Dort wurde festegestellt, dass der Kaufpreis eines Security Keys ebenfalls eine Hürde für die Nutzung darstellen kann. Als Richtwert für den Kaufpreis wird hierbei der ungefähre Preis eines Yubikeys der Series 5 mit NFC gewählt, da dieser ebenfalls für die Umsetzung genutzt wird. Die Frage soll im Weiteren auch auf für die Nutzung im Unternehmenskontext genutzt werden, da die Akzeptanz im Generellen auch eine Auswirkung auf die Etablierung von Security Keys hat. Eine erhöhte Etablierung kann ebenfalls zu einer breiteren Unterstüzung führen.
+Diese Frage zielt auf die Akzeptanz einer passwortlosen Authentifizierung im privaten Kontext ab und basiert auf dem Ergebnis in \textbf{\ref{Yubikey}}. Dort wurde festegestellt, dass der Kaufpreis eines Security Keys ebenfalls eine Hürde für die Nutzung darstellen kann. Als Richtwert für den Kaufpreis wird hierbei der ungefähre Preis eines YubiKeys der Series 5 mit NFC gewählt, da dieser ebenfalls für die Umsetzung genutzt wird. Die Frage soll im Weiteren auch auf für die Nutzung im Unternehmenskontext genutzt werden, da die Akzeptanz im Generellen auch eine Auswirkung auf die Etablierung von Security Keys hat. Eine erhöhte Etablierung kann ebenfalls zu einer breiteren Unterstützung führen.
 
 \paragraph{Frage 8:}
 
@@ -261,7 +261,7 @@ Diese Frage zielt auf die Akzeptanz einer passwortlosen Authentifizierung im pri
     \textit{Hältst du einen Security Key für sicherer als ein Passwort?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Ja; Nein;
+\textbf{Antwortmöglichkeiten:} Ja; Nein;
 
 Diese Frage basiert auf der in \textbf{\ref{Yubikey}} beschriebenen Annahme, dass Nutzer an der Sicherheit von Security Keys zweifeln, da sie die Funktionsweise der Technologie nicht verstehen. Dies soll im Zusammenhang mit Frage 4 betrachtet werden. Bewusst wird dabei auf die Antwortmöglichkeit \textit{Ich weiß es nicht} verzichtet, da Teilnehmer auf der Basis ihres aktuellen Wissensstands eine intuitive Entscheidung treffen sollen. Dies ermöglicht ebenfalls eine Aussage über die Akzeptanz der Teilnehmer. 
 
@@ -271,9 +271,9 @@ Diese Frage basiert auf der in \textbf{\ref{Yubikey}} beschriebenen Annahme, das
     \textit{Findest du eine Anmeldung per Passkey besser als eine Anmeldung per Security Key?}
 \end{quote}
 
-\textbf{Antwörtmöglichkeiten:} Ja; Nein; Gleich;
+\textbf{Antwortmöglichkeiten:} Ja; Nein; Gleich;
 
-Diese Frage soll für einen Ausblick genutzt werden, ob eine Anmeldung per Passkey eine Alternative zu einer Anmeldung per Security Key darstellt. In \textbf{\ref{fido2-pros}} wurde ebenfalls deutlich, dass die Benutzerfreundlichkeit weniger von \ac{FIDO}2 abhängig ist, sondern viel mehr vom genutzten authentifizerungsgerät.  Mithilfe von Kommentaren der Teilnehmer sollen konkrete Vor- und Nachteile der beiden Verfahren in Bezug auf deren Benutzerfreundlichkleit ermittelt werden.
+Diese Frage soll für einen Ausblick genutzt werden, ob eine Anmeldung per Passkey eine Alternative zu einer Anmeldung per Security Key darstellt. In \textbf{\ref{fido2-pros}} wurde ebenfalls deutlich, dass die Benutzerfreundlichkeit weniger von \ac{FIDO}2 abhängig ist, sondern viel mehr vom genutzten Authentifizerungsgerät.  Mithilfe von Kommentaren der Teilnehmer sollen konkrete Vor- und Nachteile der beiden Verfahren in Bezug auf deren Benutzerfreundlichkeit ermittelt werden.
 
 
 \subsection{Auswertung}
@@ -288,11 +288,11 @@ Alle Teilnehmer geben an, dass sie dazu bereit wären ihr Passwort durch eine an
 	\caption{Auswertung Frage 5 \& 6}
 \end{figure}
 
-Bei der Bewertung der Registrierung und der Anmeldung mit Hilfe eine Security Keys sind deutliche Unterschiede sichtbar. Die deutliche Mehrheit der Teilnehmer bevorzugte die Registrierung per Security Key gegenüber der passwortbasierten Alternative. Keiner der Teilnehmer fand die Registrierung im Vergleich schlechter. Bei der Anmeldung hingegen ist ein ausgeglicheneres Ergebnis sichtbar. Im Vergleich geben drei der Teilnehmer an, dass sie Anmeldung schlechter finden als die aktuelle Alternative mit Hilfe eines Passwortes und \ac{MFA}. Es wird also deutlich, dass die beiden Abläufe der Registrierung und der Anmeldung differenziert betrachtet werden müssen. 
-Eine Abhängigheit zwischen der Nutzung eines Passwort Managers und der Bewertung der Benutzerfreundlichkeit lässt sich nicht feststellen, da lediglich drei Teilnehmer keinen Passwort Manager nutzen und diese sehr verschiedene Bewertungen abgeben. Eine aussagekräftige Auswertung ist somit nicht möglich. 
+Bei der Bewertung der Registrierung und der Anmeldung mithilfe eine Security Keys sind deutliche Unterschiede sichtbar. Die deutliche Mehrheit der Teilnehmer bevorzugte die Registrierung per Security Key gegenüber der passwortbasierten Alternative. Keiner der Teilnehmer fand die Registrierung im Vergleich schlechter. Bei der Anmeldung hingegen ist ein ausgeglicheneres Ergebnis sichtbar. Im Vergleich geben drei der Teilnehmer an, dass sie Anmeldung schlechter finden als die aktuelle Alternative mithilfe eines Passwortes und \ac{MFA}. Es wird also deutlich, dass die beiden Abläufe der Registrierung und der Anmeldung differenziert betrachtet werden müssen. 
+Eine Abhängigkeit zwischen der Nutzung eines Passwort Managers und der Bewertung der Benutzerfreundlichkeit lässt sich nicht feststellen, da lediglich drei Teilnehmer keinen Passwort Manager nutzen und diese sehr verschiedene Bewertungen abgeben. Eine aussagekräftige Auswertung ist somit nicht möglich. 
 
 
-Zehn der Teilnehmen geben an, dass sie nicht bereit wären 50€ für einen Security Key auszugeben. Dies bestätigt die Annahme aus \textbf{\ref{Yubikey}}, dass der Preis eine Hürde für die Nutzung und Etablierung darstellen kann. Eine vermehrte Nutzung im privaten Kontext würde zu mehr Akzeptanz führen, da die Teilnehmer bereits mit der Technologie vertraut sind. 
+Zehn der Teilnehmer geben an, dass sie nicht bereit wären 50 € für einen Security Key auszugeben. Dies bestätigt die Annahme aus \textbf{\ref{Yubikey}}, dass der Preis eine Hürde für die Nutzung und Etablierung darstellen kann. Eine vermehrte Nutzung im privaten Kontext würde zu mehr Akzeptanz führen, da die Teilnehmer bereits mit der Technologie vertraut sind. 
 
 Bis auf zwei Teilnehmer wird die Nutzung von Security Keys sicherer eingeschätzt als die Nutzung von Passwörtern. Da lediglich zwei Nutzer die Nutzung als weniger sicher betrachten lässt sich keine Aussage über einen Zusammenhang zwischen der Kenntnis des FIDO2-Protokolls und der Einschätzung der Sicherheit treffen.
 
@@ -302,12 +302,12 @@ Aus den Kommentaren lassen sich ebenfalls einige Erkenntnisse ziehen:
 
 \begin{itemize}
     \item Ein Teilnehmer stufte die Registrierung und Anmeldung als \glqq\textit{sehr aufregend}\grqq, da es etwas neues ist und begründete so seine positive Bewertung. Dieses Beispiel zeigt auf, dass die Gewöhnung an eine neue Technologie nicht zwangsweise negativ ist, sondern auch positiv bewertet werden kann.
-    \item Mehrere Teilnehmer kritisierten die Notwendigkeit den Security Key immer dabei haben zu müssen und somit spontane Logins nicht möglich sind. Dies deckt sich mit den Ergebnissen aus \textbf{\ref{Yubikey}}.
+    \item Mehrere Teilnehmer kritisierten die Notwendigkeit, den Security Key immer dabei haben zu müssen und somit spontane Logins nicht möglich sind. Dies deckt sich mit den Ergebnissen aus \textbf{\ref{Yubikey}}.
     \item Daraus resultiert auch der Kritikpunkt, dass zusätzliche Hardware verloren gehen kann. Dies ist ein weiterer Kritikpunkt, welcher bereits in \textbf{\ref{Yubikey}} aufgeführt wurde.
-    \item Mehrere Teilnehmer wiesen darauf hin, dass sie ihr Handy und somit ihre Authenticator App immer dabei haben. Selbst, wenn sie den Prozess des anmeldens mit Hilfe eines Security Keys als besser bewerten, würden sie weiterhin die Nutzung eines Passwortes mit \ac{MFA} bevorzugen. 
-    \item Ein neuer Punkt der in den Kommentaren aufgeführt wurde ist, dass \ac{SSO} ein wichtiger Faktor ist. Da somit eine geringere Abfrage der Passwörter gegeben ist und auch weniger Passwörter erstellt werden müssen. Dies wirkt sich auch auf die Einschätzung der Benutzerfreundlichkeit aus.
+    \item Mehrere Teilnehmer wiesen darauf hin, dass sie ihr Handy und somit ihre Authenticator App immer dabei haben. Selbst, wenn sie den Prozess des Anmeldens mithilfe eines Security Keys als besser bewerten, würden sie weiterhin die Nutzung eines Passwortes mit \ac{MFA} bevorzugen. 
+    \item Ein neuer Punkt, der in den Kommentaren aufgeführt wurde, ist dass \ac{SSO} ein wichtiger Faktor ist. Da somit eine geringere Abfrage der Passwörter gegeben ist und auch weniger Passwörter erstellt werden müssen. Dies wirkt sich auch auf die Einschätzung der Benutzerfreundlichkeit aus.
     \item Die Mehrheit der Teilnehmer ist der Meinung, dass sie die Benutzerfreundlichkeit der Security Keys erst nach einer längeren Testphase bewerten können.
-    \item Ein Kritikpunkt der Teilnehmer am Anmeldevorgang mit Hilfe eines Security Keys ist, dass die Eingabe der PIN und des Benutzernamens zu viel Aufwand sind. Dadurch bewerteten sie die Alternative als gleich oder schlechter im Vergleich zu der aktuellen Lösung. Sie wünschen sich eine Lösung, bei dem der Security Key lediglich eingesteckt und gedrückt werden muss.
+    \item Ein Kritikpunkt der Teilnehmer am Anmeldevorgang mithilfe eines Security Keys ist, dass die Eingabe der PIN und des Benutzernamens zu viel Aufwand sind. Dadurch bewerteten sie die Alternative als gleich oder schlechter im Vergleich zu der aktuellen Lösung. Sie wünschen sich eine Lösung, bei dem der Security Key lediglich eingesteckt und gedrückt werden muss.
     \item Ein Teilnehmer begründet seine Antwort bezogen auf die Passkeys damit, dass er zusätzliche Hardware für sicherer hält und sich bei der Nutzung von Passkeys nicht sicher ist, ob diese wirklich nur auf dem Gerät gespeichert werden.
     \item Einige Teilnehmer erläuterten, dass sie die Anmeldung per Security Key benutzerfreundlicher als ein Passwort mit \ac{MFA} finden, allerdings nicht besser als lediglich einem Passwort.
     \item Ebenfalls wurde die mechanische Belastung des Security Keys und des USB-Ports genannt. Beide könnten durch die Nutzung beschädigt werden. Auch dieser Punkt wurde bereits in \textbf{\ref{Yubikey}} aufgeführt.
@@ -317,11 +317,11 @@ Aus den Kommentaren lassen sich ebenfalls einige Erkenntnisse ziehen:
 
 
 \section{Wirtschaftlichkeit}
-Ein entscheidender Faktor für den Einsatz einer passwortlosen Authentifizierung mit Hilfe eines Security Keys ist die Wirtschaftlichkeit. Im Folgenden soll eine Analyse der Wirtschaftlichkeit im Bezug auf die Abteilung cGroup Solutions durchgeführt werden.
+Ein entscheidender Faktor für den Einsatz einer passwortlosen Authentifizierung mithilfe eines Security Keys ist die Wirtschaftlichkeit. Im Folgenden soll eine Analyse der Wirtschaftlichkeit in Bezug auf die Abteilung cGroup Solutions durchgeführt werden.
 
-Betrachtet man die Teamgröße von 15 Personen und geht von den aktuellen Kosten eines Yubikeys aus (50 €) so ergibt sich ein Gesamtpreis von 750 €. Dieser Preis ist einmalig und muss nicht wiederholt werden. Auf Grund der geringen Backup-Möglichkeiten eines Security Keys sollte allerdings ein Backup-Key pro Nutzer angeschafft werden. Dieser kann im Falle eines Verlustes des ersten Keys genutzt werden. Dies erhöht die Kosten auf 1500 €.
+Betrachtet man die Teamgröße von 15 Personen und geht von den aktuellen Kosten eines YubiKeys aus (50 €) so ergibt sich ein Gesamtpreis von 750 €. Dieser Preis ist einmalig und muss nicht wiederholt werden. Aufgrund der geringen Backup-Möglichkeiten eines Security Keys sollte allerdings ein Backup-Key pro Nutzer angeschafft werden. Dieser kann im Falle eines Verlustes des ersten Keys genutzt werden. Dies erhöht die Kosten auf 1500 €.
 Lässt man alternativ weiterhin eine Anmeldung per Passwort zu, würden 750 € entfallen, allerdings wäre der eigentliche Zweck der Anschaffung nicht mehr erfüllt.
-Sollte ein Security Key verloren oder kaputt gehen muss dieser ebenfalls ersetzt werden.
+Sollte ein Security Key verloren oder kaputtgehen muss dieser ebenfalls ersetzt werden.
 Zusätzlich zu den Materialkosten müssen die Kosten für die Implementierung betrachtet werden. Die Migration von Passwörtern auf Security Keys muss von erfahrenen Entwicklern und Architekten durchgeführt werden. Die genauen Kosten dafür lassen sich allerdings nicht definieren und sind stark abhängig von der gewünschten Implementierung. 
 
 Sollte eine Anschaffung für das gesamte Unternehmen \ac{LSY} erfolgen so würde sich der Preis auf 280.000 € belaufen. Dies ergibt sich aus der aktuellen Mitarbeiterzahl von 2.800 und den Kosten eines Security Keys von 50 € sowie einem Backup-Key pro Nutzer.
