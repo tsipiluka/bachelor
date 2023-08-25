@@ -532,10 +532,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf}
+      \verb https://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf%7D
+      \verb https://media.fidoalliance.org/wp-content/uploads/2022/03/How-FIDO-Addresses-a-Full-Range-of-Use-Cases-March24.pdf
       \endverb
     \endentry
     \entry{passkeysapple}{misc}{}
@@ -834,10 +834,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://www.w3.org/about/}
+      \verb https://www.w3.org/about/
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://www.w3.org/about/%7D
+      \verb https://www.w3.org/about/
       \endverb
     \endentry
     \entry{keycloak}{misc}{}
@@ -862,10 +862,10 @@
       \field{urlyear}{2023}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb \url{https://www.keycloak.org}
+      \verb https://www.keycloak.org
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://www.keycloak.org%7D
+      \verb https://www.keycloak.org
       \endverb
     \endentry
     \entry{compWin}{misc}{}
